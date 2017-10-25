@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Dangnd_ProductLabel>
+            <version>0.1.0</version>
+        </Dangnd_ProductLabel>
+    </modules>
+    <global>
+        <models>
+            <dangnd_label>
+                <class>Dangnd_ProductLabel_Model</class>
+                <resourceModel>dangnd_label_resource</resourceModel>
+            </dangnd_label>
+            <dangnd_label_resource>
+                <class>Dangnd_ProductLabel_Model_Resource</class>
+            </dangnd_label_resource>
+        </models>
+        <blocks>
+            <dangnd_label>
+                <class>Dangnd_ProductLabel_Block</class>
+            </dangnd_label>
+        </blocks>
+        <helpers>
+            <dangnd_label>
+                <class>Dangnd_ProductLabel_Helper</class>
+            </dangnd_label>
+        </helpers>
+        <resources>
+            <dangnd_label_setup>
+                <setup>
+                    <module>Dangnd_ProductLabel</module>
+                </setup>
+            </dangnd_label_setup>
+        </resources>
+    </global>
+</config>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Dangnd_Zoom>
+            <version>0.1.0</version>
+        </Dangnd_Zoom>
+    </modules>
+    <global>
+        <models>
+            <dangnd_zoom>
+                <class>Dangnd_Zoom_Model</class>
+                <resourceModel>dangnd_zoom_resource</resourceModel>
+            </dangnd_zoom>
+            <dangnd_zoom_resource>
+                <class>Dangnd_Zoom_Model_Resource</class>
+            </dangnd_zoom_resource>
+        </models>
+        <blocks>
+            <dangnd_zoom>
+                <class>Dangnd_Zoom_Block</class>
+            </dangnd_zoom>
+        </blocks>
+        <helpers>
+            <dangnd_zoom>
+                <class>Dangnd_Zoom_Helper</class>
+            </dangnd_zoom>
+        </helpers>
+        <resources>
+            <dangnd_zoom_setup>
+                <setup>
+                    <module>Dangnd_Zoom</module>
+                </setup>
+            </dangnd_zoom_setup>
+        </resources>
+    </global>
+</config>

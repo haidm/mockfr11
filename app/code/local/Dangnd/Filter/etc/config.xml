@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Dangnd_Filter>
+            <version>0.1.0</version>
+        </Dangnd_Filter>
+    </modules>
+    <global>
+        <models>
+            <dangnd_filter>
+                <class>Dangnd_Filter_Model</class>
+                <resourceModel>dangnd_filter_resource</resourceModel>
+            </dangnd_filter>
+            <dangnd_filter_resource>
+                <class>Dangnd_Filter_Model_Resource</class>
+            </dangnd_filter_resource>
+        </models>
+        <blocks>
+            <dangnd_filter>
+                <class>Dangnd_Filter_Block</class>
+            </dangnd_filter>
+        </blocks>
+        <helpers>
+            <dangnd_filter>
+                <class>Dangnd_Filter_Helper</class>
+            </dangnd_filter>
+        </helpers>
+        <resources>
+            <dangnd_filter_setup>
+                <setup>
+                    <module>Dangnd_Filter</module>
+                </setup>
+            </dangnd_filter_setup>
+        </resources>
+    </global>
+</config>

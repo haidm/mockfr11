@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Dangnd_Slider>
+            <version>0.1.0</version>
+        </Dangnd_Slider>
+    </modules>
+    <global>
+        <models>
+            <dangnd_slider>
+                <class>Dangnd_Slider_Model</class>
+                <resourceModel>dangnd_slider_resource</resourceModel>
+            </dangnd_slider>
+            <dangnd_slider_resource>
+                <class>Dangnd_Slider_Model_Resource</class>
+            </dangnd_slider_resource>
+        </models>
+        <blocks>
+            <dangnd_slider>
+                <class>Dangnd_Slider_Block</class>
+            </dangnd_slider>
+        </blocks>
+        <helpers>
+            <dangnd_slider>
+                <class>Dangnd_Slider_Helper</class>
+            </dangnd_slider>
+        </helpers>
+        <resources>
+            <dangnd_slider_setup>
+                <setup>
+                    <module>Dangnd_Slider</module>
+                </setup>
+            </dangnd_slider_setup>
+        </resources>
+    </global>
+</config>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Dangnd_Bestseller>
+            <version>0.1.0</version>
+        </Dangnd_Bestseller>
+    </modules>
+    <global>
+        <models>
+            <dangnd_bestseller>
+                <class>Dangnd_Bestseller_Model</class>
+                <resourceModel>dangnd_bestseller_resource</resourceModel>
+            </dangnd_bestseller>
+            <dangnd_bestseller_resource>
+                <class>Dangnd_Bestseller_Model_Resource</class>
+            </dangnd_bestseller_resource>
+        </models>
+        <blocks>
+            <dangnd_bestseller>
+                <class>Dangnd_Bestseller_Block</class>
+            </dangnd_bestseller>
+        </blocks>
+        <helpers>
+            <dangnd_bestseller>
+                <class>Dangnd_Bestseller_Helper</class>
+            </dangnd_bestseller>
+        </helpers>
+        <resources>
+            <dangnd_bestseller_setup>
+                <setup>
+                    <module>Dangnd_Bestseller</module>
+                </setup>
+            </dangnd_bestseller_setup>
+        </resources>
+    </global>
+</config>
