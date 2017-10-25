@@ -1,0 +1,9 @@
+<?php
+class Datdt_MegaMenu_Block_MegaMenu extends Mage_Core_Block_Template
+{
+
+    public function _construct()
+    {
+        //$this->setTemplate('MegaMenu/MegaMenu.phtml');
+    }
+}

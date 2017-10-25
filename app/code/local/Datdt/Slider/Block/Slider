@@ -1,0 +1,9 @@
+<?php
+class Datdt_Slider_Block_Slider extends Mage_Core_Block_Template
+{
+
+    public function _construct()
+    {
+        //$this->setTemplate('MegaMenu/MegaMenu.phtml');
+    }
+}

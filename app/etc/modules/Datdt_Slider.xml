@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Datdt_Slider>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Datdt_Slider>
+    </modules>
+</config>
