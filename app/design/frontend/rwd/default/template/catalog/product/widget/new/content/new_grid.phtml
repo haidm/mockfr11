@@ -38,24 +38,6 @@
                 <li class="item<?php if(($i-1)%$_columnCount==0): ?> first<?php elseif($i%$_columnCount==0): ?> last<?php endif; ?>">
                     <?php $_imgSize = 210; ?>
                     <?php // The image size is locked at 210 for this for display purposes. CSS has it at 75% which should equate to 278px?>
-                    <?php
-                        if(!empty($_product->getData('product_label'))) {
-                            $product_label = explode(',', $_product->getData('product_label'));
-                            foreach ($product_label as $attr_id) {
-                                $product_label_item = $_product->getResource()->getAttribute('product_label')->getFrontend()->getOption($attr_id);
-
-                                if ($product_label_item == 'Sale') {
-                                    echo '<span class="onsale"></span>';
-                                }
-                                if ($product_label_item == 'New') {
-                                    echo '<div class="ribbon-top-left"><div class="ribbon">New</div></div>';
-                                }
-                                if ($product_label_item == 'Promotion') {
-                                    echo '<div class="ribbon-bottom-right"><div class="ribbon-right">Promition</div></div>';
-                                }
-                            }
-                        }
-                    ?>
                     <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($_product->getName(), null, true) ?>" class="product-image">
                         <img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(210) ?>" alt="<?php echo $this->stripTags($_product->getName(), null, true) ?>" />
                     </a>

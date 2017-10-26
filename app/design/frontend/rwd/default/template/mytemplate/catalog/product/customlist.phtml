@@ -49,17 +49,20 @@ $_helper = $this->helper('catalog/output');
                     <li class="item<?php if( ++$_iterator == sizeof($_productCollection) ): ?> last<?php endif; ?>">
                         <?php // Product Image ?>
                         <?php
-                        $product_label = explode(',',$_product->getData('product_label'));
-                        foreach ($product_label as $attr_id){
-                            $product_label_item = $_product->getResource()->getAttribute('product_label')->getFrontend()->getOption($attr_id);
-                            if($product_label_item == 'Sale'){
-                                echo '<span class="onsale"></span>';
-                            }
-                            if($product_label_item == 'New'){
-                                echo '<div class="ribbon-top-left"><div class="ribbon">New</div></div>';
-                            }
-                            if($product_label_item == 'Promotion'){
-                                echo '<div class="ribbon-bottom-right"><div class="ribbon-right">Promition</div></div>';
+                        if(!empty($_product->getData('product_label'))) {
+                            $product_label = explode(',', $_product->getData('product_label'));
+                            foreach ($product_label as $attr_id) {
+                                $product_label_item = $_product->getResource()->getAttribute('product_label')->getFrontend()->getOption($attr_id);
+
+                                if ($product_label_item == 'Sale') {
+                                    echo '<span class="onsale"></span>';
+                                }
+                                if ($product_label_item == 'New') {
+                                    echo '<div class="ribbon-top-left"><div class="ribbon">New</div></div>';
+                                }
+                                if ($product_label_item == 'Promotion') {
+                                    echo '<div class="ribbon-bottom-right"><div class="ribbon-right">Promition</div></div>';
+                                }
                             }
                         }
                         ?>
