@@ -33,4 +33,33 @@
             </dangnd_label_setup>
         </resources>
     </global>
+    <frontend>
+        <routers>
+            <label>
+                <use>standard</use>
+                <args>
+                    <module>Dangnd_ProductLabel</module>
+                    <frontName>label</frontName>
+                </args>
+            </label>
+        </routers>
+        <layout>
+            <updates>
+                <dangnd_productlabel>
+                    <file>dangnd_label.xml</file>
+                </dangnd_productlabel>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <dangnd_productlabel before="Mage_Adminhtml">Dangnd_ProductLable_Adminhtml</dangnd_productlabel>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
 </config>

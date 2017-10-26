@@ -1,0 +1,34 @@
+<config>
+    <menu>
+        <slider translate="title" module="dangnd_slider">
+            <title>Manager Slider</title>
+            <sort_order>100</sort_order>
+            <children>
+                <slide translate="title" module="dangnd_slider">
+                    <title>Manage Slide</title>
+                    <sort_order>0</sort_order>
+                    <action>adminhtml/slide</action>
+                </slide>
+                <images translate="title" module="dangnd_slider">
+                    <title>Manage Images</title>
+                    <sort_order>10</sort_order>
+                    <action>adminhtml/images</action>
+                </images>
+            </children>
+        </slider>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <slide>
+                        <title>Manage Slide</title>
+                    </slide>
+                    <images>
+                        <title>Manage Images</title>
+                    </images>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

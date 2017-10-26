@@ -13,6 +13,14 @@
             </dangnd_slider>
             <dangnd_slider_resource>
                 <class>Dangnd_Slider_Model_Resource</class>
+                <entities>
+                    <slide>
+                        <table>mock_slider_slide</table>
+                    </slide>
+                    <images>
+                        <table>mock_slider_images</table>
+                    </images>
+                </entities>
             </dangnd_slider_resource>
         </models>
         <blocks>
@@ -33,4 +41,33 @@
             </dangnd_slider_setup>
         </resources>
     </global>
+    <frontend>
+        <routers>
+            <slider>
+                <use>standard</use>
+                <args>
+                    <module>Dangnd_Slider</module>
+                    <frontName>slider</frontName>
+                </args>
+            </slider>
+        </routers>
+        <layout>
+            <updates>
+                <dangnd_slider>
+                    <file>dangnd_slider.xml</file>
+                </dangnd_slider>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Dangnd_Slider before="Mage_Adminhtml">Dangnd_Slider_Adminhtml</Dangnd_Slider>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
 </config>

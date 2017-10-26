@@ -33,4 +33,33 @@
             </dangnd_bestseller_setup>
         </resources>
     </global>
+    <frontend>
+        <routers>
+            <bestseller>
+                <use>standard</use>
+                <args>
+                    <module>Dangnd_Bestseller</module>
+                    <frontName>bestseller</frontName>
+                </args>
+            </bestseller>
+        </routers>
+        <layout>
+            <updates>
+                <dangnd_bestseller>
+                    <file>dangnd_bestseller.xml</file>
+                </dangnd_bestseller>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Dangnd_Bestseller before="Mage_Adminhtml">Dangnd_Bestseller_Adminhtml</Dangnd_Bestseller>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
 </config>

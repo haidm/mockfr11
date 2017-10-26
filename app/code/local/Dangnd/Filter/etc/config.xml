@@ -33,4 +33,33 @@
             </dangnd_filter_setup>
         </resources>
     </global>
+    <frontend>
+        <routers>
+            <filter>
+                <use>standard</use>
+                <args>
+                    <module>Dangnd_Filter</module>
+                    <frontName>filter</frontName>
+                </args>
+            </filter>
+        </routers>
+        <layout>
+            <updates>
+                <dangnd_filter>
+                    <file>dangnd_filter.xml</file>
+                </dangnd_filter>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Dangnd_Filter before="Mage_Adminhtml">Dangnd_Filter_Adminhtml</Dangnd_Filter>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
 </config>

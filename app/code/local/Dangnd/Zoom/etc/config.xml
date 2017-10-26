@@ -33,4 +33,33 @@
             </dangnd_zoom_setup>
         </resources>
     </global>
+    <frontend>
+        <routers>
+            <zoom>
+                <use>standard</use>
+                <args>
+                    <module>Dangnd_Zoom</module>
+                    <frontName>zoom</frontName>
+                </args>
+            </zoom>
+        </routers>
+        <layout>
+            <updates>
+                <dangnd_zoom>
+                    <file>dangnd_zoom.xml</file>
+                </dangnd_zoom>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Dangnd_Zoom before="Mage_Adminhtml">Dangnd_Zoom_Adminhtml</Dangnd_Zoom>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
 </config>
