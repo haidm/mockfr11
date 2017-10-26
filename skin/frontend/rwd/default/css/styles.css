@@ -4489,9 +4489,68 @@ p.product-name a:hover {
   margin-bottom: 20px;
 }
 .products-list > li {
+  position: relative;
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid #ededed;
+}
+span.onsale{
+  width: 59px;
+  height: 59px;
+  background: url(http://i42.tinypic.com/sq49ow.png) no-repeat;
+  position: absolute;
+  top:0;
+  right:0;
+  z-index: 1;
+}
+.ribbon-top-left{
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+.ribbon-bottom-right{
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  top:98px;
+  right: 0px;
+}
+.ribbon-right{
+  color: #fff;
+  text-align: center;
+  transform: rotate(315deg);
+  -moz-transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
+  -o-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
+  position: relative;
+  padding: 4px 0;
+  left: -12px;
+  top: 26px;
+  width: 100px;
+  text-transform: uppercase;
+  background-color: #673ab7;
+  font-size:10px;
+}
+.ribbon{
+  color: #fff;
+  text-align: center;
+  transform: rotate(315deg);
+  -moz-transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
+  -o-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
+  position: relative;
+  padding: 2px 0;
+  left: -21px;
+  top: 5px;
+  width: 80px;
+  text-transform: uppercase;
+  background-color: red;
 }
 .products-list > li:after {
   content: '';

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<layout>
+    <catalog_category_default>
+        <reference name="product_list">
+            <action method="setTemplate">
+                <template>mytemplate/catalog/product/customlist.phtml</template>
+            </action>
+        </reference>
+    </catalog_category_default>
+    <catalog_category_layered>
+        <reference name="product_list">
+            <action method="setTemplate">
+                <template>mytemplate/catalog/product/customlist.phtml</template>
+            </action>
+        </reference>
+    </catalog_category_layered>
+</layout>
