@@ -1,5 +1,12 @@
 <?xml version="1.0"?>
 <config>
+    <default>
+        <cms>
+            <wysiwyg>
+                <enabled>0</enabled>
+            </wysiwyg>
+        </cms>
+    </default>
     <modules>
         <AnhNT9_ProductZoom>
             <version>0.1.0</version>
@@ -17,9 +24,9 @@
         </routers>
         <layout>
             <updates>
-                <anhnt9_filter>
+                <anhnt9_productzoom>
                     <file>anhnt9_zoom.xml</file>
-                </anhnt9_filter>
+                </anhnt9_productzoom>
             </updates>
         </layout>
     </frontend>

@@ -23,14 +23,4 @@
         </reference>
     </catalog_product_view>
 
-    <default>
-        <reference name="head">
-            <action method="addJs">
-                <script>lib/cloud-zoom.1.0.2.min.js</script>
-            </action>
-            <action method="addCss">
-                <stylesheet>css/cloud-zoom.css</stylesheet>
-            </action>
-        </reference>
-    </default>
 </layout>

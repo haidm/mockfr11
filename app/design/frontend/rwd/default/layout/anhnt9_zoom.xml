@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<layout>
+    <anhnt9_productzoom>
+        <block type="core/template" output="toHtml" name="productzoom" template="mytemplate/catalog/product/view/media.phtml" />
+    </anhnt9_productzoom>
+</layout>

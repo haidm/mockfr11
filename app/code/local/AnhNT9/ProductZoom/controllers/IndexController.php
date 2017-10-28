@@ -7,6 +7,7 @@
  */
 class AnhNT9_ProductZoom_IndexController extends Mage_Core_Controller_Front_Action{
     public function indexAction(){
-        echo 'Hello World zoom';
+        $this->loadLayout('anhnt9_productzoom');
+        $this->renderLayout();
     }
 }
