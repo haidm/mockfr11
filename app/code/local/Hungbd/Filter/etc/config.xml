@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Hungbd_Filter>
+            <version>0.1.0</version>
+        </Hungbd_Filter>
+    </modules>
+    <global>
+        <models>
+            <Hungbd_Filter>
+                <class>Hungbd_Filter_Model</class>
+                <resourceModel>Hungbd_Filter_resource</resourceModel>
+            </Hungbd_Filter>
+            <Hungbd_Filter_resource>
+                <class>Hungbd_Filter_Model_Resource</class>
+            </Hungbd_Filter_resource>
+        </models>
+        <blocks>
+            <Hungbd_Filter>
+                <class>Hungbd_Filter_Block</class>
+            </Hungbd_Filter>
+        </blocks>
+        <helpers>
+            <Hungbd_Filter>
+                <class>Hungbd_Filter_Helper</class>
+            </Hungbd_Filter>
+        </helpers>
+        <resources>
+            <Hungbd_Filter_setup>
+                <setup>
+                    <module>Hungbd_Filter</module>
+                </setup>
+            </Hungbd_Filter_setup>
+        </resources>
+    </global>
+</config>

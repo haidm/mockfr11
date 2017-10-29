@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Hungbd_Bestseller>
+            <active>true</active>
+            <codePool>local</codePool>
+                    </Hungbd_Bestseller>
+    </modules>
+</config>

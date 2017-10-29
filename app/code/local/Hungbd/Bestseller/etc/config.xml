@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Hungbd_Bestseller>
+            <version>0.1.0</version>
+        </Hungbd_Bestseller>
+    </modules>
+    <global>
+        <models>
+            <Hungbd_Bestseller>
+                <class>Hungbd_Bestseller_Model</class>
+                <resourceModel>Hungbd_Bestseller_resource</resourceModel>
+            </Hungbd_Bestseller>
+            <Hungbd_Bestseller_resource>
+                <class>Hungbd_Bestseller_Model_Resource</class>
+            </Hungbd_Bestseller_resource>
+        </models>
+        <blocks>
+            <Hungbd_Bestseller>
+                <class>Hungbd_Bestseller_Block</class>
+            </Hungbd_Bestseller>
+        </blocks>
+        <helpers>
+            <Hungbd_Bestseller>
+                <class>Hungbd_Bestseller_Helper</class>
+            </Hungbd_Bestseller>
+        </helpers>
+        <resources>
+            <Hungbd_Bestseller_setup>
+                <setup>
+                    <module>Hungbd_Bestseller</module>
+                </setup>
+            </Hungbd_Bestseller_setup>
+        </resources>
+    </global>
+</config>

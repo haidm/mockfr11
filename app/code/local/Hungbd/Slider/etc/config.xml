@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Hungbd_Slider>
+            <version>0.1.0</version>
+        </Hungbd_Slider>
+    </modules>
+    <global>
+        <models>
+            <Hungbd_Slider>
+                <class>Hungbd_Slider_Model</class>
+                <resourceModel>Hungbd_Slider_resource</resourceModel>
+            </Hungbd_Slider>
+            <Hungbd_Slider_resource>
+                <class>Hungbd_Slider_Model_Resource</class>
+            </Hungbd_Slider_resource>
+        </models>
+        <blocks>
+            <Hungbd_Slider>
+                <class>Hungbd_Slider_Block</class>
+            </Hungbd_Slider>
+        </blocks>
+        <helpers>
+            <Hungbd_Slider>
+                <class>Hungbd_Slider_Helper</class>
+            </Hungbd_Slider>
+        </helpers>
+        <resources>
+            <Hungbd_Slider_setup>
+                <setup>
+                    <module>Hungbd_Slider</module>
+                </setup>
+            </Hungbd_Slider_setup>
+        </resources>
+    </global>
+</config>

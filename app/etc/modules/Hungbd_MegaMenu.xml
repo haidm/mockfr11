@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Hungbd_MegaMenu>
+            <active>true</active>
+            <codePool>local</codePool>
+                    </Hungbd_MegaMenu>
+    </modules>
+</config>

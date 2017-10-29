@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Hungbd_Featured>
+            <version>0.1.0</version>
+        </Hungbd_Featured>
+    </modules>
+    <global>
+        <models>
+            <Hungbd_Featured>
+                <class>Hungbd_Featured_Model</class>
+                <resourceModel>Hungbd_Featured_resource</resourceModel>
+            </Hungbd_Featured>
+            <Hungbd_Featured_resource>
+                <class>Hungbd_Featured_Model_Resource</class>
+            </Hungbd_Featured_resource>
+        </models>
+        <blocks>
+            <Hungbd_Featured>
+                <class>Hungbd_Featured_Block</class>
+            </Hungbd_Featured>
+        </blocks>
+        <helpers>
+            <Hungbd_Featured>
+                <class>Hungbd_Featured_Helper</class>
+            </Hungbd_Featured>
+        </helpers>
+        <resources>
+            <Hungbd_Featured_setup>
+                <setup>
+                    <module>Hungbd_Featured</module>
+                </setup>
+            </Hungbd_Featured_setup>
+        </resources>
+    </global>
+</config>

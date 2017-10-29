@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+        <reference name="catalog.topnav">
+            <block type="hungbd_megamenu/megaMenu" name="catalog.topnav" template="mytemplate/megamenu/megamenu.phtml"/>
+        </reference>
+    </default>
+</layout>
