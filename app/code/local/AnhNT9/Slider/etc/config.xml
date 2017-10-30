@@ -24,6 +24,13 @@
         </layout>
     </frontend>
     <global>
+        <resources>
+            <anhnt9_slider_setup>
+                <setup>
+                    <module>AnhNT9_Slider</module>
+                </setup>
+            </anhnt9_slider_setup>
+        </resources>
         <models>
             <anhnt9_slider>
                 <class>AnhNT9_Slider_Model</class>
