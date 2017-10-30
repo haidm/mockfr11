@@ -39,6 +39,9 @@ $table = $installer->getConnection()
     ->addColumn('content', Varien_Db_Ddl_Table::TYPE_VARCHAR, 255, array(
         'nullable' => false
     ), 'Content')
+    ->addColumn('link', Varien_Db_Ddl_Table::TYPE_VARCHAR, 255, array(
+        'nullable' => false
+    ), 'Link')
     ->addForeignKey($installer->getFkName('dangnd_slider/images', 'slideId',
         'dangnd_slider/slide', 'id'), 'slideId',
         $installer->getTable('dangnd_slider/slide'), 'id',

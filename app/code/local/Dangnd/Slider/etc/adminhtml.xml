@@ -27,6 +27,17 @@
                     <images>
                         <title>Manage Images</title>
                     </images>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <dangnd>
+                                        <title>Dangnd Config</title>
+                                    </dangnd>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
                 </children>
             </admin>
         </resources>

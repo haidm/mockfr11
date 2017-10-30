@@ -59,6 +59,12 @@ class Dangnd_Slider_Block_Adminhtml_Images_Edit_Form extends Mage_Adminhtml_Bloc
             'class'    => 'required-entry',
             'required' => true,
         ));
+        $fieldset->addField('link', 'editor', array(
+            'name'     => 'link',
+            'label'    => Mage::helper('dangnd_slider')->__('Link'),
+            'class'    => 'required-entry',
+            'required' => true,
+        ));
 
         if ($model->getId())
         {

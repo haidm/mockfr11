@@ -51,6 +51,11 @@ class Dangnd_Slider_Block_Adminhtml_Images_Grid extends Mage_Adminhtml_Block_Wid
             'index'  => 'content',
             'type'   => 'text'
         ));
+        $this->addColumn('link', array(
+            'header' => Mage::helper('dangnd_slider')->__('Link'),
+            'index'  => 'link',
+            'type'   => 'text'
+        ));
 
         return parent::_prepareColumns();
     }

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/swiper.min.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/swiper.min.js</name>
+            </action>
+        </reference>
+    </default>
+    <cms_index_index>
+        <reference name="content">
+            <block type="core/template" name="swiper" template="myslider/index.phtml"/>
+        </reference>
+    </cms_index_index>
+</layout>

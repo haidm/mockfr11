@@ -1,38 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <tabs>
-        <dangnd translate="label">
-            <label>MY CONFIGURATION</label>
-            <sort_order>0</sort_order>
-        </dangnd>
-    </tabs>
     <sections>
-        <dangnd translate="label">
-            <label>Slider Options</label>
+        <bestseller translate="title">
+            <label>Bestseller Slide Options</label>
             <tab>dangnd</tab>
-            <sort_order>0</sort_order>
+            <sort_order>10</sort_order>
             <show_in_default>1</show_in_default>
             <show_in_website>1</show_in_website>
             <show_in_store>1</show_in_store>
             <groups>
-                <dangnd_group translate="label">
+                <bestseller_group translate="title">
                     <label>General</label>
                     <frontend_type>text</frontend_type>
-                    <sort_order>0</sort_order>
+                    <sort_order>10</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
                     <fields>
-                        <dangnd_input translate="label">
-                            <label>Type Display :</label>
+                        <qty translate="title">
+                            <label>Quantity :</label>
+                            <frontend_type>text</frontend_type>
+                            <comment>The quantity of the product is displayed</comment>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_store>1</show_in_store>
+                            <show_in_website>1</show_in_website>
+                        </qty>
+                        <effect translate="label">
+                            <label>Effect :</label>
                             <frontend_type>select</frontend_type>
-                            <comment>Choose a display type on the frontend</comment>
-                            <sort_order>0</sort_order>
+                            <comment>Effect for slides</comment>
+                            <sort_order>10</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </dangnd_input>
-                        <dangnd_select translate="label">
+                            <source_model></source_model>
+                        </effect>
+                        <active translate="label">
                             <label>Is Active :</label>
                             <frontend_type>select</frontend_type>
                             <comment>Enable/Disable</comment>
@@ -41,10 +44,10 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
-                        </dangnd_select>
+                        </active>
                     </fields>
-                </dangnd_group>
+                </bestseller_group>
             </groups>
-        </dangnd>
+        </bestseller>
     </sections>
 </config>
