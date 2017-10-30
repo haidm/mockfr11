@@ -5,7 +5,43 @@
             <version>0.1.0</version>
         </Datdt_MegaMenu>
     </modules>
+    <frontend>
+        <routers>
+            <MegaMenu>
+                <use>standard</use>
+                <args>
+                    <module>Datdt_MegaMenu</module>
+                    <frontName>megamenu</frontName>
+                </args>
+            </MegaMenu>
+        </routers>
+    </frontend>
     <global>
+        <models>
+            <datdt_megamenu>
+                <class>Datdt_MegaMenu_Model</class>
+                <resourceModel>datdt_megamenu_resource</resourceModel>
+            </datdt_megamenu>
+            <datdt_megamenu_resource>
+                <class>Datdt_MegaMenu_Model_Resource</class>
+                <entities>
+                   <category>
+                       <table>category</table>
+                    </category>
+                    <custom>
+                        <table>custom</table>
+                    </custom>
+                    <product>
+                        <table>product</table>
+                    </product>
+                </entities>
+            </datdt_megamenu_resource>
+        </models>
+        <blocks>
+            <datdt_megamenu>
+                <class>Datdt_MegaMenu_Block</class>
+            </datdt_megamenu>
+        </blocks>
         <helpers>
             <datdt_megamenu>
                 <class>Datdt_MegaMenu_Helper</class>
@@ -18,21 +54,16 @@
                 </setup>
             </datdt_megamenu_setup>
         </resources>
-        <blocks>
-            <megamenu>
-                <class>Datdt_MegaMenu_Block</class>
-            </megamenu>
-        </blocks>
     </global>
-    <frontend>
+    <admin>
         <routers>
-             <MegaMenu>
-                <use>standard</use>
+            <adminhtml>
                 <args>
-                    <frontName>megamenu</frontName>
-                    <module>Datdt_MegaMenu</module>
+                    <modules>
+                        <Datdt_MegaMenu before="Mage_Adminhtml">Datdt_MegaMenu_Adminhtml</Datdt_MegaMenu>
+                    </modules>
                 </args>
-             </MegaMenu>
+            </adminhtml>
         </routers>
-    </frontend>
+    </admin>
 </config>

@@ -5,7 +5,7 @@ class Datdt_MegaMenu_IndexController extends Mage_Core_Controller_Front_Action
     public function indexAction()
     {
 
-         echo "hahaha";
+         echo "ffkjshdkfjkdhsjkf";
         // $layoutObject = $this->getLayout();
 
         // $logo = $layoutObject->createBlock('core/template', 'logo')
