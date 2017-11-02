@@ -21,7 +21,7 @@ class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_New extends Mage_Adminhtml_Block_
         parent::__construct();
 
         $this->setId('menuItemForm');
-        $this->setTitle(Mage::helper('tax')->__('Menu Item'));
+        $this->setTitle(Mage::helper('core')->__('Menu Item'));
     }
 
     /**
@@ -37,11 +37,11 @@ class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_New extends Mage_Adminhtml_Block_
         ));
 
         $fieldset = $form->addFieldset('base_fieldset', array(
-            'legend' => Mage::helper('tax')->__('Menu Item')
+            'legend' => Mage::helper('core')->__('Menu Item')
         ));
 
         $fieldset->addField('menuitem_type', 'select', array(
-            'label' => Mage::helper('tax')->__('Menu item type'),
+            'label' => Mage::helper('core')->__('Menu item type'),
             'name' => 'menuitem_type',
             'values' => array(
                 array('value' => 'Category link', 'label' => 'Category link'),

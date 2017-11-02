@@ -4,5 +4,32 @@
         <reference name="catalog.topnav">
             <block type="hungbd_megamenu/megaMenu" name="catalog.topnav" template="mytemplate/megamenu/megamenu.phtml"/>
         </reference>
+        <reference name="head">
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/swiper/swiper.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/swiper/swiper.min.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/swiper/swiper.esm.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/swiper/swiper.esm.bundle.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/swiper/swiper.css</name>
+            </action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/swiper/swiper.min.css</name>
+            </action>
+        </reference>
+        <block type="hungbd_slider/slider"></block>
     </default>
 </layout>

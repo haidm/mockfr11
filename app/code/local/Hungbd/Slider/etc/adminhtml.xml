@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <hungbd>
+            <children>
+                <slider translate="title">
+                    <title>Manage Slider</title>
+                    <sort_order>2</sort_order>
+                    <children>
+                        <index translate="title" module="Hungbd_Slider">
+                            <title>Slider</title>
+                            <!--Mapped to adminhtmlModulePath/controller/action-->
+                            <action>adminhtml/slider/index</action>
+                            <sort_order>0</sort_order>
+                        </index>
+                    </children>
+                    <children>
+                        <hungbd_image translate="title" module="Hungbd_Slider">
+                            <title>Image</title>
+                            <!--Mapped to adminhtmlModulePath/controller/action-->
+                            <action>adminhtml/image/index</action>
+                            <sort_order>1</sort_order>
+                        </hungbd_image>
+                    </children>
+                </slider>
+            </children>
+        </hungbd>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <catalog>
+                        <children>
+                            <slider translate="title" module="Hungbd_Slider">
+                                <title>Slider</title>
+                            </slider>
+                        </children>
+                    </catalog>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

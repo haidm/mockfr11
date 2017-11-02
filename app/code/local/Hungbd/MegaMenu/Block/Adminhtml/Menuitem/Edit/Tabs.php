@@ -19,14 +19,14 @@ class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_Edit_Tabs extends Mage_Adminhtml_
         parent::__construct();
         $this->setId('Menu_item_tabs');
         $this->setDestElementId('edit_form');
-        $this->setTitle(Mage::helper('tax')->__('Menu Item'));
+        $this->setTitle(Mage::helper('core')->__('Menu Item'));
     }
 
     protected function _beforeToHtml()
     {
         $newType = Mage::registry('menuitem_type');
         $editType = Mage::registry('menuitem_model');
-
+//        var_dump($editType);die;
         $this->addTab('form_section', array(
             'label'     => "Menu item infomation",
             'title'     => "Menu item infomation",

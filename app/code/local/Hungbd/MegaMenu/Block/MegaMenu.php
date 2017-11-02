@@ -17,26 +17,25 @@ class Hungbd_MegaMenu_Block_MegaMenu extends Mage_Core_Block_Template
      * Get child category function
      * @param object $menuitem
      * @param integer $maxLevel
+     * @param Collection $listMenuItem
      * @return void
      */
-    public function getChildItem($menuItem,$maxLevel)
+    public function getChildItem($menuItem,$maxLevel,$listMenuItem)
     {
         if ($menuItem->level >= $maxLevel){
             return;
         }
-        $data = Mage::getModel('hungbd_megamenu/menuitem')->getCollection();
         echo "<ul class='level$menuItem->level'>";
-        foreach ($data as $key => $item){
+        foreach ($listMenuItem as $key => $item){
             if ($item->parent_id == $menuItem->id){
                 if ($this->hasChildren($item->id)){
                     echo "<li class='level$item->level parent'>";
                     echo "<a class='level$item->level has-children' href='$item->link'>$item->name</a>";
-                    $this->getChildItem($item,$maxLevel);
+                    $this->getChildItem($item,$maxLevel,$listMenuItem);
                 }
                 else{
                     echo "<li class='level$item->level'>";
                     echo "<a class='level$item->level' href='$item->link'>$item->name</a>";
-
                 }
                 echo "</li>";
             }

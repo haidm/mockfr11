@@ -5,17 +5,6 @@
             <version>0.1.0</version>
         </Hungbd_MegaMenu>
     </modules>
-    <frontend>
-        <routers>
-            <megamenu>
-                <use>standard</use>
-                <args>
-                    <frontName>megamenu</frontName>
-                    <module>Hungbd_MegaMenu</module>
-                </args>
-            </megamenu>
-        </routers>
-    </frontend>
     <global>
         <models>
             <hungbd_megamenu>

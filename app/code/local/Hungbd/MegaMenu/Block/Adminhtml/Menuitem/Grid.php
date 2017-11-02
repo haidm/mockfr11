@@ -28,7 +28,7 @@ class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_Grid extends Mage_Adminhtml_Block
     /**
      * Prepare grid collection
      *
-     * @return TestVendor_Demomodule_Block_Adminhtml_Menuinfo_Grid
+     * @return Hungbd_MegaMenu_Block_Adminhtml_Menuitem_Grid
      */
     protected function _prepareCollection()
     {
@@ -48,14 +48,14 @@ class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_Grid extends Mage_Adminhtml_Block
     {
         $this->addColumn('id',
             array(
-                'header' => Mage::helper('tax')->__(' Id'),
+                'header' => Mage::helper('core')->__(' Id'),
                 'index' => 'id'
             )
         );
 
         $this->addColumn('name',
             array(
-                'header' => Mage::helper('tax')->__(' Name'),
+                'header' => Mage::helper('core')->__(' Name'),
                 'index' => 'name',
                 'type'    => 'text'
             )
@@ -63,7 +63,7 @@ class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_Grid extends Mage_Adminhtml_Block
 
         $this->addColumn('type',
             array(
-                'header' => Mage::helper('tax')->__('Type'),
+                'header' => Mage::helper('core')->__('Type'),
                 'index' => 'type',
                 'type'    => 'text'
             )
@@ -71,7 +71,7 @@ class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_Grid extends Mage_Adminhtml_Block
 
         $this->addColumn('link',
             array(
-                'header' => Mage::helper('tax')->__('Link'),
+                'header' => Mage::helper('core')->__('Link'),
                 'index' => 'link',
                 'type'    => 'text'
             )
@@ -79,7 +79,7 @@ class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_Grid extends Mage_Adminhtml_Block
 
         $this->addColumn('parent_id',
             array(
-                'header' => Mage::helper('tax')->__('Parent'),
+                'header' => Mage::helper('core')->__('Parent'),
                 'index' => 'parent_id',
                 'type'    => 'text'
             )
@@ -87,7 +87,7 @@ class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_Grid extends Mage_Adminhtml_Block
 
         $this->addColumn('level',
         array(
-            'header' => Mage::helper('tax')->__('Level'),
+            'header' => Mage::helper('core')->__('Level'),
             'index' => 'level',
             'type'    => 'text'
         )

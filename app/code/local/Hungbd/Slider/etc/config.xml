@@ -7,18 +7,33 @@
     </modules>
     <global>
         <models>
-            <Hungbd_Slider>
+            <hungbd_slider>
                 <class>Hungbd_Slider_Model</class>
-                <resourceModel>Hungbd_Slider_resource</resourceModel>
-            </Hungbd_Slider>
-            <Hungbd_Slider_resource>
+                <resourceModel>hungbd_slider_resource</resourceModel>
+            </hungbd_slider>
+            <hungbd_slider_resource>
                 <class>Hungbd_Slider_Model_Resource</class>
-            </Hungbd_Slider_resource>
+                <entities>
+                    <slider>
+                        <table>hungbd_slider</table>
+                    </slider>
+                </entities>
+                <entities>
+                    <image>
+                        <table>hungbd_image</table>
+                    </image>
+                </entities>
+                <entities>
+                    <listimage>
+                        <table>hungbd_listimage</table>
+                    </listimage>
+                </entities>
+            </hungbd_slider_resource>
         </models>
         <blocks>
-            <Hungbd_Slider>
+            <hungbd_slider>
                 <class>Hungbd_Slider_Block</class>
-            </Hungbd_Slider>
+            </hungbd_slider>
         </blocks>
         <helpers>
             <Hungbd_Slider>
@@ -33,4 +48,15 @@
             </Hungbd_Slider_setup>
         </resources>
     </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Hungbd_Slider after="Mage_Adminhtml">Hungbd_Slider_Adminhtml</Hungbd_Slider>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
 </config>

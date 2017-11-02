@@ -4,12 +4,73 @@
  * User: hungbui
  * Date: 25/10/2017
  * Time: 14:58
- */ 
+ */
 /* @var $installer Mage_Core_Model_Resource_Setup */
 $installer = $this;
 
 $installer->startSetup();
+$sliderTable = $installer->getConnection()
+    ->newTable($installer->getTable('hungbd_slider'))
+    ->addColumn('id', Varien_Db_Ddl_Table::TYPE_INTEGER, 11, array(
+        'identity' => true,
+        'unsigned' => true,
+        'nullable' => false,
+        'primary' => true,
+    ), 'Id')
+    ->addColumn('name', Varien_Db_Ddl_Table::TYPE_VARCHAR, 255, array(
+        'nullable' => false,));
+$installer->getConnection()->createTable($sliderTable);
 
+$imageTable = $installer->getConnection()
+    ->newTable($installer->getTable('hungbd_image'))
+    ->addColumn('id', Varien_Db_Ddl_Table::TYPE_INTEGER, 11, array(
+        'identity' => true,
+        'unsigned' => true,
+        'nullable' => false,
+        'primary' => true,
+    ), 'Id')
+    ->addColumn('link', Varien_Db_Ddl_Table::TYPE_VARCHAR, 255, array(
+        'nullable' => false,
+    ),'Link')
+    ->addColumn('name', Varien_Db_Ddl_Table::TYPE_VARCHAR, 255, array(
+        'nullable' => false,
+    ),'Name')
+    ->addColumn('text', Varien_Db_Ddl_Table::TYPE_TEXT, array(
+        'nullable' => true,
+    ),'text');
+$installer->getConnection()->createTable($imageTable);
+
+$listImage = $installer->getConnection()
+    ->newTable($installer->getTable('hungbd_listimage'))
+    ->addColumn('id', Varien_Db_Ddl_Table::TYPE_INTEGER, 11, array(
+        'identity' => true,
+        'unsigned' => true,
+        'nullable' => false,
+        'primary' => true,
+    ), 'Id')
+    ->addColumn('slider_id', Varien_Db_Ddl_Table::TYPE_INTEGER, 11, array(
+        'nullable' => false,
+        'unsigned' => true,
+    ))
+    ->addColumn('image_id', Varien_Db_Ddl_Table::TYPE_INTEGER, 11, array(
+        'nullable' => false,
+        'unsigned' => true,
+    ))->addForeignKey(
+        $installer->getFkName('hungbd_listimage', 'slider_id', 'hungbd_slider','id'),
+        'slider_id',
+        $installer->getTable('hungbd_slider'),
+        'id',
+        Varien_Db_Ddl_Table::ACTION_CASCADE,
+        Varien_Db_Ddl_Table::ACTION_CASCADE
+    )->addForeignKey(
+        $installer->getFkName('hungbd_listimage', 'image_id', 'hungbd_image','id'),
+        'image_id',
+        $installer->getTable('hungbd_image'),
+        'id',
+        Varien_Db_Ddl_Table::ACTION_CASCADE,
+        Varien_Db_Ddl_Table::ACTION_CASCADE
+    );
+$installer->getConnection()->createTable($listImage);
 
 
 $installer->endSetup();

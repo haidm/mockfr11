@@ -1,13 +1,14 @@
-<?php $data = Mage::getModel('hungbd_megamenu/menuitem')->getCollection()->addFilter('level','0'); ?>
+<?php $firstMenuItem = Mage::getModel('hungbd_megamenu/menuitem')->getCollection()->addFilter('level','0'); ?>
 <?php $maxLevel = Mage::getStoreConfig('general/hungbd_megamenu/level'); ?>
+<?php $listMenuItem = Mage::getModel('hungbd_megamenu/menuitem')->getCollection();?>
 <?php $nav = 'nav'; $count = 0;?>
 <nav id="nav">
     <ol class="nav-primary">
-        <?php foreach ($data as $key => $item): ?>
+        <?php foreach ($firstMenuItem as $key => $item): ?>
             <?php $newnav = $nav.'-'.$count; $count++; ?>
             <li class="level0 <?php echo $newnav; ?>">
                 <a href="<?php echo $item->link;?>" class="level0"><?php echo $item->name; ?></a>
-                    <?php $this->getChildItem($item,$maxLevel); ?>
+                    <?php $this->getChildItem($item,$maxLevel,$listMenuItem); ?>
             </li>
         <?php endforeach; ?>
     </ol>

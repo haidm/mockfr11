@@ -9,8 +9,8 @@
 /**
  * Adminhtml Menuitem Edit Form
  *
- * @category   Mage
- * @package    Mage_Adminhtml
+ * @category   Hungbd
+ * @package    Hungbd_MegaMenu_Adminhtml
  * @author     Hung Bui
  */
 class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_Edit_Form extends Mage_Adminhtml_Block_Widget_Form

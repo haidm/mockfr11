@@ -5,6 +5,13 @@
  * Date: 25/10/2017
  * Time: 16:50
  */
+/**
+ * Hungbd_MegaMenu Menuitem Resource model
+ *
+ * @category   Hungbd
+ * @package    Hungbd_MegaMenu
+ * @author      hungbd <hungbd@smartosc.com>
+ */
 class Hungbd_MegaMenu_Model_Resource_Menuitem extends Mage_Core_Model_Resource_Db_Abstract
 {
     protected function _construct()

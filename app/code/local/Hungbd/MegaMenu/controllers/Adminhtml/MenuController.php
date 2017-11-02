@@ -23,9 +23,9 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
     {
         $this->_title($this->__('Menu Item'))->_title($this->__('Mega Menu'));
         $this->loadLayout()
-            ->_setActiveMenu('hungbd_megamenu/index')
-            ->_addBreadcrumb(Mage::helper('tax')->__('Menu Item'), Mage::helper('tax')->__('Menu Item'))
-            ->_addBreadcrumb(Mage::helper('tax')->__('Mega Menu'), Mage::helper('tax')->__('Mega Menu'));
+            ->_setActiveMenu('hungbd/megamenu/index')
+            ->_addBreadcrumb(Mage::helper('core')->__('Menu Item'), Mage::helper('core')->__('Menu Item'))
+            ->_addBreadcrumb(Mage::helper('core')->__('Mega Menu'), Mage::helper('core')->__('Mega Menu'));
         $this->_addContent($this->getLayout()->createBlock('hungbd_megamenu/adminhtml_menuitem'))
             ->renderLayout();
     }
@@ -37,12 +37,12 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
     public function newAction()
     {
         $this->loadLayout()
-            ->_setActiveMenu('hungbd_megamenu/index')
-            ->_addBreadcrumb(Mage::helper('tax')->__('Menu Item'), Mage::helper('tax')->__('Menu Item'))
-            ->_addBreadcrumb(Mage::helper('tax')->__('Mega Menu'), Mage::helper('tax')->__('Mega Menu'));
+            ->_setActiveMenu('hungbd/megamenu/index')
+            ->_addBreadcrumb(Mage::helper('core')->__('Menu Item'), Mage::helper('core')->__('Menu Item'))
+            ->_addBreadcrumb(Mage::helper('core')->__('Mega Menu'), Mage::helper('core')->__('Mega Menu'));
         $this->_addBreadcrumb(
-            Mage::helper('tax')->__('Edit Menu Item'), Mage::helper('tax')->__('New Menu Item'),
-            Mage::helper('tax')->__('Edit Menu Item'), Mage::helper('tax')->__('New Menu Item'))
+            Mage::helper('core')->__('Edit Menu Item'), Mage::helper('core')->__('New Menu Item'),
+            Mage::helper('core')->__('Edit Menu Item'), Mage::helper('core')->__('New Menu Item'))
             ->_addContent($this->getLayout()
                 ->createBlock('hungbd_megamenu/adminhtml_menuitem_new')
                 ->setData('action', $this->getUrl('*/menu/save')))
@@ -56,7 +56,7 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
      */
     public function editAction()
     {
-
+//        var_dump($this->getRequest()->getParam());die;
         $this->_title($this->__('Menu Item'))->_title($this->__('Mega Menu'));
         $itemType = $this->getRequest()->getParam('menuitem_type');
         $menuItemId = $this->getRequest()->getParam('id');
@@ -79,7 +79,7 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
             $menuItemModel->load($menuItemId);
             if (!$menuItemModel->getId()) {
                 Mage::getSingleton('adminhtml/session')
-                    ->addError(Mage::helper('tax')->__('Menu item ko ton tai!'));
+                    ->addError(Mage::helper('core')->__('Menu item ko ton tai!'));
                 $this->_redirect('*/*/');
                 return;
             }
@@ -95,7 +95,7 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
 
 
         $this->loadLayout();
-        $this->_setActiveMenu('hungbd_megamenu/index');
+        $this->_setActiveMenu('hungbd/megamenu/index');
         $this->_addBreadcrumb('Mega menu', 'Mega menu');
         $this->_addBreadcrumb('Menu item', 'Menu item');
         $this->getLayout()->getBlock('head')->setCanLoadExtJs(true);
@@ -114,13 +114,12 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
     public function saveAction()
     {
         $postData = $this->getRequest()->getParams();
-        if ($this->getRequest()->getParam('parent_id') != 0){
+        if ($this->getRequest()->getParam('parent_id') != 0) {
             $parentId = $this->getRequest()->getParam('parent_id');
             $parentLevel = Mage::getModel('hungbd_megamenu/menuitem')
                 ->load($parentId)->getLevel();
             $level = $parentLevel + 1;
-        }
-        else{
+        } else {
             $parentId = 0;
             $level = 0;
         }
@@ -142,7 +141,7 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
                     $menuItemModel->save();
 
                     Mage::getSingleton('adminhtml/session')
-                        ->addSuccess(Mage::helper('tax')->__('The menu item has been saved.'));
+                        ->addSuccess(Mage::helper('core')->__('The menu item has been saved.'));
 
                     if ($this->getRequest()->getParam('back')) {
                         return $this->_redirect('*/*/edit', array('id' => $menuItemModel->getId()));
@@ -153,7 +152,7 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
                     Mage::getSingleton('adminhtml/session')->addError($e->getMessage());
                 } catch (Exception $e) {
                     Mage::getSingleton('adminhtml/session')
-                        ->addError(Mage::helper('tax')->__('An error occurred while saving this item.'));
+                        ->addError(Mage::helper('core')->__('An error occurred while saving this item.'));
                 }
                 Mage::getSingleton('adminhtml/session')->setRuleData($postData);
                 $this->_redirectReferer();
@@ -179,7 +178,7 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
                     $menuItemModel->save();
 
                     Mage::getSingleton('adminhtml/session')
-                        ->addSuccess(Mage::helper('tax')->__('The menu item has been saved.'));
+                        ->addSuccess(Mage::helper('core')->__('The menu item has been saved.'));
 
                     if ($this->getRequest()->getParam('back')) {
                         return $this->_redirect('*/*/edit', array('id' => $menuItemModel->getId()));
@@ -190,7 +189,7 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
                     Mage::getSingleton('adminhtml/session')->addError($e->getMessage());
                 } catch (Exception $e) {
                     Mage::getSingleton('adminhtml/session')
-                        ->addError(Mage::helper('tax')->__('An error occurred while saving this item.'));
+                        ->addError(Mage::helper('core')->__('An error occurred while saving this item.'));
                 }
                 Mage::getSingleton('adminhtml/session')->setRuleData($postData);
                 $this->_redirectReferer();
@@ -217,7 +216,7 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
                     $menuItemModel->save();
 
                     Mage::getSingleton('adminhtml/session')
-                        ->addSuccess(Mage::helper('tax')->__('The menu item has been saved.'));
+                        ->addSuccess(Mage::helper('core')->__('The menu item has been saved.'));
 
                     if ($this->getRequest()->getParam('back')) {
                         return $this->_redirect('*/*/edit', array('id' => $menuItemModel->getId()));
@@ -228,7 +227,7 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
                     Mage::getSingleton('adminhtml/session')->addError($e->getMessage());
                 } catch (Exception $e) {
                     Mage::getSingleton('adminhtml/session')
-                        ->addError(Mage::helper('tax')->__('An error occurred while saving this item.'));
+                        ->addError(Mage::helper('core')->__('An error occurred while saving this item.'));
                 }
                 Mage::getSingleton('adminhtml/session')->setRuleData($postData);
                 $this->_redirectReferer();
@@ -238,9 +237,15 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
             Mage::getSingleton('adminhtml/session')->setRuleData($postData);
             foreach ($this->validate($postData) as $error) {
                 Mage::getSingleton('adminhtml/session')
-                    ->addError(Mage::helper('tax')->__($error));
+                    ->addError(Mage::helper('core')->__($error));
             }
-            $this->_redirectReferer();
+//            var_dump($postData);die;
+            if ($postData['id']) {
+                $this->_redirectReferer();
+            }
+            else{
+                $this->_redirect('*/*/edit/menuitem_type/' . $postData['type']);
+            }
         }
     }
 
@@ -257,7 +262,7 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
             Mage::getSingleton('adminhtml/session')->addError($e->getMessage());
         } catch (Exception $e) {
             Mage::getSingleton('adminhtml/session')
-                ->addError(Mage::helper('tax')->__('An error occurred while saving this item.'));
+                ->addError(Mage::helper('core')->__('An error occurred while saving this item.'));
         }
         $this->_redirectReferer();
     }
@@ -274,36 +279,36 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
         if ($data['type'] == 'Custom link' || $data['type'] == 'Product link' || $data['type'] == 'Category link') {
 
             if (!Zend_Validate::is($data['parent_id'], 'Regex', array('/^[0-9]+$/'))) {
-                $errors[] = Mage::helper('tax')->__('Not a valid parent id');
+                $errors[] = Mage::helper('core')->__('Not a valid parent id');
             }
 
             if ($data['type'] == 'Custom link') {
 
                 if (!Zend_Validate::is($data['link'], 'Regex',
                     array('@^(https?|ftp)://[^\s/$.?#].[^\s]*$@'))) {
-                    $errors[] = Mage::helper('tax')->__('Not a valid url');
+                    $errors[] = Mage::helper('core')->__('Not a valid url');
                 }
 
                 if (!Zend_Validate::is($data['name'], 'Regex', array('/^[a-z A-Z 0-9]{1,15}$/'))) {
-                    $errors[] = Mage::helper('tax')->__('Not a valid Name');
+                    $errors[] = Mage::helper('core')->__('Not a valid Name');
                 }
 
                 if ($data['id']) {
                     if (!Zend_Validate::is($data['id'], 'Regex', array('/^[0-9]+$/'))) {
-                        $errors[] = Mage::helper('tax')->__('Not a valid id');
+                        $errors[] = Mage::helper('core')->__('Not a valid id');
                     }
                 }
             }
 
             if ($data['type'] == 'Product link') {
                 if (!Zend_Validate::is($data['product_sku'], 'Regex', array('/^[a-z A-z 0-9]{0,50}$/'))) {
-                    $errors[] = Mage::helper('tax')->__('Not a valid product sku');
+                    $errors[] = Mage::helper('core')->__('Not a valid product sku');
                 }
             }
 
             if ($data['type'] == 'Category link') {
                 if (!Zend_Validate::is($data['category_id'], 'Regex', array('/^[0-9]+$/'))) {
-                    $errors[] = Mage::helper('tax')->__('Not a valid category id');
+                    $errors[] = Mage::helper('core')->__('Not a valid category id');
                 }
             }
 
@@ -313,7 +318,7 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
                 return 'true';
             }
         } else {
-            $errors[] = Mage::helper('tax')->__('Not a valid type');
+            $errors[] = Mage::helper('core')->__('Not a valid type');
             return $errors;
         }
     }

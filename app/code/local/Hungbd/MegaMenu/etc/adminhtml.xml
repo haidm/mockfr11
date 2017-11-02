@@ -1,18 +1,24 @@
 <?xml version="1.0"?>
 <config>
     <menu>
-        <hungbd_megamenu translate="title" module="Hungbd_MegaMenu">
-            <title>Mega Menu</title>
+        <hungbd translate="title">
+            <title>Hung Bui</title>
             <sort_order>90</sort_order>
             <children>
-                <index translate="title" module="Hungbd_MegaMenu">
-                    <title>Menu Item</title>
-                    <!--Mapped to adminhtmlModulePath/controller/action-->
-                    <action>adminhtml/menu/index</action>
+                <megamenu translate="title">
+                    <title>Mega Menu</title>
                     <sort_order>0</sort_order>
-                </index>
+                    <children>
+                        <index translate="title" module="Hungbd_MegaMenu">
+                            <title>Menu Item</title>
+                            <!--Mapped to adminhtmlModulePath/controller/action-->
+                            <action>adminhtml/menu/index</action>
+                            <sort_order>0</sort_order>
+                        </index>
+                    </children>
+                </megamenu>
             </children>
-        </hungbd_megamenu>
+        </hungbd>
     </menu>
     <acl>
         <resources>

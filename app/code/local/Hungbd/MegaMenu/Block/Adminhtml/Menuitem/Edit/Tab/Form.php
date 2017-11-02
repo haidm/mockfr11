@@ -23,6 +23,7 @@ class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_Edit_Tab_Form extends Mage_Adminh
         $model = Mage::registry('menuitem_model');
         $newmodel = Mage::registry('menuitem_type');
         $menuItemList = Mage::registry('menuitem_list');
+        $select = 0;
         $selectData = array(
             array('label' => 'none', 'value' => 0)
         );
@@ -30,9 +31,11 @@ class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_Edit_Tab_Form extends Mage_Adminh
             if ($item->id != $model->getId()) {
                 $selectData[$key]['label'] = $item->name;
                 $selectData[$key]['value'] = $item->id;
+                if ($item->id != $model->getParentid()){
+                    $select = $item->id;
+                }
             }
         }
-
         $fieldset = $form->addFieldset('menuitem_form',
             array('legend' => 'Menu item infomation'));
 
@@ -42,7 +45,7 @@ class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_Edit_Tab_Form extends Mage_Adminh
                 'label' => 'Parent',
                 'values' => $selectData,
                 'value' => $select,
-                'class' => 'required-entry',
+                'class' => 'required-entry validate-select',
                 'required' => true,
             ));
 
@@ -60,7 +63,7 @@ class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_Edit_Tab_Form extends Mage_Adminh
             $fieldset->addField('id', 'hidden',
                 array(
                     'name' => 'id',
-                    'label' => Mage::helper('tax')->__('Id')
+                    'label' => Mage::helper('core')->__('Id')
                 )
             );
             $fieldset->addField('type', 'hidden', array(

@@ -23,18 +23,18 @@ class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_Edit extends Mage_Adminhtml_Block
         $this->_objectId = 'id';
         $this->_controller = 'adminhtml_menuitem';
         $this->_blockGroup = 'hungbd_megamenu';
-        $this->_headerText = Mage::helper('tax')
+        $this->_headerText = Mage::helper('core')
             ->__('Menu item');
         $model = Mage::registry('menuitem_model');
-        $this->_updateButton('save', 'label', Mage::helper('tax')->__('Save Menu Item'));
+        $this->_updateButton('save', 'label', Mage::helper('core')->__('Save Menu Item'));
         $this->_updateButton('delete', array(
-            'label'     => Mage::helper('tax')->__('Delete Menu Item'),
+            'label'     => Mage::helper('core')->__('Delete Menu Item'),
             'onclick'   => "window.location.href = '" . $this->getUrl("*/*/ delete", array("id" => $model->getId())) . "'",
             'class' => 'delete'
         ), 10);
 
         $this->_addButton('save_and_continue', array(
-            'label'     => Mage::helper('tax')->__('Save and Continue Edit'),
+            'label'     => Mage::helper('core')->__('Save and Continue Edit'),
             'onclick'   => 'saveAndContinueEdit()',
             'class' => 'save'
         ), 10);

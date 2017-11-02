@@ -10,6 +10,19 @@ $installer = $this;
 
 $installer->startSetup();
 
-
+$installer->addAttribute('catalog_product', 'is_featured', array(
+    'type' => 'varchar',
+    'input' => 'select',
+    'label' => 'Is Featured',
+    'visible' => true,
+    'required' => false,
+    'visible_on_front' => true,
+    'attribute_set' => 'Default',
+    'global' => Mage_Catalog_Model_Resource_Eav_Attribute::SCOPE_WEBSITE,
+    'required' => false,
+    'apply_to' => 'all',
+    'group' => 'General',
+    'source' => 'eav/entity_attribute_source_boolean',
+));
 
 $installer->endSetup();
