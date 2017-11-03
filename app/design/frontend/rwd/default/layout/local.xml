@@ -34,8 +34,11 @@
 
     <catalog_category_layered>
         <reference name="content">
-            <block type="hungbd_featured/featured" template="mytemplate/featured/categoryslide.phtml"
+            <block type="hungbd_featured/featured" name="hungbd.featured.cateogry"
+                   template="mytemplate/featured/categoryslide.phtml"
                    after="-"/>
+            <block type="hungbd_bestseller/bestSeller" template="mytemplate/bestseller/categoryslide.phtml"
+                   after="hungbd.featured.cateogry"/>
         </reference>
     </catalog_category_layered>
 

@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa3ae6cf-e262-4095-a1bb-656584fa130f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/magicento.xml" afterPath="$PROJECT_DIR$/.idea/magicento.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/Featured/etc/config.xml" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/Featured/etc/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/Featured/sql/Hungbd_Featured_setup/mysql4-install-0.1.0.php" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/Featured/sql/Hungbd_Featured_setup/mysql4-install-0.1.0.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tab/Form.php" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tab/Form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/controllers/Adminhtml/MenuController.php" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/controllers/Adminhtml/MenuController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/etc/system.xml" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/etc/system.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Slider.php" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Slider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/Slider/controllers/Adminhtml/ImageController.php" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/Slider/controllers/Adminhtml/ImageController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/etc/config.xml" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/etc/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/local.xml" afterPath="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/local.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,37 +35,10 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Featured.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Featured/Block/Featured.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="featured.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/featured.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>set u</find>
-      <find>home.phtml</find>
-      <find>slideshow-container</find>
-      <find>joi</find>
-      <find>attribute</find>
-      <find>addAttribute</find>
       <find>$installer-&gt;addAttribute('catalog_product</find>
       <find>catalog/product_widget_new</find>
       <find>widget</find>
@@ -97,6 +63,12 @@
       <find>MAGE_CORE_BLOCK_TEMPLATE E</find>
       <find>layered</find>
       <find>$_product</find>
+      <find>e</find>
+      <find>Mage_catalog_model_product_</find>
+      <find>addOrderedQty</find>
+      <find>core_model_abstract</find>
+      <find>Mage_Core_Model_Abstract e</find>
+      <find>load</find>
     </findStrings>
     <replaceStrings>
       <replace>$menuItem</replace>
@@ -119,13 +91,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Grid.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Model/Listimage.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Model/Resource/Listimage/Collection.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Model/Resource/Listimage.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Model/Resource/Image.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Image/Edit.php" />
         <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Slider/Edit.php" />
         <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/cms/content_heading.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/page.xml" />
@@ -162,14 +127,21 @@
         <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/categoryfeatured.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/homeslider.php" />
         <option value="$PROJECT_DIR$/app/code/core/Mage/Core/Block/Template.php" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/catalog.xml" />
         <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/test.xml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/local.xml" />
         <option value="$PROJECT_DIR$/app/code/local/Hungbd/Featured/Block/Featured.php" />
         <option value="$PROJECT_DIR$/app/code/local/Hungbd/Featured/etc/system.xml" />
         <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/etc/system.xml" />
         <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/homeslide.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/categoryslide.phtml" />
+        <option value="$PROJECT_DIR$/app/code/core/Mage/Reports/Model/Resource/Product/Collection.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/catalog.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/etc/config.xml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/local.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/Block/BestSeller.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/etc/system.xml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/bestseller/homeslide.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/bestseller/categoryslide.phtml" />
       </list>
     </option>
   </component>
@@ -181,10 +153,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-14" />
-    <option name="y" value="-4" />
-    <option name="width" value="1293" />
-    <option name="height" value="702" />
+    <option name="x" value="452" />
+    <option name="y" value="24" />
+    <option name="width" value="1291" />
+    <option name="height" value="666" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -262,7 +234,131 @@
               <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Hungbd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Slider" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Bestseller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Hungbd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Bestseller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Block" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Hungbd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Bestseller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Hungbd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Bestseller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="etc" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Hungbd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Featured" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="design" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="design" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="design" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="rwd" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="design" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="rwd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="design" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="rwd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layout" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="design" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="rwd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="design" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="rwd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="mytemplate" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="design" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="rwd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="mytemplate" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bestseller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="design" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="rwd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="mytemplate" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="featured" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -278,6 +374,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/etc" />
       <recent name="$PROJECT_DIR$/app/code/local/Hungbd/Featured/etc" />
       <recent name="$PROJECT_DIR$/app/code/local/Hungbd/Slider/etc" />
       <recent name="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit" />
@@ -340,21 +437,29 @@
       <workItem from="1509501410271" duration="27632000" />
       <workItem from="1509542498197" duration="922000" />
       <workItem from="1509587589859" duration="19719000" />
-      <workItem from="1509674225430" duration="8977000" />
+      <workItem from="1509674225430" duration="24314000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210475000" />
+    <option name="totallyTimeSpent" value="225812000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-14" y="-4" width="1311" height="780" extended-state="6" />
-    <editor active="true" />
+    <frame x="57" y="-4" width="1309" height="772" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24465558" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24465558" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23198733" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2581156" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -370,26 +475,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="MagicentoScripts" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24465558" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23198733" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="MagicentoScripts" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -404,230 +489,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/sql/catalog_setup/install-1.6.0.0.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14723">
-          <caret line="2346" column="0" lean-forward="false" selection-start-line="2346" selection-start-column="0" selection-end-line="2346" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/sql/Hungbd_Slider_setup/mysql4-install-0.1.0.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="38" column="26" lean-forward="false" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.eav_attribute_option_value">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.eav_attribute_option">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/featured.php" />
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/megamenu/megamenu.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/controllers/Adminhtml/ImageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-936">
-          <caret line="175" column="12" lean-forward="false" selection-start-line="175" selection-start-column="12" selection-end-line="175" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/etc/widget.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="28" column="46" lean-forward="false" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Widget/Link.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1404">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.core_resource">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.catalog_category_product">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.catalog_product_entity">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.catalog_eav_attribute">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Slider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Zend/Gdata/Spreadsheets/WorksheetEntry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="130" column="20" lean-forward="false" selection-start-line="130" selection-start-column="20" selection-end-line="130" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tab/ProductLink.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Product/Gallery.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1817">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Product/List.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="58" column="39" lean-forward="false" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/product/widget/new/content/new_list.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Product/New.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="33" column="80" lean-forward="false" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Product/Abstract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="559" column="15" lean-forward="true" selection-start-line="559" selection-start-column="0" selection-end-line="560" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/product/widget/new/content/new_grid.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="61" column="30" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="61" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Featured/etc/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.eav_attribute">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="attribute_code LIKE '%vis%'" />
-            <filter text="attribute_code LIKE 'visi'" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Product/Widget/New.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="104" column="5" lean-forward="true" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Featured/sql/Hungbd_Featured_setup/mysql4-install-0.1.0.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="27" column="65" lean-forward="false" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/product/view.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="42" column="40" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#967#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/product/list.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="35" column="57" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tabs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="20" column="42" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tab/Form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Form.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -701,26 +562,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/layout/catalog.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-333">
-          <caret line="114" column="29" lean-forward="false" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/slider/slider.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="44" column="8" lean-forward="false" selection-start-line="44" selection-start-column="8" selection-end-line="47" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/featured.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -749,10 +594,287 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/categoryslide.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="52" column="111" lean-forward="false" selection-start-line="52" selection-start-column="111" selection-end-line="52" selection-end-column="111" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/featured.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_billing_agreement_order">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_order_status">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_order_aggregated_updated">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_payment_transaction">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_bestsellers_aggregated_yearly">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" text="product_name like '%convertible%'">
+            <filter text="product_name like '%convertible%'" />
+            <filter text="product_name like '%linen%'" />
+            <filter text="product_name like '%Black %'" />
+            <filter text="product_name like '%Black Nolita Cami %'" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_bestsellers_aggregated_monthly">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" text="product_name LIKE '%Compact mp3 Player %'">
+            <filter text="product_name LIKE '%Compact mp3 Player %'" />
+            <filter text="product_name LIKE '%french%'" />
+            <filter text="product_name like '%linen%'" />
+            <filter text="product_name like '%lien%'" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.core_store">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_order_aggregated_created">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.catalog_category_product">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.catalog_eav_attribute">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_invoiced_aggregated_order">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.catalog_product_website">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.salesrule_product_attribute">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.review_detail">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_flat_invoice">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.tax_order_aggregated_updated">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_flat_order_payment">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_flat_order_status_history">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" text="status = 'complete'">
+            <filter text="status = 'complete'" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_flat_invoice_item">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_flat_order_grid">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="status = 'complete'" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Model/Menuitem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="14" column="69" lean-forward="false" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Core/Model/Abstract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="226" column="29" lean-forward="true" selection-start-line="226" selection-start-column="29" selection-end-line="226" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_flat_order">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_flat_order_item">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" text="order_id IN (51 ,57 ,122, 179 ,184 ,186 ,187 ,189 )">
+            <filter text="order_id IN (51 ,57 ,122, 179 ,184 ,186 ,187 ,189 )" />
+            <filter text="product_id =  371" />
+            <filter text="order_id IN (51, 57, 122, 179 ,184 ,186 ,187, 189 )" />
+            <filter text="order_id = 60" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Reports/Model/Resource/Product/Collection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-33">
+          <caret line="302" column="17" lean-forward="false" selection-start-line="302" selection-start-column="17" selection-end-line="302" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/layout/catalog.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="134" column="18" lean-forward="false" selection-start-line="134" selection-start-column="18" selection-end-line="134" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/etc/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="29" column="30" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/homeslide.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="52" column="108" lean-forward="false" selection-start-line="52" selection-start-column="108" selection-end-line="52" selection-end-column="108" />
+        <state relative-caret-position="253">
+          <caret line="52" column="108" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="65" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Featured/Block/Featured.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="25" column="59" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="25" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/Block/BestSeller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="34" column="48" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/bestseller/homeslide.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="52" column="112" lean-forward="true" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="112" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/bestseller/categoryslide.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="37" column="12" lean-forward="false" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/etc/system.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -764,26 +886,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/categoryslide.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="52" column="111" lean-forward="false" selection-start-line="52" selection-start-column="111" selection-end-line="52" selection-end-column="111" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/layout/local.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="36" column="100" lean-forward="false" selection-start-line="36" selection-start-column="100" selection-end-line="36" selection-end-column="100" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Featured/Block/Featured.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="21" />
+        <state relative-caret-position="720">
+          <caret line="40" column="53" lean-forward="false" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
           <folding />
         </state>
       </provider>

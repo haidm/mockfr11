@@ -5,6 +5,17 @@
             <version>0.1.0</version>
         </Hungbd_Bestseller>
     </modules>
+    <frontend>
+        <routers>
+            <hungbd_bestseller>
+                <use>standard</use>
+                <args>
+                    <module>Hungbd_Bestseller</module>
+                    <frontName>bestseller</frontName>
+                </args>
+            </hungbd_bestseller>
+        </routers>
+    </frontend>
     <global>
         <models>
             <Hungbd_Bestseller>
@@ -16,9 +27,9 @@
             </Hungbd_Bestseller_resource>
         </models>
         <blocks>
-            <Hungbd_Bestseller>
+            <hungbd_bestseller>
                 <class>Hungbd_Bestseller_Block</class>
-            </Hungbd_Bestseller>
+            </hungbd_bestseller>
         </blocks>
         <helpers>
             <Hungbd_Bestseller>
