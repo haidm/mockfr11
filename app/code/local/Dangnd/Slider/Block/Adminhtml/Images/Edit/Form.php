@@ -18,12 +18,12 @@ class Dangnd_Slider_Block_Adminhtml_Images_Edit_Form extends Mage_Adminhtml_Bloc
 
     public function _prepareForm()
     {
+        $img = '';
         $model = Mage::registry('imgModel');
         $listSlide = Mage::getModel('dangnd_slider/slide')->getCollection();
         $menuSelect = array();
 
-        foreach ($listSlide as $item)
-        {
+        foreach ($listSlide as $item) {
             $menuSelect[] = array(
                 'value' => $item->getId(),
                 'label' => $item->getName()
@@ -47,26 +47,28 @@ class Dangnd_Slider_Block_Adminhtml_Images_Edit_Form extends Mage_Adminhtml_Bloc
             'values'   => $menuSelect,
             'required' => true
         ));
-        $fieldset->addField('image', 'image', array(
-            'name'     => 'image',
-            'label'    => Mage::helper('dangnd_slider')->__('Image'),
-            'required' => false,
-        ));
-        $fieldset->addField('content', 'editor', array(
-            'name'     => 'content',
-            'label'    => Mage::helper('dangnd_slider')->__('Content'),
-        ));
-        $fieldset->addField('link', 'text', array(
-            'name'     => 'link',
-            'label'    => Mage::helper('dangnd_slider')->__('Link'),
-        ));
-
-        if ($model->getId())
-        {
+        if ($model->getId()) {
+            $img = Mage::getBaseUrl('media') . 'dangnd/slide/' . $model->getName();
             $fieldset->addField('id', 'hidden', array(
                 'name' => 'id',
             ));
         }
+        $fieldset->addField('image', 'image', array(
+            'name'               => 'image',
+            'label'              => Mage::helper('dangnd_slider')->__('Image'),
+            'required'           => false,
+            'onchange'           => 'readURL(this);',
+            'renderer'           => 'dangnd_slider/adminhtml_images_renderer_image',
+            'after_element_html' => "<br><img id='preview' src='{$img}' height='100px' />"
+        ));
+        $fieldset->addField('content', 'editor', array(
+            'name'  => 'content',
+            'label' => Mage::helper('dangnd_slider')->__('Content'),
+        ));
+        $fieldset->addField('link', 'text', array(
+            'name'  => 'link',
+            'label' => Mage::helper('dangnd_slider')->__('Link'),
+        ));
 
         $form->addValues($model->getData());
         $form->setUseContainer(true);

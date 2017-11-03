@@ -12,8 +12,8 @@ class Dangnd_Slider_Block_Adminhtml_Slide_Edit_Form extends Mage_Adminhtml_Block
     {
         $form = new Varien_Data_Form([
             'id'     => 'edit_form',
-            'action' => $this->getUrl('*/*/save'),
-            ['id' => $this->getRequest()->getParam('id')],
+            'action' => $this->getUrl('*/*/save',
+            ['id' => $this->getRequest()->getParam('id')]),
             'method' => 'post',
             'enctype' => 'multipart/form-data'
         ]);

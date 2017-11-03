@@ -44,7 +44,7 @@ class Dangnd_Slider_Adminhtml_SlideController extends Mage_Adminhtml_Controller_
 
         $id = $this->getRequest()->getParam('id');
         $model = Mage::getModel('dangnd_slider/slide');
-        $img = Mage::getModel('dangnd_slider/slide');
+        $img = Mage::getModel('dangnd_slider/images');
 
         if ($id) {
             $model->load($id);
@@ -84,16 +84,23 @@ class Dangnd_Slider_Adminhtml_SlideController extends Mage_Adminhtml_Controller_
     {
         $data = $this->getRequest()->getParams();
         $imgs = $_FILES['image'];
+        $imgEdit = $_FILES['imgEdit'];
 
         if(!$data) {
             return $this->getResponse()->setRedirect($this->getUrl('*/slide'));
         }
+        
         if($err = $this->validate($data) === true) {
             $new = Mage::getModel('dangnd_slider/slide');
 
             $new->setData($data);
 
             $slideId = isset($data['id']) ? $data['id'] : (max($new->getCollection()->getAllIds()) + 1);
+
+            if(!empty($data['delImg'])) {
+                $this->deleteImage($data['delImg']);
+            }
+            $this->editSildeImage($imgEdit, $slideId);
 
             if ($this->uploadImage($imgs, $slideId)) {
                 try {
@@ -136,9 +143,9 @@ class Dangnd_Slider_Adminhtml_SlideController extends Mage_Adminhtml_Controller_
         }
 
         try {
-            $order = Mage::getModel('dangnd_slider/slide');
-            $order->setId($id);
-            $order->delete();
+            $slide = Mage::getModel('dangnd_slider/slide');
+            $slide->setId($id);
+            $slide->delete();
             Mage::getSingleton('adminhtml/session')
                 ->addSuccess(Mage::helper('dangnd_slider')->__('Delete Success.'));
         } catch (Exception $e) {
@@ -160,12 +167,23 @@ class Dangnd_Slider_Adminhtml_SlideController extends Mage_Adminhtml_Controller_
         $result = [];
 
         foreach ($images['name'] as $key => $item) {
-            $result[$key]['name'] = $images['name'][$key];
-            $result[$key]['tmp_name'] = $images['tmp_name'][$key];
-            $result[$key]['type'] = $images['type'][$key];
-            $result[$key]['error'] = $images['error'][$key];
-            $result[$key]['size'] = $images['size'][$key];
+            if(is_array($item)) {
+                $result[$key]['name'] = $images['name'][$key][0];
+                $result[$key]['tmp_name'] = $images['tmp_name'][$key][0];
+                $result[$key]['type'] = $images['type'][$key][0];
+                $result[$key]['error'] = $images['error'][$key][0];
+                $result[$key]['size'] = $images['size'][$key][0];
+            } else {
+                $result[$key]['name'] = $images['name'][$key];
+                $result[$key]['tmp_name'] = $images['tmp_name'][$key];
+                $result[$key]['type'] = $images['type'][$key];
+                $result[$key]['error'] = $images['error'][$key];
+                $result[$key]['size'] = $images['size'][$key];
+            }
 
+            if($result[$key]['size'] === 0) {
+                continue;
+            }
             if ($result[$key]['size'] > $maxSize) {
                 return "File {$result[$key]['name']} size too large ( Maximum : 5M )";
             }
@@ -182,8 +200,9 @@ class Dangnd_Slider_Adminhtml_SlideController extends Mage_Adminhtml_Controller_
     {
         $imgModel = Mage::getModel('dangnd_slider/images');
 
-        if(empty($images['name'][0]))
+        if($images['size'][0] === 0) {
             return true;
+        }
 
         $dir = 'dangnd/slide';
         $path = Mage::getBaseDir('media') . DS . $dir;
@@ -195,7 +214,7 @@ class Dangnd_Slider_Adminhtml_SlideController extends Mage_Adminhtml_Controller_
         if (is_array($images)) {
             try {
                 $id = max($imgModel->getCollection()->getAllIds());
-                foreach ($images as $item) {
+                foreach ($images as $key => $item) {
                     $upload = new Varien_File_Uploader($item);
                     $id++;
                     $data['name'] = "slide_{$slideId}_{$id}.{$upload->getFileExtension()}";
@@ -232,5 +251,46 @@ class Dangnd_Slider_Adminhtml_SlideController extends Mage_Adminhtml_Controller_
         }
 
         return $err;
+    }
+
+    public function deleteImage($listId)
+    {
+        $imgModel = Mage::getModel('dangnd_slider/images');
+
+        foreach ($listId as $item) {
+            $imgModel->setId($item)->delete();
+        }
+    }
+
+    public function editSildeImage($images, $slideId)
+    {
+        $dir = 'dangnd/slide';
+        $path = Mage::getBaseDir('media') . DS . $dir;
+        $images = $this->checkImageUpload($images);
+
+        if (!file_exists($path)) {
+            mkdir($path, 0777);
+        }
+        if (is_array($images)) {
+            try {
+                foreach ($images as $key => $item) {
+                    if($item['size'] === 0) {
+                        continue;
+                    }
+                    $upload = new Varien_File_Uploader($item);
+                    $newName = "slide_{$slideId}_{$key}.{$upload->getFileExtension()}";
+                    $upload->save($path, $newName);
+                }
+            } catch (Exception $e) {
+                return false;
+            }
+
+            return true;
+        }
+        Mage::getSingleton('adminhtml/session')
+            ->addError(Mage::helper('dangnd_slider')
+                ->__($images));
+
+        return false;
     }
 }

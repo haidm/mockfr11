@@ -6,7 +6,7 @@
  * Time: 04:06 CH
  */
 
-class Dangnd_Slider_Block_Adminhtml_Template_Grid_Renderer_Image
+class Dangnd_Slider_Block_Adminhtml_Images_Renderer_Image
     extends Mage_Adminhtml_Block_Widget_Grid_Column_Renderer_Abstract
 {
     public function render(Varien_Object $row)
@@ -16,9 +16,13 @@ class Dangnd_Slider_Block_Adminhtml_Template_Grid_Renderer_Image
 
     protected function _getValue(Varien_Object $row)
     {
-        $val = $row->getData()['name'];
-        $url = Mage::getBaseUrl('media') . 'dangnd/slide/' . $val;
-        $out = "<img src=". $url ." width='87px'/>";
+        $out = '';
+
+        if($row->getId()) {
+            $val = $row->getData()['name'];
+            $url = Mage::getBaseUrl('media') . 'dangnd/slide/' . $val;
+            $out = "<img src=". $url ." width='87px'/>";
+        }
 
         return $out;
     }

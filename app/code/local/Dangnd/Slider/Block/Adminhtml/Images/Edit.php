@@ -33,5 +33,26 @@ class Dangnd_Slider_Block_Adminhtml_Images_Edit extends Mage_Adminhtml_Block_Wid
         $this->_formScripts[] = "function saveAndContinueEdit() {" .
             "editForm.submit($('edit_form').action + 'back/edit/')" .
             "}";
+        $this->_formScripts[] = "function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        document.getElementById('preview').src = e.target.result;
+                    };
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }";
+    }
+
+    public function getHeaderText()
+    {
+        if (Mage::registry('slideModel')->getId()) {
+            return Mage::helper('dangnd_slider')->__('Edit Information');
+        } else {
+            return Mage::helper('dangnd_slider')->__('Create Image Slide');
+
+        }
     }
 }

@@ -11,6 +11,7 @@ class Dangnd_Slider_Block_Adminhtml_Slide_Edit_Tab_Images extends Mage_Adminhtml
     public function _prepareForm()
     {
         $model = Mage::registry('imgModel');
+        $slide = Mage::registry('slideModel');
 
         $form = new Varien_Data_Form();
 
@@ -18,9 +19,23 @@ class Dangnd_Slider_Block_Adminhtml_Slide_Edit_Tab_Images extends Mage_Adminhtml
             'legend' => Mage::helper('dangnd_slider')->__('Images of Slide')
         ));
         $fieldset->addType('image', 'Dangnd_Slider_Block_Adminhtml_Helper_Image');
+        if ($slideId = $slide->getId()) {
+            $slideImg = $model->getCollection()->addFilter("slideId", $slideId);
+
+            foreach ($slideImg as $item) {
+                $html = $this->imagesHtml($item);
+                $fieldset->addField('image'.$item->getId(), 'image', array(
+                    'name'               => "imgEdit[{$item->getId()}]",
+                    'label'              => Mage::helper('dangnd_slider')->__('Image'),
+                    'class'              => 'required-entry',
+                    'onchange'           => "readURL(this, {$item->getId()});",
+                    'after_element_html' => $html
+                ));
+            }
+        }
         $fieldset->addField('image', 'image', array(
             'name'     => 'image[]',
-            'label'    => Mage::helper('dangnd_slider')->__('Image'),
+            'label'    => Mage::helper('dangnd_slider')->__('New Images'),
             'class'    => 'required-entry',
             'multiple' => 'multiple'
         ));
@@ -29,5 +44,15 @@ class Dangnd_Slider_Block_Adminhtml_Slide_Edit_Tab_Images extends Mage_Adminhtml
         $this->setForm($form);
 
         return parent::_prepareForm();
+    }
+
+    public function imagesHtml($image)
+    {
+        $pathImg = Mage::getBaseUrl('media') . 'dangnd/slide/' . $image->getName();
+        $html = '<br />';
+        $html .= "<img id='img{$image->getId()}' src='{$pathImg}' height='100px'/>";
+        $html .= "<input type='checkbox' value='{$image->getId()}' name='delImg[]' /> Delete<br />";
+
+        return $html;
     }
 }

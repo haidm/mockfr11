@@ -39,7 +39,7 @@ class Dangnd_Slider_Block_Adminhtml_Images_Grid extends Mage_Adminhtml_Block_Wid
             'header' => Mage::helper('dangnd_slider')->__('Image'),
             'index'  => 'name',
             'width'   => '100',
-            'renderer' => 'Dangnd_Slider_Block_Adminhtml_Template_Grid_Renderer_Image'
+            'renderer' => 'dangnd_slider/adminhtml_images_renderer_image'
         ));
         $this->addColumn('slideId', array(
             'header' => Mage::helper('dangnd_slider')->__('Slide'),
