@@ -13,14 +13,14 @@
                 <type>skin_js</type>
                 <name>js/swiper/swiper.min.js</name>
             </action>
-            <action method="addItem">
-                <type>skin_js</type>
-                <name>js/swiper/swiper.esm.js</name>
-            </action>
-            <action method="addItem">
-                <type>skin_js</type>
-                <name>js/swiper/swiper.esm.bundle.js</name>
-            </action>
+            <!--<action method="addItem">-->
+                <!--<type>skin_js</type>-->
+                <!--<name>js/swiper/swiper.esm.js</name>-->
+            <!--</action>-->
+            <!--<action method="addItem">-->
+                <!--<type>skin_js</type>-->
+                <!--<name>js/swiper/swiper.esm.bundle.js</name>-->
+            <!--</action>-->
             <action method="addItem">
                 <type>skin_css</type>
                 <name>css/swiper/swiper.css</name>
@@ -30,6 +30,13 @@
                 <name>css/swiper/swiper.min.css</name>
             </action>
         </reference>
-        <block type="hungbd_slider/slider"></block>
     </default>
+
+    <catalog_category_layered>
+        <reference name="content">
+            <block type="hungbd_featured/featured" template="mytemplate/featured/categoryslide.phtml"
+                   after="-"/>
+        </reference>
+    </catalog_category_layered>
+
 </layout>

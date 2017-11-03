@@ -16,9 +16,9 @@
             </Hungbd_Featured_resource>
         </models>
         <blocks>
-            <Hungbd_Featured>
+            <hungbd_featured>
                 <class>Hungbd_Featured_Block</class>
-            </Hungbd_Featured>
+            </hungbd_featured>
         </blocks>
         <helpers>
             <Hungbd_Featured>
@@ -29,6 +29,7 @@
             <Hungbd_Featured_setup>
                 <setup>
                     <module>Hungbd_Featured</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
                 </setup>
             </Hungbd_Featured_setup>
         </resources>

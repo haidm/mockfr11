@@ -2,26 +2,36 @@
     <sections>
         <general>
             <groups>
-                <hungbd_megamenu translate="label">
-                    <label>Menu item config</label>
+                <hungbd_featured translate="label">
+                    <label>Featured product config</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>0</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
                     <fields>
-                        <level translate="label">
-                            <label>Config level</label>
+                        <slider_per_view_home translate="label">
+                            <label>Slider Per View Home Page</label>
                             <frontend_type>text</frontend_type>
-                            <sort_order>2</sort_order>
                             <validate>required-entry validate-number</validate>
+                            <sort_order>1</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                             <can_be_empty>1</can_be_empty>
-                        </level>
+                        </slider_per_view_home>
+                        <slider_per_view_category translate="label">
+                            <label>Slider Per View Category Page</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>required-entry validate-number</validate>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                        </slider_per_view_category>
                         <enable translate="label">
-                            <label>Enable megamenu: </label>
+                            <label>Enable Slider: </label>
                             <frontend_type>select</frontend_type>
                             <sort_order>3</sort_order>
                             <show_in_default>1</show_in_default>
@@ -30,7 +40,7 @@
                             <source_model>adminhtml/system_config_source_yesno</source_model>
                         </enable>
                     </fields>
-                </hungbd_megamenu>
+                </hungbd_featured>
             </groups>
         </general>
     </sections>

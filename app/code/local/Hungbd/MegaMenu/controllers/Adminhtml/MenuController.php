@@ -56,7 +56,6 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
      */
     public function editAction()
     {
-//        var_dump($this->getRequest()->getParam());die;
         $this->_title($this->__('Menu Item'))->_title($this->__('Mega Menu'));
         $itemType = $this->getRequest()->getParam('menuitem_type');
         $menuItemId = $this->getRequest()->getParam('id');

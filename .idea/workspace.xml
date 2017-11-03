@@ -2,28 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa3ae6cf-e262-4095-a1bb-656584fa130f" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/errors/local.xml.sample" afterPath="$PROJECT_DIR$/errors/local.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/magicento.xml" afterPath="$PROJECT_DIR$/.idea/magicento.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/Featured/etc/config.xml" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/Featured/etc/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/Featured/sql/Hungbd_Featured_setup/mysql4-install-0.1.0.php" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/Featured/sql/Hungbd_Featured_setup/mysql4-install-0.1.0.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem.php" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit.php" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Form.php" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Form.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tab/Form.php" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tab/Form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tabs.php" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tabs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Grid.php" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Grid.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/New.php" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/New.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/MegaMenu.php" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/MegaMenu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Model/Menuitem.php" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Model/Menuitem.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Model/Resource/Menuitem.php" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Model/Resource/Menuitem.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Model/Resource/Menuitem/Collection.php" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Model/Resource/Menuitem/Collection.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/controllers/Adminhtml/MenuController.php" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/controllers/Adminhtml/MenuController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/etc/adminhtml.xml" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/etc/adminhtml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/etc/config.xml" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/etc/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/Slider/etc/config.xml" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/Slider/etc/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/Slider/sql/Hungbd_Slider_setup/mysql4-install-0.1.0.php" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/Slider/sql/Hungbd_Slider_setup/mysql4-install-0.1.0.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/etc/system.xml" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/etc/system.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Slider.php" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Slider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/Slider/controllers/Adminhtml/ImageController.php" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/Slider/controllers/Adminhtml/ImageController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/local.xml" afterPath="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/megamenu/megamenu.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/megamenu/megamenu.phtml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,21 +43,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ImageController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/controllers/Adminhtml/ImageController.php">
+      <file leaf-file-name="Featured.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Featured/Block/Featured.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+            <state relative-caret-position="105">
+              <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mysql4-install-0.1.0.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Featured/sql/Hungbd_Featured_setup/mysql4-install-0.1.0.php">
+      <file leaf-file-name="featured.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/featured.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="198">
+              <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -79,36 +67,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Mage_Adminhtml_Block_Widget_Form_Container e</find>
-      <find>Block_Template ex</find>
-      <find>Block_Template</find>
-      <find>Mage_Page_Block_Html_Topmenu</find>
-      <find>Topmenu</find>
-      <find>level</find>
-      <find>menu</find>
-      <find>$menuItemId</find>
-      <find>$menuItemModel</find>
-      <find>setactive</find>
-      <find>add</find>
-      <find>core</find>
-      <find>tax</find>
-      <find>$sliderImage</find>
-      <find>$sliderIdModel</find>
-      <find>setdata</find>
-      <find>$imageId</find>
-      <find>core_block_template e</find>
-      <find>slideshow</find>
-      <find>slider</find>
-      <find>cms_page</find>
-      <find>cms</find>
-      <find>cms/page</find>
-      <find>home</find>
-      <find>content</find>
-      <find>There was no Home CMS page configured or found.</find>
       <find>set u</find>
       <find>home.phtml</find>
       <find>slideshow-container</find>
       <find>joi</find>
+      <find>attribute</find>
+      <find>addAttribute</find>
+      <find>$installer-&gt;addAttribute('catalog_product</find>
+      <find>catalog/product_widget_new</find>
+      <find>widget</find>
+      <find>add</find>
+      <find>getadd</find>
+      <find>getpager</find>
+      <find>getColumnCoun</find>
+      <find>Mage_Catalog_Block_Product_Abstract e</find>
+      <find>getProductCollection</find>
+      <find>_getProductCollection</find>
+      <find>product</find>
+      <find>Mage</find>
+      <find>Mage::register('product')</find>
+      <find>getLayer</find>
+      <find>_addProductAttributesAndPrices</find>
+      <find>Mage_Catalog_Block_Product_Abstract</find>
+      <find>getColumnCount</find>
+      <find>core_template`</find>
+      <find>Mage_Core_Block_template e</find>
+      <find>Mage_Core_block_tem</find>
+      <find>Mage_Core_Block_Template</find>
+      <find>MAGE_CORE_BLOCK_TEMPLATE E</find>
+      <find>layered</find>
+      <find>$_product</find>
     </findStrings>
     <replaceStrings>
       <replace>$menuItem</replace>
@@ -117,6 +105,7 @@
       <replace>core</replace>
       <replace>$sliderModel</replace>
       <replace>$sliderId</replace>
+      <replace>$product</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -130,20 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Silder.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/etc/config.xml" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Model/Resource/Menuitem/Collection.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Model/Resource/Menuitem.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Model/Menuitem.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Image.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Model/Resource/Slider.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Model/Resource/Image/Collection.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Model/Image.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Model/Resource/Slider/Collection.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/etc/adminhtml.xml" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Form.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/New.php" />
         <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Grid.php" />
         <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit.php" />
         <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Model/Listimage.php" />
@@ -152,18 +127,14 @@
         <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Model/Resource/Image.php" />
         <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Image/Edit.php" />
         <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Slider/Edit.php" />
-        <option value="$PROJECT_DIR$/app/code/core/Mage/Core/Block/Template.php" />
         <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/cms/content_heading.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/page.xml" />
         <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/cms.xml" />
         <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tabs.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/controllers/Adminhtml/MenuController.php" />
         <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/customslider.xml" />
         <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/app/code/core/Mage/Cms/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/etc/config.xml" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tab/Form.php" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/local.xml" />
         <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Image/Grid/Image.php" />
         <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Model/Type.php" />
         <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Slider/Grid.php" />
@@ -178,9 +149,27 @@
         <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Model/Slider.php" />
         <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/etc/system.xml" />
         <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/slider/slider.phtml" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Slider.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Featured/sql/Hungbd_Featured_setup/install-0.1.0.php" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/featured.php" />
         <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/controllers/Adminhtml/ImageController.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Slider.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tab/Form.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Featured/etc/config.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/controllers/Adminhtml/MenuController.php" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/featured.phtml" />
         <option value="$PROJECT_DIR$/app/code/local/Hungbd/Featured/sql/Hungbd_Featured_setup/mysql4-install-0.1.0.php" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/product/view.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/categoryfeatured.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/homeslider.php" />
+        <option value="$PROJECT_DIR$/app/code/core/Mage/Core/Block/Template.php" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/catalog.xml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/test.xml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/local.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Featured/Block/Featured.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Featured/etc/system.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/etc/system.xml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/homeslide.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/categoryslide.phtml" />
       </list>
     </option>
   </component>
@@ -231,8 +220,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -273,79 +262,7 @@
               <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Hungbd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Featured" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Hungbd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Featured" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="sql" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Hungbd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Featured" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="sql" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Hungbd_Featured_setup" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="design" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="design" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="design" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="rwd" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="design" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="rwd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="design" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="rwd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="media" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="media" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="hung_bd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Slider" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -360,14 +277,15 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/code/local/Hungbd/Featured/etc" />
+      <recent name="$PROJECT_DIR$/app/code/local/Hungbd/Slider/etc" />
+      <recent name="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Slider/Renderer" />
       <recent name="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Image/Renderer" />
       <recent name="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tab" />
-      <recent name="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/code/local/Hungbd/Slider/etc" />
       <recent name="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit" />
     </key>
   </component>
@@ -382,6 +300,11 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="PHPUnit.featured">
+    <configuration name="featured" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner directory="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured" />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -416,21 +339,23 @@
       <workItem from="1509455392152" duration="2085000" />
       <workItem from="1509501410271" duration="27632000" />
       <workItem from="1509542498197" duration="922000" />
-      <workItem from="1509587589859" duration="1322000" />
+      <workItem from="1509587589859" duration="19719000" />
+      <workItem from="1509674225430" duration="8977000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183101000" />
+    <option name="totallyTimeSpent" value="210475000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="-4" width="1309" height="772" extended-state="6" />
+    <frame x="-14" y="-4" width="1311" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2787015" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24465558" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23198733" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -442,10 +367,29 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="MagicentoScripts" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24465558" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23198733" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="MagicentoScripts" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -455,226 +399,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Cms/Block/Page.php">
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/sql/catalog_setup/install-1.6.0.0.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="115" column="21" lean-forward="false" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-71">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Silder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="23" column="1" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Slider/Edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Cms/Helper/Page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="117" column="51" lean-forward="false" selection-start-line="117" selection-start-column="34" selection-end-line="117" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Cms/controllers/PageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/layout/cms.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-882">
-          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/etc/adminhtml.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/layout/contacts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/cms/default/home.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/cms/default/no-route.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/cms/content.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/cms/content_heading.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="30" column="15" lean-forward="false" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/layout/cms.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="83" column="34" lean-forward="true" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tabs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="35" column="11" lean-forward="false" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Cms/etc/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3351">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Cms/controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="41" column="9" lean-forward="false" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/controllers/IndexController.php" />
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/layout/customslider.xml" />
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/controllers/Adminhtml/MenuController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="105" column="30" lean-forward="false" selection-start-line="105" selection-start-column="30" selection-end-line="105" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/MegaMenu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="12" column="3" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="29" column="29" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tab/Form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="37" column="9" lean-forward="false" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/layout/page.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2326">
-          <caret line="184" column="20" lean-forward="false" selection-start-line="184" selection-start-column="20" selection-end-line="184" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/layout/local.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="32" column="41" lean-forward="false" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/Model/Resource/Listimage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/Model/Resource/Image.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Slider/Grid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Image.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Image/Edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-233">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Image/Renderer/GridImage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Image/Grid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="71" column="8" lean-forward="false" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
-          <folding />
+        <state relative-caret-position="-14723">
+          <caret line="2346" column="0" lean-forward="false" selection-start-line="2346" selection-start-column="0" selection-end-line="2346" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -685,136 +418,372 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/media/hung_bd/02.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.eav_attribute_option_value">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/media/hung_bd/splash_1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.eav_attribute_option">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Slider/Edit/Form.php">
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/featured.php" />
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/megamenu/megamenu.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/controllers/Adminhtml/ImageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-936">
+          <caret line="175" column="12" lean-forward="false" selection-start-line="175" selection-start-column="12" selection-end-line="175" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/etc/widget.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="28" column="46" lean-forward="false" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Widget/Link.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1404">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.core_resource">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.catalog_category_product">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.catalog_product_entity">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.catalog_eav_attribute">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Slider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Zend/Gdata/Spreadsheets/WorksheetEntry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="130" column="20" lean-forward="false" selection-start-line="130" selection-start-column="20" selection-end-line="130" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tab/ProductLink.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/Model/Type.php">
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Product/Gallery.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="28" column="5" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="28" selection-end-column="5" />
+        <state relative-caret-position="-1817">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.hungbd_slider">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Product/List.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="58" column="39" lean-forward="false" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.hungbd_listimage">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/product/widget/new/content/new_list.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/controllers/Adminhtml/SliderController.php">
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Product/New.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="33" column="80" lean-forward="false" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Product/Abstract.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
-          <caret line="46" column="60" lean-forward="false" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/etc/system.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="33" column="58" lean-forward="true" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
+          <caret line="559" column="15" lean-forward="true" selection-start-line="559" selection-start-column="0" selection-end-line="560" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/Model/Slider.php">
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/product/widget/new/content/new_grid.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="33" />
+        <state relative-caret-position="458">
+          <caret line="61" column="30" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="61" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.core_config_data">
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Featured/etc/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.eav_attribute">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true">
-            <filter text="path LIKE  'hungbd_slider'" />
-            <filter text="path LIKE 'hungbd_slider'" />
-            <filter text="path = 'hungbd_slider'" />
+            <filter text="attribute_code LIKE '%vis%'" />
+            <filter text="attribute_code LIKE 'visi'" />
           </filtering>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Slider/Renderer/FormImage.php">
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Product/Widget/New.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="63" lean-forward="false" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="63" />
+        <state relative-caret-position="216">
+          <caret line="104" column="5" lean-forward="true" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Featured/sql/Hungbd_Featured_setup/mysql4-install-0.1.0.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="27" column="65" lean-forward="false" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/etc/config.xml">
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/product/view.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="42" column="40" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#967#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/product/list.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="35" column="57" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tabs.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="26" />
+          <caret line="20" column="42" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tab/Form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="24" column="15" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/homeslider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/layout/catalog_msrp.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Category/View.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="33" column="71" lean-forward="false" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/controllers/Adminhtml/MenuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="73" column="46" lean-forward="false" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/categoryfeatured.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Core/Block/Template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="65" column="40" lean-forward="false" selection-start-line="65" selection-start-column="40" selection-end-line="65" selection-end-column="40" />
+          <caret line="66" column="46" lean-forward="false" selection-start-line="66" selection-start-column="46" selection-end-line="66" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/layout/wishlist.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/layout/test.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/layout/catalog.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-333">
+          <caret line="114" column="29" lean-forward="false" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/slider/slider.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="50" column="21" lean-forward="true" selection-start-line="49" selection-start-column="25" selection-end-line="50" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Slider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="17" column="80" lean-forward="false" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="80" />
+        <state relative-caret-position="235">
+          <caret line="44" column="8" lean-forward="false" selection-start-line="44" selection-start-column="8" selection-end-line="47" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Image/Edit/Form.php">
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/featured.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="55" column="33" lean-forward="false" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="33" />
+        <state relative-caret-position="198">
+          <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.hungbd_image">
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/etc/system.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="52" lean-forward="true" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/etc/system.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="65" lean-forward="true" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Featured/etc/system.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="41" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/homeslide.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="52" column="108" lean-forward="false" selection-start-line="52" selection-start-column="108" selection-end-line="52" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.core_config_data">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/controllers/Adminhtml/ImageController.php">
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/categoryslide.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        <state relative-caret-position="393">
+          <caret line="52" column="111" lean-forward="false" selection-start-line="52" selection-start-column="111" selection-end-line="52" selection-end-column="111" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Featured/sql/Hungbd_Featured_setup/mysql4-install-0.1.0.php">
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/layout/local.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="433">
+          <caret line="36" column="100" lean-forward="false" selection-start-line="36" selection-start-column="100" selection-end-line="36" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Featured/Block/Featured.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="21" />
           <folding />
         </state>
       </provider>

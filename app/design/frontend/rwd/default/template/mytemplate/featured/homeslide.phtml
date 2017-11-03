@@ -1,0 +1,66 @@
+<?php if (($products = $this->getFeaturedProduct())): ?>
+    <style>
+        .my-swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .my-swiper {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .my-swiper img {
+            width: 110px;
+            height: 110px;
+        }
+    </style>
+    <div class="swiper-container my-swiper">
+        <div class="swiper-wrapper">
+            <?php foreach ($products->getItems() as $product): ; ?>
+                <div class="swiper-slide">
+                    <a href="<?php echo $product->getProductUrl() ?>"
+                       title="<?php echo $this->stripTags($product->getName(), null, true) ?>" class="product-image">
+                        <img src="<?php echo $this->helper('catalog/image')->init($product, 'thumbnail')->resize(110, 110) ?>"
+                        />
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="<?php echo $product->getProductUrl() ?>"
+                                                    title="<?php echo $this->stripTags($product->getName(), null, true) ?>"><?php echo $this->helper('catalog/output')->productAttribute($product, $product->getName(), 'name') ?></a>
+                        </h3>
+                        <?php echo $this->getPriceHtml($product, true, '-widget-new-grid') ?>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+    <script>
+        var swiper = new Swiper('.my-swiper', {
+            slidesPerView: <?php echo Mage::getStoreConfig('general/hungbd_featured/slider_per_view_home'); ?>,
+            spaceBetween: 10,
+            centeredSlides: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000,
+            },
+            loop: true,
+        });
+    </script>
+<?php endif; ?>

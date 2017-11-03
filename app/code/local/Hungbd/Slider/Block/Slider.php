@@ -8,7 +8,7 @@
 /**
  * Mega Menu Block
  * @category    Hungbd
- * @package     Hungbd_Megamenu
+ * @package     Hungbd_Slider
  * @author      hungbd <hungbd@smartosc.com>
  */
 class Hungbd_Slider_Block_Slider extends Mage_Core_Block_Template

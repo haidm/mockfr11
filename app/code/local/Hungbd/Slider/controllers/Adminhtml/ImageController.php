@@ -80,14 +80,17 @@ class Hungbd_Slider_Adminhtml_ImageController extends Mage_Adminhtml_Controller_
     {
         $postData = $this->getRequest()->getParams();
         if ($this->validate($postData) == 'true') {
+
             if (!$postData) {
                 return $this->getResponse()->setRedirect($this->getUrl('*/image'));
             }
+
             $imageId = $this->getRequest()->getParam('id');
             $oldListImage = $this->getRequest()->getParam('listimage');
             $newListImage = $this->getRequest()->getParam('listslide');
             $imageText = $this->getRequest()->getParam('text');
             $image = Mage::getModel('hungbd_slider/image');
+
             if (!empty($_FILES['image']['name']) || $_FILES['image']['name']) {
                 try {
                     $path = Mage::getBaseDir('media') . DS . 'hung_bd' . DS;
@@ -111,6 +114,7 @@ class Hungbd_Slider_Adminhtml_ImageController extends Mage_Adminhtml_Controller_
                     $this->_redirectReferer();
                 }
             }
+
             $image->setId($imageId)->setName($fileName)->setLink($imageLink)->setText($imageText);
             try {
                 $image->save();
@@ -151,6 +155,7 @@ class Hungbd_Slider_Adminhtml_ImageController extends Mage_Adminhtml_Controller_
                         }
                     }
                 }
+
                 Mage::getSingleton('adminhtml/session')
                     ->addSuccess(Mage::helper('core')->__('The Image has been saved.'));
 
@@ -168,6 +173,7 @@ class Hungbd_Slider_Adminhtml_ImageController extends Mage_Adminhtml_Controller_
 
             Mage::getSingleton('adminhtml/session')->setRuleData($postData);
             $this->_redirectReferer();
+
         } else {
             Mage::getSingleton('adminhtml/session')->setRuleData($postData);
             foreach ($this->validate($postData) as $error) {

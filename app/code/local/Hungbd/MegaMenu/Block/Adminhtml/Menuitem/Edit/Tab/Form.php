@@ -31,7 +31,7 @@ class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_Edit_Tab_Form extends Mage_Adminh
             if ($item->id != $model->getId()) {
                 $selectData[$key]['label'] = $item->name;
                 $selectData[$key]['value'] = $item->id;
-                if ($item->id != $model->getParentid()){
+                if ($item->id == $model->getParentid()){
                     $select = $item->id;
                 }
             }
