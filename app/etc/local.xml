@@ -28,38 +28,47 @@
 <config>
     <global>
         <install>
-            <date>{{date}}</date>
+            <date><![CDATA[Fri, 03 Nov 2017 03:25:04 +0000]]></date>
         </install>
         <crypt>
-            <key>{{key}}</key>
+            <key><![CDATA[1a7068edff5f4f1ece8f1ccd508abe9b]]></key>
         </crypt>
         <disable_local_modules>false</disable_local_modules>
         <resources>
             <db>
-                <table_prefix>{{db_prefix}}</table_prefix>
+                <table_prefix><![CDATA[]]></table_prefix>
             </db>
             <default_setup>
                 <connection>
-                    <host>{{db_host}}</host>
-                    <username>{{db_user}}</username>
-                    <password>{{db_pass}}</password>
-                    <dbname>{{db_name}}</dbname>
-                    <initStatements>{{db_init_statemants}}</initStatements>
-                    <model>{{db_model}}</model>
-                    <type>{{db_type}}</type>
-                    <pdoType>{{db_pdo_type}}</pdoType>
+                    <host><![CDATA[localhost]]></host>
+                    <username><![CDATA[root]]></username>
+                    <password><![CDATA[]]></password>
+                    <dbname><![CDATA[magento]]></dbname>
+                    <initStatements><![CDATA[SET NAMES utf8]]></initStatements>
+                    <model><![CDATA[mysql4]]></model>
+                    <type><![CDATA[pdo_mysql]]></type>
+                    <pdoType><![CDATA[]]></pdoType>
                     <active>1</active>
                 </connection>
             </default_setup>
         </resources>
-        <session_save>{{session_save}}</session_save>
-
+        <session_save><![CDATA[files]]></session_save>
+        <blocks>
+            <catalog>
+                <rewrite>
+                    <product_featured>SM_Featured_Block_Product_Featured</product_featured>
+                </rewrite>
+                <rewrite>
+                    <category_view>SM_Featured_Block_Category_View</category_view>
+                </rewrite>
+            </catalog>
+        </blocks>
     </global>
     <admin>
         <routers>
             <adminhtml>
                 <args>
-                    <frontName>{{admin_frontname}}</frontName>
+                    <frontName><![CDATA[admin]]></frontName>
                 </args>
             </adminhtml>
         </routers>

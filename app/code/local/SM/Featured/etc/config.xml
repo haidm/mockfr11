@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SM_Featured>
+            <version>0.1.0</version>
+        </SM_Featured>
+    </modules>
+    <global>
+        <models>
+            <sm_featured>
+                <class>SM_Featured_Model</class>
+                <resourceModel>sm_featured_resource</resourceModel>
+            </sm_featured>
+            <sm_featured_resource>
+                <class>SM_Featured_Model_Resource</class>
+            </sm_featured_resource>
+        </models>
+        <blocks>
+            <sm_featured>
+                <class>SM_Featured_Block</class>
+            </sm_featured>
+        </blocks>
+        <helpers>
+            <sm_featured>
+                <class>SM_Featured_Helper</class>
+            </sm_featured>
+        </helpers>
+        <resources>
+            <sm_featured_setup>
+                <setup>
+                    <module>SM_Featured</module>
+                </setup>
+            </sm_featured_setup>
+        </resources>
+    </global>
+</config>

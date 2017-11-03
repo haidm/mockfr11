@@ -2,8 +2,14 @@
 <project version="4">
   <component name="MagicentoSettings">
     <option name="pathToMage" value="$PROJECT_DIR$/app/Mage.php" />
+    <option name="enabled" value="false" />
+    <option name="pathToPhp" value="" />
+    <option name="urlToMagento" value="" />
+    <option name="packages" value="" />
+    <option name="themes" value="" />
     <option name="projectClosedCorrectly" value="false" />
-    <option name="pathsToMagentoSerialized" value="$PROJECT_DIR$" />
-    <option name="modmanProjectChecked" value="true" />
+    <option name="basicAuthUsername" value="" />
+    <option name="basicAuthPassword" value="" />
+    <option name="date" value="1Tp+KO0Qxg0o+I9eCWFBVA==" />
   </component>
 </project>
