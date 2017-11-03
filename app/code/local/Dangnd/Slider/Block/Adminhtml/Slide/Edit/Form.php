@@ -8,45 +8,16 @@
 
 class Dangnd_Slider_Block_Adminhtml_Slide_Edit_Form extends Mage_Adminhtml_Block_Widget_Form
 {
-    public function __construct()
+    protected function _prepareForm()
     {
-        parent::__construct();
-
-        $this->setId('slideFrm');
-        $this->setTitle(Mage::helper('dangnd_slider')->__('Information'));
-    }
-
-    public function _prepareForm()
-    {
-        $model = Mage::registry('slideModel');
-
-        $form = new Varien_Data_Form(array(
+        $form = new Varien_Data_Form([
             'id'     => 'edit_form',
-            'action' => $this->getData('action'),
-            'method' => 'post'
-        ));
-
-        $fieldset = $form->addFieldset('base', array(
-            'ledend' => Mage::helper('dangnd_slider')->__('Information')
-        ));
-        $fieldset->addField('name', 'text', array(
-            'name'     => 'name',
-            'label'    => Mage::helper('dangnd_slider')->__('Name'),
-            'class'    => 'required-entry',
-            'required' => true,
-        ));
-
-        if ($model->getId())
-        {
-            $fieldset->addField('id', 'hidden', array(
-                'name' => 'id',
-            ));
-        }
-
-        $form->addValues($model->getData());
+            'action' => $this->getUrl('*/*/save'),
+            ['id' => $this->getRequest()->getParam('id')],
+            'method' => 'post',
+            'enctype' => 'multipart/form-data'
+        ]);
         $form->setUseContainer(true);
-        $form->setAction($this->getUrl('*/slide/save'));
-
         $this->setForm($form);
 
         return parent::_prepareForm();

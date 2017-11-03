@@ -7,7 +7,7 @@
         </dangnd>
     </tabs>
     <sections>
-        <dangnd translate="label">
+        <myslider translate="label">
             <label>Slider Options</label>
             <tab>dangnd</tab>
             <sort_order>0</sort_order>
@@ -15,7 +15,7 @@
             <show_in_website>1</show_in_website>
             <show_in_store>1</show_in_store>
             <groups>
-                <dangnd_group translate="label">
+                <slider_group translate="label">
                     <label>General</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>0</sort_order>
@@ -23,7 +23,7 @@
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
                     <fields>
-                        <dangnd_input translate="label">
+                        <type translate="label">
                             <label>Type Display :</label>
                             <frontend_type>select</frontend_type>
                             <comment>Choose a display type on the frontend</comment>
@@ -31,8 +31,9 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </dangnd_input>
-                        <dangnd_select translate="label">
+                            <source_model>dangnd_slider/typeSlider</source_model>
+                        </type>
+                        <active translate="label">
                             <label>Is Active :</label>
                             <frontend_type>select</frontend_type>
                             <comment>Enable/Disable</comment>
@@ -41,10 +42,10 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
-                        </dangnd_select>
+                        </active>
                     </fields>
-                </dangnd_group>
+                </slider_group>
             </groups>
-        </dangnd>
+        </myslider>
     </sections>
 </config>

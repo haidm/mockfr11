@@ -41,24 +41,6 @@
             </dangnd_slider_setup>
         </resources>
     </global>
-    <frontend>
-        <routers>
-            <slider>
-                <use>standard</use>
-                <args>
-                    <module>Dangnd_Slider</module>
-                    <frontName>slider</frontName>
-                </args>
-            </slider>
-        </routers>
-        <layout>
-            <updates>
-                <dangnd_slider>
-                    <file>dangnd_slider.xml</file>
-                </dangnd_slider>
-            </updates>
-        </layout>
-    </frontend>
     <admin>
         <routers>
             <adminhtml>

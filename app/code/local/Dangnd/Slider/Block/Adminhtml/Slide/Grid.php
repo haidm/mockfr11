@@ -33,12 +33,14 @@ class Dangnd_Slider_Block_Adminhtml_Slide_Grid extends Mage_Adminhtml_Block_Widg
     {
         $this->addColumn('id', array(
             'header' => Mage::helper('dangnd_slider')->__('ID'),
-            'index'  => 'id'
+            'index'  => 'id',
+            'width'  => '60px'
         ));
         $this->addColumn('name', array(
             'header' => Mage::helper('dangnd_slider')->__('Name'),
             'index'  => 'name',
-            'type'   => 'text'
+            'type'   => 'text',
+            'width'  => '200px'
         ));
 
         return parent::_prepareColumns();
@@ -48,6 +50,7 @@ class Dangnd_Slider_Block_Adminhtml_Slide_Grid extends Mage_Adminhtml_Block_Widg
      * Return url
      *
      * @param Mage_Core_Model_Abstract $row
+     *
      * @return string
      */
     public function getRowUrl($row)

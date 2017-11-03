@@ -14,7 +14,7 @@ class Dangnd_Slider_Adminhtml_ImagesController extends Mage_Adminhtml_Controller
             ->_title($this->__('Manage Images'));
 
         $this->loadLayout()
-            ->_setActiveMenu('dangnd_slider/images')
+            ->_setActiveMenu('slider')
             ->_addBreadcrumb(Mage::helper('dangnd_slider')->__('Manager Slider'),
                 Mage::helper('dangnd_slider')->__('Manager Slider'))
             ->_addBreadcrumb(Mage::helper('dangnd_slider')->__('Manage Images'),
@@ -87,7 +87,7 @@ class Dangnd_Slider_Adminhtml_ImagesController extends Mage_Adminhtml_Controller
 
         $id = isset($data['id']) ? $data['id'] : (max($item->getCollection()->getAllIds()) + 1);
 
-        if (!empty($_FILES['image']['name']))
+        if (!empty($_FILES['image']['name'][0]))
         {
             try
             {
@@ -104,13 +104,12 @@ class Dangnd_Slider_Adminhtml_ImagesController extends Mage_Adminhtml_Controller
 
                 $newName = 'slide_' . $data['slideId'] . '_' . $id . '.' . $uploader->getFileExtension();
                 $uploader->save($path, $newName);
-
+                $data['name'] = $newName;
             }
             catch (Exception $e)
             {
 
             }
-            $data['name'] = $newName;
         }
 
         if (!$data)

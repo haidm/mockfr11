@@ -10,7 +10,7 @@ class Dangnd_Slider_Block_Adminhtml_Slide_Edit extends Mage_Adminhtml_Block_Widg
 {
     public function __construct()
     {
-        $this->_objectId = 'slide';
+        $this->_objectId = 'id';
         $this->_controller = 'adminhtml_slide';
         $this->_blockGroup = 'dangnd_slider';
 
@@ -19,19 +19,29 @@ class Dangnd_Slider_Block_Adminhtml_Slide_Edit extends Mage_Adminhtml_Block_Widg
         $model = Mage::registry('slideModel');
 
         $this->_updateButton('save', 'label', Mage::helper('dangnd_slider')->__('Save'));
-        $this->_addButton('delete', array(
+        $this->_addButton('delete', [
             'label'   => Mage::helper('dangnd_slider')->__('Delete'),
-            'onclick' => "window.location.href='{$this->getUrl('*/*/delete', array('id' => $model->getId()))}'",
+            'onclick' => "window.location.href='{$this->getUrl('*/*/delete', ['id' => $model->getId()])}'",
             'class'   => 'delete'
-        ));
-        $this->_addButton('save_and_continue', array(
+        ]);
+        $this->_addButton('save_and_continue', [
             'label'   => Mage::helper('dangnd_slider')->__('Save and Continue Edit'),
             'onclick' => 'saveAndContinueEdit()',
             'class'   => 'save'
-        ));
+        ]);
 
         $this->_formScripts[] = "function saveAndContinueEdit() {" .
             "editForm.submit($('edit_form').action + 'back/edit/')" .
             "}";
+    }
+
+    public function getHeaderText()
+    {
+        if (Mage::registry('slideModel')->getId()) {
+            return Mage::helper('dangnd_slider')->__('Edit Slide Information');
+        } else {
+            return Mage::helper('dangnd_slider')->__('New Slide');
+
+        }
     }
 }

@@ -50,20 +50,15 @@ class Dangnd_Slider_Block_Adminhtml_Images_Edit_Form extends Mage_Adminhtml_Bloc
         $fieldset->addField('image', 'image', array(
             'name'     => 'image',
             'label'    => Mage::helper('dangnd_slider')->__('Image'),
-            'class'    => 'required-entry',
-            'required' => true
+            'required' => false,
         ));
         $fieldset->addField('content', 'editor', array(
             'name'     => 'content',
             'label'    => Mage::helper('dangnd_slider')->__('Content'),
-            'class'    => 'required-entry',
-            'required' => true,
         ));
-        $fieldset->addField('link', 'editor', array(
+        $fieldset->addField('link', 'text', array(
             'name'     => 'link',
             'label'    => Mage::helper('dangnd_slider')->__('Link'),
-            'class'    => 'required-entry',
-            'required' => true,
         ));
 
         if ($model->getId())

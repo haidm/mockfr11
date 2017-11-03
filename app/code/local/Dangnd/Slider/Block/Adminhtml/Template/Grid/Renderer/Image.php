@@ -17,7 +17,6 @@ class Dangnd_Slider_Block_Adminhtml_Template_Grid_Renderer_Image
     protected function _getValue(Varien_Object $row)
     {
         $val = $row->getData()['name'];
-        $val = str_replace("no_selection", "", $val);
         $url = Mage::getBaseUrl('media') . 'dangnd/slide/' . $val;
         $out = "<img src=". $url ." width='87px'/>";
 
