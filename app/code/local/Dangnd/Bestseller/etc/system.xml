@@ -1,6 +1,6 @@
 <config>
     <sections>
-        <bestseller translate="title">
+        <mybestseller translate="title">
             <label>Bestseller Slide Options</label>
             <tab>dangnd</tab>
             <sort_order>10</sort_order>
@@ -20,7 +20,7 @@
                             <label>Quantity :</label>
                             <frontend_type>text</frontend_type>
                             <comment>The quantity of the product is displayed</comment>
-                            <sort_order>10</sort_order>
+                            <sort_order>0</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_store>1</show_in_store>
                             <show_in_website>1</show_in_website>
@@ -33,13 +33,13 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <source_model></source_model>
+                            <source_model>dangnd_bestseller/effectSlide</source_model>
                         </effect>
                         <active translate="label">
                             <label>Is Active :</label>
                             <frontend_type>select</frontend_type>
                             <comment>Enable/Disable</comment>
-                            <sort_order>10</sort_order>
+                            <sort_order>20</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -48,6 +48,6 @@
                     </fields>
                 </bestseller_group>
             </groups>
-        </bestseller>
+        </mybestseller>
     </sections>
 </config>
