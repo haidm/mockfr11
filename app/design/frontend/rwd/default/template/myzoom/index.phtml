@@ -1,0 +1,95 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     rwd_default
+ * @copyright   Copyright (c) 2006-2017 X.commerce, Inc. and affiliates (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+
+/**
+ * Product media data template
+ *
+ * @see Mage_Catalog_Block_Product_View_Media
+ */
+
+/* @var $this Mage_Catalog_Block_Product_View_Media */
+?>
+<?php
+$_product = $this->getProduct();
+$_helper = $this->helper('catalog/output');
+$mainImgHeight = '500';
+$mainImgWidth = '500';
+if(!empty(Mage::getStoreConfig('myzoom/main_image/height'))) {
+    $mainImgHeight = Mage::getStoreConfig('myzoom/main_image/height');
+}
+if(!empty(Mage::getStoreConfig('myzoom/main_image/width'))) {
+    $mainImgWidth = Mage::getStoreConfig('myzoom/main_image/width');
+}
+?>
+<style>
+    #main-image {
+        max-height : <?= $mainImgHeight ?>px;
+        max-width : <?= $mainImgWidth ?>px;
+    }
+    .cloudzoom-gallery {
+        float : left;
+        margin-left : 5px;
+    }
+    .cloudzoom-gallery-active {
+        border : 2px #9baa9b solid;
+    }
+</style>
+<div class="product-image">
+        <img id="main-image"
+             class="cloudzoom"
+             data-cloudzoom = "zoomImage: '<?= $this->helper('catalog/image')->init($_product, 'small_image') ?>'"
+             src="<?php echo $this->helper('catalog/image')->init($_product, 'image') ?>"
+             alt="<?php echo $this->escapeHtml($this->getImageLabel()) ?>"
+             title="<?php echo $this->escapeHtml($this->getImageLabel()); ?>"/>
+        <br>
+        <?php
+        foreach ($this->getGalleryImages() as $_image): ?>
+            <?php if ($this->isGalleryImageVisible($_image)): ?>
+                <img class = 'cloudzoom-gallery'
+                     src = "<?= $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile())->resize(75) ?>"
+                     data-cloudzoom = "useZoom: '.cloudzoom',
+                                image: '<?= $this->helper('catalog/image')->init($this->getProduct(), 'small_image') ?>',
+                                zoomImage: '<?= $this->helper('catalog/image')->init($this->getProduct(), 'image') ?>'" />
+                <?php endif; ?>
+            <?php endforeach; ?>
+
+</div>
+
+<script>
+    CloudZoom.quickStart();
+
+    $(function () {
+        // Bind a click event to a Cloud Zoom instance.
+        $('#main-image').bind('click', function () {
+            var cloudZoom = $(this).data('CloudZoom');
+            cloudZoom.closeZoom();
+            console.log(cloudZoom.getGalleryList());
+            $.fancybox.open(cloudZoom.getGalleryList());
+            return false;
+        });
+    });
+</script>
+<?php echo $this->getChildHtml('after'); ?>

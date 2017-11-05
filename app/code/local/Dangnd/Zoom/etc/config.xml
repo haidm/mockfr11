@@ -6,15 +6,6 @@
         </Dangnd_Zoom>
     </modules>
     <global>
-        <models>
-            <dangnd_zoom>
-                <class>Dangnd_Zoom_Model</class>
-                <resourceModel>dangnd_zoom_resource</resourceModel>
-            </dangnd_zoom>
-            <dangnd_zoom_resource>
-                <class>Dangnd_Zoom_Model_Resource</class>
-            </dangnd_zoom_resource>
-        </models>
         <blocks>
             <dangnd_zoom>
                 <class>Dangnd_Zoom_Block</class>
@@ -25,32 +16,7 @@
                 <class>Dangnd_Zoom_Helper</class>
             </dangnd_zoom>
         </helpers>
-        <resources>
-            <dangnd_zoom_setup>
-                <setup>
-                    <module>Dangnd_Zoom</module>
-                </setup>
-            </dangnd_zoom_setup>
-        </resources>
     </global>
-    <frontend>
-        <routers>
-            <zoom>
-                <use>standard</use>
-                <args>
-                    <module>Dangnd_Zoom</module>
-                    <frontName>zoom</frontName>
-                </args>
-            </zoom>
-        </routers>
-        <layout>
-            <updates>
-                <dangnd_zoom>
-                    <file>dangnd_zoom.xml</file>
-                </dangnd_zoom>
-            </updates>
-        </layout>
-    </frontend>
     <admin>
         <routers>
             <adminhtml>
