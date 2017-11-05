@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <layout>
-
+    <cms_page>
+        <reference name="content">
+            <block type="dangnd_bestseller/bestseller" name="dangnd.bestseller" template="mybestseller/slide.phtml"
+                   after="content"/>
+        </reference>
+    </cms_page>
 </layout>
