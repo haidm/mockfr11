@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa3ae6cf-e262-4095-a1bb-656584fa130f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/magicento.xml" afterPath="$PROJECT_DIR$/.idea/magicento.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -11,8 +13,186 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="mock@localhost" type="e3449647:DbNodeDescriptor" />
+      </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="mock@localhost" type="e3449647:DbNodeDescriptor" />
+        <item name="mock" type="e3449647:DbNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="log.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shell/log.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-720">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1509961813716" expanded="true" signature="5677:5834" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="indexer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shell/indexer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3384">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1509961813716" expanded="true" signature="7828:8340" ph="..." />
+                <marker date="1509961813716" expanded="true" signature="7881:8340" ph="..." />
+                <marker date="1509961813716" expanded="true" signature="7949:8340" ph="..." />
+                <marker date="1509961813716" expanded="true" signature="8016:8340" ph="..." />
+                <marker date="1509961813716" expanded="true" signature="8080:8340" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="abstract.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shell/abstract.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3240">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="install.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/install.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3240">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>$installer-&gt;addAttribute('catalog_product</find>
+      <find>catalog/product_widget_new</find>
+      <find>widget</find>
+      <find>add</find>
+      <find>getadd</find>
+      <find>getpager</find>
+      <find>getColumnCoun</find>
+      <find>Mage_Catalog_Block_Product_Abstract e</find>
+      <find>getProductCollection</find>
+      <find>_getProductCollection</find>
+      <find>product</find>
+      <find>Mage</find>
+      <find>Mage::register('product')</find>
+      <find>getLayer</find>
+      <find>_addProductAttributesAndPrices</find>
+      <find>Mage_Catalog_Block_Product_Abstract</find>
+      <find>getColumnCount</find>
+      <find>core_template`</find>
+      <find>Mage_Core_Block_template e</find>
+      <find>Mage_Core_block_tem</find>
+      <find>Mage_Core_Block_Template</find>
+      <find>MAGE_CORE_BLOCK_TEMPLATE E</find>
+      <find>layered</find>
+      <find>$_product</find>
+      <find>e</find>
+      <find>Mage_catalog_model_product_</find>
+      <find>addOrderedQty</find>
+      <find>core_model_abstract</find>
+      <find>Mage_Core_Model_Abstract e</find>
+      <find>load</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>$menuItem</replace>
+      <replace>$sliderImage</replace>
+      <replace>$sliderImageModel</replace>
+      <replace>core</replace>
+      <replace>$sliderModel</replace>
+      <replace>$sliderId</replace>
+      <replace>$product</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="hungbd" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Slider/Edit.php" />
+        <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/cms/content_heading.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/page.xml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/cms.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tabs.php" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/customslider.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/app/code/core/Mage/Cms/controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/etc/config.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Image/Grid/Image.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Model/Type.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Slider/Grid.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Image/Renderer/GridImage.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Image/Renderer/FormImage.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Image/Grid.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/sql/Hungbd_Slider_setup/mysql4-install-0.1.0.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Image/Edit/Form.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Slider/Renderer/FormImage.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Slider/Edit/Form.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/controllers/Adminhtml/SliderController.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Model/Slider.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/etc/system.xml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/slider/slider.phtml" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Featured/sql/Hungbd_Featured_setup/install-0.1.0.php" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/featured.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/controllers/Adminhtml/ImageController.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Slider.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tab/Form.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Featured/etc/config.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/controllers/Adminhtml/MenuController.php" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/featured.phtml" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Featured/sql/Hungbd_Featured_setup/mysql4-install-0.1.0.php" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/product/view.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/categoryfeatured.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/homeslider.php" />
+        <option value="$PROJECT_DIR$/app/code/core/Mage/Core/Block/Template.php" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/test.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Featured/Block/Featured.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Featured/etc/system.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/etc/system.xml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/homeslide.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/categoryslide.phtml" />
+        <option value="$PROJECT_DIR$/app/code/core/Mage/Reports/Model/Resource/Product/Collection.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/catalog.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/etc/config.xml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/local.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/Block/BestSeller.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/etc/system.xml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/bestseller/homeslide.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/bestseller/categoryslide.phtml" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -21,11 +201,11 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-6" />
-    <option name="y" value="1" />
-    <option name="width" value="1932" />
-    <option name="height" value="1045" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1011" />
+    <option name="y" value="7" />
+    <option name="width" value="697" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -43,7 +223,9 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -59,25 +241,51 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="mockfr11" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mockfr11" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="mockmage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockmage" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mockmage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockmage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mockmage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockmage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="etc" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="com.magicento.ui.forms.MagicentoSettingsForm" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/etc" />
+      <recent name="$PROJECT_DIR$/app/code/local/Hungbd/Featured/etc" />
+      <recent name="$PROJECT_DIR$/app/code/local/Hungbd/Slider/etc" />
+      <recent name="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Slider/Renderer" />
+      <recent name="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Image/Renderer" />
+      <recent name="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tab" />
+      <recent name="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -91,6 +299,11 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="PHPUnit.featured">
+    <configuration name="featured" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner directory="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured" />
+    </configuration>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
@@ -102,40 +315,336 @@
       <option name="presentableId" value="Default" />
       <updated>1508732857341</updated>
       <workItem from="1508732858843" duration="46000" />
+      <workItem from="1508902058324" duration="123000" />
+      <workItem from="1508915538294" duration="11959000" />
+      <workItem from="1508982890055" duration="21114000" />
+      <workItem from="1509023216570" duration="2254000" />
+      <workItem from="1509069081904" duration="26952000" />
+      <workItem from="1509158518978" duration="5024000" />
+      <workItem from="1509179138417" duration="4377000" />
+      <workItem from="1509194255763" duration="8076000" />
+      <workItem from="1509239722510" duration="5436000" />
+      <workItem from="1509261444199" duration="8346000" />
+      <workItem from="1509281305301" duration="3650000" />
+      <workItem from="1509328477064" duration="552000" />
+      <workItem from="1509329095587" duration="50000" />
+      <workItem from="1509329183788" duration="30000" />
+      <workItem from="1509329390332" duration="17729000" />
+      <workItem from="1509349612167" duration="10330000" />
+      <workItem from="1509414798869" duration="8954000" />
+      <workItem from="1509424617957" duration="16015000" />
+      <workItem from="1509447540299" duration="123000" />
+      <workItem from="1509455392152" duration="2085000" />
+      <workItem from="1509501410271" duration="27632000" />
+      <workItem from="1509542498197" duration="922000" />
+      <workItem from="1509587589859" duration="19719000" />
+      <workItem from="1509674225430" duration="24314000" />
+      <workItem from="1509961631426" duration="559000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46000" />
+    <option name="totallyTimeSpent" value="226371000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-1374" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24810892" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2581156" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="MagicentoScripts" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="MagicentoScripts" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/categoryslide.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="52" column="111" lean-forward="false" selection-start-line="52" selection-start-column="111" selection-end-line="52" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/featured.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_billing_agreement_order" />
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_order_status" />
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_order_aggregated_updated" />
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_payment_transaction" />
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_bestsellers_aggregated_yearly" />
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_bestsellers_aggregated_monthly" />
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.core_store" />
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_order_aggregated_created" />
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.catalog_category_product" />
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.catalog_eav_attribute" />
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_invoiced_aggregated_order" />
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.catalog_product_website" />
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.salesrule_product_attribute" />
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.review_detail" />
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_flat_invoice" />
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.tax_order_aggregated_updated" />
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_flat_order_payment" />
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_flat_order_status_history" />
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_flat_invoice_item" />
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_flat_order_grid" />
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Model/Menuitem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="14" column="69" lean-forward="false" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Core/Model/Abstract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="226" column="29" lean-forward="true" selection-start-line="226" selection-start-column="29" selection-end-line="226" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_flat_order" />
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_flat_order_item" />
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Reports/Model/Resource/Product/Collection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-33">
+          <caret line="302" column="17" lean-forward="false" selection-start-line="302" selection-start-column="17" selection-end-line="302" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/layout/catalog.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="134" column="18" lean-forward="false" selection-start-line="134" selection-start-column="18" selection-end-line="134" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/etc/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="29" column="30" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/homeslide.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="52" column="108" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="65" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Featured/Block/Featured.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="25" column="59" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="25" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/Block/BestSeller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="34" column="48" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/bestseller/homeslide.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="52" column="112" lean-forward="true" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/bestseller/categoryslide.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="37" column="12" lean-forward="false" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/etc/system.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.core_config_data" />
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/layout/local.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="40" column="53" lean-forward="false" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Mage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-288">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mage">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1560">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-936">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1509961800200" expanded="true" signature="1035:1081" ph="..." />
+            <marker date="1509961800200" expanded="true" signature="1082:1505" ph="..." />
+            <marker date="1509961800200" expanded="false" signature="1096:1144" ph="..." />
+            <marker date="1509961800200" expanded="true" signature="1145:1324" ph="..." />
+            <marker date="1509961800200" expanded="false" signature="1158:1257" ph="..." />
+            <marker date="1509961800200" expanded="true" signature="1258:1318" ph="..." />
+            <marker date="1509961800200" expanded="true" signature="1327:1499" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/var/resource_config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4464">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1509961800184" expanded="true" signature="1034:1080" ph="..." />
+            <marker date="1509961800184" expanded="true" signature="1094:1155" ph="..." />
+            <marker date="1509961800184" expanded="true" signature="1168:1280" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1440">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shell/log.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-720">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1509961813716" expanded="true" signature="5677:5834" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shell/indexer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3384">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1509961813716" expanded="true" signature="7828:8340" ph="..." />
+            <marker date="1509961813716" expanded="true" signature="7881:8340" ph="..." />
+            <marker date="1509961813716" expanded="true" signature="7949:8340" ph="..." />
+            <marker date="1509961813716" expanded="true" signature="8016:8340" ph="..." />
+            <marker date="1509961813716" expanded="true" signature="8080:8340" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shell/abstract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3240">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/etc/local.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1272">
+          <caret line="53" column="20" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/etc/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2592">
+          <caret line="33" column="27" lean-forward="true" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/install.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3240">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
