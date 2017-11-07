@@ -37,59 +37,74 @@ $_product = $this->getProduct();
 $_helper = $this->helper('catalog/output');
 $mainImgHeight = '500';
 $mainImgWidth = '500';
-if(!empty(Mage::getStoreConfig('myzoom/main_image/height'))) {
+if (!empty(Mage::getStoreConfig('myzoom/main_image/height'))) {
     $mainImgHeight = Mage::getStoreConfig('myzoom/main_image/height');
 }
-if(!empty(Mage::getStoreConfig('myzoom/main_image/width'))) {
+if (!empty(Mage::getStoreConfig('myzoom/main_image/width'))) {
     $mainImgWidth = Mage::getStoreConfig('myzoom/main_image/width');
 }
 ?>
 <style>
-    #main-image {
+    #myCloudZoom {
         max-height : <?= $mainImgHeight ?>px;
-        max-width : <?= $mainImgWidth ?>px;
+        max-width  : <?= $mainImgWidth ?>px;
     }
+
     .cloudzoom-gallery {
-        float : left;
+        float       : left;
         margin-left : 5px;
     }
+
     .cloudzoom-gallery-active {
         border : 2px #9baa9b solid;
     }
 </style>
-<div class="product-image">
-        <img id="main-image"
-             class="cloudzoom"
-             data-cloudzoom = "zoomImage: '<?= $this->helper('catalog/image')->init($_product, 'small_image') ?>'"
-             src="<?php echo $this->helper('catalog/image')->init($_product, 'image') ?>"
-             alt="<?php echo $this->escapeHtml($this->getImageLabel()) ?>"
-             title="<?php echo $this->escapeHtml($this->getImageLabel()); ?>"/>
-        <br>
-        <?php
-        foreach ($this->getGalleryImages() as $_image): ?>
-            <?php if ($this->isGalleryImageVisible($_image)): ?>
-                <img class = 'cloudzoom-gallery'
-                     src = "<?= $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile())->resize(75) ?>"
-                     data-cloudzoom = "useZoom: '.cloudzoom',
-                                image: '<?= $this->helper('catalog/image')->init($this->getProduct(), 'small_image') ?>',
-                                zoomImage: '<?= $this->helper('catalog/image')->init($this->getProduct(), 'image') ?>'" />
-                <?php endif; ?>
-            <?php endforeach; ?>
 
+<div class="product-image product-image-zoom">
+    <div class="product-image-gallery">
+        <img id='myCloudZoom' class="cloudzoom"
+             src="<?= $this->helper('catalog/image')->init($_product, 'small_image') ?>"
+             data-cloudzoom="zoomImage: '<?= $this->helper('catalog/image')->init($_product, 'image') ?>'"/>
+    </div>
 </div>
 
-<script>
-    CloudZoom.quickStart();
+<?php if (count($this->getGalleryImages()) > 0): ?>
+    <div class="more-views">
+        <h2><?php echo $this->__('More Views') ?></h2>
+        <ul class="product-image-thumbs">
+            <?php foreach ($this->getGalleryImages() as $_image): ?>
+                <?php if ($this->isGalleryImageVisible($_image)): ?>
+                    <li>
+                        <img class="cloudzoom-gallery"
+                             src="<?= $this->helper('catalog/image')->init($_product, 'thumbnail', $_image->getFile())->resize(75) ?>"
+                             data-cloudzoom="useZoom: '.cloudzoom',
+                             image: '<?= $this->helper('catalog/image')->init($_product, 'thumbnail', $_image->getFile())->resize(500, 500) ?>',
+                             zoomImage: '<?= $this->helper('catalog/image')->init($_product, 'thumbnail', $_image->getFile())->resize(1000, 1000) ?>'"
+                             width="75" height="75" alt="<?php echo $this->escapeHtml($_image->getLabel()) ?>" />
+                    </li>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </ul>
+    </div>
 
-    $(function () {
-        // Bind a click event to a Cloud Zoom instance.
-        $('#main-image').bind('click', function () {
-            var cloudZoom = $(this).data('CloudZoom');
-            cloudZoom.closeZoom();
-            console.log(cloudZoom.getGalleryList());
-            $.fancybox.open(cloudZoom.getGalleryList());
-            return false;
+    <script>
+        CloudZoom.quickStart();
+
+        $.fn.CloudZoom.defaults.tintColor = '#061EAA';
+        $.fn.CloudZoom.defaults.tintOpacity = 0.4;
+        $.fn.CloudZoom.defaults.zoomWidth = 500;
+        $.fn.CloudZoom.defaults.zoomHeight = 500;
+
+
+        $(function () {
+            $('#myCloudZoom').bind('click', function () {
+                var cloudZoom = $(this).data('CloudZoom');
+
+                cloudZoom.closeZoom();
+                $.fancybox.open(cloudZoom.getGalleryList());
+                return false;
+            });
         });
-    });
-</script>
+    </script>
+<?php endif; ?>
 <?php echo $this->getChildHtml('after'); ?>
