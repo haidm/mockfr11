@@ -15,7 +15,7 @@ class Dangnd_Bestseller_Block_Bestseller extends Mage_Catalog_Block_Product_Abst
 
         if($catId) {
             $cat = Mage::getModel('catalog/category')->load($catId);
-            $list = $list->addCategoryFilter($cat);
+            $list = Mage::getResourceModel('reports/product_collection')->addCategoryFilter($cat);
         }
         $list = $this->_addProductAttributesAndPrices($list)
             ->addAttributeToFilter('visibility', 4);

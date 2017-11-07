@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <layout>
+    <default>
+        <reference name="head">
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/swiper.min.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/swiper.min.css</name>
+            </action>
+        </reference>
+    </default>
     <cms_page>
         <reference name="content">
             <block type="dangnd_bestseller/bestseller" name="dangnd.bestseller" template="mybestseller/slide.phtml"
                    after="content"/>
         </reference>
     </cms_page>
+    <catalog_category_layered>
+        <reference name="content">
+            <block type="dangnd_bestseller/bestseller" name="dangnd.bestseller" template="mybestseller/slide.phtml"
+                   after="product_list_toolbar_pager"/>
+        </reference>
+    </catalog_category_layered>
 </layout>

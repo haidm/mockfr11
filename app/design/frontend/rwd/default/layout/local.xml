@@ -1,40 +1,4 @@
 <?xml version="1.0"?>
 <layout>
-    <default>
-        <reference name="head">
-            <action method="addItem">
-                <type>skin_js</type>
-                <name>js/swiper.min.js</name>
-            </action>
-            <action method="addItem">
-                <type>skin_css</type>
-                <name>css/swiper.min.css</name>
-            </action>
-        </reference>
-    </default>
-    <catalog_product_view>
-        <reference name="head">
-            <action method="addItem">
-                <type>skin_css</type>
-                <name>css/cloudzoom.css</name>
-            </action>
-            <action method="addItem">
-                <type>skin_css</type>
-                <name>css/fancybox.min.css</name>
-            </action>
-            <action method="addItem">
-                <type>skin_js</type>
-                <name>js/cloudzoom.js</name>
-            </action>
-            <action method="addItem">
-                <type>skin_js</type>
-                <name>js/fancybox.min.js</name>
-            </action>
-        </reference>
-        <reference name="product.info.media">
-            <action method="setTemplate">
-                <template>myzoom/index.phtml</template>
-            </action>
-        </reference>
-    </catalog_product_view>
+
 </layout>

@@ -11,6 +11,10 @@ class Dangnd_Bestseller_Model_EffectSlide
     {
         return [
             [
+                'label' => 'None',
+                'value' => ''
+            ],
+            [
                 'label' => 'Fade',
                 'value' => 'fade'
             ],
