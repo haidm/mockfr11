@@ -5,18 +5,15 @@
             <version>0.1.0</version>
         </Dangnd_Zoom>
     </modules>
-    <global>
-        <blocks>
-            <dangnd_zoom>
-                <class>Dangnd_Zoom_Block</class>
-            </dangnd_zoom>
-        </blocks>
-        <helpers>
-            <dangnd_zoom>
-                <class>Dangnd_Zoom_Helper</class>
-            </dangnd_zoom>
-        </helpers>
-    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <dangnd_bestseller>
+                    <file>dangnd_zoom.xml</file>
+                </dangnd_bestseller>
+            </updates>
+        </layout>
+    </frontend>
     <admin>
         <routers>
             <adminhtml>
