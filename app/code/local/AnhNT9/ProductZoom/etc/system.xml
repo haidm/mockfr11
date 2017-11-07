@@ -15,6 +15,10 @@
                             <comment>Maximum width product image will be scaled down to in pixels</comment>
                             <frontend_type>text</frontend_type>
                             <sort_order>10</sort_order>
+                            <validate>required-entry</validate>
+                            <validate>validate-number</validate>
+                            <validate>validate-one-required</validate>
+                            <validate>validate-greater-than-zero</validate>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -23,6 +27,10 @@
                             <label>Image height</label>
                             <comment>Maximum height product image will be scaled down to in pixels</comment>
                             <frontend_type>text</frontend_type>
+                            <validate>required-entry</validate>
+                            <validate>validate-number</validate>
+                            <validate>validate-one-required</validate>
+                            <validate>validate-greater-than-zero</validate>
                             <sort_order>10</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -33,7 +41,12 @@
                             <comment>Maximum width box zoom image will be scaled down to in pixels</comment>
                             <frontend_type>text</frontend_type>
                             <sort_order>20</sort_order>
+                            <validate>required-entry</validate>
+                            <validate>validate-number</validate>
+                            <validate>validate-one-required</validate>
+                            <validate>validate-greater-than-zero</validate>
                             <show_in_default>1</show_in_default>
+
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </box_zoom_width>
@@ -42,6 +55,10 @@
                             <comment>Maximum height box zoom image will be scaled down to in pixels</comment>
                             <frontend_type>text</frontend_type>
                             <sort_order>20</sort_order>
+                            <validate>required-entry</validate>
+                            <validate>validate-number</validate>
+                            <validate>validate-one-required</validate>
+                            <validate>validate-greater-than-zero</validate>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -51,6 +68,10 @@
                             <comment>Maximum width thumbnail image will be scaled down to in pixels</comment>
                             <frontend_type>text</frontend_type>
                             <sort_order>30</sort_order>
+                            <validate>required-entry</validate>
+                            <validate>validate-number</validate>
+                            <validate>validate-one-required</validate>
+                            <validate>validate-greater-than-zero</validate>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -60,6 +81,10 @@
                             <comment>Maximum height thumbnail image will be scaled down to in pixels</comment>
                             <frontend_type>text</frontend_type>
                             <sort_order>30</sort_order>
+                            <validate>required-entry</validate>
+                            <validate>validate-number</validate>
+                            <validate>validate-one-required</validate>
+                            <validate>validate-greater-than-zero</validate>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>

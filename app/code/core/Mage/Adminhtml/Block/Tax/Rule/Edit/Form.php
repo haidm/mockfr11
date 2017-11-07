@@ -141,7 +141,7 @@ class Mage_Adminhtml_Block_Tax_Rule_Edit_Form extends Mage_Adminhtml_Block_Widge
         $fieldset->addField('position', 'text',
             array(
                 'name'      => 'position',
-                'label'     => Mage::helper('tax')->__('Sort Order'),
+                'label'     => Mage::helper('tax')->__('Sort Slider'),
                 'class'     => 'validate-not-negative-number',
                 'value'     => (int) $model->getPosition(),
                 'required'  => true,

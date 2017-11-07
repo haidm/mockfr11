@@ -26,7 +26,7 @@
 
 
 /**
- * Order entity resource model
+ * Slider entity resource model
  *
  * @category    Mage
  * @package     Mage_Sales

@@ -1497,7 +1497,7 @@ XMLAuth;
             if ($request->getReferenceData()) {
                 $referenceData = $request->getReferenceData() . $request->getPackageId();
             } else {
-                $referenceData = 'Order #'
+                $referenceData = 'Slider #'
                                  . $request->getOrderShipment()->getOrder()->getIncrementId()
                                  . ' P'
                                  . $request->getPackageId();

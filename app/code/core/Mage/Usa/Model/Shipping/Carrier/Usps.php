@@ -1610,7 +1610,7 @@ class Mage_Usa_Model_Shipping_Carrier_Usps
                                  . ' P'
                                  . $request->getPackageId();
             }
-            $xml->addChild('FromCustomsReference', 'Order #' . $referenceData);
+            $xml->addChild('FromCustomsReference', 'Slider #' . $referenceData);
         }
         $xml->addChild('ToFirstName', $request->getRecipientContactPersonFirstName());
         $xml->addChild('ToLastName', $request->getRecipientContactPersonLastName());

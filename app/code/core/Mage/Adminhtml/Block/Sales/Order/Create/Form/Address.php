@@ -25,7 +25,7 @@
  */
 
 /**
- * Order create address form
+ * Slider create address form
  *
  * @category    Mage
  * @package     Mage_Adminhtml

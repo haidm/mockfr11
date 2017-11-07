@@ -45,7 +45,7 @@ class Mage_Sales_Block_Order_Info extends Mage_Core_Block_Template
     protected function _prepareLayout()
     {
         if ($headBlock = $this->getLayout()->getBlock('head')) {
-            $headBlock->setTitle($this->__('Order # %s', $this->getOrder()->getRealOrderId()));
+            $headBlock->setTitle($this->__('Slider # %s', $this->getOrder()->getRealOrderId()));
         }
         $this->setChild(
             'payment_info',

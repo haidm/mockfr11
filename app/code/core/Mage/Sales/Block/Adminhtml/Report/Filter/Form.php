@@ -61,12 +61,12 @@ class Mage_Sales_Block_Adminhtml_Report_Filter_Form extends Mage_Adminhtml_Block
 
             $fieldset->addField('show_order_statuses', 'select', array(
                 'name'      => 'show_order_statuses',
-                'label'     => Mage::helper('reports')->__('Order Status'),
+                'label'     => Mage::helper('reports')->__('Slider Status'),
                 'options'   => array(
                         '0' => Mage::helper('reports')->__('Any'),
                         '1' => Mage::helper('reports')->__('Specified'),
                     ),
-                'note'      => Mage::helper('reports')->__('Applies to Any of the Specified Order Statuses'),
+                'note'      => Mage::helper('reports')->__('Applies to Any of the Specified Slider Statuses'),
             ), 'to');
 
             $fieldset->addField('order_statuses', 'multiselect', array(

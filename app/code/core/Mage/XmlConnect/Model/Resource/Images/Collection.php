@@ -66,7 +66,7 @@ class Mage_Xmlconnect_Model_Resource_Images_Collection extends Mage_Core_Model_R
     }
 
     /**
-     * Set Order by position
+     * Set Slider by position
      *
      * @return Mage_Xmlconnect_Model_Images_Collection
      */

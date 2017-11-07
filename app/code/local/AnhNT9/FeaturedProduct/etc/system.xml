@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <catalog>
+            <groups>
+                <product_featured translate="label">
+                    <label>Product Featured</label>
+                    <sort_order>201</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enable_product_featured translate="label comment">
+                            <label>Enable Product Featured</label>
+                            <frontend_type>select</frontend_type>
+                            <validate>required-entry</validate>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </enable_product_featured>
+                        <number_display_slider translate="label comment">
+                            <label>Number Product Display Slider</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>required-entry</validate>
+                            <validate>validate-number</validate>
+                            <validate>validate-one-required</validate>
+                            <validate>validate-greater-than-zero</validate>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </number_display_slider>
+                    </fields>
+                </product_featured>
+            </groups>
+        </catalog>
+    </sections>
+</config>

@@ -14,7 +14,11 @@ $table = $installer->getConnection()
     ->addColumn('name_slider', Varien_Db_Ddl_Table::TYPE_VARCHAR, 255, array(
         'nullable'  => false,
         'unique'    => true
-    ), 'Name-Slider');
+    ), 'Name-Slider')
+    ->addColumn('status', Varien_Db_Ddl_Table::TYPE_VARCHAR, 255, array(
+        'nullable'  => false,
+        'unique'    => true
+    ), 'Status');
 $installer->getConnection()->createTable($table);
 
 $table = $installer->getConnection()
@@ -25,14 +29,14 @@ $table = $installer->getConnection()
         'nullable'  => false,
         'primary'   => true,
     ), 'Image-Id')
-    ->addColumn('slider_id', Varien_Db_Ddl_Table::TYPE_INTEGER, null, array(
+    ->addColumn('sl_id', Varien_Db_Ddl_Table::TYPE_INTEGER, null, array(
         'unsigned'  => true,
         'nullable'  => false,
     ), 'Slider-Id')
     ->addForeignKey(
-        $installer->getFkName('slider_image', 'slider_id', 'slider_manager','slider_id'),
-        'slider_id',
-        $installer->getTable('slider_image'),
+        $installer->getFkName('slider_image', 'sl_id', 'slider_manager','slider_id'),
+        'sl_id',
+        $installer->getTable('slider_manager'),
         'slider_id',
         Varien_Db_Ddl_Table::ACTION_CASCADE,
         Varien_Db_Ddl_Table::ACTION_CASCADE
@@ -40,7 +44,11 @@ $table = $installer->getConnection()
     ->addColumn('name_image', Varien_Db_Ddl_Table::TYPE_VARCHAR, 255, array(
         'nullable'  => false,
         'unique'    => true
-    ), 'Name-Image');
+    ), 'Name-Image')
+    ->addColumn('description', Varien_Db_Ddl_Table::TYPE_VARCHAR, 255, array(
+        'nullable'  => false,
+        'unique'    => true
+    ), 'Text-Image');
 $installer->getConnection()->createTable($table);
 
 

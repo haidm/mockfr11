@@ -76,7 +76,7 @@ class Mage_XmlConnect_Block_Checkout_Payment_Method_Purchaseorder extends Mage_P
         $formXmlObj->addAttribute('method', 'post');
 
         $poNumber = $this->getInfoData('po_number');
-        $poNumberText = $this->__('Purchase Order Number');
+        $poNumberText = $this->__('Purchase Slider Number');
         $xml = <<<EOT
 <fieldset>
     <field name="payment[po_number]" type="text" label="{$poNumberText}" value="$poNumber" required="true" />

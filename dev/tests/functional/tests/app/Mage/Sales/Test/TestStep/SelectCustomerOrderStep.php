@@ -31,7 +31,7 @@ use Mage\Sales\Test\Page\Adminhtml\SalesOrderCreateIndex;
 use Magento\Mtf\TestStep\TestStepInterface;
 
 /**
- * Select Customer for Order.
+ * Select Customer for Slider.
  */
 class SelectCustomerOrderStep implements TestStepInterface
 {
@@ -61,7 +61,7 @@ class SelectCustomerOrderStep implements TestStepInterface
     }
 
     /**
-     * Select Customer for Order.
+     * Select Customer for Slider.
      *
      * @return void
      */

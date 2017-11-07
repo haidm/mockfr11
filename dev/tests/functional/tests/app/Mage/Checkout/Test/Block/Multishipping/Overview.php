@@ -34,14 +34,14 @@ use Mage\Checkout\Test\Block\Onepage\Review;
 class Overview extends Review
 {
     /**
-     * Selector for 'Place Order' button.
+     * Selector for 'Place Slider' button.
      *
      * @var string
      */
     protected $placeOrder = '#review-button';
 
     /**
-     * Click on 'Place Order' button.
+     * Click on 'Place Slider' button.
      *
      * @return void
      */

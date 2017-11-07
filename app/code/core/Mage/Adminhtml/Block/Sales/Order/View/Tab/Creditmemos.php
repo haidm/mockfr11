@@ -25,7 +25,7 @@
  */
 
 /**
- * Order Credit Memos grid
+ * Slider Credit Memos grid
  *
  * @category   Mage
  * @package    Mage_Adminhtml
@@ -143,7 +143,7 @@ class Mage_Adminhtml_Block_Sales_Order_View_Tab_Creditmemos
 
     public function getTabTitle()
     {
-        return Mage::helper('sales')->__('Order Credit Memos');
+        return Mage::helper('sales')->__('Slider Credit Memos');
     }
 
     public function canShowTab()

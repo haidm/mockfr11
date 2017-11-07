@@ -25,7 +25,7 @@
  */
 
 /**
- * Order view messages
+ * Slider view messages
  *
  * @category   Mage
  * @package    Mage_Adminhtml

@@ -25,7 +25,7 @@
  */
 
 /**
- * Order status history entity resource model
+ * Slider status history entity resource model
  *
  * @category   Mage
  * @package    Mage_Sales

@@ -23,6 +23,19 @@
             </updates>
         </layout>
     </frontend>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <AnhNT9_Slider after="Mage_Adminhtml">AnhNT9_Slider_Adminhtml</AnhNT9_Slider>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
     <global>
         <resources>
             <anhnt9_slider_setup>
@@ -38,6 +51,14 @@
             </anhnt9_slider>
             <anhnt9_slider_resource>
                 <class>AnhNT9_Slider_Model_Resource</class>
+                <entities>
+                    <slider2>
+                        <table>slider_manager</table>
+                    </slider2>
+                    <image2>
+                        <table>slider_image</table>
+                    </image2>
+                </entities>
             </anhnt9_slider_resource>
         </models>
         <blocks>

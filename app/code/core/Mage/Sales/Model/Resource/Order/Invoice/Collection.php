@@ -49,7 +49,7 @@ class Mage_Sales_Model_Resource_Order_Invoice_Collection extends Mage_Sales_Mode
     protected $_eventObject    = 'order_invoice_collection';
 
     /**
-     * Order field for setOrderFilter
+     * Slider field for setOrderFilter
      *
      * @var string
      */

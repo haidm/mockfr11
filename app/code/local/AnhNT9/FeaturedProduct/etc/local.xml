@@ -1,0 +1,18 @@
+<blocks>
+    <catalog>
+        <rewrite>
+            <product_featured>AnhNT9_FeaturedProduct_Block_Product_Featured</product_featured>
+        </rewrite>
+    </catalog>
+</blocks>
+
+<blocks>
+<catalog>
+    <rewrite>
+        <product_featured>AnhNT9_FeaturedProduct_Block_Product_Featured</product_featured>
+    </rewrite>
+    <rewrite>
+        <category_view>AnhNT9_FeaturedProduct_Block_Product_Html</category_view>
+    </rewrite>
+</catalog>
+</blocks>

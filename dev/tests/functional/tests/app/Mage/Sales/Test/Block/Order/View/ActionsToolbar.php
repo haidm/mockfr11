@@ -30,7 +30,7 @@ use Magento\Mtf\Block\Block;
 use Magento\Mtf\Client\Locator;
 
 /**
- * Order view block.
+ * Slider view block.
  */
 class ActionsToolbar extends Block
 {

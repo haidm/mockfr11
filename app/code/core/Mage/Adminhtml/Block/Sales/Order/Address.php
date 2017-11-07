@@ -35,7 +35,7 @@ class Mage_Adminhtml_Block_Sales_Order_Address extends Mage_Adminhtml_Block_Widg
         $this->_controller = 'sales_order';
         $this->_mode       = 'address';
         parent::__construct();
-        $this->_updateButton('save', 'label', Mage::helper('sales')->__('Save Order Address'));
+        $this->_updateButton('save', 'label', Mage::helper('sales')->__('Save Slider Address'));
         $this->_removeButton('delete');
     }
 
@@ -53,7 +53,7 @@ class Mage_Adminhtml_Block_Sales_Order_Address extends Mage_Adminhtml_Block_Widg
         } else {
             $type = Mage::helper('sales')->__('Billing');
         }
-        return Mage::helper('sales')->__('Edit Order %s %s Address', $orderId, $type);
+        return Mage::helper('sales')->__('Edit Slider %s %s Address', $orderId, $type);
     }
 
     /**

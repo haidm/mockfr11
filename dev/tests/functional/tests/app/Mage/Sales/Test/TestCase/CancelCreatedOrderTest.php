@@ -39,7 +39,7 @@ use Magento\Mtf\TestCase\Injectable;
  * 1. Login to backend.
  * 2. Navigate to Sales > Orders.
  * 3. Open the created order.
- * 4. Do cancel Order.
+ * 4. Do cancel Slider.
  * 5. Perform all assertions.
  *
  * @group Order_Management_(CS)
@@ -55,7 +55,7 @@ class CancelCreatedOrderTest extends Injectable
     protected $orderIndex;
 
     /**
-     * Order view page.
+     * Slider view page.
      *
      * @var SalesOrderView
      */

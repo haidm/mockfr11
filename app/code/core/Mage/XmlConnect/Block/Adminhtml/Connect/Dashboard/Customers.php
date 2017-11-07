@@ -115,12 +115,12 @@ class Mage_XmlConnect_Block_Adminhtml_Connect_Dashboard_Customers
                 $itemListXml->addCustomChild(
                     'orders_avg_amount',
                     $orderHelper->preparePrice($item->getOrdersAvgAmount(), $storeId),
-                    array('label' => $this->__('Average Order Amount'))
+                    array('label' => $this->__('Average Slider Amount'))
                 );
                 $itemListXml->addCustomChild(
                     'orders_sum_amount',
                     $orderHelper->preparePrice($item->getOrdersSumAmount(), $storeId),
-                    array('label' => $this->__('Total Order Amount'))
+                    array('label' => $this->__('Total Slider Amount'))
                 );
             }
         }

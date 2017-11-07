@@ -196,7 +196,7 @@ class Mage_XmlConnect_Paypal_MeclController extends Mage_XmlConnect_Controller_A
     }
 
     /**
-     * Order review after returning from PayPal
+     * Slider review after returning from PayPal
      */
     public function orderReviewAction()
     {

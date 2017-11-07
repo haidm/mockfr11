@@ -1,0 +1,156 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 8.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-8.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     rwd_default
+ * @copyright   Copyright (c) 2006-2017 X.commerce, Inc. and affiliates (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-8.0.php  Academic Free License (AFL 8.0)
+ */
+?>
+<?php if ($featured_products = $this->getFeaturedProducts()): ?>
+    <?php
+    $enable_product_featured = Mage::getStoreConfig('catalog/product_featured/enable_product_featured');
+    $slidesPerView = Mage::getStoreConfig('catalog/product_featured/number_display_slider');
+    if (isset($enable_product_featured) && $enable_product_featured == 1) :?>
+        <?php shuffle($featured_products); ?>
+        <?php $this->getLayout()->getBlock('head')->setTitle('My Slider'); ?>
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="skin/frontend/rwd/default/css/swiper.min.css">
+
+        <!-- Demo styles -->
+        <style>
+            .product-featured {
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                overflow: hidden;
+                z-index: 1;
+                width: 100%;
+                height: 400px;
+            }
+        </style>
+        <div class="box recently" style="padding-left:15px; padding-right:15px;">
+            <div style="text-align: center;">
+                <h2><?php echo $this->__('Featured Products') ?></h2>
+            </div>
+            <div class="listing-type-grid  catalog-listing">
+                <?php $_collectionSize = count($featured_products) ?>
+                <table style="margin-left: 100px" cellspacing="0" class="recently-list" id="product-list-table">
+                    <?php
+                    $i = 0;
+                    foreach ($featured_products->getItems() as $_res): ?>
+                        <?php $_product = Mage::getModel('catalog/product')->load($_res->getId()); ?>
+
+                        <?php if ($i++ % 5 == 0): ?><tr><?php endif ?>
+                        <td>
+                            <div>
+                                <a href="<?php echo $_product->getProductUrl() ?>"
+                                   title="<?php echo $this->htmlEscape($_product->getName()) ?>">
+                                    <img style="margin-right: 40px;" class="product-image"
+                                         src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(135, 135); ?>"
+                                         width="155" height="135"
+                                         alt="<?php echo $this->htmlEscape($_product->getName()) ?>"/>
+                                </a>
+                            </div>
+                            <div class="product-info" style="text-align: center">
+                                <h3 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>"
+                                                            title="<?php echo $this->stripTags($_product->getName(), null, true) ?>"><?php echo $this->helper('catalog/output')->productAttribute($_product, $_product->getName(), 'name') ?></a>
+                                </h3>
+                                <?php echo $this->getPriceHtml($_product, true, '-widget-new-grid') ?>
+                                <?php echo $this->getReviewsSummaryHtml($_product, 'short') ?>
+                            </div>
+                            <?php echo $this->getReviewsSummaryHtml($_product, 'short') ?>
+                        </td>
+                        <?php if ($i % 5 == 0 && $i != $_collectionSize): ?></tr><?php endif ?>
+                        <?php if ($i == 5): break; ?>&nbsp;<?php endif ?>
+                    <?php endforeach ?>
+                    <?php for ($i; $i % 5 != 0; $i++): ?>
+                        <td class="empty-product">&nbsp;</td>
+                    <?php endfor ?>
+                    <?php if ($i % 5 == 0): ?>&nbsp;<?php endif ?>
+                </table>
+                <script type="text/javascript">decorateTable('product-list-table')</script>
+            </div>
+        </div>
+        <!-- Swiper -->
+        <div class="product-featured">
+            <div class="swiper-wrapper">
+                <?php foreach ($featured_products->getItems() as $_res): ?>
+                    <?php $_product = Mage::getModel('catalog/product')->load($_res->getId()); ?>
+                    <div class="swiper-slide">
+                        <a href="<?php echo $_product->getProductUrl() ?>"
+                           title="<?php echo $this->htmlEscape($_product->getName()) ?>">
+                            <img class="product-image"
+                                 src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(185, 185); ?>"
+                                 alt="<?php echo $this->htmlEscape($_product->getName()) ?>"/>
+                        </a>
+
+                    </div>
+                <?php endforeach ?>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <!-- Swiper JS -->
+        <script src="skin/frontend/rwd/default/js/swiper.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.product-featured', {
+                centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                slidesPerView: <?php echo $slidesPerView; ?>,
+                spaceBetween: 50,
+                // init: false,
+                breakpoints: {
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 40,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    }
+                }
+            });
+        </script>
+    <?php endif; ?>
+<?php endif; ?>

@@ -25,7 +25,7 @@
  */
 
 /**
- * Order information tab
+ * Slider information tab
  *
  * @category   Mage
  * @package    Mage_Adminhtml
@@ -127,7 +127,7 @@ class Mage_Adminhtml_Block_Sales_Order_View_Tab_Info
 
     public function getTabTitle()
     {
-        return Mage::helper('sales')->__('Order Information');
+        return Mage::helper('sales')->__('Slider Information');
     }
 
     public function canShowTab()

@@ -65,6 +65,6 @@ class AssertOrderStatusIsCorrect extends AbstractConstraint
      */
     public function toString()
     {
-        return 'Order status is correct.';
+        return 'Slider status is correct.';
     }
 }

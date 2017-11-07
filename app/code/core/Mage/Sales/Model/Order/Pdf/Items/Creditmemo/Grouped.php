@@ -25,7 +25,7 @@
  */
 
 /**
- * Sales Order Creditmemo Pdf grouped items renderer
+ * Sales Slider Creditmemo Pdf grouped items renderer
  *
  * @category   Mage
  * @package    Mage_Sales

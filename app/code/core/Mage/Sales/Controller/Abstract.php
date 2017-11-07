@@ -101,7 +101,7 @@ abstract class Mage_Sales_Controller_Abstract extends Mage_Core_Controller_Front
     }
 
     /**
-     * Order view page
+     * Slider view page
      */
     public function viewAction()
     {
@@ -171,7 +171,7 @@ abstract class Mage_Sales_Controller_Abstract extends Mage_Core_Controller_Front
     }
 
     /**
-     * Print Order Action
+     * Print Slider Action
      */
     public function printAction()
     {

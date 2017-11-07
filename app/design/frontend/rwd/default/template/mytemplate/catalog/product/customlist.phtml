@@ -34,6 +34,8 @@
 ?>
 <?php
 $_productCollection=$this->getLoadedProductCollection();
+$enable_product_featured = Mage::getStoreConfig('catalog/product_featured/enable_product_featured');
+$slidesPerView = Mage::getStoreConfig('catalog/product_featured/number_display_slider');
 $_helper = $this->helper('catalog/output');
 ?>
 <?php if(!$_productCollection->count()): ?>
@@ -55,13 +57,13 @@ $_helper = $this->helper('catalog/output');
                                 $product_label_item = $_product->getResource()->getAttribute('product_label')->getFrontend()->getOption($attr_id);
 
                                 if ($product_label_item == 'Sale') {
-                                    echo '<span class="onsale"></span>';
+                                    echo '<span class="onsale" style="left: 168px;top: -2px"></span>';
                                 }
                                 if ($product_label_item == 'New') {
                                     echo '<div class="ribbon-top-left"><div class="ribbon">New</div></div>';
                                 }
                                 if ($product_label_item == 'Promotion') {
-                                    echo '<div class="ribbon-bottom-right"><div class="ribbon-right">Promition</div></div>';
+                                    echo '<div style="top: 90px;left: 165px;" class="ribbon-bottom-right"><div class="ribbon-right">Promition</div></div>';
                                 }
                             }
                         }
@@ -227,3 +229,109 @@ if ($this->getChild('after')) {
     }
 }
 ?>
+<?php if (isset($enable_product_featured) && $enable_product_featured == 1) : ?>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="../skin/frontend/rwd/default/css/swiper.min.css">
+    <!-- Demo styles -->
+    <style>
+        html, body {
+            position: relative;
+            height: 100%;
+        }
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color:#000;
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    </style>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <?php foreach ($_productCollection as $_product): ?>
+                <?php if (!empty($_product->getData('product_label'))): ?>
+                    <?php $product_label = explode(',', $_product->getData('product_label'));
+                    foreach ($product_label as $attr_id):?>
+                        <div class="swiper-slide">
+                            <a href="<?php echo $_product->getProductUrl() ?>"
+                               title="<?php echo $this->htmlEscape($_product->getName()) ?>">
+                                <img class="product-image"
+                                     src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(185, 185); ?>"
+                                     alt="<?php echo $this->htmlEscape($_product->getName()) ?>"/>
+                            </a>
+                        </div>
+                    <?php endforeach ?>
+                <?php endif; ?>
+            <?php endforeach ?>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="../skin/frontend/rwd/default/js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            slidesPerView: <?php echo $slidesPerView; ?>,
+            spaceBetween: 50,
+            // init: false,
+            breakpoints: {
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                }
+            }
+        });
+    </script>
+<?php endif; ?>
