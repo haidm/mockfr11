@@ -29,6 +29,7 @@
             height: 110px;
         }
     </style>
+    <h2 align="center">Best Seller Product</h2>
     <div class="swiper-container best-seller">
         <div class="swiper-wrapper">
             <?php foreach ($products->getItems() as $product): ; ?>
@@ -53,10 +54,6 @@
             slidesPerView: <?php echo Mage::getStoreConfig('general/hungbd_bestseller/slider_per_view_home'); ?>,
             spaceBetween: 10,
             centeredSlides: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
             autoplay: {
                 delay: 5000,
             },

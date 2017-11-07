@@ -17,11 +17,12 @@ class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_Edit_Tab_ProductLink extends Mage
     protected function _prepareForm()
     {
         $form = new Varien_Data_Form();
+        $menuItem = Mage::registry('menuitem_model');
         $model = Mage::registry('product_list');
         foreach ($model as $key => $item){
             $data[$key]['label'] = $item->name." ($item->sku)";
             $data[$key]['value'] = $item->sku;
-            if ($model->name == $item->name){
+            if ($menuItem->getName() == $item->name){
                 $select = $item->sku;
             }
         }

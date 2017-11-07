@@ -23,9 +23,9 @@ class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_Edit extends Mage_Adminhtml_Block
         $this->_objectId = 'id';
         $this->_controller = 'adminhtml_menuitem';
         $this->_blockGroup = 'hungbd_megamenu';
-        $this->_headerText = Mage::helper('core')
-            ->__('Menu item');
         $model = Mage::registry('menuitem_model');
+        $this->_headerText = Mage::helper('core')
+            ->__('Menu item '.$model->getName());
         $this->_updateButton('save', 'label', Mage::helper('core')->__('Save Menu Item'));
         $this->_updateButton('delete', array(
             'label'     => Mage::helper('core')->__('Delete Menu Item'),

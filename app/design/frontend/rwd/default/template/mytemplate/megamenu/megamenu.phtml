@@ -1,15 +1,45 @@
+<script>
+    var $ = jQuery.noConflict();
+</script>
 <?php $firstMenuItem = Mage::getModel('hungbd_megamenu/menuitem')->getCollection()->addFilter('level','0'); ?>
 <?php $maxLevel = Mage::getStoreConfig('general/hungbd_megamenu/level'); ?>
 <?php $listMenuItem = Mage::getModel('hungbd_megamenu/menuitem')->getCollection();?>
-<?php $nav = 'nav'; $count = 0;?>
-<nav id="nav">
-    <ol class="nav-primary">
+<nav class="main-nav" role="navigation">
+    <ul id="main-menu" class="sm sm-blue">
         <?php foreach ($firstMenuItem as $key => $item): ?>
-            <?php $newnav = $nav.'-'.$count; $count++; ?>
-            <li class="level0 <?php echo $newnav; ?>">
-                <a href="<?php echo $item->link;?>" class="level0"><?php echo $item->name; ?></a>
-                    <?php $this->getChildItem($item,$maxLevel,$listMenuItem); ?>
+            <li>
+                <a href="<?php echo $item->link;?>"><?php echo $item->name; ?></a>
+                <?php $this->getChildItem($item,$maxLevel,$listMenuItem); ?>
             </li>
         <?php endforeach; ?>
-    </ol>
+    </ul>
 </nav>
+
+<script type="text/javascript">
+    $(function() {
+        $('#main-menu').smartmenus({
+            subMenusSubOffsetX: 1,
+            subMenusSubOffsetY: -8
+        });
+    });
+    $(function() {
+        var $mainMenuState = $('#main-menu-state');
+        if ($mainMenuState.length) {
+            // animate mobile menu
+            $mainMenuState.change(function(e) {
+                var $menu = $('#main-menu');
+                if (this.checked) {
+                    $menu.hide().slideDown(250, function() { $menu.css('display', ''); });
+                } else {
+                    $menu.show().slideUp(250, function() { $menu.css('display', ''); });
+                }
+            });
+            // hide mobile menu beforeunload
+            $(window).bind('beforeunload unload', function() {
+                if ($mainMenuState[0].checked) {
+                    $mainMenuState[0].click();
+                }
+            });
+        }
+    });
+</script>

@@ -18,11 +18,12 @@ class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_Edit_Tab_CategoryLink extends Mag
     protected function _prepareForm()
     {
         $form = new Varien_Data_Form();
+        $menuItem = Mage::registry('menuitem_model');
         $model = Mage::registry('category');
         foreach ($model as $key => $item){
             $data[$key]['label'] = $item->name;
             $data[$key]['value'] = $item->getId();
-            if ($model->name == $item->name){
+            if ($menuItem->getName() == $item->name){
                 $select = $item->getId();
             }
         }

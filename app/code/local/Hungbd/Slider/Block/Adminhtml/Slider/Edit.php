@@ -23,9 +23,9 @@ class Hungbd_Slider_Block_Adminhtml_Slider_Edit extends Mage_Adminhtml_Block_Wid
         $this->_objectId = 'id';
         $this->_controller = 'adminhtml_slider';
         $this->_blockGroup = 'hungbd_slider';
-        $this->_headerText = Mage::helper('core')
-            ->__('Image');
         $model = Mage::registry('slider');
+        $this->_headerText = Mage::helper('core')
+            ->__('Slider '.$model->getName());
         $this->_updateButton('save', 'label', Mage::helper('core')->__('Save Image'));
         $this->_updateButton('delete', array(
             'label'     => Mage::helper('tax')->__('Delete Image'),

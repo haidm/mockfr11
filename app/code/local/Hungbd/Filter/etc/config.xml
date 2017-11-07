@@ -7,23 +7,23 @@
     </modules>
     <global>
         <models>
-            <Hungbd_Filter>
+            <hungbd_filter>
                 <class>Hungbd_Filter_Model</class>
-                <resourceModel>Hungbd_Filter_resource</resourceModel>
-            </Hungbd_Filter>
-            <Hungbd_Filter_resource>
+                <resourceModel>hungbd_filter_resource</resourceModel>
+            </hungbd_filter>
+            <hungbd_filter_resource>
                 <class>Hungbd_Filter_Model_Resource</class>
-            </Hungbd_Filter_resource>
+            </hungbd_filter_resource>
         </models>
         <blocks>
-            <Hungbd_Filter>
+            <hungbd_filter>
                 <class>Hungbd_Filter_Block</class>
-            </Hungbd_Filter>
+            </hungbd_filter>
         </blocks>
         <helpers>
-            <Hungbd_Filter>
+            <hungbd_filter>
                 <class>Hungbd_Filter_Helper</class>
-            </Hungbd_Filter>
+            </hungbd_filter>
         </helpers>
         <resources>
             <Hungbd_Filter_setup>

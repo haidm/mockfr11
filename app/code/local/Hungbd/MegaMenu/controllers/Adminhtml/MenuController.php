@@ -241,8 +241,7 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
 //            var_dump($postData);die;
             if ($postData['id']) {
                 $this->_redirectReferer();
-            }
-            else{
+            } else {
                 $this->_redirect('*/*/edit/menuitem_type/' . $postData['type']);
             }
         }

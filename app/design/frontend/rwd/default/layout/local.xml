@@ -13,14 +13,10 @@
                 <type>skin_js</type>
                 <name>js/swiper/swiper.min.js</name>
             </action>
-            <!--<action method="addItem">-->
-                <!--<type>skin_js</type>-->
-                <!--<name>js/swiper/swiper.esm.js</name>-->
-            <!--</action>-->
-            <!--<action method="addItem">-->
-                <!--<type>skin_js</type>-->
-                <!--<name>js/swiper/swiper.esm.bundle.js</name>-->
-            <!--</action>-->
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/smartmenu/jquery.smartmenus.js</name>
+            </action>
             <action method="addItem">
                 <type>skin_css</type>
                 <name>css/swiper/swiper.css</name>
@@ -28,6 +24,14 @@
             <action method="addItem">
                 <type>skin_css</type>
                 <name>css/swiper/swiper.min.css</name>
+            </action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/smartmenu/sm-core-css.css</name>
+            </action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/smartmenu/sm-blue.css</name>
             </action>
         </reference>
     </default>
