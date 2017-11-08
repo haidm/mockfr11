@@ -29,20 +29,12 @@
             <dangnd_label_setup>
                 <setup>
                     <module>Dangnd_ProductLabel</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
                 </setup>
             </dangnd_label_setup>
         </resources>
     </global>
     <frontend>
-        <routers>
-            <label>
-                <use>standard</use>
-                <args>
-                    <module>Dangnd_ProductLabel</module>
-                    <frontName>label</frontName>
-                </args>
-            </label>
-        </routers>
         <layout>
             <updates>
                 <dangnd_productlabel>
