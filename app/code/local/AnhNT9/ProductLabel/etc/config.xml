@@ -24,6 +24,13 @@
         </layout>
     </frontend>
     <global>
+        <resources>
+            <anhnt9_productlabel_setup>
+                <setup>
+                    <module>AnhNT9_ProductLabel</module>
+                </setup>
+            </anhnt9_productlabel_setup>
+        </resources>
         <models>
             <anhnt9_productlabel>
                 <class>AnhNT9_ProductLabel_Model</class>

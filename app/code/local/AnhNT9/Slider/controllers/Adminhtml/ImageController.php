@@ -96,7 +96,6 @@ class AnhNT9_Slider_Adminhtml_ImageController extends Mage_Adminhtml_Controller_
                 if (!file_exists($new_dirPath)) {
                     mkdir($new_dirPath, 0777);
                 }
-
                 $path = Mage::getBaseDir('media') . DS . $newDir . DS;
                 $uploader->save($path, $_FILES['name_image']['name']);
                 $fileName = $uploader->getUploadedFileName();
@@ -105,9 +104,16 @@ class AnhNT9_Slider_Adminhtml_ImageController extends Mage_Adminhtml_Controller_
             } catch (Exception $e) {
                 $fileType = "Invalid file format";
             }
+        }else{
+            $fileType = "Image is required";
         }
         if ($fileType == 'Invalid file format') {
             Mage::getSingleton('adminhtml/session')->addError(Mage::helper('anhnt9_slider')->__($fileName . " Invalid file format"));
+            $this->_redirect('*/*/');
+            return;
+        }
+        if ($fileType == 'Image is required') {
+            Mage::getSingleton('adminhtml/session')->addError(Mage::helper('anhnt9_slider')->__($fileName . " Image is required"));
             $this->_redirect('*/*/');
             return;
         }
@@ -241,16 +247,24 @@ class AnhNT9_Slider_Adminhtml_ImageController extends Mage_Adminhtml_Controller_
 
     public function validate(){
         $errors = array();
-        $helper = Mage::helper('anhnt9_slider');
 
-        if (!Zend_Validate::is($this->getname_image(),'NotEmpty')){
-            $errors[] = $helper->__('Please add the image.');
+        $helper = Mage::helper('customer');
+
+        if (!Zend_Validate::is($this->getName_image(), 'NotEmpty')) {
+            $errors[] = $helper->__('Review summary can\'t be empty');
         }
 
-        if (empty($errors) || $this->getShouldIgnoreValidation()) {
+        if (!Zend_Validate::is($this->getSl_id(), 'NotEmpty')) {
+            $errors[] = $helper->__('Nickname can\'t be empty');
+        }
+
+        if (!Zend_Validate::is($this->getDescreption(), 'NotEmpty')) {
+            $errors[] = $helper->__('Review can\'t be empty');
+        }
+
+        if (empty($errors)) {
             return true;
         }
-
         return $errors;
     }
 }

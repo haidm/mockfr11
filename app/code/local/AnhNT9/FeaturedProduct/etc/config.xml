@@ -24,6 +24,13 @@
         </layout>
     </frontend>
     <global>
+        <resources>
+            <anhnt9_featuredproduct_setup>
+                <setup>
+                    <module>AnhNT9_FeaturedProduct</module>
+                </setup>
+            </anhnt9_featuredproduct_setup>
+        </resources>
         <models>
             <anhnt9_featuredproduct>
                 <class>AnhNT9_FeaturedProduct_Model</class>

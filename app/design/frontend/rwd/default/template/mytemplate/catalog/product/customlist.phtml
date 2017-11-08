@@ -34,6 +34,9 @@
 ?>
 <?php
 $_productCollection=$this->getLoadedProductCollection();
+$_productFeatured = Mage::getModel('catalog/product')->getCollection()
+    ->addAttributeToFilter('is_featured', array(1))
+    ->addAttributeToFilter('status', array(1));
 $enable_product_featured = Mage::getStoreConfig('catalog/product_featured/enable_product_featured');
 $slidesPerView = Mage::getStoreConfig('catalog/product_featured/number_display_slider');
 $_helper = $this->helper('catalog/output');
@@ -271,19 +274,17 @@ if ($this->getChild('after')) {
     </style>
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <?php foreach ($_productCollection as $_product): ?>
-                <?php if (!empty($_product->getData('product_label'))): ?>
-                    <?php $product_label = explode(',', $_product->getData('product_label'));
-                    foreach ($product_label as $attr_id):?>
+            <?php foreach ($_productCollection->getItems() as $_res): ?>
+                <?php $_product = Mage::getModel('catalog/product')->load($_res->getId()); ?>
+                <?php if (!empty($_product->getData('is_featured')) && $_product->getData('is_featured') == 1): ?>
                         <div class="swiper-slide">
                             <a href="<?php echo $_product->getProductUrl() ?>"
                                title="<?php echo $this->htmlEscape($_product->getName()) ?>">
                                 <img class="product-image"
-                                     src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(185, 185); ?>"
+                                     src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(135, 135); ?>"
                                      alt="<?php echo $this->htmlEscape($_product->getName()) ?>"/>
                             </a>
                         </div>
-                    <?php endforeach ?>
                 <?php endif; ?>
             <?php endforeach ?>
         </div>
