@@ -78,7 +78,7 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
             $menuItemModel->load($menuItemId);
             if (!$menuItemModel->getId()) {
                 Mage::getSingleton('adminhtml/session')
-                    ->addError(Mage::helper('core')->__('Menu item ko ton tai!'));
+                    ->addError(Mage::helper( 'core')->__('Menu item ko ton tai!'));
                 $this->_redirect('*/*/');
                 return;
             }

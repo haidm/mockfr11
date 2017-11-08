@@ -1,3 +1,4 @@
+<?php $productPerView = (int)Mage::getStoreConfig('general/hungbd_bestseller/slider_per_view_home'); ?>
 <?php if (($products = $this->getBestSellerProduct())): ?>
     <style>
         .best-seller {
@@ -51,7 +52,7 @@
     </div>
     <script>
         var swiper = new Swiper('.best-seller', {
-            slidesPerView: <?php echo Mage::getStoreConfig('general/hungbd_bestseller/slider_per_view_home'); ?>,
+            slidesPerView: <?php echo $productPerView; ?>,
             spaceBetween: 10,
             centeredSlides: true,
             autoplay: {

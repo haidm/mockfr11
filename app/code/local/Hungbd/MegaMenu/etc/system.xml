@@ -3,7 +3,7 @@
         <general>
             <groups>
                 <hungbd_megamenu translate="label">
-                    <label>Menu item config</label>
+                    <label>Mega Menu config</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>0</sort_order>
                     <show_in_default>1</show_in_default>
