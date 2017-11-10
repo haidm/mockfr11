@@ -34,15 +34,6 @@
         </resources>
     </global>
     <frontend>
-        <routers>
-            <bestseller>
-                <use>standard</use>
-                <args>
-                    <module>Dangnd_Bestseller</module>
-                    <frontName>bestseller</frontName>
-                </args>
-            </bestseller>
-        </routers>
         <layout>
             <updates>
                 <dangnd_bestseller>
