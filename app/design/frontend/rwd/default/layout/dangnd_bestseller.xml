@@ -14,13 +14,13 @@
     </default>
     <cms_page>
         <reference name="content">
-            <block type="dangnd_bestseller/bestseller" name="dangnd.bestseller" template="mybestseller/slide.phtml"
+            <block type="dangnd_bestseller/bestseller" name="dangnd.bestseller" template="dangnd/bestseller/slide.phtml"
                    after="content"/>
         </reference>
     </cms_page>
     <catalog_category_layered>
         <reference name="content">
-            <block type="dangnd_bestseller/bestseller" name="dangnd.bestseller" template="mybestseller/slide.phtml"
+            <block type="dangnd_bestseller/bestseller" name="dangnd.bestseller" template="dangnd/bestseller/slide.phtml"
                    after="product_list_toolbar_pager"/>
         </reference>
     </catalog_category_layered>

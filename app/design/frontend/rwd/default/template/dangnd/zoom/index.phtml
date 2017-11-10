@@ -35,19 +35,24 @@
 <?php
 $_product = $this->getProduct();
 $_helper = $this->helper('catalog/output');
-$mainImgHeight = '500';
-$mainImgWidth = '500';
+$zoomHeight = $zoomWidth = $mainImgHeight = $mainImgWidth = '500';
 if (!empty(Mage::getStoreConfig('myzoom/main_image/height'))) {
     $mainImgHeight = Mage::getStoreConfig('myzoom/main_image/height');
 }
 if (!empty(Mage::getStoreConfig('myzoom/main_image/width'))) {
     $mainImgWidth = Mage::getStoreConfig('myzoom/main_image/width');
 }
+if (!empty(Mage::getStoreConfig('myzoom/zoom_image/height'))) {
+    $zoomHeight = Mage::getStoreConfig('myzoom/zoom_image/height');
+}
+if (!empty(Mage::getStoreConfig('myzoom/zoom_image/width'))) {
+    $zoomWidth = Mage::getStoreConfig('myzoom/zoom_image/width');
+}
 ?>
 <style>
     #myCloudZoom {
-        max-height : <?= $mainImgHeight ?>px;
-        max-width  : <?= $mainImgWidth ?>px;
+        max-height : <?php echo $mainImgHeight ?>px;
+        max-width  : <?php echo $mainImgWidth ?>px;
     }
 
     .cloudzoom-gallery {
@@ -63,8 +68,8 @@ if (!empty(Mage::getStoreConfig('myzoom/main_image/width'))) {
 <div class="product-image product-image-zoom">
     <div class="product-image-gallery">
         <img id='myCloudZoom' class="cloudzoom"
-             src="<?= $this->helper('catalog/image')->init($_product, 'small_image') ?>"
-             data-cloudzoom="zoomImage: '<?= $this->helper('catalog/image')->init($_product, 'image')->resize($mainImgHeight*3, $mainImgWidth*3) ?>'"/>
+             src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($mainImgWidth, $mainImgHeight) ?>"
+             data-cloudzoom="zoomImage: '<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize($mainImgWidth*2, $mainImgHeight*2) ?>'"/>
     </div>
 </div>
 
@@ -76,24 +81,24 @@ if (!empty(Mage::getStoreConfig('myzoom/main_image/width'))) {
                 <?php if ($this->isGalleryImageVisible($_image)): ?>
                     <li>
                         <img class="cloudzoom-gallery"
-                             src="<?= $this->helper('catalog/image')->init($_product, 'thumbnail', $_image->getFile())->resize(75) ?>"
+                             src="<?php echo $this->helper('catalog/image')->init($_product, 'thumbnail', $_image->getFile())->resize(75) ?>"
                              data-cloudzoom="useZoom: '.cloudzoom',
-                             image: '<?= $this->helper('catalog/image')->init($_product, 'thumbnail', $_image->getFile())->resize($mainImgWidth, $mainImgHeight) ?>',
-                             zoomImage: '<?= $this->helper('catalog/image')->init($_product, 'thumbnail', $_image->getFile())->resize(1500, 1500) ?>'"
+                             image: '<?php echo $this->helper('catalog/image')->init($_product, 'thumbnail', $_image->getFile())->resize($mainImgWidth, $mainImgHeight) ?>',
+                             zoomImage: '<?php echo $this->helper('catalog/image')->init($_product, 'thumbnail', $_image->getFile())->resize(1500, 1500) ?>'"
                              width="75" height="75" alt="<?php echo $this->escapeHtml($_image->getLabel()) ?>" />
                     </li>
                 <?php endif; ?>
             <?php endforeach; ?>
         </ul>
     </div>
-
+<?php endif; ?>
     <script>
         CloudZoom.quickStart();
 
         $.fn.CloudZoom.defaults.tintColor = '#061EAA';
         $.fn.CloudZoom.defaults.tintOpacity = 0.4;
-        $.fn.CloudZoom.defaults.zoomWidth = 500;
-        $.fn.CloudZoom.defaults.zoomHeight = 500;
+        $.fn.CloudZoom.defaults.zoomWidth = <?php echo $zoomWidth ?>;
+        $.fn.CloudZoom.defaults.zoomHeight = <?php echo $zoomHeight ?>;
 
 
         $(function () {
@@ -106,5 +111,4 @@ if (!empty(Mage::getStoreConfig('myzoom/main_image/width'))) {
             });
         });
     </script>
-<?php endif; ?>
 <?php echo $this->getChildHtml('after'); ?>

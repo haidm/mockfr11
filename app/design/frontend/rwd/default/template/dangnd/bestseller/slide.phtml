@@ -25,7 +25,22 @@ if ($active) {
                     ?>
                     <div class="swiper-slide">
                         <a href="<?php echo $item->getProductUrl() ?>"
-                           title="<?php echo $this->stripTags($item->getName(), null, true) ?>" class="product-image">
+                           title="<?php echo $this->stripTags($item->getName(), null, true) ?>"
+                           class="product-image prd-link">
+                            <?php $label = $item->getProduct_label(); ?>
+                            <?php if(strpos($label, 'new') !== false) {?>
+                                <div class="mylabel new-prd">
+                                    <div class="new-label">New</div>
+                                </div>
+                            <?php } ?>
+                            <?php if(strpos($label, 'sale') !== false) {?>
+                                <div class="mylabel sale-prd">
+                                    <div class="sale-label">Sale</div>
+                                </div>
+                            <?php } ?>
+                            <?php if(strpos($label, 'promotion') !== false) {?>
+                                <div class="promotion-label">Promotion</div>
+                            <?php } ?>
                             <img src="<?php echo $this->helper('catalog/image')->init($item, 'small_image')->resize(210) ?>"
                                  alt="<?php echo $this->stripTags($item->getName(), null, true) ?>"/>
                         </a>
@@ -48,7 +63,6 @@ if ($active) {
             <div class="swiper-scrollbar"></div>
         </div>
     </div>
-    <script src="<?php echo Mage::getBaseUrl('skin') . 'frontend/rwd/default/js/jquery-3.2.1.min.js'  ?>"></script>
     <script>
         <?php
         $qty = 5;
@@ -65,6 +79,7 @@ if ($active) {
             slidesPerView: <?= $qty ?>,
             effect: '<?= $effect ?>',
             spaceBetween: 20,
+            mousewheel: true,
             autoplay: {
                 delay: 5000,
             },

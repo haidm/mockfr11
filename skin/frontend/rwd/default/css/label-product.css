@@ -1,0 +1,67 @@
+.prd-link {
+    position : relative;
+}
+
+.mylabel {
+    position   : absolute;
+    height     : 71px;
+    width      : 71px;
+    overflow   : hidden;
+    color      : #fff;
+    text-align : center;
+}
+
+.new-prd {
+    left : -3px;
+    top  : -3px;
+}
+
+.sale-prd {
+    right : -3px;
+    top   : -3px;
+}
+
+.prom-prd {
+    right  : -3px;
+    bottom : -3px;
+}
+
+.new-label {
+    background-color  : #f90;
+    position          : relative;
+    padding           : 4px 0;
+    right             : 20.5px;
+    top               : 5px;
+    width             : 80px;
+    text-transform    : uppercase;
+    -webkit-transform : rotate(-45deg);
+    -moz-transform    : rotate(-45deg);
+    -ms-transform     : rotate(-45deg);
+    -o-transform      : rotate(-45deg);
+}
+
+.sale-label {
+    background-color  : #00ACEE;
+    position          : relative;
+    padding           : 4px 0;
+    left              : 11.5px;
+    top               : 5px;
+    width             : 80px;
+    text-transform    : uppercase;
+    -webkit-transform : rotate(45deg);
+    -moz-transform    : rotate(45deg);
+    -ms-transform     : rotate(45deg);
+    -o-transform      : rotate(45deg);
+}
+
+.promotion-label {
+    background-color          : #0F0;
+    position                  : absolute;
+    padding                   : 4px 5px;
+    bottom                    : 0;
+    right                     : 0;
+    color                     : #fff;
+    border-top-left-radius    : 10px;
+    border-bottom-left-radius : 10px;
+    text-transform            : uppercase;
+}
