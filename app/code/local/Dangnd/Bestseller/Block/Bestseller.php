@@ -30,8 +30,10 @@ class Dangnd_Bestseller_Block_Bestseller extends Mage_Catalog_Block_Product_Abst
                 ))->group('e.entity_id')
             ->joinInner(array('order' => $list->getResource()->getTable('sales/order')),
                 "order_items.order_id = order.entity_id AND order.status = 'complete'",
-                array())->order(array('ordered_qty DESC'))->limit(10);
-
+                array())
+            ->order(array('ordered_qty DESC'))
+            ->limit(10);
+        //die($list->getSelect());
         return $list->getItems();
     }
 }
