@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+        <reference name="catalog.topnav">
+            <block type="nhatbq_megamenu/megaMenu" name="catalog.topnav" template="mytemplate/megamenu/megamenu.phtml"/>
+        </reference>
+        <reference name="head">
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/swiper/swiper.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/swiper/swiper.min.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/smartmenu/jquery.smartmenus.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/swiper/swiper.css</name>
+            </action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/swiper/swiper.min.css</name>
+            </action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/smartmenu/sm-core-css.css</name>
+            </action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/smartmenu/sm-blue.css</name>
+            </action>
+        </reference>
+    </default>
+
+    <catalog_category_layered>
+        <reference name="content">
+            <block type="nhatbq_bestseller/bestSeller" template="mytemplate/bestseller/categoryslide.phtml"
+                   after="nhatbq.featured.cateogry"/>
+        </reference>
+    </catalog_category_layered>
+
+</layout>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Nhatbq_Slider>
+            <active>true</active>
+            <codePool>local</codePool>
+                    </Nhatbq_Slider>
+    </modules>
+</config>

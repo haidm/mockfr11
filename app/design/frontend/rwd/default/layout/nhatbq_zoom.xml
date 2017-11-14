@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<layout>
+    <nhatbq_zoom>
+        <block type="core/template" output="toHtml" name="zoom" template="mytemplate/catalog/product/view/media.phtml" />
+    </nhatbq_zoom>
+</layout>

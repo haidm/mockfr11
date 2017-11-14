@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <nhatbq>
+            <children>
+                <slider translate="title">
+                    <title>Slider Manager</title>
+                    <sort_order>2</sort_order>
+                    <children>
+                        <index translate="title" module="Nhatbq_Slider">
+                            <title>Slider</title>
+                            <!--Mapped to adminhtmlModulePath/controller/action-->
+                            <action>adminhtml/slider/index</action>
+                            <sort_order>0</sort_order>
+                        </index>
+                    </children>
+                    <children>
+                        <nhatbq_image translate="title" module="Nhatbq_Slider">
+                            <title>Image</title>
+                            <!--Mapped to adminhtmlModulePath/controller/action-->
+                            <action>adminhtml/image/index</action>
+                            <sort_order>1</sort_order>
+                        </nhatbq_image>
+                    </children>
+                </slider>
+            </children>
+        </nhatbq>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <catalog>
+                        <children>
+                            <slider translate="title" module="Nhatbq_Slider">
+                                <title>Slider</title>
+                            </slider>
+                        </children>
+                    </catalog>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
