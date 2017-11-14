@@ -11,7 +11,7 @@ class Dangnd_Slider_Block_Slider extends Mage_Core_Block_Template
     public function _construct()
     {
         parent::_construct();
-        $this->setTemplate('myslider/index.phtml')
+        $this->setTemplate('dangnd/slider/index.phtml')
             ->setData('list', $this->getSlider());
     }
 
