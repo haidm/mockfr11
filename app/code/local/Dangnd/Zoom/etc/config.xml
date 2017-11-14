@@ -8,9 +8,9 @@
     <frontend>
         <layout>
             <updates>
-                <dangnd_bestseller>
+                <dangnd_zoom>
                     <file>dangnd_zoom.xml</file>
-                </dangnd_bestseller>
+                </dangnd_zoom>
             </updates>
         </layout>
     </frontend>
