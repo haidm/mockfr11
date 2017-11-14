@@ -1,57 +1,62 @@
-<?php $listImage = $this->getListSlide(); ?>
-<?php $sliderType = Mage::getStoreConfig('general/hungbd_slider/slider_type'); ?>
-<style>
-    .swiper-container {
-        width: 100%;
-        height: 100%;
-        max-height: 500px;
-    }
-    .swiper-container img{
-        max-width: 100%;
-        width: 100%;
-    }
-    .top-left {
-        position: absolute;
-        top: 8px;
-        left: 16px;
-        color: red;
-        font-size: 20px;
-        font-style: inherit;
-    }
+<?php if (Mage::getStoreConfig('general/hungbd_slider/enable')): ?>
+    <?php $listImage = $this->getListSlide(); ?>
+    <?php $sliderType = Mage::getStoreConfig('general/hungbd_slider/slider_type'); ?>
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            max-height: 500px;
+        }
 
-</style>
-<div class="swiper-container">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-        <!-- Slides -->
-        <?php foreach ($listImage as $item): ?>
-        <div class="swiper-slide"><img src="<?php echo $item->link; ?>"><div class="top-left"><?php echo $item->text; ?></div>
+        .swiper-container img {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .top-left {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            color: #ff6140;
+            font-size: 24px;
+            font-style: inherit;
+        }
+
+    </style>
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <?php foreach ($listImage as $item): ?>
+                <div class="swiper-slide"><img src="<?php echo $item->link; ?>">
+                    <div class="top-left"><?php echo $item->text; ?></div>
+                </div>
+            <?php endforeach; ?>
         </div>
-        <?php endforeach; ?>
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
-</div>
-<script>
-    var swiper = new Swiper('.swiper-container', {
-        direction: '<?php echo $sliderType; ?>',
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        autoplay: {
-            delay: 5000,
-        },
-        loop: true,
-        spaceBetween: 30,
-        slidesPerView: 1,
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: true,
-        },
-    });
-</script>
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            direction: '<?php echo $sliderType; ?>',
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 5000,
+            },
+            loop: true,
+            spaceBetween: 30,
+            slidesPerView: 1,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
+        });
+    </script>
+<?php endif; ?>

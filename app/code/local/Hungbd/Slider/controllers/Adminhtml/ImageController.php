@@ -23,8 +23,8 @@ class Hungbd_Slider_Adminhtml_ImageController extends Mage_Adminhtml_Controller_
         $this->_title($this->__('Image'))->_title($this->__('Slider'));
         $this->loadLayout()
             ->_setActiveMenu('hungbd/slider')
-            ->_addBreadcrumb(Mage::helper('core')->__('Menu Item'), Mage::helper('core')->__('Menu Item'))
-            ->_addBreadcrumb(Mage::helper('core')->__('Mega Menu'), Mage::helper('core')->__('Mega Menu'));
+            ->_addBreadcrumb(Mage::helper('core')->__('Image'), Mage::helper('core')->__('Menu Item'))
+            ->_addBreadcrumb(Mage::helper('core')->__('Slider'), Mage::helper('core')->__('Mega Menu'));
         $this->_addContent($this->getLayout()->createBlock('hungbd_slider/adminhtml_image'))
             ->renderLayout();
     }
