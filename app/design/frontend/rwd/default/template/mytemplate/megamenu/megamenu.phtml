@@ -1,7 +1,4 @@
 <?php if (Mage::getStoreConfig('general/hungbd_megamenu/enable')): ?>
-    <script>
-        var $ = jQuery.noConflict();
-    </script>
     <?php $firstMenuItem = Mage::getModel('hungbd_megamenu/menuitem')->getCollection()->addFilter('level', '0'); ?>
     <?php $maxLevel = (int)Mage::getStoreConfig('general/hungbd_megamenu/level'); ?>
     <?php $listMenuItem = Mage::getModel('hungbd_megamenu/menuitem')->getCollection(); ?>
@@ -17,35 +14,38 @@
     </nav>
 
     <script type="text/javascript">
-        $(function () {
-            $('#main-menu').smartmenus({
-                subMenusSubOffsetX: 1,
-                subMenusSubOffsetY: -8
+        jQuery(document).ready(function ($) {
+            $(function () {
+                $('#main-menu').smartmenus({
+                    subMenusSubOffsetX: 1,
+                    subMenusSubOffsetY: -8
+                });
+            });
+            $(function () {
+                var $mainMenuState = $('#main-menu-state');
+                if ($mainMenuState.length) {
+                    // animate mobile menu
+                    $mainMenuState.change(function (e) {
+                        var $menu = $('#main-menu');
+                        if (this.checked) {
+                            $menu.hide().slideDown(250, function () {
+                                $menu.css('display', '');
+                            });
+                        } else {
+                            $menu.show().slideUp(250, function () {
+                                $menu.css('display', '');
+                            });
+                        }
+                    });
+                    // hide mobile menu beforeunload
+                    $(window).bind('beforeunload unload', function () {
+                        if ($mainMenuState[0].checked) {
+                            $mainMenuState[0].click();
+                        }
+                    });
+                }
             });
         });
-        $(function () {
-            var $mainMenuState = $('#main-menu-state');
-            if ($mainMenuState.length) {
-                // animate mobile menu
-                $mainMenuState.change(function (e) {
-                    var $menu = $('#main-menu');
-                    if (this.checked) {
-                        $menu.hide().slideDown(250, function () {
-                            $menu.css('display', '');
-                        });
-                    } else {
-                        $menu.show().slideUp(250, function () {
-                            $menu.css('display', '');
-                        });
-                    }
-                });
-                // hide mobile menu beforeunload
-                $(window).bind('beforeunload unload', function () {
-                    if ($mainMenuState[0].checked) {
-                        $mainMenuState[0].click();
-                    }
-                });
-            }
-        });
+
     </script>
 <?php endif; ?>

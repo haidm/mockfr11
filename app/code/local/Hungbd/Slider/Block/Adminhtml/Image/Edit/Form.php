@@ -36,8 +36,8 @@ class Hungbd_Slider_Block_Adminhtml_Image_Edit_Form extends Mage_Adminhtml_Block
         foreach ($listImage as $item) {
             $listId[$item->id] = $item->slider_id;
         }
-        $fieldset = $form->addFieldset('menuitem_form',
-            array('legend' => 'Menu item infomation'));
+        $fieldset = $form->addFieldset('slider_form',
+            array('legend' => 'Slider infomation'));
 
         if ($model->getId()) {
             $fieldset->addField('link', 'image', array(

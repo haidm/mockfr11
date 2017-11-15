@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <hungbd>
+            <children>
+                <filter translate="title">
+                    <title>Manage Filter</title>
+                    <sort_order>2</sort_order>
+                    <children>
+                        <index translate="title" module="hungbd_filter">
+                            <title>Filter</title>
+                            <!--Mapped to adminhtmlModulePath/controller/action-->
+                            <action>adminhtml/filter/index</action>
+                            <sort_order>0</sort_order>
+                        </index>
+                    </children>
+                </filter>
+            </children>
+        </hungbd>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <hungbd>
+                        <children>
+                            <filter translate="title" module="Hungbd_Filter">
+                                <title>Filter</title>
+                            </filter>
+                        </children>
+                    </hungbd>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

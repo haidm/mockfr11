@@ -37,12 +37,20 @@
     </default>
 
     <catalog_category_layered>
+        <remove name="catalog.leftnav" />
+        <remove name="catalog.leftnav.state.renderers" />
         <reference name="content">
             <block type="hungbd_featured/featured" name="hungbd.featured.cateogry"
                    template="mytemplate/featured/categoryslide.phtml"
                    after="-"/>
             <block type="hungbd_bestseller/bestSeller" template="mytemplate/bestseller/categoryslide.phtml"
                    after="hungbd.featured.cateogry"/>
+        </reference>
+        <reference name="left_first">
+            <block type="hungbd_filter/layer_view" name="hungbd.lefnav"
+                   template="catalog/layer/view.phtml">
+                <block type="core/text_list" name="hungbd.lefnav.state.renderers" as="state_renderers"/>
+            </block>
         </reference>
     </catalog_category_layered>
 

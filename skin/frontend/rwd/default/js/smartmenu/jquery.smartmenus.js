@@ -7,6 +7,8 @@
  *
  * Licensed MIT
  */
+var jQuery = jQuery.noConflict();
+jQuery( document ).ready(function( $ ) {
 (function(factory) {
 	if (typeof define === 'function' && define.amd) {
 		// AMD
@@ -1212,4 +1214,5 @@
 	};
 
 	return $;
-}));
+}));});
+	

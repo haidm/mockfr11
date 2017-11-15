@@ -5,6 +5,17 @@
             <version>0.1.0</version>
         </Hungbd_Filter>
     </modules>
+    <frontend>
+        <routers>
+            <hungbd_filter>
+                <use>standard</use>
+                <args>
+                    <module>Hungbd_Filter</module>
+                    <frontName>filter</frontName>
+                </args>
+            </hungbd_filter>
+        </routers>
+    </frontend>
     <global>
         <models>
             <hungbd_filter>
@@ -29,8 +40,20 @@
             <Hungbd_Filter_setup>
                 <setup>
                     <module>Hungbd_Filter</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
                 </setup>
             </Hungbd_Filter_setup>
         </resources>
     </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Hungbd_Filter after="Mage_Adminhtml">Hungbd_Filter_Adminhtml</Hungbd_Filter>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
 </config>

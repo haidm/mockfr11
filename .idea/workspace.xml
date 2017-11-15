@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa3ae6cf-e262-4095-a1bb-656584fa130f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/skin/frontend/rwd/default/js/smartmenu/jquery.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/magicento.xml" afterPath="$PROJECT_DIR$/.idea/magicento.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/controllers/IndexController.php" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/controllers/IndexController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/controllers/Adminhtml/MenuController.php" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/controllers/Adminhtml/MenuController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/etc/system.xml" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/etc/system.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/bestseller/categoryslide.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/bestseller/categoryslide.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/bestseller/homeslide.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/bestseller/homeslide.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/categoryslide.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/categoryslide.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/homeslide.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/homeslide.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/Filter/etc/config.xml" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/Filter/etc/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/Filter/sql/Hungbd_Filter_setup/mysql4-install-0.1.0.php" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/Filter/sql/Hungbd_Filter_setup/mysql4-install-0.1.0.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Image/Edit/Form.php" afterPath="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Image/Edit/Form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/local.xml" afterPath="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/local.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/megamenu/megamenu.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/megamenu/megamenu.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/frontend/rwd/default/js/smartmenu/jquery.smartmenus.js" afterPath="$PROJECT_DIR$/skin/frontend/rwd/default/js/smartmenu/jquery.smartmenus.js" />
     </list>
@@ -44,40 +39,73 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Productlist.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/core/Mage/ConfigurableSwatches/Helper/Productlist.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-556">
+              <caret line="70" column="84" lean-forward="false" selection-start-line="70" selection-start-column="78" selection-end-line="70" selection-end-column="84" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mysql4-install-0.1.0.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Filter/sql/Hungbd_Filter_setup/mysql4-install-0.1.0.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="color.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/filter/color.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+              <folding>
+                <element signature="e#6#967#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getLayer</find>
-      <find>_addProductAttributesAndPrices</find>
-      <find>Mage_Catalog_Block_Product_Abstract</find>
-      <find>getColumnCount</find>
-      <find>core_template`</find>
-      <find>Mage_Core_Block_template e</find>
-      <find>Mage_Core_block_tem</find>
       <find>Mage_Core_Block_Template</find>
-      <find>MAGE_CORE_BLOCK_TEMPLATE E</find>
-      <find>layered</find>
-      <find>$_product</find>
-      <find>e</find>
-      <find>Mage_catalog_model_product_</find>
-      <find>addOrderedQty</find>
-      <find>core_model_abstract</find>
-      <find>Mage_Core_Model_Abstract e</find>
-      <find>load</find>
-      <find>mage_core_block_tem</find>
-      <find>Mage_Core_Block_Template ex</find>
-      <find>Mage_Catalog_Block_Layer_Filter_Abstract</find>
-      <find>getFilters</find>
-      <find>Mage_Catalog_Block_Layer_Filter_Category</find>
-      <find>Mage_Catalog_Model_Layer_Filter_Abstract e</find>
-      <find>Mage_Core_Block_Template e</find>
-      <find>Mage_Core_Block_Abstract e</find>
-      <find>getHtml</find>
-      <find>Mage_Catalog_Block_Layer_Filter</find>
-      <find>Mage_Catalog_Block_Layer_View</find>
-      <find>set</find>
-      <find>lib/jquery/jquery-1.12.0.min.js</find>
+      <find>layer_state</find>
+      <find>getLoadedProductCollection</find>
+      <find>getProductCollection</find>
+      <find>getProductAttributes</find>
+      <find>apply()</find>
+      <find>appp</find>
+      <find>_appliedCategory</find>
+      <find>addf</find>
+      <find>addFilter</find>
+      <find>_getCategoryFilter</find>
+      <find>canShowBlock</find>
+      <find>getChild</find>
+      <find>getf</find>
+      <find>getItems</find>
+      <find>_filterable_attributes</find>
+      <find>setAttributeModel</find>
+      <find>Mage_Adminhtml_Block_Widget_Grid_Container e</find>
+      <find>getFilterableAttributes</find>
+      <find>setAttributeSetFilter</find>
+      <find>addfield</find>
+      <find>load($id)</find>
+      <find>getLayer()</find>
+      <find>getAttributeModel</find>
+      <find>getAttributeModel()</find>
+      <find>class=&quot;swatch-label&quot;</find>
+      <find>img</find>
+      <find>shouldRender()</find>
+      <find>shouldRender</find>
+      <find>swatches.phtml</find>
     </findStrings>
     <replaceStrings>
       <replace>$menuItem</replace>
@@ -100,57 +128,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Image/Renderer/GridImage.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Image/Renderer/FormImage.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Image/Grid.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/sql/Hungbd_Slider_setup/mysql4-install-0.1.0.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Image/Edit/Form.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Slider/Renderer/FormImage.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Slider/Edit/Form.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/controllers/Adminhtml/SliderController.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Model/Slider.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/etc/system.xml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/slider/slider.phtml" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Featured/sql/Hungbd_Featured_setup/install-0.1.0.php" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/featured.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/controllers/Adminhtml/ImageController.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Slider.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tab/Form.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Featured/etc/config.xml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/featured.phtml" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Featured/sql/Hungbd_Featured_setup/mysql4-install-0.1.0.php" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/product/view.phtml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/categoryfeatured.phtml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/homeslider.php" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/test.xml" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Featured/Block/Featured.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Featured/etc/system.xml" />
-        <option value="$PROJECT_DIR$/app/code/core/Mage/Reports/Model/Resource/Product/Collection.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/etc/config.xml" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/etc/system.xml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/catalog.xml" />
-        <option value="$PROJECT_DIR$/app/code/core/Mage/Core/Block/Template.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tab/CategoryLink.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tab/ProductLink.php" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/layer/view.phtml" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Slider/Edit.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Image/Edit.php" />
-        <option value="$PROJECT_DIR$/app/code/core/Mage/Catalog/Model/Layer/Filter/Abstract.php" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Filter/etc/config.xml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/page.xml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/megamenu/test.phtml" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/MegaMenu.php" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/local.xml" />
         <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/etc/system.xml" />
         <option value="$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/Block/BestSeller.php" />
         <option value="$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/controllers/Adminhtml/MenuController.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Filter/controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/app/code/core/Mage/Catalog/controllers/CategoryController.php" />
+        <option value="$PROJECT_DIR$/app/code/core/Mage/CatalogSearch/Block/Layer.php" />
+        <option value="$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Product/List.php" />
+        <option value="$PROJECT_DIR$/app/code/core/Mage/Catalog/Model/Layer.php" />
+        <option value="$PROJECT_DIR$/app/code/core/Mage/Catalog/Model/Layer/Filter/Category.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Filter/Block/CustomLayer.php" />
+        <option value="$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Layer/View.php" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/layer/filter.phtml" />
+        <option value="$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Layer/Filter/Abstract.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Filter/Model/Type.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/controllers/Adminhtml/ImageController.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Filter/controllers/adminhtml/IndexController.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Filter/controllers/adminhtml/FilterController.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Filter/etc/config.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Filter/etc/adminhtml.xml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/categoryfeatured.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/bestseller/homeslide.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/bestseller/categoryslide.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/categoryslide.phtml" />
-        <option value="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/controllers/Adminhtml/MenuController.php" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/megamenu/megamenu.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/featured.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/homeslide.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/slider/slider.phtml" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Filter/sql/Hungbd_Filter_setup/mysql4-install-0.1.0.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Filter/Block/Adminhtml/Filter.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Image/Edit/Form.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Slider/controllers/Adminhtml/SliderController.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Filter/Block/Adminhtml/Filter/Grid.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Filter/Block/Adminhtml/Filter/Edit.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Filter/Block/Adminhtml/Filter/Edit/Form.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Filter/controllers/Adminhtml/FilterController.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Filter/Block/Filter/Price.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Filter/Block/Layer/Filter/Category.php" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/layer/view.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/configurableswatches/catalog/layer/filter/swatches.phtml" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Filter/Block/Layer/View.php" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/filter/filter.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/catalog.xml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/local.xml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/megamenu/megamenu.phtml" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Filter/Block/Layer/Filter/Attribute.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Filter/Block/Layer/Filter/Price.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Filter/Block/Layer/Filter/Decimal.php" />
+        <option value="$PROJECT_DIR$/app/code/local/Hungbd/Filter/Block/Layer/Filter/Abstract.php" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/filter/select.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/filter/checkbox.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/filter/color.phtml" />
       </list>
     </option>
   </component>
@@ -162,9 +190,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="width" value="1356" />
-    <option name="height" value="555" />
+    <option name="x" value="-41" />
+    <option name="width" value="1336" />
+    <option name="height" value="559" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -201,6 +229,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -224,6 +253,96 @@
               <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Mage" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Mage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Mage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Block" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Mage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Block" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Layer" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Mage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Block" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Layer" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Mage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Mage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Layer" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Mage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Layer" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -241,7 +360,7 @@
               <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Hungbd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="MegaMenu" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="mock" type="b2602c69:ProjectViewProjectNode" />
@@ -250,7 +369,40 @@
               <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Hungbd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="MegaMenu" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Block" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Hungbd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Block" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Layer" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Hungbd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Block" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Layer" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Hungbd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -260,9 +412,30 @@
               <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Hungbd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="MegaMenu" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Adminhtml" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Hungbd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sql" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Hungbd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sql" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Hungbd_Filter_setup" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="mock" type="b2602c69:ProjectViewProjectNode" />
@@ -323,6 +496,79 @@
               <item name="rwd" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="design" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="rwd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layer" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="design" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="rwd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="configurableswatches" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="design" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="rwd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="configurableswatches" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="design" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="rwd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="configurableswatches" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layer" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="design" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="rwd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="configurableswatches" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layer" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="filter" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="design" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="rwd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="mytemplate" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -347,13 +593,24 @@
               <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="mytemplate" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="filter" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mock" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="design" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="rwd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="mytemplate" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="megamenu" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -361,13 +618,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="SearchEverywhereHistoryKey" value="swatches.&#9;FILE&#9;file:///home/hungbui/localhung/mock/app/design/frontend/rwd/default/template/configurableswatches/catalog/layer/filter/swatches.phtml" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/code/local/Hungbd/Filter/Block" />
+      <recent name="$PROJECT_DIR$/app/code/local/Hungbd/Filter/etc" />
       <recent name="$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/etc" />
       <recent name="$PROJECT_DIR$/app/code/local/Hungbd/Featured/etc" />
       <recent name="$PROJECT_DIR$/app/code/local/Hungbd/Slider/etc" />
-      <recent name="$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Slider/Renderer" />
@@ -395,6 +654,9 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -434,12 +696,21 @@
       <workItem from="1509941485159" duration="15011000" />
       <workItem from="1510020088903" duration="569000" />
       <workItem from="1510021734229" duration="18444000" />
-      <workItem from="1510106335804" duration="10986000" />
+      <workItem from="1510106335804" duration="15270000" />
+      <workItem from="1510279297092" duration="5011000" />
+      <workItem from="1510284617659" duration="12854000" />
+      <workItem from="1510365930143" duration="2565000" />
+      <workItem from="1510389016133" duration="3180000" />
+      <workItem from="1510451574076" duration="7770000" />
+      <workItem from="1510555441693" duration="13684000" />
+      <workItem from="1510624663795" duration="2777000" />
+      <workItem from="1510627552499" duration="18235000" />
+      <workItem from="1510711580760" duration="17270000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="280272000" />
+    <option name="totallyTimeSpent" value="367902000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -451,47 +722,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="768" extended-state="6" />
+    <frame x="-41" y="0" width="1366" height="768" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26176023" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28528073" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2579666" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32868218" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="MagicentoScripts" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="MagicentoScripts" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32868218" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24506828" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2579666" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="MagicentoScripts" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -501,149 +754,36 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Layer/Filter/Attribute.php">
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tab/CustomLink.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="43" column="66" lean-forward="false" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.catalog_product_link_attribute">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Layer/Filter/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="33" column="6" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tab/Form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tab/ProductLink.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="24" column="35" lean-forward="false" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Core/Block/Abstract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="947" column="48" lean-forward="false" selection-start-line="947" selection-start-column="41" selection-end-line="947" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Core/Block/Template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="34" column="63" lean-forward="false" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/CatalogSearch/Block/Layer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-727">
-          <caret line="30" column="6" lean-forward="false" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/layer/state.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tabs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="342">
+          <caret line="24" column="41" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit/Tab/CategoryLink.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="308">
+          <caret line="37" column="35" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="37" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/Adminhtml/Menuitem/Edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="27" column="38" lean-forward="false" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Image/Edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/Block/Adminhtml/Slider/Edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/layer/view.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="50" column="52" lean-forward="false" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Filter/sql/Hungbd_Filter_setup/mysql4-install-0.1.0.php">
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Model/Menuitem.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Filter/etc/config.xml">
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Filter/Model/Type.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="41" lean-forward="false" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/layout/catalog.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="117" column="43" lean-forward="true" selection-start-line="117" selection-start-column="43" selection-end-line="117" selection-end-column="43" />
-          <folding />
+        <state relative-caret-position="439">
+          <caret line="27" column="13" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="27" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -654,189 +794,316 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Layer/View.php">
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Slider/controllers/Adminhtml/SliderController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="707">
-          <caret line="141" column="5" lean-forward="true" selection-start-line="141" selection-start-column="5" selection-end-line="141" selection-end-column="5" />
+        <state relative-caret-position="504">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Filter/Block/Adminhtml/Filter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Filter/Block/Adminhtml/Filter/Grid.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="61" column="43" lean-forward="true" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Model/Layer/Filter/Price.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Filter/Block/Adminhtml/Filter/Edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="13" column="47" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Filter/Block/Filter/Price.php" />
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Filter/Block/Layer/State.php" />
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Model/Layer/Filter/Abstract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="234" column="20" lean-forward="false" selection-start-line="234" selection-start-column="20" selection-end-line="234" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/controllers/Adminhtml/MenuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="173" column="25" lean-forward="false" selection-start-line="173" selection-start-column="25" selection-end-line="173" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Filter/Block/CustomLayer.php" />
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Filter/controllers/Adminhtml/FilterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="92" column="34" lean-forward="true" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Filter/Block/Adminhtml/Filter/Edit/Form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="63" column="34" lean-forward="false" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/layer/view.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="32" column="2" lean-forward="false" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Core/Block/Abstract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="243" column="20" lean-forward="false" selection-start-line="243" selection-start-column="20" selection-end-line="243" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/categoryfeatured.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="20" lean-forward="true" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/configurableswatches/catalog/product/view/type/options/configurable/swatches.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Layer/State.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-551">
-          <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="-754">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/layer/filter.phtml">
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Layer/Filter/Price.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="30" column="39" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="39" />
+        <state relative-caret-position="430">
+          <caret line="49" column="52" lean-forward="false" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Model/Layer/Filter/Category.php">
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Layer/Filter/Decimal.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="33" column="95" lean-forward="false" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="95" />
+        <state relative-caret-position="-146">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Layer/Filter/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Layer/Filter/Attribute.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Layer/Filter/Abstract.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="67" column="6" lean-forward="true" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Model/Layer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Model/Layer/Filter/Abstract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Model/Layer/State.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="46" column="14" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="14" />
+        <state relative-caret-position="-630">
+          <caret line="94" column="7" lean-forward="true" selection-start-line="94" selection-start-column="7" selection-end-line="94" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Model/Layer/Filter/Attribute.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        <state relative-caret-position="344">
+          <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/layout/page.xml">
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Layer/View.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="38" column="51" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="74">
+          <caret line="87" column="77" lean-forward="false" selection-start-line="87" selection-start-column="55" selection-end-line="87" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Zend/Controller/Action/Helper/ViewRenderer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16446">
+          <caret line="980" column="24" lean-forward="false" selection-start-line="980" selection-start-column="24" selection-end-line="980" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/ConfigurableSwatches/Block/Catalog/Product/View/Type/Configurable/Swatches.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-178">
+          <caret line="36" column="20" lean-forward="false" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/layer/state.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20">
+          <caret line="46" column="85" lean-forward="false" selection-start-line="46" selection-start-column="73" selection-end-line="46" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Model/Layer/State.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-394">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/layer/filter.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/layout/catalog.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="116" column="16" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/megamenu/megamenu.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="28" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="12" selection-end-column="28" />
+        <state relative-caret-position="162">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/Block/MegaMenu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="28" column="44" lean-forward="false" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.menuitem">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/layout/local.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="17" column="55" lean-forward="false" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+        <state relative-caret-position="380">
+          <caret line="52" column="20" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.sales_flat_order_item">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" text="sku LIKE '%wbk009%'">
-            <filter text="sku LIKE '%wbk009%'" />
-            <filter text="sku LIKE '%ebk009%'" />
-            <filter text="product_id LIKE '%291%'" />
-            <filter text="order_id IN (51 ,57 ,122, 179 ,184 ,186 ,187 ,189 )" />
-            <filter text="product_id =  371" />
-            <filter text="order_id IN (51, 57, 122, 179 ,184 ,186 ,187, 189 )" />
-            <filter text="order_id = 60" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/Block/BestSeller.php">
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Filter/Block/Layer/Filter/Category.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="50" />
+        <state relative-caret-position="180">
+          <caret line="33" column="97" lean-forward="false" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="97" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/controllers/IndexController.php">
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Filter/Block/Layer/Filter/Decimal.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="14" column="111" lean-forward="false" selection-start-line="14" selection-start-column="111" selection-end-line="14" selection-end-column="111" />
+        <state relative-caret-position="425">
+          <caret line="54" column="31" lean-forward="false" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Bestseller/etc/config.xml">
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Filter/Block/Layer/Filter/Price.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="412">
+          <caret line="54" column="18" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/bestseller/categoryslide.phtml">
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Filter/Block/Layer/Filter/Attribute.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="396">
+          <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/bestseller/homeslide.phtml">
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Filter/Block/Layer/View.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="378">
+          <caret line="121" column="63" lean-forward="false" selection-start-line="121" selection-start-column="39" selection-end-line="121" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/slider/slider.phtml">
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Filter/Block/Layer/Filter/Abstract.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="39" column="42" lean-forward="false" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="42" />
+        <state relative-caret-position="344">
+          <caret line="172" column="22" lean-forward="false" selection-start-line="172" selection-start-column="22" selection-end-line="172" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Featured/sql/Hungbd_Featured_setup/mysql4-install-0.1.0.php">
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/filter/link.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="34" column="18" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="540">
+          <caret line="55" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#967#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/filter/select.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="40" lean-forward="true" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.eav_entity">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/filter/checkbox.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/bca687c8/3852e4fb-3a17-4b58-9c16-aa3cea156ade/mock.eav_entity_attribute">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/configurableswatches/catalog/layer/filter/swatches.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="43" column="46" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#967#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -850,42 +1117,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/categoryslide.phtml">
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/filter/color.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="54" column="53" lean-forward="false" selection-start-line="54" selection-start-column="53" selection-end-line="54" selection-end-column="53" />
+        <state relative-caret-position="506">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#967#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/ConfigurableSwatches/Helper/Productlist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-556">
+          <caret line="70" column="84" lean-forward="false" selection-start-line="70" selection-start-column="78" selection-end-line="70" selection-end-column="84" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/controllers/Adminhtml/MenuController.php">
+    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/Filter/sql/Hungbd_Filter_setup/mysql4-install-0.1.0.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/megamenu/megamenu.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/homeslide.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Hungbd/MegaMenu/etc/system.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        <state relative-caret-position="288">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
