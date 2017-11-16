@@ -26,9 +26,9 @@ class Hungbd_Filter_Block_Adminhtml_Filter_Edit extends Mage_Adminhtml_Block_Wid
         $model = Mage::registry('fitler_model');
         $this->_headerText = Mage::helper('core')
             ->__('Filter '.$model->frontend_label);
-        $this->_updateButton('save', 'label', Mage::helper('tax')->__('Save Filter'));
+        $this->_updateButton('save', 'label', Mage::helper('hungbd_filter')->__('Save Filter'));
         $this->_addButton('save_and_continue', array(
-            'label'     => Mage::helper('tax')->__('Save and Continue Edit'),
+            'label'     => Mage::helper('hungbd_filter')->__('Save and Continue Edit'),
             'onclick'   => 'saveAndContinueEdit()',
             'class' => 'save'
         ), 10);

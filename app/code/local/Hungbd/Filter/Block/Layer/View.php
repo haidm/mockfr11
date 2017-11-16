@@ -25,10 +25,10 @@
  */
 
 /**
- * Catalog layered navigation view block
+ * Hungbd layered navigation view block
  *
- * @category    Mage
- * @package     Mage_Catalog
+ * @category    Hungbd
+ * @package     Hungbd_Filter
  * @author      Magento Core Team <core@magentocommerce.com>
  */
 class Hungbd_Filter_Block_Layer_View extends Mage_Core_Block_Template

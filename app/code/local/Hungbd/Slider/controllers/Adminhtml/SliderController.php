@@ -23,8 +23,8 @@ class Hungbd_Slider_Adminhtml_SliderController extends Mage_Adminhtml_Controller
         $this->_title($this->__('Slider'));
         $this->loadLayout()
             ->_setActiveMenu('hungbd/slider')
-            ->_addBreadcrumb(Mage::helper('tax')->__('Menu Item'), Mage::helper('tax')->__('Menu Item'))
-            ->_addBreadcrumb(Mage::helper('tax')->__('Mega Menu'), Mage::helper('tax')->__('Mega Menu'));
+            ->_addBreadcrumb(Mage::helper('core')->__('Slider'), Mage::helper('core')->__('Slider'))
+            ->_addBreadcrumb(Mage::helper('core')->__('Slider'), Mage::helper('core')->__('Slider'));
         $this->_addContent($this->getLayout()->createBlock('hungbd_slider/adminhtml_silder'))
             ->renderLayout();
     }
@@ -42,6 +42,7 @@ class Hungbd_Slider_Adminhtml_SliderController extends Mage_Adminhtml_Controller
         $sliderModel = Mage::getModel('hungbd_slider/slider');
         if ($sliderId) {
             $sliderModel->load($sliderId);
+            // join 2 table to get list of image in slider
             $listImage = Mage::getModel('hungbd_slider/listimage')
                 ->getCollection()
                 ->join(array('image' => 'hungbd_slider/image'),

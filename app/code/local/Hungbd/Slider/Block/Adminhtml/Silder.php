@@ -17,8 +17,8 @@ class Hungbd_Slider_Block_Adminhtml_Silder extends Mage_Adminhtml_Block_Widget_G
     {
         $this->_controller      = 'adminhtml_slider';
         $this->_blockGroup      = 'hungbd_slider';
-        $this->_headerText      = Mage::helper('tax')->__('Manage Slider');
-        $this->_addButtonLabel  = Mage::helper('tax')->__('Add Menu slider');
+        $this->_headerText      = Mage::helper('Hungbd_Slider')->__('Manage Slider');
+        $this->_addButtonLabel  = Mage::helper('Hungbd_Slider')->__('Add Menu slider');
         parent::__construct();
     }
 }

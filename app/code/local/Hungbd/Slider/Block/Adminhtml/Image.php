@@ -17,8 +17,8 @@ class Hungbd_Slider_Block_Adminhtml_Image extends Mage_Adminhtml_Block_Widget_Gr
     {
         $this->_controller      = 'adminhtml_image';
         $this->_blockGroup      = 'hungbd_slider';
-        $this->_headerText      = Mage::helper('tax')->__('Manage Silder Image');
-        $this->_addButtonLabel  = Mage::helper('tax')->__('Add Image');
+        $this->_headerText      = Mage::helper('Hungbd_Slider')->__('Manage Silder Image');
+        $this->_addButtonLabel  = Mage::helper('Hungbd_Slider')->__('Add Image');
         parent::__construct();
     }
 }

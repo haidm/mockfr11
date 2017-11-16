@@ -48,14 +48,14 @@ class Hungbd_Slider_Block_Adminhtml_Image_Grid extends Mage_Adminhtml_Block_Widg
     {
         $this->addColumn('id',
             array(
-                'header' => Mage::helper('core')->__(' Id'),
+                'header' => Mage::helper('Hungbd_Slider')->__(' Id'),
                 'index' => 'id'
             )
         );
 
         $this->addColumn('name',
             array(
-                'header' => Mage::helper('core')->__(' Name'),
+                'header' => Mage::helper('Hungbd_Slider')->__(' Name'),
                 'index' => 'name',
                 'type'    => 'text'
             )
@@ -63,7 +63,7 @@ class Hungbd_Slider_Block_Adminhtml_Image_Grid extends Mage_Adminhtml_Block_Widg
 
         $this->addColumn('image',
             array(
-                'header' => Mage::helper('core')->__(' image'),
+                'header' => Mage::helper('Hungbd_Slider')->__(' image'),
                 'index' => 'link',
                 'type'    => 'text',
                 'renderer' => 'Hungbd_Slider_Block_Adminhtml_Image_Renderer_GridImage',

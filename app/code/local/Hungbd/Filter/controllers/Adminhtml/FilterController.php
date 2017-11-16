@@ -20,15 +20,7 @@ class Hungbd_Filter_Adminhtml_FilterController extends Mage_Adminhtml_Controller
      */
     public function indexAction()
     {
-//        $collection = Mage::getResourceModel('catalog/product_attribute_collection');
-//        $collection
-//            ->addFieldToFilter('is_filterable',1)
-//            ->setItemObjectClass('catalog/resource_eav_attribute')
-//            ->setOrder('position', 'ASC');
-//        foreach ($collection as $item){
-//            var_dump($item); die;
-//        }
-        $this->_title($this->__('Filter'))->_title($this->__('Filter'));
+        $this->_title($this->__('Filter'))->_title($this->__('Manage Filter'));
         $this->loadLayout()
             ->_setActiveMenu('hungbd')
             ->_addBreadcrumb(Mage::helper('core')->__('Filter'), Mage::helper('core')->__('Menu Item'))
@@ -43,7 +35,7 @@ class Hungbd_Filter_Adminhtml_FilterController extends Mage_Adminhtml_Controller
      */
     public function editAction()
     {
-        $this->_title($this->__('Slider'));
+        $this->_title($this->__('Manage Filter'));
         $filterId = $this->getRequest()->getParam('id');
         $filterModel = Mage::getResourceModel('catalog/product_attribute_collection')
             ->addFieldToFilter('additional_table.attribute_id', $filterId)

@@ -17,7 +17,7 @@ class Hungbd_Filter_Block_Adminhtml_Filter extends Mage_Adminhtml_Block_Widget_G
     {
         $this->_controller      = 'adminhtml_filter';
         $this->_blockGroup      = 'hungbd_filter';
-        $this->_headerText      = Mage::helper('tax')->__('Manage Filter');
+        $this->_headerText      = Mage::helper('hungbd_filter')->__('Manage Filter');
         parent::__construct();
         $this->_removeButton('add');
     }

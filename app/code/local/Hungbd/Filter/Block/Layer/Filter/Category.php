@@ -25,10 +25,10 @@
  */
 
 /**
- * Catalog layer category filter
+ * Hungbd layer category filter
  *
- * @category    Mage
- * @package     Mage_Catalog
+ * @category    Hungbd
+ * @package     Hungbd_Filter
  * @author      Magento Core Team <core@magentocommerce.com>
  */
 class Hungbd_Filter_Block_Layer_Filter_Category extends Hungbd_Filter_Block_Layer_Filter_Abstract

@@ -24,9 +24,9 @@ class Hungbd_Slider_Block_Adminhtml_Slider_Edit extends Mage_Adminhtml_Block_Wid
         $this->_controller = 'adminhtml_slider';
         $this->_blockGroup = 'hungbd_slider';
         $model = Mage::registry('slider');
-        $this->_headerText = Mage::helper('core')
+        $this->_headerText = Mage::helper('Hungbd_Slider')
             ->__('Slider '.$model->getName());
-        $this->_updateButton('save', 'label', Mage::helper('core')->__('Save Image'));
+        $this->_updateButton('save', 'label', Mage::helper('Hungbd_Slider')->__('Save Slider'));
         $this->_updateButton('delete', array(
             'label'     => Mage::helper('tax')->__('Delete Image'),
             'onclick'   => "window.location.href = '" . $this->getUrl("*/*/ delete", array("id" => $model->getId())) . "'",
@@ -34,7 +34,7 @@ class Hungbd_Slider_Block_Adminhtml_Slider_Edit extends Mage_Adminhtml_Block_Wid
         ), 10);
 
         $this->_addButton('save_and_continue', array(
-            'label'     => Mage::helper('tax')->__('Save and Continue Edit'),
+            'label'     => Mage::helper('Hungbd_Slider')->__('Save and Continue Edit'),
             'onclick'   => 'saveAndContinueEdit()',
             'class' => 'save'
         ), 10);

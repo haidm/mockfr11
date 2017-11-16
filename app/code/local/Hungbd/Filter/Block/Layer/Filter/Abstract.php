@@ -25,10 +25,10 @@
  */
 
 /**
- * Catalog layer filter abstract
+ * Hungbd layer filter abstract
  *
- * @category   Mage
- * @package    Mage_Catalog
+ * @category   Hungbd
+ * @package    Hungbd_Filter
  * @author     Magento Core Team <core@magentocommerce.com>
  */
 abstract class Hungbd_Filter_Block_Layer_Filter_Abstract extends Mage_Core_Block_Template

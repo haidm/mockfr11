@@ -26,10 +26,10 @@
 
 
 /**
- * Catalog Layer Decimal Attribute Filter Block
+ * Hungbd Layer Decimal Attribute Filter Block
  *
- * @category    Mage
- * @package     Mage_Catalog
+ * @category    Hungbd
+ * @package     Hungbd_Filter
  * @author      Magento Core Team <core@magentocommerce.com>
  */
 class Hungbd_Filter_Block_Layer_Filter_Decimal extends Hungbd_Filter_Block_Layer_Filter_Abstract

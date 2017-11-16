@@ -6,7 +6,7 @@
  * Time: 16:00
  */
 /**
- * Slider Fitler Grid
+ * Fitler Grid
  * @category    Hungbd
  * @package     Hungbd_Filter_Adminhtml
  * @author      hungbd <hungbd@smartosc.com>
@@ -28,7 +28,7 @@ class Hungbd_Filter_Block_Adminhtml_Filter_Grid extends Mage_Adminhtml_Block_Wid
     /**
      * Prepare grid collection
      *
-     * @return Hungbd_Slider_Block_Adminhtml_Image_Grid
+     * @return Hungbd_Filter_Block_Adminhtml_Filter_Grid
      */
     protected function _prepareCollection()
     {

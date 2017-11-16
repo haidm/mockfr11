@@ -23,8 +23,8 @@ class Hungbd_Slider_Adminhtml_ImageController extends Mage_Adminhtml_Controller_
         $this->_title($this->__('Image'))->_title($this->__('Slider'));
         $this->loadLayout()
             ->_setActiveMenu('hungbd/slider')
-            ->_addBreadcrumb(Mage::helper('core')->__('Image'), Mage::helper('core')->__('Menu Item'))
-            ->_addBreadcrumb(Mage::helper('core')->__('Slider'), Mage::helper('core')->__('Mega Menu'));
+            ->_addBreadcrumb(Mage::helper('core')->__('Image'), Mage::helper('core')->__('Image'))
+            ->_addBreadcrumb(Mage::helper('core')->__('Slider'), Mage::helper('core')->__('Slider'));
         $this->_addContent($this->getLayout()->createBlock('hungbd_slider/adminhtml_image'))
             ->renderLayout();
     }
@@ -36,12 +36,13 @@ class Hungbd_Slider_Adminhtml_ImageController extends Mage_Adminhtml_Controller_
     public function editAction()
     {
 
-        $this->_title($this->__('Menu Item'))->_title($this->__('Slider Image'));
+        $this->_title($this->__('Slider Image'))->_title($this->__('Slider Image'));
         $sliderImage = $this->getRequest()->getParam('id');
         $sliderImageModel = Mage::getModel('hungbd_slider/image');
         $sliderModel = Mage::getModel('hungbd_slider/slider')->getCollection();
         if ($sliderImage) {
             $sliderImageModel->load($sliderImage);
+            //join 2 table to get list slider of image
             $listImage = Mage::getModel('hungbd_slider/listimage')
                 ->getCollection()
                 ->join(array('slider' => 'hungbd_slider/slider'),
@@ -91,6 +92,7 @@ class Hungbd_Slider_Adminhtml_ImageController extends Mage_Adminhtml_Controller_
             $imageText = $this->getRequest()->getParam('text');
             $image = Mage::getModel('hungbd_slider/image');
 
+            //upload image
             if (!empty($_FILES['image']['name']) || $_FILES['image']['name']) {
                 try {
                     $path = Mage::getBaseDir('media') . DS . 'hung_bd' . DS;
