@@ -1,0 +1,100 @@
+<?php
+$number_view_home = Mage::getStoreConfig('catalog/tungtt_featured/number_view_home');
+$enable_featured = Mage::getStoreConfig('catalog/tungtt_featured/enable_featured');
+if ((count($products = $this->getFeaturedProduct())>0 && $enable_featured == 1 )): ?>
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .my-swiper img {
+            width: 150px;
+            height: 180px;
+        }
+    </style>
+    <div class="widget-title">
+        <h2 align="center"><?php echo 'Featured Products'; ?></h2>
+    </div>
+    <div class="swiper-container my-swiper">
+        <div class="swiper-wrapper">
+            <?php foreach ($products->getItems() as $product): ; ?>
+                <div class="swiper-slide">
+                    <a href="<?php echo $product->getProductUrl() ?>"
+                       title="<?php echo $this->stripTags($product->getName(), null, true) ?>" class="product-image">
+                        <img src="<?php echo $this->helper('catalog/image')->init($product, 'thumbnail'); ?>"
+                        />
+                    </a>
+                </div>
+            <?php endforeach; ?>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+//            slidesPerView: <?php //echo $number_view_home; ?>//,
+            spaceBetween: 10,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: false,
+            centeredSlides: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                // when window width is <= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                // when window width is <= 768px
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                // when window width is <= 1368px
+                1368: {
+                    slidesPerView: <?php echo $number_view_home; ?>,
+                    spaceBetween: 30
+                },
+                // when window width is <= 1920px
+                1920: {
+                    slidesPerView: <?php echo $number_view_home+1; ?>,
+                    spaceBetween: 30
+                }
+            },
+        });
+    </script>
+<?php endif; ?>

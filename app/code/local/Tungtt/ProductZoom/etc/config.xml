@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Tungtt_ProductZoom>
+            <version>0.1.0</version>
+        </Tungtt_ProductZoom>
+    </modules>
+</config>

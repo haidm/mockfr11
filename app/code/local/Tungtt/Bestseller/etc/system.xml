@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <catalog>
+            <groups>
+                <tungtt_bestseller translate="label">
+                    <label>BestSeller Options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enable_bestseller translate="label">
+                            <label>Enable BestSeller</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </enable_bestseller>
+                        <number_view_home translate="label">
+                            <label>Product Per View Home Page</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>required-entry validate-number</validate>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                        </number_view_home>
+                        <number_view_category translate="label">
+                            <label>Product Per View Category Page</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>required-entry validate-number</validate>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                        </number_view_category>
+                    </fields>
+                </tungtt_bestseller>
+            </groups>
+        </catalog>
+    </sections>
+</config>

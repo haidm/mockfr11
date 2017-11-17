@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+        <reference name="head">
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/megamenu/bootstrap.min.css</name>
+            </action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/megamenu/bootstrap-responsive.min.css</name>
+            </action>
+
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/megamenu/fonts.css</name>
+            </action>
+            <!--<action method="addItem">-->
+                <!--<type>skin_css</type>-->
+                <!--<name>css/megamenu/jquery.lightbox.min.css</name>-->
+            <!--</action>-->
+
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/megamenu/spectrum.css</name>
+            </action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/megamenu/wayoutmenu.css</name>
+            </action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/megamenu/wayoutmenueffects.css</name>
+            </action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/megamenu/wayoutmenuresponsive.css</name>
+            </action>
+
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/swiper/swiper.min.css</name>
+            </action>
+
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/megamenu/bootstrap.min.js</name>
+            </action>
+            <!--<action method="addItem">-->
+                <!--<type>skin_js</type>-->
+                <!--<name>js/megamenu/demo.js</name>-->
+            <!--</action>-->
+            <!--<action method="addItem">-->
+                <!--<type>skin_js</type>-->
+                <!--<name>js/megamenu/jquery.lightbox.min.js</name>-->
+            <!--</action>-->
+            <!--<action method="addItem">-->
+                <!--<type>skin_js</type>-->
+                <!--<name>js/megamenu/jquery.min.js</name>-->
+            <!--</action>-->
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/megamenu/spectrum.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/megamenu/wayoutmenu.js</name>
+            </action>
+
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/swiper/swiper.min.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/swiper/swiper.esm.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/swiper/swiper.esm.bundle.js</name>
+            </action>
+        </reference>
+        <reference name="catalog.topnav">
+            <block type="tungtt_megamenu/megamenu" name="catalog.topnav" template="mytemplate/megamenu/megamenu.phtml"/>
+        </reference>
+    </default>
+
+    <catalog_category_layered>
+        <reference name="content">
+            <block type="tungtt_featured/featured" name="tungtt.featured.cateogry"
+                   template="mytemplate/featured/categoryslide.phtml"
+                   after="-"/>
+            <block type="tungtt_bestseller/bestseller" template="mytemplate/bestseller/categoryslide.phtml"
+                   after="tungtt.featured.cateogry"/>
+        </reference>
+    </catalog_category_layered>
+    <catalog_product_view>
+        <reference name="product.info.media">
+            <action method="setTemplate">
+                <template>mytemplate/productzoom/mediazoom.phtml</template>
+            </action>
+        </reference>
+    </catalog_product_view>
+</layout>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Tungtt_Bestseller>
+            <version>0.1.0</version>
+        </Tungtt_Bestseller>
+    </modules>
+    <global>
+        <models>
+            <tungtt_bestseller>
+                <class>Tungtt_Bestseller_Model</class>
+                <resourceModel>tungtt_bestseller_resource</resourceModel>
+            </tungtt_bestseller>
+            <tungtt_bestseller_resource>
+                <class>Tungtt_Bestseller_Model_Resource</class>
+            </tungtt_bestseller_resource>
+        </models>
+        <blocks>
+            <tungtt_bestseller>
+                <class>Tungtt_Bestseller_Block</class>
+            </tungtt_bestseller>
+        </blocks>
+        <helpers>
+            <tungtt_bestseller>
+                <class>Tungtt_Bestseller_Helper</class>
+            </tungtt_bestseller>
+        </helpers>
+    </global>
+</config>

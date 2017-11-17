@@ -1,0 +1,45 @@
+<config>
+    <sections>
+        <catalog>
+            <groups>
+                <tungtt_featured translate="label">
+                    <label>Product Featured</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enable_featured translate="label">
+                            <label>Enable Slider </label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </enable_featured>
+                        <number_view_home translate="label">
+                            <label>Number View Home Page</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>required-entry validate-number</validate>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </number_view_home>
+                        <number_view_category translate="label">
+                            <label>Number View In Category</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>required-entry validate-number</validate>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </number_view_category>
+                    </fields>
+                </tungtt_featured>
+            </groups>
+        </catalog>
+    </sections>
+</config>

@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <catalog>
+            <groups>
+                <product_image_zoom translate="label">
+                    <label>Product Detail Image Zoom</label>
+                    <sort_order>200</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <image_width translate="label comment">
+                            <label>Image width</label>
+                            <comment>Maximum width product image will be scaled down to in pixels</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <validate>required-entry</validate>
+                            <validate>validate-number</validate>
+                            <validate>validate-one-required</validate>
+                            <validate>validate-greater-than-zero</validate>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </image_width>
+                        <image_height translate="label comment">
+                            <label>Image height</label>
+                            <comment>Maximum height product image will be scaled down to in pixels</comment>
+                            <frontend_type>text</frontend_type>
+                            <validate>required-entry</validate>
+                            <validate>validate-number</validate>
+                            <validate>validate-one-required</validate>
+                            <validate>validate-greater-than-zero</validate>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </image_height>
+                        <box_zoom_width translate="label comment">
+                            <label>Box zoom width</label>
+                            <comment>Maximum width box zoom image will be scaled down to in pixels</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <validate>required-entry</validate>
+                            <validate>validate-number</validate>
+                            <validate>validate-one-required</validate>
+                            <validate>validate-greater-than-zero</validate>
+                            <show_in_default>1</show_in_default>
+
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </box_zoom_width>
+                        <box_zoom_height translate="label comment">
+                            <label>Box zoom height</label>
+                            <comment>Maximum height box zoom image will be scaled down to in pixels</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <validate>required-entry</validate>
+                            <validate>validate-number</validate>
+                            <validate>validate-one-required</validate>
+                            <validate>validate-greater-than-zero</validate>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </box_zoom_height>
+                        <width_thumbnail translate="label comment">s
+                            <label>Image thumbnail width</label>
+                            <comment>Maximum width thumbnail image will be scaled down to in pixels</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <validate>required-entry</validate>
+                            <validate>validate-number</validate>
+                            <validate>validate-one-required</validate>
+                            <validate>validate-greater-than-zero</validate>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </width_thumbnail>
+                        <height_thumbnail translate="label comment">
+                            <label>Image thumbnail height</label>
+                            <comment>Maximum height thumbnail image will be scaled down to in pixels</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <validate>required-entry</validate>
+                            <validate>validate-number</validate>
+                            <validate>validate-one-required</validate>
+                            <validate>validate-greater-than-zero</validate>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </height_thumbnail>
+                    </fields>
+                </product_image_zoom>
+            </groups>
+        </catalog>
+    </sections>
+</config>

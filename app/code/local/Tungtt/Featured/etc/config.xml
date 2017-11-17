@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Tungtt_Featured>
+            <version>0.1.0</version>
+        </Tungtt_Featured>
+    </modules>
+    <global>
+        <models>
+            <tungtt_featured>
+                <class>Tungtt_Featured_Model</class>
+                <resourceModel>tungtt_featured_resource</resourceModel>
+            </tungtt_featured>
+            <tungtt_featured_resource>
+                <class>Tungtt_Featured_Model_Resource</class>
+            </tungtt_featured_resource>
+        </models>
+        <blocks>
+            <tungtt_featured>
+                <class>Tungtt_Featured_Block</class>
+            </tungtt_featured>
+        </blocks>
+        <helpers>
+            <tungtt_featured>
+                <class>Tungtt_Featured_Helper</class>
+            </tungtt_featured>
+        </helpers>
+        <resources>
+            <tungtt_featured_setup>
+                <setup>
+                    <module>Tungtt_Featured</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
+                </setup>
+            </tungtt_featured_setup>
+        </resources>
+    </global>
+</config>

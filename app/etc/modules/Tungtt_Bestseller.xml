@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Tungtt_Bestseller>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Tungtt_Bestseller>
+    </modules>
+</config>

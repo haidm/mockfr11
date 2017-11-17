@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <tungtt translate="title" module="tungtt_megamenu">
+            <title>Mega Menu</title>
+            <sort_order>101</sort_order>
+            <children>
+                <megamenu translate="title">
+                    <title>Mega Menu</title>
+                    <sort_order>0</sort_order>
+                    <children>
+                        <index translate="title" module="tungtt_megamenu">
+                            <title>Menu Item</title>
+                            <!--Mapped to adminhtmlModulePath/controller/action-->
+                            <action>adminhtml/menu/index</action>
+                            <sort_order>0</sort_order>
+                        </index>
+                    </children>
+                </megamenu>
+            </children>
+        </tungtt>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <catalog>
+                        <children>
+                            <megamenu translate="title" module="tungtt_megamenu">
+                                <title>Mega Menu</title>
+                            </megamenu>
+                        </children>
+                    </catalog>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
