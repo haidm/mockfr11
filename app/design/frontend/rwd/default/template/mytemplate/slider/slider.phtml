@@ -17,28 +17,30 @@ if ($yes) {
             height: 550px;
 
         }
-        .swiper-container div{
+
+        .swiper-container div {
             width: 90%;
-            height:100%
-            padding-left:5%;
+            height: 100%
+            padding-left: 5%;
 
         }
 
         .swiper-container div img {
             width: 100%;
-            height:80%
+            height: 85%
 
         }
 
         .center-bottom {
             position: absolute;
-            bottom: 60px;
+            bottom: 26px;
             left: 40%;
             color: #751d02;
             font-size: 30px;
             font-style: inherit;
         }
-        .size_img{
+
+        .size_img {
 
         }
 
@@ -49,7 +51,10 @@ if ($yes) {
             <!-- Slides -->
             <?php foreach ($listImage as $item): ?>
                 <div class="swiper-slide"><img src="<?php echo $item->link; ?>">
-                    <div class="center-bottom"><?php echo $item->text; ?></div>
+                    <div class="center-bottom">
+                        <marquee class="nhapnhay" direction="down" scrollamount="2"><?php echo $item->text; ?></marquee>
+                    </div>
+
                 </div>
             <?php endforeach; ?>
         </div>
@@ -69,7 +74,7 @@ if ($yes) {
             prevEl: '.swiper-button-prev',
         },
         autoplay: {
-            delay: 5000,
+            delay: 6000,
         },
         loop: true,
         spaceBetween: 30,
