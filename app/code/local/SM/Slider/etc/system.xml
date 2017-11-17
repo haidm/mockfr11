@@ -1,0 +1,54 @@
+<config>
+    <sections>
+        <smslider translate="label" module="SM_Slider">
+            <tab>mygeneral</tab>
+            <label>Slider config</label>
+            <frontend_type>text</frontend_type>
+            <sort_order>2</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <sm_slider translate="label">
+                    <label>Slider config</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <slider_type translate="label">
+                            <label>Chose Slider type</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                            <source_model>sm_slider/type</source_model>
+                        </slider_type>
+                        <slider_chose translate="label">
+                            <label>Chose Slider Available On Page</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                            <source_model>sm_slider/slider</source_model>
+                        </slider_chose>
+                        <enable translate="label">
+                            <label>Enable Slider: </label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </enable>
+                    </fields>
+                </sm_slider>
+            </groups>
+        </smslider>
+    </sections>
+</config>

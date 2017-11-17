@@ -28,10 +28,10 @@
 <config>
     <global>
         <install>
-            <date><![CDATA[Fri, 03 Nov 2017 03:25:04 +0000]]></date>
+            <date><![CDATA[Fri, 10 Nov 2017 04:39:57 +0000]]></date>
         </install>
         <crypt>
-            <key><![CDATA[1a7068edff5f4f1ece8f1ccd508abe9b]]></key>
+            <key><![CDATA[c7f7f2eaa00231be2b078a0e6c89ab47]]></key>
         </crypt>
         <disable_local_modules>false</disable_local_modules>
         <resources>
@@ -53,16 +53,6 @@
             </default_setup>
         </resources>
         <session_save><![CDATA[files]]></session_save>
-        <blocks>
-            <catalog>
-                <rewrite>
-                    <product_featured>SM_Featured_Block_Product_Featured</product_featured>
-                </rewrite>
-                <rewrite>
-                    <category_view>SM_Featured_Block_Category_View</category_view>
-                </rewrite>
-            </catalog>
-        </blocks>
     </global>
     <admin>
         <routers>

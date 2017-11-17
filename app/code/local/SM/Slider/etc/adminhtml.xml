@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <sm translate="title" >
+            <title>SM</title>
+            <sort_order>1000</sort_order>
+            <children>
+                <slider translate="title">
+                    <title>Manage Slider</title>
+                    <sort_order>100</sort_order>
+                    <children>
+                        <index translate="title" module="SM_Slider">
+                            <title>Slider</title>
+                            <!--Mapped to adminhtmlModulePath/controller/action-->
+                            <action>adminhtml/slider/index</action>
+                            <sort_order>0</sort_order>
+                        </index>
+                    </children>
+                    <children>
+                        <sm_image translate="title" module="SM_Slider">
+                            <title>Image</title>
+                            <!--Mapped to adminhtmlModulePath/controller/action-->
+                            <action>adminhtml/image/index</action>
+                            <sort_order>1</sort_order>
+                        </sm_image>
+                    </children>
+                </slider>
+            </children>
+        </sm>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <catalog>
+                        <children>
+                            <slider translate="title" module="SM_Slider">
+                                <title>Slider</title>
+                            </slider>
+                        </children>
+                    </catalog>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <smslider translate="title" module="slider">
+                                        <title>Config Slider</title>
+                                    </smslider>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

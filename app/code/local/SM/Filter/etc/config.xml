@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SM_Filter>
+            <version>0.1.0</version>
+        </SM_Filter>
+    </modules>
+    <global>
+        <models>
+            <sm_filter>
+                <class>SM_Filter_Model</class>
+                <resourceModel>sm_filter_resource</resourceModel>
+            </sm_filter>
+            <sm_filter_resource>
+                <class>SM_Filter_Model_Resource</class>
+            </sm_filter_resource>
+        </models>
+        <blocks>
+            <sm_filter>
+                <class>SM_Filter_Block</class>
+            </sm_filter>
+        </blocks>
+        <helpers>
+            <sm_filter>
+                <class>SM_Filter_Helper</class>
+            </sm_filter>
+        </helpers>
+        <resources>
+            <SM_Filter_setup>
+                <setup>
+                    <module>SM_Filter</module>
+                </setup>
+            </SM_Filter_setup>
+        </resources>
+    </global>
+</config>

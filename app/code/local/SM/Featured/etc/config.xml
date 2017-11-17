@@ -7,13 +7,13 @@
     </modules>
     <global>
         <models>
-            <sm_featured>
+            <SM_Featured>
                 <class>SM_Featured_Model</class>
-                <resourceModel>sm_featured_resource</resourceModel>
-            </sm_featured>
-            <sm_featured_resource>
+                <resourceModel>SM_Featured_resource</resourceModel>
+            </SM_Featured>
+            <SM_Featured_resource>
                 <class>SM_Featured_Model_Resource</class>
-            </sm_featured_resource>
+            </SM_Featured_resource>
         </models>
         <blocks>
             <sm_featured>
@@ -21,16 +21,18 @@
             </sm_featured>
         </blocks>
         <helpers>
-            <sm_featured>
+            <SM_Featured>
                 <class>SM_Featured_Helper</class>
-            </sm_featured>
+            </SM_Featured>
         </helpers>
         <resources>
-            <sm_featured_setup>
+            <SM_Featured_setup>
                 <setup>
                     <module>SM_Featured</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
                 </setup>
-            </sm_featured_setup>
+            </SM_Featured_setup>
         </resources>
+
     </global>
 </config>

@@ -1,0 +1,83 @@
+<?php
+$yes = Mage::getStoreConfig('smslider/sm_slider/enable');
+if ($yes) {
+    $sliderConfig = Mage::getStoreConfig('smslider/sm_slider/slider_chose');
+    $listImage = Mage::getModel('sm_slider/listimage')
+        ->getCollection()
+        ->join(array('image' => 'sm_slider/image'),
+            'main_table.image_id=image.id',
+            array('name', 'link', 'text'))
+        ->addFilter('slider_id', $sliderConfig);
+
+    ?>
+    <?php $sliderType = Mage::getStoreConfig('smslider/sm_slider/slider_type'); ?>
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 550px;
+
+        }
+        .swiper-container div{
+            width: 90%;
+            height:100%
+            padding-left:5%;
+
+        }
+
+        .swiper-container div img {
+            width: 100%;
+            height:80%
+
+        }
+
+        .center-bottom {
+            position: absolute;
+            bottom: 60px;
+            left: 40%;
+            color: #751d02;
+            font-size: 30px;
+            font-style: inherit;
+        }
+        .size_img{
+
+        }
+
+    </style>
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <?php foreach ($listImage as $item): ?>
+                <div class="swiper-slide"><img src="<?php echo $item->link; ?>">
+                    <div class="center-bottom"><?php echo $item->text; ?></div>
+                </div>
+            <?php endforeach; ?>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+<?php } else {
+} ?>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        direction: '<?php echo $sliderType; ?>',
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 5000,
+        },
+        loop: true,
+        spaceBetween: 30,
+        slidesPerView: 1,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+        },
+    });
+</script>

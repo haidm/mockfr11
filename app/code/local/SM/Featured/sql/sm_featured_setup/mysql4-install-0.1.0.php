@@ -1,11 +1,10 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: baohan-baotran
- * Date: 11/3/2017
- * Time: 10:06 AM
+ * User: hungbui
+ * Date: 25/10/2017
+ * Time: 15:00
  */ 
-
 /* @var $installer Mage_Eav_Model_Entity_Setup */
 $installer = $this;
 
