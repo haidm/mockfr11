@@ -33,25 +33,18 @@ class Hungbd_Slider_Block_Adminhtml_Image_Edit_Form extends Mage_Adminhtml_Block
         $listSlider = Mage::registry('list_slider');
         $listImage = Mage::registry('list_image');
         $listId = array();
+        $render = $this->getLayout()->createBlock('hungbd_slider/adminhtml_image_renderer_FormRender');
         foreach ($listImage as $item) {
             $listId[$item->id] = $item->slider_id;
         }
         $fieldset = $form->addFieldset('slider_form',
             array('legend' => 'Slider infomation'));
 
-        if ($model->getId()) {
-            $fieldset->addField('link', 'image', array(
-                'label' => Mage::helper('catalog')->__('Image'),
-                'required' => false,
-                'name' => 'image',
-            ));
-        } else {
-            $fieldset->addField('link', 'file', array(
-                'label' => Mage::helper('core')->__('Image'),
-                'required' => true,
-                'name' => 'image',
-            ));
-        }
+        $fieldset->addField('link', 'image', array(
+            'label' => Mage::helper('catalog')->__('Image'),
+            'required' => false,
+            'name' => 'image',
+        ))->setRenderer($render);
 
         $fieldset->addField('text', 'textarea', array(
             'label' => Mage::helper('core')->__('text'),
@@ -63,7 +56,7 @@ class Hungbd_Slider_Block_Adminhtml_Image_Edit_Form extends Mage_Adminhtml_Block
             if (in_array($item->id, $listId)) {
                 foreach ($listId as $key => $value) {
                     if ($item->id == $value) {
-                        $fieldset->addField('listslider' . $key, 'checkbox', array(
+                        $fieldset->addField("listslider$key", 'checkbox', array(
                             'label' => $item->name,
                             'name' => 'listimage[]',
                             'value' => $key,
@@ -72,11 +65,10 @@ class Hungbd_Slider_Block_Adminhtml_Image_Edit_Form extends Mage_Adminhtml_Block
                     }
                 }
             } else {
-                $fieldset->addField('listslider' . $item->id, 'checkbox', array(
+                $fieldset->addField("listslider$item->id", 'checkbox', array(
                     'label' => $item->name,
                     'name' => 'listslide[]',
                     'value' => $item->id,
-
                 ));
             }
         }

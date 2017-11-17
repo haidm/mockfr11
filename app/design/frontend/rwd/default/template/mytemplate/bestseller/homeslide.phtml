@@ -31,27 +31,29 @@
                 height: 110px;
             }
         </style>
-        <h2 align="center">Best Seller Product</h2>
-        <div class="swiper-container best-seller">
-            <div class="swiper-wrapper">
-                <?php foreach ($products->getItems() as $product): ; ?>
-                    <div class="swiper-slide">
-                        <a href="<?php echo $product->getProductUrl() ?>"
-                           title="<?php echo $this->stripTags($product->getName(), null, true) ?>"
-                           class="product-image">
-                            <img src="<?php echo $this->helper('catalog/image')->init($product, 'thumbnail')->resize(110, 110) ?>"
-                            />
-                        </a>
-                        <div class="product-info">
-                            <h3 class="product-name"><a href="<?php echo $product->getProductUrl() ?>"
-                                                        title="<?php echo $this->stripTags($product->getName(), null, true) ?>"><?php echo $this->helper('catalog/output')->productAttribute($product, $product->getName(), 'name') ?></a>
-                            </h3>
-                            <?php echo $this->getPriceHtml($product, true, '-widget-new-grid') ?>
+        <?php if ($products->getItems()): ?>
+            <h2 align="center">Best Seller Product</h2>
+            <div class="swiper-container best-seller">
+                <div class="swiper-wrapper">
+                    <?php foreach ($products->getItems() as $product): ; ?>
+                        <div class="swiper-slide">
+                            <a href="<?php echo $product->getProductUrl() ?>"
+                               title="<?php echo $this->stripTags($product->getName(), null, true) ?>"
+                               class="product-image">
+                                <img src="<?php echo $this->helper('catalog/image')->init($product, 'thumbnail')->resize(110, 110) ?>"
+                                />
+                            </a>
+                            <div class="product-info">
+                                <h3 class="product-name"><a href="<?php echo $product->getProductUrl() ?>"
+                                                            title="<?php echo $this->stripTags($product->getName(), null, true) ?>"><?php echo $this->helper('catalog/output')->productAttribute($product, $product->getName(), 'name') ?></a>
+                                </h3>
+                                <?php echo $this->getPriceHtml($product, true, '-widget-new-grid') ?>
+                            </div>
                         </div>
-                    </div>
-                <?php endforeach; ?>
+                    <?php endforeach; ?>
+                </div>
             </div>
-        </div>
+        <?php endif; ?>
         <script>
             var swiper = new Swiper('.best-seller', {
                 slidesPerView: <?php echo $productPerView; ?>,
@@ -61,6 +63,9 @@
                     delay: 5000,
                 },
                 loop: true,
+                mousewheel: {
+                    invert: true,
+                },
             });
         </script>
     <?php endif; ?>

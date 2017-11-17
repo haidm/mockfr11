@@ -33,6 +33,10 @@
                 </div>
             <?php endforeach; ?>
         </div>
+        <?php if ($sliderType == 'horizontal'): ?>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <?php endif; ?>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
 
@@ -56,6 +60,9 @@
                 el: '.swiper-pagination',
                 type: 'bullets',
                 clickable: true,
+            },
+            mousewheel: {
+                invert: true,
             },
         });
     </script>

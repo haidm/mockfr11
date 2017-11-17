@@ -33,7 +33,7 @@ class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_Grid extends Mage_Adminhtml_Block
     protected function _prepareCollection()
     {
         $collection = Mage::getModel('hungbd_megamenu/menuitem')
-            ->getCollection();
+            ->getCollection()->getJoinSefl();
         $this->setCollection($collection);
         parent::_prepareCollection();
         return $this;
@@ -77,10 +77,10 @@ class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_Grid extends Mage_Adminhtml_Block
             )
         );
 
-        $this->addColumn('parent_id',
+        $this->addColumn('parent',
             array(
                 'header' => Mage::helper('core')->__('Parent'),
-                'index' => 'parent_id',
+                'index' => 'parent_name',
                 'type'    => 'text'
             )
         );

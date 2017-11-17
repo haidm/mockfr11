@@ -12,8 +12,19 @@
  * @package     Hungbd_Megamenu
  * @author      hungbd <hungbd@smartosc.com>
  */
-class Hungbd_MegaMenu_Block_MegaMenu extends Mage_Core_Block_Template
+class Hungbd_MegaMenu_Block_MegaMenu extends Mage_Page_Block_Html_Topmenu
 {
+    public function __construct()
+    {
+        parent::__construct();
+        if (Mage::getStoreConfig('general/hungbd_megamenu/enable')){
+            $this->setTemplate('mytemplate/megamenu/megamenu.phtml');
+        }
+        else{
+            $this->setTemplate('page/html/topmenu.phtml');
+        }
+    }
+
     /**
      * Get child category function
      * @param object $menuitem

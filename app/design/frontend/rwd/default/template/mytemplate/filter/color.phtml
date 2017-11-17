@@ -49,7 +49,9 @@ $_swatchOuterHeight = $_dimHelper->getOuterHeight(Mage_ConfigurableSwatches_Help
             <li>
                 <?php if ($_item->getCount() > 0): ?>
                     <a href="<?php echo $this->urlEscape($_item->getUrl()) ?>">
-                        <?php echo $_item->getLabel() ?>
+                        <span <?php if ($_hasImage){ echo ' style="' . $_linkCss . '"'; } ?>>
+                        <?php echo $_label; ?>
+                        </span>
                         <?php if ($this->shouldDisplayProductCount()): ?>
                             <span class="count">(<?php echo $_item->getCount() ?>)</span>
                         <?php endif; ?>
