@@ -14,7 +14,7 @@ $installer = Mage::getResourceModel('catalog/setup', 'catalog_setup');
 $installer->addAttribute(Mage_Catalog_Model_Product::ENTITY, 'product_label', array(
     'group'                      => 'Design',
     'attribute_set'              => 'Default',
-    'backend'                    => 'catalog/product_attribute_backend_array',
+    'backend'                    => 'eav/entity_attribute_backend_array',
     'type'                       => 'text',
     'label'                      => 'Label',
     'input'                      => 'multiselect',
@@ -24,7 +24,7 @@ $installer->addAttribute(Mage_Catalog_Model_Product::ENTITY, 'product_label', ar
     'default'                    => '',
     'required'                   => false,
     'searchable'                 => true,
-    'visible_on_front'           => true,
+    'visible_on_front'           => false,
     'apply_to'                   => '',
     'used_for_sort_by'           => true,
     'used_in_product_listing'    => true,
