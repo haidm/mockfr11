@@ -1,37 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <layout>
-    <default>
-        <reference name="head">
-            <!--<action method="removeItem">-->
-            <!--<type>js</type>-->
-            <!--<name>lib/jquery/jquery-1.12.0.min.js</name>-->
+    <!--<default>-->
+        <!--<reference name="head">-->
+            <!--<action method="addItem">-->
+                <!--<type>skin_css</type>-->
+                <!--<name>css/cloudzoom.css</name>-->
             <!--</action>-->
-            <!--<action method="removeItem">-->
-            <!--<type>js</type>-->
-            <!--<name>lib/jquery/noconflict.js</name>-->
+            <!--<action method="addItem">-->
+                <!--<type>skin_css</type>-->
+                <!--<name>css/fancybox.min.css</name>-->
             <!--</action>-->
-            <action method="addItem">
-                <type>skin_js</type>
-                <name>js/jquery-3.2.1.min.js</name>
-            </action>
-            <action method="addItem">
-                <type>skin_css</type>
-                <name>css/cloudzoom.css</name>
-            </action>
-            <action method="addItem">
-                <type>skin_css</type>
-                <name>css/fancybox.min.css</name>
-            </action>
-            <action method="addItem">
-                <type>skin_js</type>
-                <name>js/cloudzoom.js</name>
-            </action>
-            <action method="addItem">
-                <type>skin_js</type>
-                <name>js/fancybox.min.js</name>
-            </action>
-        </reference>
-    </default>
+            <!--<action method="addItem">-->
+                <!--<type>skin_js</type>-->
+                <!--<name>js/cloudzoom.js</name>-->
+            <!--</action>-->
+            <!--<action method="addItem">-->
+                <!--<type>skin_js</type>-->
+                <!--<name>js/fancybox.min.js</name>-->
+            <!--</action>-->
+        <!--</reference>-->
+    <!--</default>-->
     <catalog_product_view>
         <reference name="product.info.media">
             <action method="setTemplate">

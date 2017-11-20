@@ -81,6 +81,7 @@ if (!empty(Mage::getStoreConfig('myzoom/zoom_image/width'))) {
                 <?php if ($this->isGalleryImageVisible($_image)): ?>
                     <li>
                         <img class="cloudzoom-gallery"
+                             imgsize="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(650, 500) ?>"
                              src="<?php echo $this->helper('catalog/image')->init($_product, 'thumbnail', $_image->getFile())->resize(75) ?>"
                              data-cloudzoom="useZoom: '.cloudzoom',
                              image: '<?php echo $this->helper('catalog/image')->init($_product, 'thumbnail', $_image->getFile())->resize($mainImgWidth, $mainImgHeight) ?>',
@@ -95,18 +96,22 @@ if (!empty(Mage::getStoreConfig('myzoom/zoom_image/width'))) {
     <script>
         CloudZoom.quickStart();
 
-        $.fn.CloudZoom.defaults.tintColor = '#061EAA';
-        $.fn.CloudZoom.defaults.tintOpacity = 0.4;
-        $.fn.CloudZoom.defaults.zoomWidth = <?php echo $zoomWidth ?>;
-        $.fn.CloudZoom.defaults.zoomHeight = <?php echo $zoomHeight ?>;
+        jquery.fn.CloudZoom.defaults.tintColor = '#061EAA';
+        jquery.fn.CloudZoom.defaults.tintOpacity = 0.4;
+        jquery.fn.CloudZoom.defaults.zoomWidth = <?php echo $zoomWidth ?>;
+        jquery.fn.CloudZoom.defaults.zoomHeight = <?php echo $zoomHeight ?>;
 
-
-        $(function () {
-            $('#myCloudZoom').bind('click', function () {
-                var cloudZoom = $(this).data('CloudZoom');
-
+        jquery(function () {
+            jquery('#myCloudZoom').bind('click', function () {
+                var cloudZoom = jquery(this).data('CloudZoom');
+                var images = jquery('.cloudzoom-gallery');
+                var data = [];
+                for (var i = 0; i < images.length; i++) {
+                    data.push({src: jquery(images[i]).attr('imgsize'), title: jquery(images[i]).attr('title')});
+                }
                 cloudZoom.closeZoom();
-                $.fancybox.open(cloudZoom.getGalleryList());
+                console.log(data);
+                jquery.fancybox.open(data, {loop: true});
                 return false;
             });
         });

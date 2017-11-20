@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <layout>
-    <default>
-        <reference name="head">
-            <action method="addItem">
-                <type>skin_css</type>
-                <name>css/label-product.css</name>
-            </action>
-        </reference>
-    </default>
+    <!--<default>-->
+        <!--<reference name="head">-->
+            <!--<action method="addItem">-->
+                <!--<type>skin_css</type>-->
+                <!--<name>css/label-product.css</name>-->
+            <!--</action>-->
+        <!--</reference>-->
+    <!--</default>-->
     <catalog_category_layered>
         <reference name="product_list">
             <action method="setTemplate">
