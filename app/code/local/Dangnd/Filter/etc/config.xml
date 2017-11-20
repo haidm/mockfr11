@@ -13,6 +13,9 @@
             </dangnd_filter>
             <dangnd_filter_resource>
                 <class>Dangnd_Filter_Model_Resource</class>
+                <entities>
+                    <filter>mock_filter_type</filter>
+                </entities>
             </dangnd_filter_resource>
         </models>
         <blocks>
@@ -29,20 +32,12 @@
             <dangnd_filter_setup>
                 <setup>
                     <module>Dangnd_Filter</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
                 </setup>
             </dangnd_filter_setup>
         </resources>
     </global>
     <frontend>
-        <routers>
-            <filter>
-                <use>standard</use>
-                <args>
-                    <module>Dangnd_Filter</module>
-                    <frontName>filter</frontName>
-                </args>
-            </filter>
-        </routers>
         <layout>
             <updates>
                 <dangnd_filter>
@@ -62,4 +57,17 @@
             </adminhtml>
         </routers>
     </admin>
+    <adminhtml>
+        <events>
+            <adminhtml_catalog_product_attribute_edit_prepare_form>
+                <observers>
+                    <tooltip>
+                        <type>singleton</type>
+                        <class>dangnd_filter/observer</class>
+                        <method>addFieldToAttributeEditForm</method>
+                    </tooltip>
+                </observers>
+            </adminhtml_catalog_product_attribute_edit_prepare_form>
+        </events>
+    </adminhtml>
 </config>

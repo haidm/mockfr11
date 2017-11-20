@@ -1,0 +1,9 @@
+<config>
+    <menu>
+        <filter translate="title" module="dangnd_filter">
+            <title>Manager Filter</title>
+            <sort_order>110</sort_order>
+            <action>adminhtml/filterType</action>
+        </filter>
+    </menu>
+</config>
