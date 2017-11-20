@@ -48,7 +48,7 @@ class Dangnd_Slider_Block_Adminhtml_Images_Edit extends Mage_Adminhtml_Block_Wid
 
     public function getHeaderText()
     {
-        if (Mage::registry('slideModel')->getId()) {
+        if (Mage::registry('imgModel')->getId()) {
             return Mage::helper('dangnd_slider')->__('Edit Information');
         } else {
             return Mage::helper('dangnd_slider')->__('Create Image Slide');

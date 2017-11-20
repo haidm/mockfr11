@@ -56,11 +56,18 @@ if (Mage::getStoreConfig('myslider/slider_group/active') == 0) {
         }
 
         .swiper-slide > a > .text {
-            width     : 40%;
+            max-width : 40%;
+            width     : intrinsic;
+            width     : -moz-max-content;
+            width     : -webkit-max-content;
             height    : 100%;
             font-size : 1.5em;
             padding   : 50px;
             color     : #fff;
+        }
+
+        .swiper-slide > a > .text > p {
+            background : rgba(7, 65, 47, 0.3);
         }
 
         .gallery-top {
@@ -85,59 +92,64 @@ if (Mage::getStoreConfig('myslider/slider_group/active') == 0) {
         }
     </style>
     <div class="swiper-container parent-slide">
+    <div class="swiper-wrapper">
+    <?php
+    $slides = $this->getData('list');
+foreach ($slides
+
+    as $item) {
+    if (count($item['images']) < 1) {
+        continue;
+    }
+if (count($item['images']) > 1) {
+    ?>
+    <div class="swiper-slide">
+    <div class="swiper-container gallery-top">
         <div class="swiper-wrapper">
             <?php
-            $slides = $this->getData('list');
-            foreach ($slides as $item) {
-                if (count($item['images']) > 1) {
-                    ?>
-            <div class="swiper-slide">
-                <div class="swiper-container gallery-top">
-                    <div class="swiper-wrapper">
-                    <?php
-                    foreach ($item['images'] as $image) {
-                        $urlImage = Mage::getBaseUrl('media') . 'dangnd/slide/' . $image['name'];
-                        ?>
-                        <div class="swiper-slide" style="background-image:url(<?php echo $urlImage ?>)">
-                            <a href="<?php echo ($image['link']) ? $image['link'] : '#' ?>">
-                                <div class="text">
-                                    <p><?php echo $image['content'] ?></p>
-                                </div>
-                            </a>
+            foreach ($item['images'] as $image) {
+                $urlImage = Mage::getBaseUrl('media') . 'dangnd/slide/' . $image['name'];
+                ?>
+                <div class="swiper-slide" style="background-image:url(<?php echo $urlImage ?>)">
+                    <a href="<?php echo ($image['link']) ? $image['link'] : '#' ?>">
+                        <div class="text">
+                            <p><?php echo $image['content'] ?></p>
                         </div>
-                        <?php
-                    }
-                    ?>
-                    </div>
-                    <div class="swiper-button-next swiper-button-white"></div>
-                    <div class="swiper-button-prev swiper-button-white"></div>
+                    </a>
                 </div>
-                <div class="swiper-container gallery-thumbs">
-                    <div class="swiper-wrapper">
-                    <?php
-                    foreach ($item['images'] as $image) {
-                        $urlImage = Mage::getBaseUrl('media') . 'dangnd/slide/' . $image['name'];
-
-                        echo '<div class="swiper-slide" style="background-image:url('.$urlImage.')"></div>';
-                    }
-                    echo '</div></div></div>';
-                } else {
-                    $urlImage = Mage::getBaseUrl('media') . 'dangnd/slide/' . $item['images'][0]['name'];
-                    ?>
-                    <div class="swiper-slide" style="background-image:url(<?php echo $urlImage ?>)">
-                        <a href="<?php echo ($item['images'][0]['link']) ? $item['images'][0]['link'] : '#' ?>">
-                            <div class="text">
-                                <p><?php echo $item['images'][0]['content'] ?></p>
-                            </div>
-                        </a>
-                    </div>
-                    <?php
-                }
+                <?php
             }
             ?>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-scrollbar"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+    <div class="swiper-container gallery-thumbs">
+    <div class="swiper-wrapper">
+    <?php
+    foreach ($item['images'] as $image) {
+        $urlImage = Mage::getBaseUrl('media') . 'dangnd/slide/' . $image['name'];
+
+        echo '<div class="swiper-slide" style="background-image:url(' . $urlImage . ')"></div>';
+    }
+    echo '</div></div></div>';
+} else {
+    $urlImage = Mage::getBaseUrl('media') . 'dangnd/slide/' . $item['images'][0]['name'];
+    ?>
+    <div class="swiper-slide" style="background-image:url(<?php echo $urlImage ?>)">
+        <a href="<?php echo ($item['images'][0]['link']) ? $item['images'][0]['link'] : '#' ?>">
+            <div class="text">
+                <p><?php echo $item['images'][0]['content'] ?></p>
+            </div>
+        </a>
+    </div>
+    <?php
+}
+}
+    ?>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-scrollbar"></div>
     </div>
 
     <script>
@@ -153,7 +165,7 @@ if (Mage::getStoreConfig('myslider/slider_group/active') == 0) {
         });
         var galleryTop = new Swiper('.gallery-top', {
             spaceBetween: 10,
-            centeredSlides:true,
+            centeredSlides: true,
             loop: true,
             loopedSlides: 5,
             navigation: {
@@ -169,7 +181,7 @@ if (Mage::getStoreConfig('myslider/slider_group/active') == 0) {
             loopedSlides: 5,
             slideToClickedSlide: true
         });
-        
+
         for (var i = 0; i < galleryTop.length; i++) {
             galleryTop[i].controller.control = galleryThumbs[i];
             galleryThumbs[i].controller.control = galleryTop[i];
