@@ -40,6 +40,7 @@
             <Hungbd_Bestseller_setup>
                 <setup>
                     <module>Hungbd_Bestseller</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
                 </setup>
             </Hungbd_Bestseller_setup>
         </resources>

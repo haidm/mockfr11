@@ -1,6 +1,8 @@
 <?php if (Mage::getStoreConfig('general/hungbd_bestseller/enable')): ?>
+    <?php $customProduct = $this->getCustomBestSeller();?>
+    <?php $products = $this->getBestSellerProduct();?>
     <?php $productPerView = (int)Mage::getStoreConfig('general/hungbd_bestseller/slider_per_view_home'); ?>
-    <?php if (($products = $this->getBestSellerProduct())): ?>
+    <?php if ($products || $customProduct): ?>
         <style>
             .best-seller {
                 width: 100%;
@@ -31,10 +33,26 @@
                 height: 110px;
             }
         </style>
-        <?php if ($products->getItems()): ?>
+        <?php if ($products->getItems() || $customProduct->getItems()): ?>
             <h2 align="center">Best Seller Product</h2>
             <div class="swiper-container best-seller">
                 <div class="swiper-wrapper">
+                    <?php foreach ($customProduct->getItems() as $product): ; ?>
+                        <div class="swiper-slide">
+                            <a href="<?php echo $product->getProductUrl() ?>"
+                               title="<?php echo $this->stripTags($product->getName(), null, true) ?>"
+                               class="product-image">
+                                <img src="<?php echo $this->helper('catalog/image')->init($product, 'thumbnail')->resize(110, 110) ?>"
+                                />
+                            </a>
+                            <div class="product-info">
+                                <h3 class="product-name"><a href="<?php echo $product->getProductUrl() ?>"
+                                                            title="<?php echo $this->stripTags($product->getName(), null, true) ?>"><?php echo $this->helper('catalog/output')->productAttribute($product, $product->getName(), 'name') ?></a>
+                                </h3>
+                                <?php echo $this->getPriceHtml($product, true, '-widget-new-grid') ?>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
                     <?php foreach ($products->getItems() as $product): ; ?>
                         <div class="swiper-slide">
                             <a href="<?php echo $product->getProductUrl() ?>"

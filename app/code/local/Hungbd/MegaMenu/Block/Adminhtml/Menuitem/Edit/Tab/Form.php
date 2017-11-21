@@ -22,17 +22,18 @@ class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_Edit_Tab_Form extends Mage_Adminh
         $this->setForm($form);
         $model = Mage::registry('menuitem_model');
         $newmodel = Mage::registry('menuitem_type');
-        $menuItemList = Mage::registry('menuitem_list');
+        $menuItemList = Mage::helper('Hungbd_MegaMenu/menu')->getListMenu();
+        $hiden = $model->getHiden();
         $select = 0;
         $selectData = array(
             array('label' => 'none', 'value' => 0)
         );
         foreach ($menuItemList as $key => $item) {
-            if ($item->id != $model->getId()) {
-                $selectData[$key]['label'] = $item->name;
-                $selectData[$key]['value'] = $item->id;
-                if ($item->id == $model->getParentid()){
-                    $select = $item->id;
+            if ($key != $model->getId()) {
+                $selectData[$key]['label'] = $item;
+                $selectData[$key]['value'] = $key;
+                if ($key == $model->getParentid()){
+                    $select = $key;
                 }
             }
         }
@@ -47,6 +48,13 @@ class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_Edit_Tab_Form extends Mage_Adminh
                 'value' => $select,
                 'class' => 'required-entry validate-select',
                 'required' => true,
+            ));
+        $fieldset->addField('hiden', 'select',
+            array(
+                'name' => 'hiden',
+                'label' => 'Hiden',
+                'values' => array(array('label' => 'yes', 'value' => '1'),array('label' => 'no', 'value' => '0')),
+                'value' => $hiden,
             ));
 
         if ($newmodel){

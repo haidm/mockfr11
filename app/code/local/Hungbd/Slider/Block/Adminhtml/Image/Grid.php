@@ -69,6 +69,13 @@ class Hungbd_Slider_Block_Adminhtml_Image_Grid extends Mage_Adminhtml_Block_Widg
                 'renderer' => 'Hungbd_Slider_Block_Adminhtml_Image_Renderer_GridImage',
             )
         );
+        $this->addColumn('text',
+            array(
+                'header' => Mage::helper('Hungbd_Slider')->__(' text'),
+                'index' => 'text',
+                'type'    => 'text',
+            )
+        );
 
         return parent::_prepareColumns();
     }

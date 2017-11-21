@@ -60,7 +60,6 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
         $itemType = $this->getRequest()->getParam('menuitem_type');
         $menuItemId = $this->getRequest()->getParam('id');
         $menuItemModel = Mage::getModel('hungbd_megamenu/menuitem');
-        $menuItemList = Mage::getModel('hungbd_megamenu/menuitem')->getCollection();
         $categories = Mage::getModel('catalog/category')
             ->getCollection()
             ->addAttributeToSelect('name')
@@ -88,7 +87,6 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
 
         Mage::register('menuitem_model', $menuItemModel);
         Mage::register('menuitem_type', $itemType);
-        Mage::register('menuitem_list', $menuItemList);
         Mage::register('category', $categories);
         Mage::register('product_list', $productList);
 
@@ -128,6 +126,7 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
                 $type = $this->getRequest()->getParam('type');
                 $name = $this->getRequest()->getParam('name');
                 $link = $this->getRequest()->getParam('link');
+                $hiden = $this->getRequest()->getParam('hiden');
                 $id = $this->getRequest()->getParam('id');
                 $menuItemModel = Mage::getModel('hungbd_megamenu/menuitem')
                     ->setId($id)
@@ -135,6 +134,7 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
                     ->setLevel($level)
                     ->setType($type)
                     ->setLink($link)
+                    ->setHiden($hiden)
                     ->setParent_id($parentId);
                 try {
                     $menuItemModel->save();
@@ -160,6 +160,7 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
             //save category link
             if ($this->getRequest()->getParam('type') == 'Category link') {
                 $type = $this->getRequest()->getParam('type');
+                $hiden = $this->getRequest()->getParam('hiden');
                 $categoryId = $this->getRequest()->getParam('category_id');
                 $categoryModel = Mage::getModel('catalog/category');
                 $categoryModel->load($categoryId);
@@ -172,6 +173,7 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
                     ->setLevel($level)
                     ->setType($type)
                     ->setLink($link)
+                    ->setHiden($hiden)
                     ->setParent_id($parentId);
                 try {
                     $menuItemModel->save();
@@ -198,6 +200,7 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
             //save product link
             if ($this->getRequest()->getParam('type') == 'Product link') {
                 $type = $this->getRequest()->getParam('type');
+                $hiden = $this->getRequest()->getParam('hiden');
                 $sku = $this->getRequest()->getParam('product_sku');
                 $productModel = Mage::getModel('catalog/product');
                 $productModel->load($productModel->getIdBySku($sku));
@@ -210,6 +213,7 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
                     ->setLevel($level)
                     ->setType($type)
                     ->setLink($link)
+                    ->setHiden($hiden)
                     ->setParent_id($parentId);
                 try {
                     $menuItemModel->save();
@@ -249,6 +253,7 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
 
     public function deleteAction()
     {
+
         $menuItemId = $this->getRequest()->getParam('id');
         try {
             Mage::getModel('hungbd_megamenu/menuitem')

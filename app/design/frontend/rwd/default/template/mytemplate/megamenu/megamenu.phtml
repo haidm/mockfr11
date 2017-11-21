@@ -4,10 +4,12 @@
 <nav class="main-nav" role="navigation">
     <ul id="main-menu" class="sm sm-blue">
         <?php foreach ($firstMenuItem as $key => $item): ?>
-            <li>
-                <a href="<?php echo $item->link; ?>"><?php echo $item->name; ?></a>
-                <?php $this->getChildItem($item, $maxLevel, $listMenuItem); ?>
-            </li>
+            <?php if (!$item->hiden): ?>
+                <li>
+                    <a href="<?php echo $item->link; ?>"><?php echo $item->name; ?></a>
+                    <?php $this->getChildItem($item, $maxLevel, $listMenuItem); ?>
+                </li>
+            <?php endif; ?>
         <?php endforeach; ?>
     </ul>
 </nav>

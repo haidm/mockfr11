@@ -10,26 +10,34 @@ class Hungbd_Bestseller_IndexController extends Mage_Core_Controller_Front_Actio
 {
     public function indexAction()
     {
+        $order = Mage::getResourceModel('sales/order_collection')->addFieldToFilter('status','complete');
+        $list = '(';
+        foreach ($order as $item){
+            $list .= $item->entity_id.',';
+        }
+        $list = rtrim($list,',');
+        $list .= ')';
         $storeId = (int)Mage::app()->getStore()->getId();
         $products = Mage::getResourceModel('reports/product_collection')
-            ->addAttributeToSelect(array('name', 'price', 'small_image'))->addAttributeToFilter('visibility',4);
+            ->addAttributeToSelect(array('name', 'price', 'small_image'))->addAttributeToFilter('visibility', 4);
         $products->getSelect()
             ->joinInner(array('order_items' => $products->getResource()->getTable('sales/order_item')),
-                'e.entity_id = order_items.product_id',
+                "e.entity_id = order_items.product_id AND order_items.order_id in $list",
                 array(
                     'ordered_qty' => 'SUM(order_items.qty_ordered)',
                     'order_items_name' => 'order_items.name',
                     'order_id' => 'order_items.order_id',
-                ))->group('e.entity_id')
-            ->joinInner(array('order' => $products->getResource()->getTable('sales/order')),
-                "order_items.order_id = order.entity_id AND order.status = 'complete'",
-                array())->order(array('ordered_qty DESC'));
-        foreach ($products as $item){
+                ))->group('e.entity_id');
+        $time = 0;
+        foreach ($products as $item) {
+            $time++;
             echo $item->entity_id.'<br>';
-            echo $item->name.'<br>';
-            echo $item->ordered_qty.'<br>';
+//            echo $item->name.'<br>';
+//            echo $item->ordered_qty.'<br>';
+            echo $item->order_id.'<br>';
             echo '-------------------------------- <br>';
         }
+        echo $time;
     }
 
 }

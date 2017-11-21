@@ -34,7 +34,7 @@ class Hungbd_MegaMenu_Block_MegaMenu extends Mage_Page_Block_Html_Topmenu
      */
     public function getChildItem($menuItem, $maxLevel, $listMenuItem)
     {
-        if ($menuItem->level >= $maxLevel) {
+        if ($menuItem->level >= $maxLevel || $menuItem->hiden) {
             return;
         }
         if ($this->hasChildren($menuItem->id)){
