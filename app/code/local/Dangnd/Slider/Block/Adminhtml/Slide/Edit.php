@@ -33,17 +33,31 @@ class Dangnd_Slider_Block_Adminhtml_Slide_Edit extends Mage_Adminhtml_Block_Widg
         $this->_formScripts[] = "function saveAndContinueEdit() {" .
             "editForm.submit($('edit_form').action + 'back/edit/')" .
             "}";
-        $this->_formScripts[] = "function readURL(input, id) {
+        $this->_formScripts[] = "function readOne(input, id, index) {
                 if (input.files && input.files[0]) {
                     var reader = new FileReader();
 
                     reader.onload = function (e) {
-                        document.getElementById('img' + id).src = e.target.result;
+                        document.getElementById(id).src = e.target.result;
                     };
 
-                    reader.readAsDataURL(input.files[0]);
+                    reader.readAsDataURL(input.files[index]);
                 }
             }";
+        $this->_formScripts[] = "function readMulti(input) {
+            document.getElementById('newImg').innerHTML = ''; 
+            if (input.files && input.files[0]) {
+                var html = ''; 
+                for (var i = 0; i < input.files.length; i++) {  
+                    html += \" <img id = 'new\" + i + \"' src = '' height = '100px' />\";                   
+                }
+                document.getElementById('newImg').innerHTML = html;  
+                
+                for (var i = 0; i < input.files.length; i++) {  
+                    readOne(input, 'new'+i, i);                   
+                }    
+            }
+        }";
     }
 
     public function getHeaderText()

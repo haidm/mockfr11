@@ -44,6 +44,19 @@ class Dangnd_Slider_Block_Adminhtml_Images_Edit extends Mage_Adminhtml_Block_Wid
                     reader.readAsDataURL(input.files[0]);
                 }
             }";
+        $this->_formScripts[] = "function previewImage(input, newFrm) {
+                var div = document.getElementById('previewImg');
+                div.innerHTML = '';
+                
+                if (newFrm == 1) {
+                    div.innerHTML = \"<div><img id='preview' src='' height='100px' /></div>\";
+                } else {
+                    div.innerHTML = \"<div><img id='preview' src='' height='100px' /></div>\" +
+                    \"<div><input type='checkbox' name='keep' /> Keep the old image.</div>\";
+                }
+                
+                readURL(input);
+            }";
     }
 
     public function getHeaderText()

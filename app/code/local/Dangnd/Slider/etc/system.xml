@@ -23,11 +23,21 @@
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
                     <fields>
+                        <slide translate="label">
+                            <label>Slide Display :</label>
+                            <frontend_type>select</frontend_type>
+                            <comment>Choose a slide show in the frontend</comment>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>dangnd_slider/chooseSlide</source_model>
+                        </slide>
                         <type translate="label">
                             <label>Type Display :</label>
                             <frontend_type>select</frontend_type>
                             <comment>Choose a display type on the frontend</comment>
-                            <sort_order>0</sort_order>
+                            <sort_order>10</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -37,7 +47,7 @@
                             <label>Is Active :</label>
                             <frontend_type>select</frontend_type>
                             <comment>Enable/Disable</comment>
-                            <sort_order>10</sort_order>
+                            <sort_order>20</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>

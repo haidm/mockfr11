@@ -61,4 +61,13 @@
             </adminhtml>
         </routers>
     </admin>
+    <default>
+        <myslider>
+            <slider_group>
+                <type>horizontal</type>
+                <slide>1</slide>
+                <active>1</active>
+            </slider_group>
+        </myslider>
+    </default>
 </config>

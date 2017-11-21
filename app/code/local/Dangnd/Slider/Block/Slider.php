@@ -12,21 +12,7 @@ class Dangnd_Slider_Block_Slider extends Mage_Core_Block_Template
     {
         parent::_construct();
         $this->setTemplate('dangnd/slider/index.phtml')
-            ->setData('list', $this->getSlider());
-    }
-
-    public function getSlider()
-    {
-        $listSlide = Mage::getModel('dangnd_slider/slide')
-            ->getCollection()
-            ->toArray();
-        $listSlide = $listSlide['items'];
-
-        foreach ($listSlide as $key => $item) {
-            $listSlide[$key]['images'] = $this->getImages($item['id']);
-        }
-
-        return $listSlide;
+            ->setData('list', $this->getImages(Mage::getStoreConfig('myslider/slider_group/slide')));
     }
 
     public function getImages($slideId)
@@ -34,6 +20,7 @@ class Dangnd_Slider_Block_Slider extends Mage_Core_Block_Template
         $images = Mage::getModel('dangnd_slider/images')
             ->getCollection()
             ->addFilter('slideId', $slideId)
+            ->addFilter('visible', 1)
             ->toArray();
 
         return $images['items'];

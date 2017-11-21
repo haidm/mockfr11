@@ -18,7 +18,8 @@ class Dangnd_Slider_Block_Adminhtml_Images_Edit_Form extends Mage_Adminhtml_Bloc
 
     public function _prepareForm()
     {
-        $img = '';
+        $new = 1;
+        $preview = '';
         $model = Mage::registry('imgModel');
         $listSlide = Mage::getModel('dangnd_slider/slide')->getCollection();
         $menuSelect = array();
@@ -40,6 +41,14 @@ class Dangnd_Slider_Block_Adminhtml_Images_Edit_Form extends Mage_Adminhtml_Bloc
         $fieldset = $form->addFieldset('base', array(
             'ledend' => Mage::helper('dangnd_slider')->__('Information')
         ));
+
+        if ($model->getId()) {
+            $fieldset->addField('id', 'hidden', array(
+                'name' => 'id',
+            ));
+            $new = 0;
+            $preview = $this->previewImg($model);
+        }
         $fieldset->addField('slideId', 'select', array(
             'name'     => 'slideId',
             'label'    => Mage::helper('dangnd_slider')->__('Slide'),
@@ -47,19 +56,13 @@ class Dangnd_Slider_Block_Adminhtml_Images_Edit_Form extends Mage_Adminhtml_Bloc
             'values'   => $menuSelect,
             'required' => true
         ));
-        if ($model->getId()) {
-            $img = Mage::getBaseUrl('media') . 'dangnd/slide/' . $model->getName();
-            $fieldset->addField('id', 'hidden', array(
-                'name' => 'id',
-            ));
-        }
         $fieldset->addField('image', 'image', array(
             'name'               => 'image',
             'label'              => Mage::helper('dangnd_slider')->__('Image'),
             'required'           => false,
-            'onchange'           => 'readURL(this);',
+            'onchange'           => "previewImage(this, $new);",
             'renderer'           => 'dangnd_slider/adminhtml_images_renderer_image',
-            'after_element_html' => "<br><img id='preview' src='{$img}' height='100px' />"
+            'after_element_html' => "<div id='previewImg'>$preview</div>"
         ));
         $fieldset->addField('content', 'editor', array(
             'name'  => 'content',
@@ -69,6 +72,12 @@ class Dangnd_Slider_Block_Adminhtml_Images_Edit_Form extends Mage_Adminhtml_Bloc
             'name'  => 'link',
             'label' => Mage::helper('dangnd_slider')->__('Link'),
         ));
+        $fieldset->addField('visible', 'checkbox', array(
+            'name'    => 'visible',
+            'onclick' => 'this.value = this.checked ? 1 : 0;',
+            'checked' => ($model->getVisible() == 1) ? 'true' : '',
+            'label'   => Mage::helper('dangnd_slider')->__('Is Visible'),
+        ));
 
         $form->addValues($model->getData());
         $form->setUseContainer(true);
@@ -77,5 +86,14 @@ class Dangnd_Slider_Block_Adminhtml_Images_Edit_Form extends Mage_Adminhtml_Bloc
         $this->setForm($form);
 
         return parent::_prepareForm();
+    }
+
+    public function previewImg($image)
+    {
+        $link = Mage::getBaseUrl('media') . 'dangnd/slide/' . $image->getName();
+        $html = "<div><img id='preview' src='{$link}' height='100px' /></div>";
+//        $html .= "<div><input type='checkbox' value='{$image->getName()}' name='keep' /> Keep the old image.</div>";
+
+        return $html;
     }
 }

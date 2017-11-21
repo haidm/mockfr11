@@ -85,10 +85,10 @@ class Dangnd_Slider_Adminhtml_SlideController extends Mage_Adminhtml_Controller_
         $data = $this->getRequest()->getParams();
         $imgs = $_FILES['image'];
         $imgEdit = $_FILES['imgEdit'];
-
-        if(!$data) {
-            return $this->getResponse()->setRedirect($this->getUrl('*/slide'));
-        }
+//        die(var_dump($data));
+//        if(!$data) {
+//            return $this->getResponse()->setRedirect($this->getUrl('*/slide'));
+//        }
         
         if($err = $this->validate($data) === true) {
             $new = Mage::getModel('dangnd_slider/slide');
@@ -96,6 +96,10 @@ class Dangnd_Slider_Adminhtml_SlideController extends Mage_Adminhtml_Controller_
             $new->setData($data);
 
             $slideId = isset($data['id']) ? $data['id'] : (max($new->getCollection()->getAllIds()) + 1);
+
+            if(!empty($data['visibleImg'])) {
+                $this->visibleImage($data['visibleImg']);
+            }
 
             if(!empty($data['delImg'])) {
                 $this->deleteImage($data['delImg']);
@@ -196,6 +200,17 @@ class Dangnd_Slider_Adminhtml_SlideController extends Mage_Adminhtml_Controller_
         return $result;
     }
 
+//    public function visibleImage($images)
+//    {
+//        $imgModel = Mage::getModel('dangnd_slider/images');
+//
+//        foreach ($images as $image) {
+//            $imgModel->setId($image);
+//            $imgModel->setVisible(1);
+//            $imgModel->save();
+//        }
+//    }
+
     public function uploadImage($images, $slideId)
     {
         $imgModel = Mage::getModel('dangnd_slider/images');
@@ -292,5 +307,25 @@ class Dangnd_Slider_Adminhtml_SlideController extends Mage_Adminhtml_Controller_
                 ->__($images));
 
         return false;
+    }
+
+    public function multiDeleteAction()
+    {
+        $listId = $this->getRequest()->getParam('slideId');
+        $model  = Mage::getModel('dangnd_slider/slide');
+
+        if(empty($listId)) {
+            Mage::getSingleton('adminhtml/session')
+                ->addError(Mage::helper('dangnd_slider')->__('Please select a line to delete!'));
+        } else {
+            foreach ($listId as $item) {
+                $model->setId($item)->delete();
+            }
+
+            Mage::getSingleton('adminhtml/session')
+                ->addSuccess(Mage::helper('dangnd_slider')->__('Delete Success.'));
+        }
+
+        $this->_redirect('*/*/');
     }
 }

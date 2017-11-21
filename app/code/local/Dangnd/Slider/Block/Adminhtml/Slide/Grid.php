@@ -46,6 +46,20 @@ class Dangnd_Slider_Block_Adminhtml_Slide_Grid extends Mage_Adminhtml_Block_Widg
         return parent::_prepareColumns();
     }
 
+    protected function _prepareMassaction()
+    {
+        $this->setMassactionIdField('id');
+        $this->getMassactionBlock()->setFormFieldName('slideId');
+
+        $this->getMassactionBlock()->addItem('delete', array(
+            'label'=> Mage::helper('dangnd_slider')->__('Delete'),
+            'url'  => $this->getUrl('*/*/multiDelete'),
+            'confirm' => Mage::helper('dangnd_slider')->__('Are you sure?')
+        ));
+
+        return $this;
+    }
+
     /**
      * Return url
      *

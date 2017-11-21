@@ -56,8 +56,28 @@ class Dangnd_Slider_Block_Adminhtml_Images_Grid extends Mage_Adminhtml_Block_Wid
             'index'  => 'link',
             'type'   => 'text'
         ));
+        $this->addColumn('visible', array(
+            'header' => Mage::helper('dangnd_slider')->__('Is Visible'),
+            'index'  => 'visible',
+            'type'      => 'options',
+            'options'   => array('1' => 'Yes', '0' => 'No')
+        ));
 
         return parent::_prepareColumns();
+    }
+
+    protected function _prepareMassaction()
+    {
+        $this->setMassactionIdField('id');
+        $this->getMassactionBlock()->setFormFieldName('imageId');
+
+        $this->getMassactionBlock()->addItem('delete', array(
+            'label'=> Mage::helper('dangnd_slider')->__('Delete'),
+            'url'  => $this->getUrl('*/*/multiDelete'),
+            'confirm' => Mage::helper('dangnd_slider')->__('Are you sure?')
+        ));
+
+        return $this;
     }
 
     /**
