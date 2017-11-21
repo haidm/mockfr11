@@ -10,16 +10,10 @@
                 <type>skin_css</type>
                 <name>css/megamenu/bootstrap-responsive.min.css</name>
             </action>
-
             <action method="addItem">
                 <type>skin_css</type>
                 <name>css/megamenu/fonts.css</name>
             </action>
-            <!--<action method="addItem">-->
-                <!--<type>skin_css</type>-->
-                <!--<name>css/megamenu/jquery.lightbox.min.css</name>-->
-            <!--</action>-->
-
             <action method="addItem">
                 <type>skin_css</type>
                 <name>css/megamenu/spectrum.css</name>
@@ -46,18 +40,10 @@
                 <type>skin_js</type>
                 <name>js/megamenu/bootstrap.min.js</name>
             </action>
-            <!--<action method="addItem">-->
-                <!--<type>skin_js</type>-->
-                <!--<name>js/megamenu/demo.js</name>-->
-            <!--</action>-->
-            <!--<action method="addItem">-->
-                <!--<type>skin_js</type>-->
-                <!--<name>js/megamenu/jquery.lightbox.min.js</name>-->
-            <!--</action>-->
-            <!--<action method="addItem">-->
-                <!--<type>skin_js</type>-->
-                <!--<name>js/megamenu/jquery.min.js</name>-->
-            <!--</action>-->
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/megamenu/jquery.min.js</name>
+            </action>
             <action method="addItem">
                 <type>skin_js</type>
                 <name>js/megamenu/spectrum.js</name>

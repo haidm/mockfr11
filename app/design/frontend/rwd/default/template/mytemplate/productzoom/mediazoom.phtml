@@ -95,9 +95,8 @@ $_width_thumbnail = Mage::getStoreConfig('catalog/product_image_zoom/width_thumb
     </script>
     <div>
         <img class="cloudzoom"
-             width="<?php echo $_image_width; ?>"
              alt="<?php echo $this->escapeHtml($this->getImageLabel()) ?>" id="zoom1"
-             src="<?php echo $this->helper('catalog/image')->init($_product, 'image'); ?>"
+             src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize($_image_width, $_image_height); ?>"
              data-cloudzoom='
                      zoomImage:"<?php echo $this->helper('catalog/image')->init($_product, 'image')?>",
                      zoomSizeMode: "lens",

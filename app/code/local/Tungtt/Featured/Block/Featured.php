@@ -4,10 +4,6 @@ class Tungtt_Featured_Block_Featured extends Mage_Catalog_Block_Product_Abstract
 {
     public function getFeaturedProduct()
     {
-//        $collection = Mage::getResourceModel('catalog/product_collection');
-//        $collection->setVisibility(4);
-//        $collection = $this->_addProductAttributesAndPrices($collection)
-//            ->addAttributeToFilter('is_featured', 1);
         $collection = Mage::getModel('catalog/product')
             ->getCollection()
             ->addAttributeToFilter('visibility',4)

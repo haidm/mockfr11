@@ -3,23 +3,54 @@
 <?php $listMenuItem = Mage::getModel('tungtt_megamenu/menuitem')->getCollection(); ?>
 <?php $nav = 'nav';
 $count = 0; ?>
+<?php
+$_helper = Mage::helper('catalog/category');
+$_categories = $_helper->getStoreCategories();
+?>
 <nav id="nav">
-<div id="mainn" class="main" style="position:relative">
-    <div class="container-fluid menu-bg" style="width: 100%;">
-        <div class="row-fluid site-width bm-container">
-            <div class="top-nav">
-                <ul>
-                    <?php foreach ($firstMenuItem as $key => $item): ?>
-                        <?php $newnav = $nav . '-' . $count;
-                        $count++; ?>
-                        <li class="level0 <?php echo $newnav; ?>">
-                            <a href="<?php echo $item->link; ?>" class="level0"><?php echo $item->name; ?></a>
-                            <?php $this->getChildItem($item, $maxLevel, $listMenuItem); ?>
-                        </li>
-                    <?php endforeach; ?>
+    <div id="mainn" class="main" style="position:relative">
+        <div class="container-fluid menu-bg-boxed">
+            <div class="row-fluid site-width-boxed bm-container">
+                <div class="top-nav">
+                    <ul>
+                        <li class="top-nav-mega fw"><a href="#" title="">Collections</a></li>
+                        <div class="top-nav-mega-full-width">
+                            <div class="row-fluid">
+                                <?php if (count($_categories) > 0) {
+                                    foreach ($_categories as $_category) {
+                                        $_category = Mage::getModel('catalog/category')->load($_category->getId());
+                                        $_subcategories = $_category->getChildrenCategories();
+                                        if (count($_subcategories) > 0) { ?>
+                                            <div class="span3">
+                                                <h3 style="color: white"><a
+                                                            href="<?php echo $_category->getUrl(); ?>"><?php echo $_category->getName(); ?></a>
+                                                </h3>
+                                                <ul>
+                                                    <?php foreach ($_subcategories as $_subcategory) { ?>
+                                                        <li>
+                                                            <a href="<?php echo $_subcategory->getUrl(); ?>"><?php echo $_subcategory->getName(); ?></a>
+                                                        </li>
+                                                    <?php } ?>
+                                                </ul>
+                                            </div>
+                                            <?php
+                                        }
+                                    }
+                                } ?>
+                            </div>
+                        </div>
+                        <?php foreach ($firstMenuItem as $key => $item): ?>
+                            <?php $newnav = $nav . '-' . $count;
+                            $count++; ?>
+                            <li class="level0 <?php echo $newnav; ?>">
+                                <a href="<?php echo $item->link; ?>" class="level0"><?php echo $item->name; ?></a>
+                                <?php $this->getChildItem($item, $maxLevel, $listMenuItem); ?>
+                            </li>
+                        <?php endforeach; ?>
+
                 </ul>
             </div>
         </div>
     </div>
-</div>
+    </div>
 </nav>
