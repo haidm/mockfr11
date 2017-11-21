@@ -1,9 +1,20 @@
 <?php
-//var_dump($this->getProducts());die;
+$products = $this->getProducts();
 $active = true;
-if (Mage::getStoreConfig('mybestseller/bestseller_group/active') === 0) {
-    $active = false;
+$effect = '';
+
+if(empty($products['category'])) {
+    if (Mage::getStoreConfig('mybestseller/home/active') === 0) {
+        $active = false;
+    }
+    $qty = Mage::getStoreConfig('mybestseller/home/qty');
+} else {
+    if (Mage::getStoreConfig('mybestseller/category/active') === 0) {
+        $active = false;
+    }
+    $qty = Mage::getStoreConfig('mybestseller/category/qty');
 }
+
 if ($active) {
     ?>
     <style>
@@ -20,8 +31,7 @@ if ($active) {
         <div class="swiper-container product-slide">
             <div class="swiper-wrapper">
                 <?php
-                $products = $this->getProducts();
-                foreach ($products as $item) {
+                foreach ($products['list'] as $item) {
                     ?>
                     <div class="swiper-slide">
                         <a href="<?php echo $item->getProductUrl() ?>"
@@ -64,17 +74,6 @@ if ($active) {
         </div>
     </div>
     <script>
-        <?php
-        $qty = 5;
-        $effect = '';
-        if (!empty(Mage::getStoreConfig('mybestseller/bestseller_group/qty'))) {
-            $qty = Mage::getStoreConfig('mybestseller/bestseller_group/qty');
-        }
-
-        if (!empty(Mage::getStoreConfig('mybestseller/bestseller_group/effect'))) {
-            $effect = Mage::getStoreConfig('mybestseller/bestseller_group/effect');
-        }
-        ?>
         var bestseller = new Swiper('.product-slide', {
             slidesPerView: <?= $qty ?>,
             effect: '<?= $effect ?>',

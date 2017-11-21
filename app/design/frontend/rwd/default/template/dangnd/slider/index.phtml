@@ -55,7 +55,7 @@ if (Mage::getStoreConfig('myslider/slider_group/active') == 0) {
             cursor : pointer;
         }
 
-        .swiper-slide > a > .text {
+        .text {
             max-width : 40%;
             width     : intrinsic;
             width     : -moz-max-content;
@@ -66,7 +66,7 @@ if (Mage::getStoreConfig('myslider/slider_group/active') == 0) {
             color     : #fff;
         }
 
-        .swiper-slide > a > .text > p {
+        .text > p {
             background : rgba(7, 65, 47, 0.3);
         }
 
@@ -94,58 +94,22 @@ if (Mage::getStoreConfig('myslider/slider_group/active') == 0) {
     <div class="swiper-container parent-slide">
     <div class="swiper-wrapper">
     <?php
-    $slides = $this->getData('list');
-foreach ($slides
-
-    as $item) {
-    if (count($item['images']) < 1) {
-        continue;
-    }
-if (count($item['images']) > 1) {
+    $images = $this->getData('list');
+    foreach ($images as $item) {
     ?>
-    <div class="swiper-slide">
-    <div class="swiper-container gallery-top">
-        <div class="swiper-wrapper">
-            <?php
-            foreach ($item['images'] as $image) {
-                $urlImage = Mage::getBaseUrl('media') . 'dangnd/slide/' . $image['name'];
-                ?>
-                <div class="swiper-slide" style="background-image:url(<?php echo $urlImage ?>)">
-                    <a href="<?php echo ($image['link']) ? $image['link'] : '#' ?>">
-                        <div class="text">
-                            <p><?php echo $image['content'] ?></p>
-                        </div>
-                    </a>
-                </div>
-                <?php
-            }
-            ?>
-        </div>
-        <div class="swiper-button-next swiper-button-white"></div>
-        <div class="swiper-button-prev swiper-button-white"></div>
-    </div>
-    <div class="swiper-container gallery-thumbs">
-    <div class="swiper-wrapper">
-    <?php
-    foreach ($item['images'] as $image) {
-        $urlImage = Mage::getBaseUrl('media') . 'dangnd/slide/' . $image['name'];
-
-        echo '<div class="swiper-slide" style="background-image:url(' . $urlImage . ')"></div>';
-    }
-    echo '</div></div></div>';
-} else {
-    $urlImage = Mage::getBaseUrl('media') . 'dangnd/slide/' . $item['images'][0]['name'];
-    ?>
+    <?php $urlImage = Mage::getBaseUrl('media') . 'dangnd/slide/' . $item['name']; ?>
     <div class="swiper-slide" style="background-image:url(<?php echo $urlImage ?>)">
-        <a href="<?php echo ($item['images'][0]['link']) ? $item['images'][0]['link'] : '#' ?>">
+        <?php if(!empty($item['link'])) { ?>
+        <a href="<?php echo ($item['link']) ? $item['link'] : '#' ?>"><?php } ?>
             <div class="text">
-                <p><?php echo $item['images'][0]['content'] ?></p>
+                <p><?php echo $item['content'] ?></p>
             </div>
-        </a>
+        <?php if(!empty($item['link'])) {
+            echo '</a>';
+        } ?>
     </div>
     <?php
-}
-}
+    }
     ?>
     </div>
     <div class="swiper-pagination"></div>
@@ -156,36 +120,15 @@ if (count($item['images']) > 1) {
         var swiper = new Swiper('.parent-slide', {
             direction: '<?php echo Mage::getStoreConfig('myslider/slider_group/type') ?>',
             spaceBetween: 30,
-            loop: true,
             mousewheel: true,
+            autoplay: {
+                delay: 3000,
+            },
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true
             }
         });
-        var galleryTop = new Swiper('.gallery-top', {
-            spaceBetween: 10,
-            centeredSlides: true,
-            loop: true,
-            loopedSlides: 5,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev'
-            }
-        });
-        var galleryThumbs = new Swiper('.gallery-thumbs', {
-            spaceBetween: 10,
-            slidesPerView: 'auto',
-            touchRatio: 0.2,
-            loop: true,
-            loopedSlides: 5,
-            slideToClickedSlide: true
-        });
-
-        for (var i = 0; i < galleryTop.length; i++) {
-            galleryTop[i].controller.control = galleryThumbs[i];
-            galleryThumbs[i].controller.control = galleryTop[i];
-        }
     </script>
     <?php
 }

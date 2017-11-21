@@ -25,4 +25,20 @@
             </adminhtml>
         </routers>
     </admin>
+    <default>
+        <myzoom>
+            <main_image>
+                <height>500</height>
+                <width>500</width>
+            </main_image>
+            <zoom_image>
+                <height>500</height>
+                <width>500</width>
+            </zoom_image>
+            <thumbnail>
+                <height>75</height>
+                <width>75</width>
+            </thumbnail>
+        </myzoom>
+    </default>
 </config>

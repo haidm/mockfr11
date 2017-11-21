@@ -33,7 +33,6 @@ class Dangnd_Bestseller_Block_Bestseller extends Mage_Catalog_Block_Product_Abst
                 array())
             ->order(array('ordered_qty DESC'))
             ->limit(10);
-        //die($list->getSelect());
-        return $list->getItems();
+        return ['category' => $catId, 'list' => $list->getItems()];
     }
 }

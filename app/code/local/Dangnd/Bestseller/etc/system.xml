@@ -8,8 +8,27 @@
             <show_in_website>1</show_in_website>
             <show_in_store>1</show_in_store>
             <groups>
-                <bestseller_group translate="title">
-                    <label>General</label>
+                <products translate="title">
+                    <label>Product</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <qty translate="title">
+                            <label>Quantity :</label>
+                            <comment>Quantity of product taken out</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_store>1</show_in_store>
+                            <show_in_website>1</show_in_website>
+                        </qty>
+                    </fields>
+                </products>
+                <home translate="title">
+                    <label>Home page</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>10</sort_order>
                     <show_in_default>1</show_in_default>
@@ -19,22 +38,22 @@
                         <qty translate="title">
                             <label>Quantity :</label>
                             <frontend_type>text</frontend_type>
-                            <comment>The quantity of the product is displayed</comment>
+                            <comment>The number of products displayed in a slide</comment>
                             <sort_order>0</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_store>1</show_in_store>
                             <show_in_website>1</show_in_website>
                         </qty>
-                        <effect translate="label">
-                            <label>Effect :</label>
-                            <frontend_type>select</frontend_type>
-                            <comment>Effect for slides</comment>
-                            <sort_order>10</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                            <source_model>dangnd_bestseller/effectSlide</source_model>
-                        </effect>
+                        <!--<effect translate="label">-->
+                            <!--<label>Effect :</label>-->
+                            <!--<frontend_type>select</frontend_type>-->
+                            <!--<comment>Effect for slides</comment>-->
+                            <!--<sort_order>10</sort_order>-->
+                            <!--<show_in_default>1</show_in_default>-->
+                            <!--<show_in_website>1</show_in_website>-->
+                            <!--<show_in_store>1</show_in_store>-->
+                            <!--<source_model>dangnd_bestseller/effectSlide</source_model>-->
+                        <!--</effect>-->
                         <active translate="label">
                             <label>Is Active :</label>
                             <frontend_type>select</frontend_type>
@@ -46,7 +65,46 @@
                             <source_model>adminhtml/system_config_source_yesno</source_model>
                         </active>
                     </fields>
-                </bestseller_group>
+                </home>
+                <category translate="title">
+                    <label>Category page</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <qty translate="title">
+                            <label>Quantity :</label>
+                            <frontend_type>text</frontend_type>
+                            <comment>The number of products displayed in a slide</comment>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_store>1</show_in_store>
+                            <show_in_website>1</show_in_website>
+                        </qty>
+                        <!--<effect translate="label">-->
+                            <!--<label>Effect :</label>-->
+                            <!--<frontend_type>select</frontend_type>-->
+                            <!--<comment>Effect for slides</comment>-->
+                            <!--<sort_order>10</sort_order>-->
+                            <!--<show_in_default>1</show_in_default>-->
+                            <!--<show_in_website>1</show_in_website>-->
+                            <!--<show_in_store>1</show_in_store>-->
+                            <!--<source_model>dangnd_bestseller/effectSlide</source_model>-->
+                        <!--</effect>-->
+                        <active translate="label">
+                            <label>Is Active :</label>
+                            <frontend_type>select</frontend_type>
+                            <comment>Enable/Disable</comment>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </active>
+                    </fields>
+                </category>
             </groups>
         </mybestseller>
     </sections>

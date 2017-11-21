@@ -53,4 +53,19 @@
             </adminhtml>
         </routers>
     </admin>
+    <default>
+        <mybestseller>
+            <products>
+                <qty>10</qty>
+            </products>
+            <home>
+                <qty>5</qty>
+                <active>1</active>
+            </home>
+            <category>
+                <qty>4</qty>
+                <active>1</active>
+            </category>
+        </mybestseller>
+    </default>
 </config>
