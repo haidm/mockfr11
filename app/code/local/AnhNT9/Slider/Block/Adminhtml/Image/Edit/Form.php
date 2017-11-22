@@ -52,6 +52,8 @@ class AnhNT9_Slider_Block_Adminhtml_Image_Edit_Form extends Mage_Adminhtml_Block
     {
         $model  = Mage::registry('imagemodel');
 
+        $valueDescription = $model->getData()['description'];
+
         $configSettings = Mage::getSingleton('cms/wysiwyg_config')->getConfig(
             array(
                 'add_widgets' => false,
@@ -79,6 +81,7 @@ class AnhNT9_Slider_Block_Adminhtml_Image_Edit_Form extends Mage_Adminhtml_Block
                 'class'     => 'required-entry required-file',
                 'renderer'  => 'anhnt9_slider/adminhtml_image_edit_renderer',
                 'required'  => true,
+                'note' => '(*.jpg, *.png, *.gif)',
             )
         );
         $fieldset->addField('sl_id', 'multiselect',
@@ -97,7 +100,8 @@ class AnhNT9_Slider_Block_Adminhtml_Image_Edit_Form extends Mage_Adminhtml_Block
             'class'     => 'required-entry',
             'required'  => true,
             'wysiwyg' => true,
-            'config'    => $configSettings
+            'config'    => $configSettings,
+            'value'     => $valueDescription
         ));
 
         if ($model->getId()) {

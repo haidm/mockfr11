@@ -23,9 +23,9 @@ class AnhNT9_Slider_Block_Adminhtml_Slider_Edit extends Mage_Adminhtml_Block_Wid
         $model = Mage::registry('slidermodel');
 
 
-        $this->_updateButton('save', 'label', Mage::helper('anhnt9_slider')->__('Save Slider'));
+        $this->_updateButton('save', 'label', Mage::helper('anhnt9_slider')->__('Save Album'));
         $this->_addButton('delete', array(
-            'label'     => Mage::helper('anhnt9_slider')->__('Delete Slider'),
+            'label'     => Mage::helper('anhnt9_slider')->__('Delete Album'),
             'onclick'   => "window.location.href = '" . $this->getUrl("*/*/delete", array("slider_id" => $model->getId())) . "'",
             'class' => 'delete'
         ), 10);

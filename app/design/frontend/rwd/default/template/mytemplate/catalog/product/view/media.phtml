@@ -60,19 +60,68 @@ $_width_thumbnail = Mage::getStoreConfig('catalog/product_image_zoom/width_thumb
     });
     CloudZoom.quickStart();
 </script>
-<img  class="cloudzoom" alt="Cloud Zoom small image" id="zoom1"
-     src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize($_image_width, $_image_height) ?>"
-     title="<?php echo $this->escapeHtml($this->getImageLabel()); ?>"
-     data-cloudzoom='
-                     zoomImage:"<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(768, 1024) ?>",
-                     zoomWidth:<?php echo $_box_zoom_width;?>,
-                     zoomHeight:<?php echo $_box_zoom_height;?>,
+<style>
+    .product-label{
+        position: relative;
+    }
+    .new{
+        position: absolute;
+    }
+    .ribbon-bottom-right{
+        top: auto;
+        bottom: 0;
+        width: 100px;
+        height: 100px;
+    }
+    .ribbon-right{
+        padding:14px;
+        left: -11px;
+        top:43px;
+        width: 150px;
+    }
+    .ribbon-top-left{
+        width: 100px;
+        height: 100px;
+    }
+    .ribbon{
+        padding: 7px 0;
+        left: -40px;
+        top:13px;
+        width: 150px;
+    }
+</style>
+<div class="product-label">
+    <?php
+    if (!empty($_product->getData('product_label'))) {
+        $product_label = explode(',', $_product->getData('product_label'));
+        foreach ($product_label as $attr_id) {
+            $product_label_item = $_product->getResource()->getAttribute('product_label')->getFrontend()->getOption($attr_id);
+            if ($product_label_item == 'Sale') {
+                echo '<span class="onsale" ></span>';
+            }
+            if ($product_label_item == 'New') {
+                echo '<div class="ribbon-top-left"><div class="ribbon">New</div></div>';
+            }
+            if ($product_label_item == 'Promotion') {
+                echo '<div class="ribbon-bottom-right"><div class="ribbon-right">Promition</div></div>';
+            }
+        }
+    }
+    ?>
+    <img class="cloudzoom" alt="Cloud Zoom small image" id="zoom1"
+         src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize($_image_width, $_image_height) ?>"
+         title="<?php echo $this->escapeHtml($this->getImageLabel()); ?>"
+         data-cloudzoom='
+                     zoomImage:"<?php echo $this->helper('catalog/image')->init($_product, 'image');?>",
+                     zoomWidth:<?php echo $_box_zoom_width; ?>,
+                     zoomHeight:<?php echo $_box_zoom_height; ?>,
                      tintColor:"#000",
                      tintOpacity:0.25,
                      maxMagnification:4,
-                     zoomClass:"cloudzoom-lens",
-                     lensClass:"cloudzoom-lens",
+                     captionPosition:"bottom",
+                     autoInside:750,
                      '>
+</div>
 <div class="more-views">
     <div class="zoom-desc">
         <h2><?php echo $this->__('More Views') ?></h2>
@@ -81,9 +130,10 @@ $_width_thumbnail = Mage::getStoreConfig('catalog/product_image_zoom/width_thumb
             foreach ($this->getGalleryImages() as $_image): ?>
                 <?php if ($this->isGalleryImageVisible($_image)): ?>
                     <li>
-                        <a href="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile())->resize(768, 1024); ?>"
+                        <a href="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile()); ?>"
                            class="thumb-link">
-                            <img class="cloudzoom-gallery" width="<?php echo $_width_thumbnail; ?>" height="<?php echo $_height_thumbnail; ?>"
+                            <img class="cloudzoom-gallery" width="<?php echo $_width_thumbnail; ?>"
+                                 height="<?php echo $_height_thumbnail; ?>"
                                  src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile())->resize($_image_width, $_image_height); ?>"
                                  title="<?php echo $this->escapeHtml($this->getImageLabel()); ?>"
                                  alt="<?php echo $this->escapeHtml($this->getImageLabel()); ?>"

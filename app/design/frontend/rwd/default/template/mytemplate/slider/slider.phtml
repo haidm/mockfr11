@@ -73,7 +73,6 @@ if (isset($enable_slider) && ($enable_slider == 1)) {
             color: white;
             text-transform: capitalize;
             text-shadow: 3px 2px green;
-
         }
     </style>
     <!-- Swiper -->
@@ -108,7 +107,7 @@ if (isset($enable_slider) && ($enable_slider == 1)) {
     <!-- Initialize Swiper -->
     <!--    Pagination Slider   -->
     <?php
-    $typeSlider = Mage::getStoreConfig('design/slider/select_slider');
+    $typeSlider = Mage::getStoreConfig('design/slider/type_slider');
     if ($typeSlider == 1) {
         ?>
         <script>

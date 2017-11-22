@@ -17,6 +17,7 @@
                             <sort_order>10</sort_order>
                             <frontend_class>required-entry</frontend_class>
                             <validate>validate-number</validate>
+                            <backend_model>anhnt9_productzoom/number</backend_model>
                             <validate>validate-one-required</validate>
                             <validate>validate-greater-than-zero</validate>
                             <show_in_default>1</show_in_default>
@@ -29,6 +30,7 @@
                             <frontend_type>text</frontend_type>
                             <frontend_class>required-entry</frontend_class>
                             <validate>validate-number</validate>
+                            <backend_model>anhnt9_productzoom/number</backend_model>
                             <validate>validate-one-required</validate>
                             <validate>validate-greater-than-zero</validate>
                             <sort_order>10</sort_order>
@@ -42,6 +44,7 @@
                             <frontend_type>text</frontend_type>
                             <sort_order>20</sort_order>
                             <frontend_class>required-entry</frontend_class>
+                            <backend_model>anhnt9_productzoom/number</backend_model>
                             <validate>validate-number</validate>
                             <validate>validate-one-required</validate>
                             <validate>validate-greater-than-zero</validate>
@@ -59,6 +62,7 @@
                             <validate>validate-number</validate>
                             <validate>validate-one-required</validate>
                             <validate>validate-greater-than-zero</validate>
+                            <backend_model>anhnt9_productzoom/number</backend_model>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -72,6 +76,7 @@
                             <validate>validate-number</validate>
                             <validate>validate-one-required</validate>
                             <validate>validate-greater-than-zero</validate>
+                            <backend_model>anhnt9_productzoom/imagethumbnail</backend_model>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -85,6 +90,7 @@
                             <validate>validate-number</validate>
                             <validate>validate-one-required</validate>
                             <validate>validate-greater-than-zero</validate>
+                            <backend_model>anhnt9_productzoom/imagethumbnail</backend_model>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>

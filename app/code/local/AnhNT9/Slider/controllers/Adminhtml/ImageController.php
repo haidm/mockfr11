@@ -81,7 +81,7 @@ class AnhNT9_Slider_Adminhtml_ImageController extends Mage_Adminhtml_Controller_
         if (!$postData) {
             return $this->getResponse()->setRedirect($this->getUrl('*/image'));
         }
-
+        //Add image
         if (!empty($_FILES['name_image']['name'])) {
             try {
                 $newDir = 'my_slider';
@@ -112,11 +112,6 @@ class AnhNT9_Slider_Adminhtml_ImageController extends Mage_Adminhtml_Controller_
             $this->_redirect('*/*/');
             return;
         }
-        if ($fileType == 'Image is required') {
-            Mage::getSingleton('adminhtml/session')->addError(Mage::helper('anhnt9_slider')->__($fileName . " Image is required"));
-            $this->_redirect('*/*/');
-            return;
-        }
 
         //modify image and delete file image if delete image to checkbox
         if (isset($postData['name_image']['delete']) && $postData['name_image']['delete'] == 1) {
@@ -134,7 +129,11 @@ class AnhNT9_Slider_Adminhtml_ImageController extends Mage_Adminhtml_Controller_
             }
         }
         //save image to database
-        $postData['name_image'] = $_imgUrl;
+        if (isset($_imgUrl) && !empty($_imgUrl)){
+            $postData['name_image'] = $_imgUrl;
+        }else{
+            $postData['name_image'] = $postData['name_image']['value'];
+        }
         if ($postData['image_id']) {
             $image = Mage::getModel('anhnt9_slider/image');
             $image->setData($postData);

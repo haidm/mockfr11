@@ -10,6 +10,8 @@ class AnhNT9_FeaturedProduct_Block_Product_Featured extends Mage_Catalog_Block_P
     public function getFeaturedProducts() {
         $products = Mage::getModel('catalog/product')->getCollection()
             ->addAttributeToFilter('is_featured', array(1))
+            ->addAttributeToSelect('name')
+            ->joinAttribute('visibility', 'catalog_product/visibility', 'entity_id', null, 'inner', 1)
             ->addAttributeToFilter('status', array(1));
         return $products;
     }

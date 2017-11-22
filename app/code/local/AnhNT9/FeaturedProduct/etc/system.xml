@@ -23,6 +23,7 @@
                             <label>Number Product Display Slider</label>
                             <frontend_type>text</frontend_type>
                             <frontend_class>required-entry</frontend_class>
+                            <backend_model>anhnt9_featuredproduct/number</backend_model>
                             <validate>validate-number</validate>
                             <validate>validate-one-required</validate>
                             <validate>validate-greater-than-zero</validate>

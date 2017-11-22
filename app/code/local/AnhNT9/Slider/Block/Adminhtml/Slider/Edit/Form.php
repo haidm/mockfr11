@@ -25,7 +25,7 @@
  */
 
 /**
- * Adminhtml Tax Rule Edit Form
+ * Adminhtml anhnt9_slider Rule Edit Form
  *
  * @category   Mage
  * @package    Mage_Adminhtml
@@ -58,14 +58,14 @@ class AnhNT9_Slider_Block_Adminhtml_Slider_Edit_Form extends Mage_Adminhtml_Bloc
         ));
 
         $fieldset   = $form->addFieldset('base_fieldset', array(
-            'legend'    => Mage::helper('tax')->__('Slider Information')
+            'legend'    => Mage::helper('anhnt9_slider')->__('Slider Information')
         ));
 
 
         $fieldset->addField('name_slider', 'text',
             array(
                 'name'      => 'name_slider',
-                'label'     => Mage::helper('tax')->__('Name Slider'),
+                'label'     => Mage::helper('anhnt9_slider')->__('Name Album'),
                 'class'     => 'required-entry',
                 'required'  => true,
             )
@@ -75,7 +75,7 @@ class AnhNT9_Slider_Block_Adminhtml_Slider_Edit_Form extends Mage_Adminhtml_Bloc
             $fieldset->addField('slider_id', 'hidden',
                 array(
                     'name'      => 'slider_id',
-                    'label'     => Mage::helper('anhnt9_slider')->__('Slider Id')
+                    'label'     => Mage::helper('anhnt9_slider')->__('Album Id')
                 )
             );
         }

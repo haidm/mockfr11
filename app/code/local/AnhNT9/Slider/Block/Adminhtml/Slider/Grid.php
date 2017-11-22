@@ -42,16 +42,16 @@ class AnhNT9_Slider_Block_Adminhtml_Slider_Grid extends Mage_Adminhtml_Block_Wid
     {
         $this->addColumn('slider_id',
             array(
-                'header' => Mage::helper('anhnt9_slider')->__('Slider ID'),
+                'header' => Mage::helper('anhnt9_slider')->__('Album ID'),
                 'index' => 'slider_id'
             )
         );
 
         $this->addColumn('name_slider',
             array(
-                'header' => Mage::helper('anhnt9_slider')->__('Slider Name'),
+                'header' => Mage::helper('anhnt9_slider')->__('Album Name'),
                 'index' => 'name_slider',
-                'type'    => 'text'
+                'type'    => 'text',
             )
         );
 

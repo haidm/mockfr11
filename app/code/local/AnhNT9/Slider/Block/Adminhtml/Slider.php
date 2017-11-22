@@ -12,8 +12,8 @@ class AnhNT9_Slider_Block_Adminhtml_Slider extends Mage_Adminhtml_Block_Widget_G
     {
         $this->_controller      = 'adminhtml_slider';
         $this->_blockGroup      = 'anhnt9_slider';
-        $this->_headerText      = Mage::helper('anhnt9_slider')->__('Manage Slider');
-        $this->_addButtonLabel  = Mage::helper('anhnt9_slider')->__('Add New Slider');
+        $this->_headerText      = Mage::helper('anhnt9_slider')->__('Manage Album');
+        $this->_addButtonLabel  = Mage::helper('anhnt9_slider')->__('Add New Album');
         parent::__construct();
     }
 }
