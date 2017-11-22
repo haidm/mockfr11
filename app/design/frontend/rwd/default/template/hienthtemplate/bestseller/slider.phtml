@@ -1,0 +1,55 @@
+<?php
+    $configEnable = Mage::getStoreConfig('general/Hienth_Bestseller/enablebestsellerhomepage');
+    $sliderQuantity = Mage::getStoreConfig('general/Hienth_Bestseller/sliderquantityhome');
+    if($configEnable == 1) {$products = $this->getBestsellerHome();}
+?>
+<?php if($products):?>
+    <style>
+        .bestsellercss1{color:#2c464f;font-weight: 100;font-style: normal;font-size: 18px;}
+        /*.bestsellercss1:hover{list-style: none;font-size:20px;}*/
+        .text_best{text-align: center;font-size: 24px;font-style: normal;font-weight: 400}
+        .img-bestseller{border:1px solid #ccc}
+        .img-bestseller:hover{border:1px solid #00ACEE}
+    </style>
+    <h3 class="text_best">Bestseller</h3>
+    <div class="swiper-container bestsellercss">
+        <div class="swiper-wrapper">
+        <?php foreach ($products as $product):?>
+            <div class="swiper-slide">
+                <a href="<?php echo $product->getProductUrl() ?>">
+                    <img  class="img-bestseller" src="<?php echo $this->helper('catalog/image')->init($product, 'thumbnail')->resize(150) ?>">
+                    <p class="bestsellercss1"><?php echo $product->getName();?></p>
+                    <p><?php echo Mage::helper('core')->currency($product->getPrice(), true, false);?></p>
+                </a>
+<!--                <a>--><?php //var_dump($product->getPrice());die; ?><!--</a>-->
+            </div>
+        <?php endforeach;?>
+        </div>
+        <!-- Add Pagination -->
+<!--        <div class="swiper-pagination bestsellercss2"></div>-->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <script>
+        var swiper = new Swiper('.bestsellercss', {
+            slidesPerView: 5,
+            spaceBetween: 10,
+            init: true,
+            loop:true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            }
+
+        });
+    </script>
+<?php endif;?>
+

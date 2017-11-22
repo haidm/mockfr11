@@ -1,0 +1,58 @@
+<config>
+    <sections>
+        <general>
+            <groups>
+                <Hienth_Bestseller translate="label">
+                    <label>Bestseller Config</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <sliderquantityhome translate="label">
+                            <label>Quantity Product in Slider in Homepage</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <validate>required-entry validate-number</validate>
+                            <frontend_class>validate-digits-range digits-range-1-8</frontend_class>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                        </sliderquantityhome>
+                        <enablebestsellerhomepage translate="label">
+                            <label>Enable Bestseller in Homepage</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </enablebestsellerhomepage>
+                        <sliderquantitycate translate="label">
+                            <label>Quantity Product in Slider in Category</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <validate>required-entry validate-number</validate>
+                            <frontend_class>validate-digits-range digits-range-1-5</frontend_class>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                        </sliderquantitycate>
+                        <enablebestsellercate translate="label">
+                            <label>Enable Bestseller in Category</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </enablebestsellercate>
+                    </fields>
+                </Hienth_Bestseller>
+            </groups>
+        </general>
+    </sections>
+</config>

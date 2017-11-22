@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <Hienth_ProductLabel>
+        <Hienth_Slider>
             <active>true</active>
             <codePool>local</codePool>
-        </Hienth_ProductLabel>
+                    </Hienth_Slider>
     </modules>
 </config>

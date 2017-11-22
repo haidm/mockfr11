@@ -1,0 +1,93 @@
+<config>
+    <sections>
+        <general>
+            <groups>
+                <Hienth_ProductZoom translate="label">
+                    <label>Product Zoom Cofig</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>5</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <heightMain translate="label">
+                            <label>Image Main Height</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <validate>required-entry validate-number</validate>
+                            <frontend_class>validate-digits-range digits-range-1-1000</frontend_class>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                        </heightMain>
+                        <widthMain translate="label">
+                            <label>Image Main Width</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <validate>required-entry validate-number</validate>
+                            <frontend_class>validate-digits-range digits-range-1-1000</frontend_class>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                        </widthMain>
+                        <heightBox translate="label">
+                            <label>Image Box Height</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <validate>required-entry validate-number</validate>
+                            <frontend_class>validate-digits-range digits-range-1-1000</frontend_class>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                        </heightBox>
+                        <widthBox translate="label">
+                            <label>Image Box Width</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <validate>required-entry validate-number</validate>
+                            <frontend_class>validate-digits-range digits-range-1-1000</frontend_class>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                        </widthBox>
+                        <heightThumb translate="label">
+                            <label>Image Thumbnail Height</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <validate>required-entry validate-number</validate>
+                            <frontend_class>validate-digits-range digits-range-1-1000</frontend_class>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                        </heightThumb>
+                        <widthThumb translate="label">
+                            <label>Image Thumbnail Width</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>6</sort_order>
+                            <validate>required-entry validate-number</validate>
+                            <frontend_class>validate-digits-range digits-range-1-1000</frontend_class>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                        </widthThumb>
+                        <!--<enable translate="label">-->
+                            <!--<label>Enable Mega Menu </label>-->
+                            <!--<frontend_type>select</frontend_type>-->
+                            <!--<sort_order>3</sort_order>-->
+                            <!--<show_in_default>1</show_in_default>-->
+                            <!--<show_in_website>1</show_in_website>-->
+                            <!--<show_in_store>1</show_in_store>-->
+                            <!--<source_model>adminhtml/system_config_source_yesno</source_model>-->
+                        <!--</enable>-->
+                    </fields>
+                </Hienth_ProductZoom>
+            </groups>
+        </general>
+    </sections>
+</config>

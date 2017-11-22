@@ -6,6 +6,9 @@
                 <template>hienthtemplate/catalog/product/list.phtml</template>
             </action>
         </reference>
+        <reference name="content">
+            <block type="Hienth_Bestseller/bestseller"  template="hienthtemplate/catalog/category/view.phtml"/>
+        </reference>
     </catalog_category_default>
     <catalog_category_layered>
         <reference name="product_list">
@@ -13,14 +16,53 @@
                 <template>hienthtemplate/catalog/product/list.phtml</template>
             </action>
         </reference>
+        <reference name="content">
+            <block type="Hienth_Bestseller/bestseller" template="hienthtemplate/catalog/category/view.phtml"/>
+        </reference>
     </catalog_category_layered>
+    <catalog_product_view>
+        <reference name="product.info.media">
+            <action method="setTemplate">
+                <template>hienthtemplate/catalog/product/view/media.phtml</template>
+            </action>
+        </reference>
+    </catalog_product_view>
     <default>
         <reference name="head">
             <action method="addCss">
-                <!--<type>skin_css</type>-->
-                <!--<file>css/style-label.css</file>-->
                 <stylesheet>css/style-label.css</stylesheet>
             </action>
+            <action method="addCss">
+                <stylesheet>css/swiper.min.css</stylesheet>
+            </action>
+            <action method="addCss">
+                <stylesheet>css/styles.css</stylesheet>
+            </action>
+            <action method="addCss">
+                <stylesheet>css/scaffold-forms.css</stylesheet>
+            </action>
+            <action method="addCss">
+                <stylesheet>css/cloudzoom.css</stylesheet>
+            </action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <script>js/cloudzoom.js</script>
+            </action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <script>js/swiper.min.js</script>
+            </action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <script>js/cloudzoom.0.1.js</script>
+            </action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <script>js/cloudzoom.jquery.js</script>
+            </action>
+        </reference>
+        <reference name="catalog.topnav">
+            <block type="Hienth_MegaMenu/function" name="catalog.topnav" template="hienthtemplate/page/topmenu/menu.phtml"/>
         </reference>
     </default>
 </layout>

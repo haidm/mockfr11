@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <mega>
+            <children>
+                <slider translate="title" module="Hienth_Slider">
+                    <title>Slider Manager</title>
+                    <!--Mapped to adminhtmlModulePath/controller/action-->
+                    <!--<action>adminhtml/slider/index</action>-->
+                    <sort_order>2</sort_order>
+                    <children>
+                        <slidertable translate="title" module="Hienth_Slider">
+                            <title>Slider Table</title>
+                            <!--Mapped to adminhtmlModulePath/controller/action-->
+                            <action>adminhtml/slider/index</action>
+                            <sort_order>0</sort_order>
+                        </slidertable>
+                    </children>
+                    <children>
+                        <imagetable translate="title" module="Hienth_Slider">
+                            <title>Image Table</title>
+                            <!--Mapped to adminhtmlModulePath/controller/action-->
+                            <action>adminhtml/image/index</action>
+                            <sort_order>2</sort_order>
+                        </imagetable>
+                    </children>
+                </slider>
+            </children>
+        </mega>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <mega>
+                        <children>
+                            <slider translate="title" module="Hienth_Slider">
+                                <title>Slider Manager</title>
+                                <children>
+                                    <slidertable translate="title" module="Hienth_Slider">
+                                        <title>Slider Table</title>
+                                    </slidertable>
+                                </children>
+                                <children>
+                                    <imagetable translate="title" module="Hienth_Slider">
+                                        <title>Image Table</title>
+                                    </imagetable>
+                                </children>
+                            </slider>
+                        </children>
+                    </mega>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

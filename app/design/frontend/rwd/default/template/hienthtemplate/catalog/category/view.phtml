@@ -1,0 +1,78 @@
+<?php
+$configEnable = Mage::getStoreConfig('general/Hienth_Bestseller/enablebestsellercate');
+$sliderQuantity = Mage::getStoreConfig('general/Hienth_Bestseller/sliderquantitycate');
+if($configEnable == 1) {$products = $this->getBestsellerCategory();}
+?>
+<?php if(count($products) > 0) :?>
+    <?php
+        if(count($products) >= 3)
+        {
+            $loop = 'true';
+
+        }
+        else
+        {
+            $loop = 'false';
+        }
+
+        if(count($products) == 1)  {$center = 'true';}
+        else {$center = 'false';}
+    ?>
+    <style>
+        .bestsellercss1{color:#2c464f;font-weight: 100;font-style: normal;font-size: 18px;}
+        /*.bestsellercss1:hover{list-style: none;font-size:20px;}*/
+        .text_best{text-align: center;font-size: 24px;font-style: normal;font-weight: 400}
+        .img-bestseller{border:1px solid #ccc;text-align: center;}
+        .img-bestseller:hover{border:1px solid #00ACEE}
+    </style>
+    <h3 class="text_best">Bestseller Category</h3>
+    <div class="swiper-container bestsellercss">
+        <div class="swiper-wrapper">
+            <?php foreach ($products as $product):?>
+                <div class="swiper-slide">
+                    <a href="<?php echo $product->getProductUrl() ?>">
+                        <img  class="img-bestseller" src="<?php echo $this->helper('catalog/image')->init($product, 'thumbnail')->resize(150) ?>">
+                        <p class="bestsellercss1"><?php echo $product->getName();?></p>
+                        <p><?php echo Mage::helper('core')->currency($product->getPrice(), true, false);?></p>
+                    </a>
+                </div>
+            <?php endforeach;?>
+            <?php ?>
+        </div>
+        <!-- Add Pagination -->
+        <!--        <div class="swiper-pagination bestsellercss2"></div>-->
+        <?php if($loop == 'true'):?>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <?php endif;?>
+    </div>
+    <script>
+        var swiper = new Swiper('.bestsellercss', {
+            slidesPerView:<?php echo $sliderQuantity ?>,
+            spaceBetween: 10,
+            init: true,
+            centeredSlides:<?php echo $center ?>,
+            loop:<?php echo $loop ?>,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            <?php
+                if($loop == 'true')
+                {
+                    echo "autoplay: {
+                                delay: 2500,
+                                disableOnInteraction: false,
+                            }";
+                }
+            ?>
+
+
+        });
+    </script>
+<?php endif;?>
+

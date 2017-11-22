@@ -1,13 +1,42 @@
 *{padding:0;margin: 0}
-.parent-label{position: relative;overflow: hidden;}
-.label-new{color:indianred;left:-100px;position: absolute;z-index: 1;text-transform: uppercase;
-    transform: rotate(315deg);font-weight: bold;top:25px;
-    transition: 1s;
+/***********************************************MegaMenu***************************/
+.megamenu{background-color:#d5e8ff;border:1px solid #d0dfe2;}
+.megamenu li{display:inline-block;text-transform: uppercase;padding:10px;position: relative;}
+.megamenu ul{display: none;position: absolute;left:0;top:40px;background-color:#d5e8ff;}
+.megamenu ul li{position: relative;display: block;text-align: center;width:150px;}
+.megamenu ul li:hover{background-color: #0A246A;border:1px solid #0a263d;}
+.megamenu ul ul{position: absolute;left:145px;top:0;display: none;}
+.megamenu ul ul li{position: relative;display: block;text-align: center;}
+.nav-primary li{padding:5px 20px 5px 20px;}
+/*.megamenu ul ul ul{position: absolute;}*/
 
+/*********************************label***********************************/
+.parent-label{position: relative;}
+
+/***********************************grid**********************************/
+.wrap-label{position: absolute;z-index: 1;width:80px;height:80px;overflow: hidden;}
+.label-new{color:#cd3319;position:relative;text-transform: uppercase;
+    transform: rotate(315deg);font-weight: bold;top:2px;left:-33px;
+    transition: 1s;width:120px;height:40px;
+    background: #FFE71A;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
-.label-sale{color:yellow;right:-100px;position: absolute;z-index: 2;text-transform: uppercase;
-    transform: rotate(-315deg);top:25px;font-weight: bold;}
-.label-promotion{color:indianred;right:-100px;top:200px;position: absolute;z-index: 1;
+.label-sale{color:#1e46ff;right:-110px;position: absolute;z-index: 2;text-transform: uppercase;
+    transform: rotate(-315deg);top:25px;font-weight: bold;
+    text-shadow: 2px 2px 8px red;
+}
+.label-promotion{color:indianred;right:-105px;top:200px;position: absolute;z-index: 1;
     text-transform: uppercase;font-weight: bold;
     /*color*/
     background-image: -webkit-linear-gradient(left, #ff0000, #ff7f00, #ffff00, #00ff00, #00ffff, #0000ff, #8b00ff);
@@ -32,14 +61,31 @@
     transform: rotateY(-180deg);
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2)
 }
-.label-new-list{color:indianred;position: absolute;z-index: 1;text-transform: uppercase;
-    transform: rotate(315deg);font-weight: bold;top:25px;
-    transition: 1s;
-
+/***********************************list**********************************/
+.wrap-label-new-list{position: absolute;z-index: 1;overflow: hidden;width:100px;height:100px;top:15px;}
+.label-new-list{color: #cd3319;position:relative;text-transform: uppercase;
+    transform: rotate(315deg);font-weight: bold;text-align: center;
+    transition: 1s;background: #FFE71A;height:50px;width:140px;left:-38px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    /*opacity: 0.5;*/
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
-.label-sale-list{color:yellow;right:-300px;position: absolute;z-index: 2;text-transform: uppercase;
-    transform: rotate(-315deg);top:25px;font-weight: bold;}
-.label-promotion-list{color:indianred;right:-300px;top:290px;position: absolute;z-index: 1;
+.label-sale-list{color: #1e46ff;right:-300px;position: absolute;z-index: 2;text-transform: uppercase;
+    transform: rotate(-315deg);top:25px;font-weight: bold;
+    text-shadow: 2px 2px 8px red;
+}
+.label-promotion-list{color:indianred;right:-295px;top:290px;position: absolute;z-index: 1;
     text-transform: uppercase;font-weight: bold;
     /*color*/
     background-image: -webkit-linear-gradient(left, #ff0000, #ff7f00, #ffff00, #00ff00, #00ffff, #0000ff, #8b00ff);
@@ -54,8 +100,8 @@
     -webkit-background-clip: text;
     -webkit-background-size: 300px;
 
-    transition: 1s;
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    transition: 2s;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
 }
 .label-promotion-list:hover{
     -webkit-transform: rotateY(-180deg);

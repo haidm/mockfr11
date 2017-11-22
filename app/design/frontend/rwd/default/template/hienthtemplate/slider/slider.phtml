@@ -1,0 +1,109 @@
+<?php $configSlider = Mage::getStoreConfig('general/Hienth_Slider/typevertical'); ?>
+<?php $enableSlider = Mage::getStoreConfig('general/Hienth_Slider/enableslider'); ?>
+<?php if($enableSlider == 0): ?>
+    <div class="slideshow-container">
+        <ul class="slideshow">
+            <li><a href="<?php echo Mage::getUrl('accessories/eyewear.html') ?>"><img src="<?php echo Mage::getBaseUrl('media') . 'wysiwyg/slide-1.jpg' ?>" alt="An eye for detail - Click to Shop Eye Wear" /></a></li>
+            <li><a href="<?php echo Mage::getUrl('women.html') ?>"><img src="<?php echo Mage::getBaseUrl('media') . 'wysiwyg/slide-2.jpg' ?>" /></a></li>
+            <li><a href="<?php echo Mage::getUrl('men.html') ?>"><img src="<?php echo Mage::getBaseUrl('media') . 'wysiwyg/slide-3.jpg' ?>" /></a></li>
+        </ul>
+    <div class="slideshow-pager">&nbsp;</div>
+    <span class="slideshow-prev">&nbsp;</span> <span class="slideshow-next">&nbsp;</span></div>
+<?php endif;?>
+<?php if($enableSlider == 1): ?>
+    <?php if($configSlider == 0): ?>
+        <style>
+           .slidercss1{width:100%;height:500px;}
+           .slidercss2 img{width:100%;height:100%}
+           .text{position: absolute;top:50px;color:yellow}
+        </style>
+        <div class="swiper-container slidercss1">
+            <div class="swiper-wrapper">
+                <?php $list = $this->getSlider();  ?>
+                <?php foreach ($list as $item): ?>
+                    <?php
+                        $url = Mage::getBaseUrl('media') .'hienth/image/'.$item['name'];
+                        $url = str_replace(' ','',$url);
+                        $url = str_replace('(','_',$url);
+                        $url = str_replace(')','_',$url);
+                    ?>
+                    <div class="swiper-slide slidercss2">
+                        <a href="<?php echo ($item['link']) ? $item['link'] : '#' ?>">
+                            <img src="<?php echo $url ?>">
+                            <span class="text"><?php echo $item['text']; ?></span>
+                        </a>
+                    </div>
+                <?php endforeach;?>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }
+            });
+        </script>
+    <?php endif;?>
+    <?php if($configSlider == 1):?>
+        <style>
+            .slidercss1{width:100%;height:620px;}
+            .slidercss2 img{width:100%;height:100%}
+            .text{position: absolute;top:50px;color:yellow}
+        </style>
+        <div class="swiper-container slidercss1">
+            <div class="swiper-wrapper">
+                <?php $list = $this->getSlider(); $count = count($list); ?>
+                <?php foreach ($list as $item): ?>
+                    <?php
+                    $url = Mage::getBaseUrl('media') .'hienth/image/'.$item['name'];
+                    $url = str_replace(' ','',$url);
+                    $url = str_replace('(','_',$url);
+                    $url = str_replace(')','_',$url);
+                    ?>
+                    <div class="swiper-slide slidercss2">
+                        <a href="<?php echo ($item['link']) ? $item['link'] : '#' ?>">
+                            <img src="<?php echo $url ?>">
+                            <span class="text"><?php echo $item['text']; ?></span>
+                        </a>
+                    </div>
+                <?php endforeach;?>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                direction: 'vertical',
+                slidesPerView: 1,
+                spaceBetween: 30,
+                mousewheel: true,
+                loop:true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }
+            });
+        </script>
+    <?php endif;?>
+<?php endif;?>

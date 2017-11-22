@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Hienth_Bestseller>
+            <version>0.1.0</version>
+        </Hienth_Bestseller>
+    </modules>
+    <global>
+        <models>
+            <Hienth_Bestseller>
+                <class>Hienth_Bestseller_Model</class>
+                <resourceModel>Hienth_Bestseller_resource</resourceModel>
+            </Hienth_Bestseller>
+            <Hienth_Bestseller_resource>
+                <class>Hienth_Bestseller_Model_Resource</class>
+            </Hienth_Bestseller_resource>
+        </models>
+        <blocks>
+            <Hienth_Bestseller>
+                <class>Hienth_Bestseller_Block</class>
+            </Hienth_Bestseller>
+        </blocks>
+        <helpers>
+            <Hienth_Bestseller>
+                <class>Hienth_Bestseller_Helper</class>
+            </Hienth_Bestseller>
+        </helpers>
+        <resources>
+            <Hienth_Bestseller_setup>
+                <setup>
+                    <module>Hienth_Bestseller</module>
+                </setup>
+            </Hienth_Bestseller_setup>
+        </resources>
+    </global>
+</config>

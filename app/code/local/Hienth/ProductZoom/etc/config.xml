@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Hienth_ProductZoom>
+            <version>0.1.0</version>
+        </Hienth_ProductZoom>
+    </modules>
+    <global>
+        <models>
+            <hienth_zoom>
+                <class>Hienth_ProductZoom_Model</class>
+                <resourceModel>hienth_zoom_resource</resourceModel>
+            </hienth_zoom>
+            <hienth_zoom_resource>
+                <class>Hienth_ProductZoom_Model_Resource</class>
+            </hienth_zoom_resource>
+        </models>
+        <blocks>
+            <hienth_zoom>
+                <class>Hienth_ProductZoom_Block</class>
+            </hienth_zoom>
+        </blocks>
+        <helpers>
+            <hienth_zoom>
+                <class>Hienth_ProductZoom_Helper</class>
+            </hienth_zoom>
+        </helpers>
+        <resources>
+            <hienth_zoom_setup>
+                <setup>
+                    <module>Hienth_ProductZoom</module>
+                </setup>
+            </hienth_zoom_setup>
+        </resources>
+    </global>
+</config>

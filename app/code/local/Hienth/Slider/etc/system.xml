@@ -1,0 +1,47 @@
+<config>
+    <sections>
+        <general>
+            <groups>
+                <Hienth_Slider translate="label">
+                    <label>Slider Config</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <slideractive translate="label">
+                            <label>Slider Active</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>2</sort_order>
+                            <validate>required-entry validate-number</validate>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                            <source_model>Hienth_Slider/slider</source_model>
+                        </slideractive>
+                        <typevertical translate="label">
+                            <label>Ngang Dọc Slider</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </typevertical>
+                        <enableslider translate="label">
+                            <label>Enable Slider</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </enableslider>
+                    </fields>
+                </Hienth_Slider>
+            </groups>
+        </general>
+    </sections>
+</config>

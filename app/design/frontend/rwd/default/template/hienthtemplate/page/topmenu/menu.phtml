@@ -1,0 +1,32 @@
+<?php
+    $menuConfig = Mage::getStoreConfig('general/Hienth_MegaMenu/enable');
+    if($menuConfig == 0){
+        $_menu = $this->getHtml('level-top');
+    }
+    else
+    {
+        $menuFirst = Mage::getModel('Hienth_MegaMenu/menu')->getCollection()->addFilter('level','0');
+        $level = Mage::getStoreConfig('general/Hienth_MegaMenu/level');
+        $listMenu = Mage::getModel('Hienth_MegaMenu/menu')->getCollection();
+    }
+?>
+<?php if($_menu): ?>
+    <nav id="nav">
+        <ol class="nav-primary">
+            <?php echo $_menu ?>
+        </ol>
+    </nav>
+<?php endif ?>
+<?php if($menuFirst): ?>
+    <nav id="nav">
+        <ul class="nav-primary megamenu">
+            <?php foreach ($menuFirst as $k => $v): ?>
+                <li>
+                    <a href="<?php echo $v->link; ?>"><?php echo $v->name; ?></a>
+                    <?php $this->getChildMenu($v,$level,$listMenu);
+                    ?>
+                </li>
+            <?php endforeach;?>
+        </ul>
+    </nav>
+<?php endif ?>

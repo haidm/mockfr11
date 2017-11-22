@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <mega translate="title" module="Hienth_MegaMenu">
+            <title>My Module</title>
+            <sort_order>85</sort_order>
+            <children>
+                <categoryitem translate="title" module="Hienth_MegaMenu">
+                    <title>Mega Menu Manager</title>
+                    <!--Mapped to adminhtmlModulePath/controller/action-->
+                    <action>adminhtml/menu/index</action>
+                    <sort_order>0</sort_order>
+                </categoryitem>
+            </children>
+        </mega>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <mega>
+                        <children>
+                            <categoryitem translate="title" module="Hienth_MegaMenu">
+                                <title>Mega Menu Manager</title>
+                            </categoryitem>
+                        </children>
+                    </mega>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
