@@ -15,7 +15,7 @@
                             <comment>Maximum width product image will be scaled down to in pixels</comment>
                             <frontend_type>text</frontend_type>
                             <sort_order>10</sort_order>
-                            <validate>required-entry</validate>
+                            <frontend_class>required-entry</frontend_class>
                             <validate>validate-number</validate>
                             <validate>validate-one-required</validate>
                             <validate>validate-greater-than-zero</validate>
@@ -27,7 +27,7 @@
                             <label>Image height</label>
                             <comment>Maximum height product image will be scaled down to in pixels</comment>
                             <frontend_type>text</frontend_type>
-                            <validate>required-entry</validate>
+                            <frontend_class>required-entry</frontend_class>
                             <validate>validate-number</validate>
                             <validate>validate-one-required</validate>
                             <validate>validate-greater-than-zero</validate>
@@ -41,7 +41,7 @@
                             <comment>Maximum width box zoom image will be scaled down to in pixels</comment>
                             <frontend_type>text</frontend_type>
                             <sort_order>20</sort_order>
-                            <validate>required-entry</validate>
+                            <frontend_class>required-entry</frontend_class>
                             <validate>validate-number</validate>
                             <validate>validate-one-required</validate>
                             <validate>validate-greater-than-zero</validate>
@@ -55,7 +55,7 @@
                             <comment>Maximum height box zoom image will be scaled down to in pixels</comment>
                             <frontend_type>text</frontend_type>
                             <sort_order>20</sort_order>
-                            <validate>required-entry</validate>
+                            <frontend_class>required-entry</frontend_class>
                             <validate>validate-number</validate>
                             <validate>validate-one-required</validate>
                             <validate>validate-greater-than-zero</validate>
@@ -68,7 +68,7 @@
                             <comment>Maximum width thumbnail image will be scaled down to in pixels</comment>
                             <frontend_type>text</frontend_type>
                             <sort_order>30</sort_order>
-                            <validate>required-entry</validate>
+                            <frontend_class>required-entry</frontend_class>
                             <validate>validate-number</validate>
                             <validate>validate-one-required</validate>
                             <validate>validate-greater-than-zero</validate>
@@ -81,7 +81,7 @@
                             <comment>Maximum height thumbnail image will be scaled down to in pixels</comment>
                             <frontend_type>text</frontend_type>
                             <sort_order>30</sort_order>
-                            <validate>required-entry</validate>
+                            <frontend_class>required-entry</frontend_class>
                             <validate>validate-number</validate>
                             <validate>validate-one-required</validate>
                             <validate>validate-greater-than-zero</validate>

@@ -10,12 +10,12 @@ class AnhNT9_Slider_Adminhtml_ImageController extends Mage_Adminhtml_Controller_
 {
     public function indexAction()
     {
-        $this->_title($this->__('My Menu'))
+        $this->_title($this->__('Slider'))
             ->_title($this->__('Image Manager'));
 
         $this->loadLayout()
             ->_setActiveMenu('image/image')
-            ->_addBreadcrumb(Mage::helper('anhnt9_slider')->__('My Menu'), Mage::helper('anhnt9_slider')->__('My Menu'))
+            ->_addBreadcrumb(Mage::helper('anhnt9_slider')->__('Slider'), Mage::helper('anhnt9_slider')->__('Slider'))
             ->_addBreadcrumb(Mage::helper('anhnt9_slider')->__('Image Manager'), Mage::helper('anhnt9_slider')->__('Image Manager'));
 
         $this->_addContent($this->getLayout()->createBlock('anhnt9_slider/adminhtml_image'))
@@ -28,7 +28,7 @@ class AnhNT9_Slider_Adminhtml_ImageController extends Mage_Adminhtml_Controller_
      */
     public function editAction()
     {
-        $this->_title($this->__('My Menu'))
+        $this->_title($this->__('Slider'))
             ->_title($this->__('Image Manager'));
 
         $image_id = $this->getRequest()->getParam('image_id');
@@ -50,7 +50,7 @@ class AnhNT9_Slider_Adminhtml_ImageController extends Mage_Adminhtml_Controller_
 
         $this->loadLayout()
             ->_setActiveMenu('slider/slider')
-            ->_addBreadcrumb(Mage::helper('anhnt9_slider')->__('My Menu'), Mage::helper('anhnt9_slider')->__('My Menu'))
+            ->_addBreadcrumb(Mage::helper('anhnt9_slider')->__('Slider'), Mage::helper('anhnt9_slider')->__('Slider'))
             ->_addBreadcrumb(Mage::helper('anhnt9_slider')->__('Slider Manager'), Mage::helper('anhnt9_slider')->__('Image Manager'));
 
         $this->_addBreadcrumb(

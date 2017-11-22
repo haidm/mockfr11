@@ -90,7 +90,7 @@ if (isset($enable_slider) && ($enable_slider == 1)) {
                                                    src="<?php echo $value['name_image']; ?>"
                                                    alt="<?php echo $value['description']; ?>"
                         />
-                        <span class="description"><strong><?php echo $value['description']; ?></strong></span>
+                        <span class="description"><strong><?php echo $this->stripTags($value['description']); ?></strong></span>
                     </div>
                     <?php
                 }

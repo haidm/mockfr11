@@ -2,7 +2,7 @@
 <config>
     <menu>
         <slider>
-            <title>My Menu</title>
+            <title>Slider</title>
             <sort_order>99</sort_order>
             <children>
                 <slidermenu translate="title" module="anhnt9_slider">

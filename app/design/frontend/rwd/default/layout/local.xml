@@ -13,7 +13,7 @@
                 <template>mytemplate/catalog/product/customlist.phtml</template>
             </action>
         </reference>
-        <reference name="catalog/layer_view">
+        <reference name="catalog.leftnav">
             <action method="setTemplate">
                 <template>mytemplate/catalog/layer/view.phtml</template>
             </action>

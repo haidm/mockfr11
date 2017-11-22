@@ -13,7 +13,7 @@
                         <enable_slider translate="label comment">
                             <label>Enable Slider</label>
                             <frontend_type>select</frontend_type>
-                            <validate>required-entry</validate>
+                            <frontend_class>required-entry</frontend_class>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -22,9 +22,9 @@
                     </fields>
                     <fields>
                         <select_slider translate="label comment">
-                            <label>Type Slider</label>
+                            <label>Select Album</label>
                             <frontend_type>select</frontend_type>
-                            <validate>required-entry</validate>
+                            <frontend_class>required-entry</frontend_class>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>

@@ -69,6 +69,7 @@ class AnhNT9_Slider_Block_Adminhtml_Image_Grid extends Mage_Adminhtml_Block_Widg
             array(
                 'header' => Mage::helper('anhnt9_slider')->__('Description'),
                 'index' => 'description',
+                'escape' => true,
                 'type' => 'text'
             )
         );

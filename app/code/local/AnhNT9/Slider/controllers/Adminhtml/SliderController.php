@@ -9,12 +9,12 @@ class AnhNT9_Slider_Adminhtml_SliderController extends Mage_Adminhtml_Controller
 {
     public function indexAction()
     {
-        $this->_title($this->__('My Menu'))
+        $this->_title($this->__('Slider'))
             ->_title($this->__('Slider Manager'));
 
         $this->loadLayout()
             ->_setActiveMenu('slider/slider')
-            ->_addBreadcrumb(Mage::helper('anhnt9_slider')->__('My Menu'), Mage::helper('anhnt9_slider')->__('My Menu'))
+            ->_addBreadcrumb(Mage::helper('anhnt9_slider')->__('Slider'), Mage::helper('anhnt9_slider')->__('Slider'))
             ->_addBreadcrumb(Mage::helper('anhnt9_slider')->__('Slider Manager'), Mage::helper('anhnt9_slider')->__('Slider Manager'))
         ;
 
@@ -28,7 +28,7 @@ class AnhNT9_Slider_Adminhtml_SliderController extends Mage_Adminhtml_Controller
      */
     public function editAction()
     {
-        $this->_title($this->__('My Menu'))
+        $this->_title($this->__('Slider'))
             ->_title($this->__('Slider Manager'));
 
         $sliderId  = $this->getRequest()->getParam('slider_id');
@@ -50,7 +50,7 @@ class AnhNT9_Slider_Adminhtml_SliderController extends Mage_Adminhtml_Controller
 
         $this->loadLayout()
             ->_setActiveMenu('slider/slider')
-            ->_addBreadcrumb(Mage::helper('anhnt9_slider')->__('My Menu'), Mage::helper('anhnt9_slider')->__('My Menu'))
+            ->_addBreadcrumb(Mage::helper('anhnt9_slider')->__('Slider'), Mage::helper('anhnt9_slider')->__('Slider'))
             ->_addBreadcrumb(Mage::helper('anhnt9_slider')->__('Slider Manager'), Mage::helper('anhnt9_slider')->__('Slider Manager'));
 
         $this->_addBreadcrumb(

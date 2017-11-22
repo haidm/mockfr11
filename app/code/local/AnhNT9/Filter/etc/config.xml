@@ -14,6 +14,20 @@
                     <module>AnhNT9_Filter</module>
                 </args>
             </anhnt9_filter>
+            <catalog>
+                <args>
+                    <modules>
+                        <AnhNT9_Filter before="Mage_Catalog">AnhNT9_Filter_Catalog</AnhNT9_Filter>
+                    </modules>
+                </args>
+            </catalog>
+            <catalogsearch>
+                <args>
+                    <modules>
+                        <AnhNT9_Filter before="Mage_CatalogSearch">AnhNT9_Filter_CatalogSearch</AnhNT9_Filter>
+                    </modules>
+                </args>
+            </catalogsearch>
         </routers>
         <layout>
             <updates>
@@ -34,14 +48,24 @@
             </anhnt9_filter_resource>
         </models>
         <blocks>
-            <anhnt9_filter>
-                <class>AnhNT9_Filter_Block</class>
-            </anhnt9_filter>
+            <catalog>
+                <rewrite>
+                    <layer_view>AnhNT9_Filter_Block_Catalog_Layer_View</layer_view>
+                    <layer_state>AnhNT9_Filter_Block_Catalog_Layer_State</layer_state>
+                    <layer_filter_abstract>AnhNT9_Filter_Block_Catalog_Layer_Abstract</layer_filter_abstract>
+                </rewrite>
+            </catalog>
         </blocks>
         <helpers>
             <anhnt9_filter>
                 <class>AnhNT9_Filter_Helper</class>
             </anhnt9_filter>
+            <configurableswatches><!-- change here -->
+                <rewrite>
+                    <productimg>AnhNT9_Filter_Helper_Productimg</productimg>
+                    <productlist>AnhNT9_Filter_Helper_Productlist</productlist>
+                </rewrite>
+            </configurableswatches><!-- change here -->
         </helpers>
     </global>
 </config>
