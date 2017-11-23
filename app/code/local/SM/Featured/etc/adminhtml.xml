@@ -1,34 +1,9 @@
 <?xml version="1.0"?>
 <config>
-    <menu>
-        <sm>
-            <children>
-                <featured translate="title">
-                    <title>Manage Featured</title>
-                    <sort_order>2</sort_order>
-                    <children>
-                        <index translate="title" module="SM_Featured">
-                            <title>Slider</title>
-                            <!--Mapped to adminhtmlModulePath/controller/action-->
-                            <action>adminhtml/featured/index</action>
-                            <sort_order>0</sort_order>
-                        </index>
-                    </children>
-                </featured>
-            </children>
-        </sm>
-    </menu>
     <acl>
         <resources>
             <admin>
                 <children>
-                    <catalog>
-                        <children>
-                            <slider translate="title" module="SM_Featured">
-                                <title>Featured</title>
-                            </slider>
-                        </children>
-                    </catalog>
                     <system>
                         <children>
                             <config>
@@ -43,6 +18,6 @@
                 </children>
             </admin>
         </resources>
-          </acl>
+    </acl>
 
 </config>

@@ -1,5 +1,7 @@
-<?php $productPerView = (int)Mage::getStoreConfig('general/sm_bestseller/slider_per_view_category'); ?>
-<?php if (($products = $this->getBestSellerProductCategory())): ?>
+<?php $productPerView = (int)Mage::getStoreConfig('smbestseller/sm_bestseller/slider_per_view_category'); ?>
+<?php
+$products = $this->getBestSellerProductCategory();
+if ($products ): ?>
     <style>
         .best-seller {
             width: 100%;
@@ -33,7 +35,7 @@
     <h3 align="center">Best Seller Product</h3>
     <div class="swiper-container best-seller">
         <div class="swiper-wrapper">
-            <?php foreach ($products->getItems() as $product): ; ?>
+            <?php foreach ($products->getItems() as $product):  ?>
                 <div class="swiper-slide">
                     <a href="<?php echo $product->getProductUrl() ?>"
                        title="<?php echo $this->stripTags($product->getName(), null, true) ?>" class="product-image">

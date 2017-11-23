@@ -1,12 +1,15 @@
-<?php $productPerView = (int)Mage::getStoreConfig('general/sm_featured/slider_per_view_home'); ?>
-<?php if (($products = $this->getFeaturedProduct())): ?>
+<?php $productPerView = (int)Mage::getStoreConfig('smfeatured/featured_custom/slider_per_view_home'); ?>
+<?php $yes = Mage::getStoreConfig('smfeatured/featured_custom/enable'); ?>
+<?php $products = $this->getFeaturedProduct();
+if ($products && $yes): ?>
     <style>
-        .my-swiper {
-            width: 100%;
-            height: 100%;
-        }
+        /*.my-swiper {*/
+            /*width: 100%;*/
+            /*height: 250px;*/
+        /*}*/
 
-        .my-swiper {
+        .swiper-featured {
+            height: 320px;
             text-align: center;
             font-size: 18px;
             background: #fff;
@@ -25,19 +28,113 @@
             align-items: center;
         }
 
-        .my-swiper img {
-            width: 110px;
-            height: 110px;
+        /*.my-swiper img {*/
+            /*width: 110px;*/
+            /*height: 110px;*/
+        /*}*/
+
+        .enter1 {
+            width: 100%;
+            height: 100px;
         }
+
+        .enter2 {
+            width: 100%;
+            height: 30px;
+        }
+        div.angrytext {
+            font-size:30px;
+            font-weight:lighter;
+            color:#cc7777;
+            width:300px;
+
+            -webkit-animation: jump 1.5s ease 0s infinite normal ;
+            animation: jump 1.5s ease 0s infinite normal ;
+        }
+
+        @-webkit-keyframes jump {
+            0%{
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+            20%{
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+            40%{
+                -webkit-transform: translateY(-30px);
+                transform: translateY(-30px);
+            }
+            50%{
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+            60%{
+                -webkit-transform: translateY(-15px);
+                transform: translateY(-15px);
+            }
+            80%{
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+            100%{
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes jump {
+            0%{
+                transform: translateY(0);
+            }
+            20%{
+                transform: translateY(0);
+            }
+            40%{
+                transform: translateY(-30px);
+            }
+            50%{
+                transform: translateY(0);
+            }
+            60%{
+                transform: translateY(-15px);
+            }
+            80%{
+                transform: translateY(0);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+        /*@keyframes jump {*/
+            /*0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}*/
+            /*40%  {transform: translate3d(0,30%,0) scale3d(.7,1.5,1);}*/
+            /*100% {transform: translate3d(0,0%,0) scale3d(1.5,.7,1);}*/
+        /*}*/
+        /*.jump {*/
+            /*transform-origin: 50% 50%;*/
+            /*animation: jump 1s linear alternate infinite;*/
+        /*}*/
+
+        /*!* For demo: *!*/
+        /*body {text-align: center;}*/
+        /*body * {margin: 2em 2em 0; text-align: center; vertical-align: middle; font-family: sans-serif, sans; font-weight: bold;}*/
+    .center{
+        width: 100%;
+    }
     </style>
-    <h2 align="center">Featured Product</h2>
-    <div class="swiper-container my-swiper">
+    <div class="angrytext" >
+        Featured Product
+    </div>
+<!--    <h2 align="center">Featured Product</h2>-->
+    <div class="enter2"></div>
+    <div class="swiper-container swiper-featured">
         <div class="swiper-wrapper">
             <?php foreach ($products->getItems() as $product): ; ?>
                 <div class="swiper-slide">
                     <a href="<?php echo $product->getProductUrl() ?>"
                        title="<?php echo $this->stripTags($product->getName(), null, true) ?>" class="product-image">
-                        <img src="<?php echo $this->helper('catalog/image')->init($product, 'thumbnail')->resize(110, 110) ?>"
+                        <img src="<?php echo $this->helper('catalog/image')->init($product, 'thumbnail')->resize(1000, 1000) ?>"
                         />
                     </a>
                     <div class="product-info">
@@ -50,15 +147,23 @@
             <?php endforeach; ?>
         </div>
     </div>
+    <div  class="swiper-pagination center"></div>
+    <div class="enter1">
+    </div>
     <script>
-        var swiper = new Swiper('.my-swiper', {
+        var swiper = new Swiper('.swiper-featured', {
             slidesPerView: <?php echo $productPerView; ?>,
-            spaceBetween: 10,
+            spaceBetween: 50,
             centeredSlides: true,
             autoplay: {
                 delay: 5000,
             },
             loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
         });
     </script>
 <?php endif; ?>

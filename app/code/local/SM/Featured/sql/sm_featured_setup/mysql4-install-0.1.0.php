@@ -10,7 +10,7 @@ $installer = $this;
 
 $installer->startSetup();
 $isFeatured = array(
-    'group'             => 'General',
+    'group'             => 'Featured product config',
     'attribute_set' => 'Default',
     'backend' =>'catalog/product_attribute_backend_boolean',
     'type'              => 'int',

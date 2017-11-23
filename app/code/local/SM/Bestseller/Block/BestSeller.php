@@ -6,7 +6,12 @@ class SM_Bestseller_Block_BestSeller extends Mage_Catalog_Block_Product_Abstract
     {
         $products = Mage::getResourceModel('reports/product_collection');
         $products = $this->_addProductAttributesAndPrices($products)
-            ->addAttributeToFilter('visibility',4);
+            ->addAttributeToFilter( array(
+                array('attribute'=>'visibility', 'finset'=>2),
+                array('attribute'=>'visibility', 'finset'=>3),
+                array('attribute'=>'visibility', 'finset'=>4),
+
+            ));
         $products->getSelect()
             ->joinInner(array('order_items' => $products->getResource()->getTable('sales/order_item')),
                 'e.entity_id = order_items.product_id',
@@ -28,7 +33,12 @@ class SM_Bestseller_Block_BestSeller extends Mage_Catalog_Block_Product_Abstract
         $products = Mage::getResourceModel('reports/product_collection')
             ->addCategoryFilter($category);
         $products = $this->_addProductAttributesAndPrices($products)
-            ->addAttributeToFilter('visibility',4);
+            ->addAttributeToFilter( array(
+                array('attribute'=>'visibility', 'finset'=>2),
+                array('attribute'=>'visibility', 'finset'=>3),
+                array('attribute'=>'visibility', 'finset'=>4),
+
+            ));
         $products->getSelect()
             ->joinInner(array('order_items' => $products->getResource()->getTable('sales/order_item')),
                 'e.entity_id = order_items.product_id',

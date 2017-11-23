@@ -28,7 +28,8 @@
                         <slider_per_view_home translate="label">
                             <label>Slider Per View Home Page</label>
                             <frontend_type>text</frontend_type>
-                            <validate>required-entry validate-number</validate>
+                            <validate>required-entry validate-number
+                                validate-greater-than-zero validate-length maximum-length-1</validate>
                             <sort_order>1</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
@@ -38,7 +39,8 @@
                         <slider_per_view_category translate="label">
                             <label>Slider Per View Category Page</label>
                             <frontend_type>text</frontend_type>
-                            <validate>required-entry validate-number</validate>
+                            <validate>required-entry validate-number
+                                validate-greater-than-zero validate-length maximum-length-1</validate>
                             <sort_order>2</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>

@@ -216,7 +216,7 @@ class SM_Slider_Adminhtml_ImageController extends Mage_Adminhtml_Controller_Acti
     {
         $errors = array();
         if ($data['text']){
-            if (!Zend_Validate::is($data['text'], 'Regex', array('/^[a-zA-Z0-9\s]{1,100}$/'))) {
+            if (!Zend_Validate::is($data['text'], 'Regex', array('/^[a-zA-Z0-9\s\.\?\!]{1,100}$/'))) {
                 $errors[] = Mage::helper('core')->__('Not a valid Text');
             }
         }

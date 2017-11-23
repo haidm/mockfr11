@@ -2,6 +2,7 @@
 <layout>
     <default>
         <reference name="head">
+
             <action method="addItem">
                 <type>skin_css</type>
                 <name>css/nhapnhay.css</name>
@@ -14,6 +15,10 @@
                 <type>skin_js</type>
                 <name>js/swiper/swiper.min.js</name>
             </action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/swiper/swiper2.css</name>
+            </action>
 
             <action method="addItem">
                 <type>skin_css</type>
@@ -25,13 +30,29 @@
             </action>
         </reference>
     </default>
-
+    <cms_page>
+        <reference name="content">
+            <block type="sm_featured/featured" name="sm.featured" template="mytemplate/featured/homeslide.phtml"
+                   />
+            <block type="sm_bestseller/bestSeller" name="sm.bestseller" template="mytemplate/bestseller/homeslide.phtml"
+                  />
+        </reference>
+    </cms_page>
     <catalog_category_layered>
+        <remove name="catalog.leftnav"/>
+        <remove name="catalog.leftnav.state.renderers"/>
+        <reference name="left_first">
+            <block type="sm_filter/layer_view" name="sm.lefnav"
+                   template="catalog/layer/view.phtml">
+                <block type="core/text_list" name="sm.lefnav.state.renderers" as="state_renderers"/>
+            </block>
+        </reference>
         <reference name="content">
             <block type="sm_featured/featured" name="sm.featured.cateogry"
                    template="mytemplate/featured/categoryslide.phtml"
                    after="-"/>
-            <block type="sm_bestseller/bestSeller" template="mytemplate/bestseller/categoryslide.phtml"
+            <block type="sm_bestseller/bestSeller"
+                   template="mytemplate/bestseller/categoryslide.phtml"
                    after="sm.featured.cateogry"/>
         </reference>
     </catalog_category_layered>

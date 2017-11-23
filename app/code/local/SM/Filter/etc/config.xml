@@ -5,6 +5,17 @@
             <version>0.1.0</version>
         </SM_Filter>
     </modules>
+    <frontend>
+        <routers>
+            <sm_filter>
+                <use>standard</use>
+                <args>
+                    <module>SM_Filter</module>
+                    <frontName>filter</frontName>
+                </args>
+            </sm_filter>
+        </routers>
+    </frontend>
     <global>
         <models>
             <sm_filter>
@@ -22,15 +33,27 @@
         </blocks>
         <helpers>
             <sm_filter>
-                <class>SM_Filter_Helper</class>
+                <class>sm_Filter_Helper</class>
             </sm_filter>
         </helpers>
         <resources>
             <SM_Filter_setup>
                 <setup>
                     <module>SM_Filter</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
                 </setup>
             </SM_Filter_setup>
         </resources>
     </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <SM_Filter after="Mage_Adminhtml">SM_Filter_Adminhtml</SM_Filter>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
 </config>

@@ -1,12 +1,15 @@
-<?php $productPerView = (int)Mage::getStoreConfig('general/sm_bestseller/slider_per_view_home'); ?>
-<?php if (($products = $this->getBestSellerProduct())): ?>
+<?php $productPerView = (int)Mage::getStoreConfig('smbestseller/sm_bestseller/slider_per_view_home'); ?>
+<?php $yes=Mage::getStoreConfig('smbestseller/sm_bestseller/enable');?>
+<?php if (($products = $this->getBestSellerProduct()) && $yes): ?>
     <style>
-        .best-seller {
-            width: 100%;
-            height: 100%;
-        }
+        /*.best-seller {*/
+            /*width: 100%;*/
+            /*height: 100%;*/
+        /*}*/
 
         .best-seller {
+
+            height: 350px;
             text-align: center;
             font-size: 18px;
             background: #fff;
@@ -25,40 +28,163 @@
             align-items: center;
         }
 
-        .best-seller img {
-            width: 110px;
-            height: 110px;
+        /*.best-seller img {*/
+            /*width: 110px;*/
+            /*height: 110px;*/
+        /*}*/
+        .enter2{
+            width: 100%;
+            height: 30px;
+        }
+        .angrytextt {
+            font-size:30px;
+            font-weight:lighter;
+            color:red;
+            width:300px;
+
+            -webkit-animation: jump 1.5s ease 0s infinite normal ;
+            animation: jump 1.5s ease 0s infinite normal ;
+        }
+
+        @-webkit-keyframes jump {
+            0%{
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+            20%{
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+            40%{
+                -webkit-transform: translateY(-30px);
+                transform: translateY(-30px);
+            }
+            50%{
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+            60%{
+                -webkit-transform: translateY(-15px);
+                transform: translateY(-15px);
+            }
+            80%{
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+            100%{
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes jump {
+            0%{
+                transform: translateY(0);
+            }
+            20%{
+                transform: translateY(0);
+            }
+            40%{
+                transform: translateY(-30px);
+            }
+            50%{
+                transform: translateY(0);
+            }
+            60%{
+                transform: translateY(-15px);
+            }
+            80%{
+                transform: translateY(0);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+        .boder1st {
+            border: 5px solid red;
+        }
+        .boder2nd {
+            border: 4px solid darkorange;
+        }
+        .boder3th {
+            border: 3px solid blueviolet;
+        }
+        .boder4th {
+            border: 2px solid #1E7EC8;
+        }
+        .boder5th {
+            border: 2px solid #00aa00;
+        }
+        .center{
+            width: 100%;
         }
     </style>
-    <h2 align="center">Best Seller Product</h2>
-    <div class="swiper-container best-seller">
-        <div class="swiper-wrapper">
-            <?php foreach ($products->getItems() as $product): ; ?>
-                <div class="swiper-slide">
+    <div class="angrytextt">Best Seller Product</div>
+    <div class="enter2"></div>
+    <div class="swiper-container best-seller" >
+        <div  class="swiper-wrapper" >
+              <?php $index=0; $str; foreach ($products->getItems() as $product): ; ?>
+                <div class="swiper-slide" >
                     <a href="<?php echo $product->getProductUrl() ?>"
                        title="<?php echo $this->stripTags($product->getName(), null, true) ?>" class="product-image">
-                        <img src="<?php echo $this->helper('catalog/image')->init($product, 'thumbnail')->resize(110, 110) ?>"
-                        />
+                        <?php if($index==0) {?>
+                        <img class="boder1st" src="<?php echo $this->helper('catalog/image')->init($product, 'thumbnail')->resize(1100, 1100) ?>"/>
+                            <p style="color:red">1st</p>
+                        <?php } else{?>
+
+                        <?php if($index==1) {?>
+                            <img class="boder2nd" src="<?php echo $this->helper('catalog/image')->init($product, 'thumbnail')->resize(1100, 1100) ?>"/>
+                                <p style="color:darkorange">2nd</p>
+                        <?php } else{?>
+
+                        <?php if($index==2) {?>
+                            <img class="boder3th" src="<?php echo $this->helper('catalog/image')->init($product, 'thumbnail')->resize(1100, 1100) ?>"/>
+                             <p style="color:blueviolet">3th</p>
+                        <?php } else{?>
+
+                        <?php if($index==3) {?>
+                                    <img class="boder4th" src="<?php echo $this->helper('catalog/image')->init($product, 'thumbnail')->resize(1100, 1100) ?>"/>
+                                        <p style="color:#1E7EC8">4th</p>
+                         <?php } else{?>
+
+                        <?php if($index==4) {?>
+                                    <img class="boder5th" src="<?php echo $this->helper('catalog/image')->init($product, 'thumbnail')->resize(1100, 1100) ?>"/>
+                                            <p style="color:#00aa00">5th</p>
+                        <?php } else{?>
+
+                        <img src="<?php echo $this->helper('catalog/image')->init($product, 'thumbnail')->resize(1100, 1100) ?>"
+                        /> <?php }}}}}?>
                     </a>
                     <div class="product-info">
                         <h3 class="product-name"><a href="<?php echo $product->getProductUrl() ?>"
                                                     title="<?php echo $this->stripTags($product->getName(), null, true) ?>"><?php echo $this->helper('catalog/output')->productAttribute($product, $product->getName(), 'name') ?></a>
                         </h3>
-                        <?php echo $this->getPriceHtml($product, true, '-widget-new-grid') ?>
+                        <?php echo $this->getPriceHtml($product, true, '-widget-new-grid') ;
+                        if(($index++) ==10) break;
+                        ?>
                     </div>
                 </div>
             <?php endforeach; ?>
+
         </div>
-    </div>
+         </div>
     <script>
         var swiper = new Swiper('.best-seller', {
             slidesPerView: <?php echo $productPerView; ?>,
-            spaceBetween: 10,
-            centeredSlides: true,
+            spaceBetween: 50,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
             autoplay: {
                 delay: 5000,
             },
             loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
         });
     </script>
 <?php endif; ?>

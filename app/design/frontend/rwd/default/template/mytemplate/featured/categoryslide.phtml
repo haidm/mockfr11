@@ -1,5 +1,7 @@
-<?php $productPerView = (int)Mage::getStoreConfig('general/sm_featured/slider_per_view_category'); ?>
-<?php if (($products = $this->getFeaturedProductByCategory())): ?>
+<?php $productPerView = (int)Mage::getStoreConfig('smfeatured/featured_custom/slider_per_view_category'); ?>
+<?php
+$products = $this->getFeaturedProductByCategory();
+if ($products): ?>
     <style>
         .my-swiper {
             width: 100%;
@@ -33,13 +35,13 @@
     <h3 align="center">Featured Product</h3>
     <div class="swiper-container my-swiper">
         <div class="swiper-wrapper">
-            <?php foreach ($products->getItems() as $product): ; ?>
-                <div class="swiper-slide">
+            <?php foreach ($products->getItems() as $product):?>
+                <?php echo $product?>
+                     <div class="swiper-slide">
                     <a href="<?php echo $product->getProductUrl() ?>"
                        title="<?php echo $this->stripTags($product->getName(), null, true) ?>" class="product-image">
                         <img src="<?php echo $this->helper('catalog/image')->init($product, 'thumbnail')->resize(110, 110) ?>"
-                        />
-                    </a>
+                        </a>
                     <div class="product-info">
                         <h3 class="product-name"><a href="<?php echo $product->getProductUrl() ?>"
                                                     title="<?php echo $this->stripTags($product->getName(), null, true) ?>"><?php echo $this->helper('catalog/output')->productAttribute($product, $product->getName(), 'name') ?></a>

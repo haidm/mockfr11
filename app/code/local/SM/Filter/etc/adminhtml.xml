@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <sm>
+            <children>
+                <filter translate="title">
+                    <title>Manage Filter</title>
+                    <sort_order>2</sort_order>
+                    <children>
+                        <index translate="title" module="sm_filter">
+                            <title>Filter</title>
+                            <!--Mapped to adminhtmlModulePath/controller/action-->
+                            <action>adminhtml/filter/index</action>
+                            <sort_order>0</sort_order>
+                        </index>
+                    </children>
+                </filter>
+            </children>
+        </sm>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <sm>
+                        <children>
+                            <filter translate="title" module="SM_Filter">
+                                <title>Filter</title>
+                            </filter>
+                        </children>
+                    </sm>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
