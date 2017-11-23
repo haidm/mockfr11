@@ -83,52 +83,59 @@ class Dangnd_Slider_Adminhtml_SlideController extends Mage_Adminhtml_Controller_
     public function saveAction()
     {
         $data = $this->getRequest()->getParams();
-        $imgs = $_FILES['image'];
+        $newImg = $_FILES['image'];
         $imgEdit = $_FILES['imgEdit'];
-//        die(var_dump($data));
-//        if(!$data) {
-//            return $this->getResponse()->setRedirect($this->getUrl('*/slide'));
-//        }
-        
-        if($err = $this->validate($data) === true) {
-            $new = Mage::getModel('dangnd_slider/slide');
+        $err = $this->validate($data, $newImg, $imgEdit);
+        if ($err === true) {
+            $slide = Mage::getModel('dangnd_slider/slide');
+            $image = Mage::getModel('dangnd_slider/images');
 
-            $new->setData($data);
+            $slide->setData($data);
+            try {
+                $key = time();
+                $slide->save();
 
-            $slideId = isset($data['id']) ? $data['id'] : (max($new->getCollection()->getAllIds()) + 1);
-
-            if(!empty($data['visibleImg'])) {
-                $this->visibleImage($data['visibleImg']);
-            }
-
-            if(!empty($data['delImg'])) {
-                $this->deleteImage($data['delImg']);
-            }
-            $this->editSildeImage($imgEdit, $slideId);
-
-            if ($this->uploadImage($imgs, $slideId)) {
-                try {
-                    $new->save();
-
-                    Mage::getSingleton('adminhtml/session')
-                        ->addSuccess(Mage::helper('dangnd_slider')->__('Success!'));
-                    if ($data['back']) {
-                        return $this->_redirect('*/*/edit', ['id' => $new->getId()]);
+                if (!empty($data['delImg'])) {
+                    $this->deleteImage($data['delImg']);
+                }
+                if ($newImg) {
+                    foreach ($newImg as $item) {
+                        $imgName = $this->uploadImage($item, $slide->getId(), ++$key);
+                        $image->setData(array(
+                            'slideId' => $slide->getId(),
+                            'visible' => 1,
+                            'name'    => $imgName
+                        ));
+                        $image->save();
                     }
+                }
+                if ($imgEdit) {
+                    foreach ($imgEdit as $index => $item) {
+                        $imgName = $this->uploadImage($item, $slide->getId(), ++$key);
+                        $image->setData(array(
+                            'id'      => $index,
+                            'name'    => $imgName
+                        ));
+                        $image->save();
+                    }
+                }
 
-                    return $this->_redirect('*/*/');
-                } catch (Mage_Core_Exception $e) {
-                    Mage::getSingleton('adminhtml/session')->addError($e->getMessage());
-                } catch (Exception $e) {
-                    Mage::getSingleton('adminhtml/session')
-                        ->addError(Mage::helper('dangnd_slider')->__('An error occurred while saving!'));
+                Mage::getSingleton('adminhtml/session')
+                    ->addSuccess(Mage::helper('dangnd_slider')->__('Success!'));
+                if ($data['back']) {
+                    return $this->_redirect('*/*/edit', ['id' => $slide->getId()]);
                 }
-            } else {
-                foreach ($err as $item) {
-                    Mage::getSingleton('adminhtml/session')
-                        ->addError(Mage::helper('dangnd_slider')->__($item));
-                }
+
+                return $this->_redirect('*/*/');
+            } catch (Mage_Core_Exception $e) {
+                Mage::getSingleton('adminhtml/session')->addError($e->getMessage());
+            } catch (Exception $e) {
+                Mage::getSingleton('adminhtml/session')
+                    ->addError(Mage::helper('dangnd_slider')->__('An error occurred while saving!'));
             }
+        } else {
+            Mage::getSingleton('adminhtml/session')
+                ->addError(Mage::helper('dangnd_slider')->__($err));
         }
 
         Mage::getSingleton('adminhtml/session')->setRuleData($data);
@@ -160,18 +167,86 @@ class Dangnd_Slider_Adminhtml_SlideController extends Mage_Adminhtml_Controller_
         $this->_redirect('*/*/');
     }
 
-    /*
-     * @param $images : list file upload == $_FILE['field_name']
-     * @return String or Array
-     */
-    public function checkImageUpload($images)
+    public function validate($data, &$newImg, &$editImg)
     {
-        $maxSize = 5242880;
-        $extImg = ['jpg', 'jpeg', 'png'];
+        $err = '';
+
+        if (empty($data['name'])) {
+            $err .= 'Name is a required field';
+        } else {
+            if (strlen($data['name']) > strlen(strip_tags($data['name']))) {
+                $err .= '<br>Name : HTML tags are not allowed';
+            }
+        }
+        $newImg = $this->checkImageUpload($newImg);
+        if (is_string($newImg)) {
+            $err .= '<br>' . $newImg;
+        }
+        $editImg = $this->checkImageUpload($editImg);
+        if (is_string($editImg)) {
+            $err .= '<br>' . $editImg;
+        }
+
+        if (empty($err)) {
+            foreach ($newImg as $key => $item) {
+                if(empty($item['name'])) {
+                    unset($newImg[$key]);
+                }
+            }
+            foreach ($editImg as $key => $item) {
+                if(empty($item['name'])) {
+                    unset($editImg[$key]);
+                }
+            }
+
+            return true;
+        }
+
+        return ltrim($err, '<br>');
+    }
+
+    public function deleteImage($listId)
+    {
+        $imgModel = Mage::getModel('dangnd_slider/images');
+
+        foreach ($listId as $item) {
+            $imgModel->setId($item)->delete();
+        }
+    }
+
+    public function multiDeleteAction()
+    {
+        $listId = $this->getRequest()->getParam('slideId');
+        $model = Mage::getModel('dangnd_slider/slide');
+
+        if (empty($listId)) {
+            Mage::getSingleton('adminhtml/session')
+                ->addError(Mage::helper('dangnd_slider')->__('Please select a line to delete!'));
+        } else {
+            foreach ($listId as $item) {
+                $model->setId($item)->delete();
+            }
+
+            Mage::getSingleton('adminhtml/session')
+                ->addSuccess(Mage::helper('dangnd_slider')->__('Delete Success.'));
+        }
+
+        $this->_redirect('*/*/');
+    }
+
+    /**
+     * @param       $images
+     * @param int   $max_size
+     * @param array $allowExt
+     *
+     * @return array|string
+     */
+    public function checkImageUpload($images, $max_size = 5242880, $allowExt = ['jpg', 'jpeg', 'png'])
+    {
         $result = [];
 
         foreach ($images['name'] as $key => $item) {
-            if(is_array($item)) {
+            if (is_array($item)) {
                 $result[$key]['name'] = $images['name'][$key][0];
                 $result[$key]['tmp_name'] = $images['tmp_name'][$key][0];
                 $result[$key]['type'] = $images['type'][$key][0];
@@ -185,14 +260,14 @@ class Dangnd_Slider_Adminhtml_SlideController extends Mage_Adminhtml_Controller_
                 $result[$key]['size'] = $images['size'][$key];
             }
 
-            if($result[$key]['size'] === 0) {
+            if ($result[$key]['size'] === 0) {
                 continue;
             }
-            if ($result[$key]['size'] > $maxSize) {
+            if ($result[$key]['size'] > $max_size) {
                 return "File {$result[$key]['name']} size too large ( Maximum : 5M )";
             }
             $ext = end(explode('.', $result[$key]['name']));
-            if (!in_array($ext, $extImg)) {
+            if (!in_array($ext, $allowExt)) {
                 return "Only accepted photo format: jpg, jpeg, png";
             }
         }
@@ -200,132 +275,32 @@ class Dangnd_Slider_Adminhtml_SlideController extends Mage_Adminhtml_Controller_
         return $result;
     }
 
-//    public function visibleImage($images)
-//    {
-//        $imgModel = Mage::getModel('dangnd_slider/images');
-//
-//        foreach ($images as $image) {
-//            $imgModel->setId($image);
-//            $imgModel->setVisible(1);
-//            $imgModel->save();
-//        }
-//    }
-
-    public function uploadImage($images, $slideId)
+    /**
+     * @param     $image
+     * @param int $slideId
+     * @param int $key
+     *
+     * @return bool | string
+     */
+    public function uploadImage($image, $slideId, $key)
     {
-        $imgModel = Mage::getModel('dangnd_slider/images');
-
-        if($images['size'][0] === 0) {
-            return true;
-        }
-
         $dir = 'dangnd/slide';
         $path = Mage::getBaseDir('media') . DS . $dir;
-        $images = $this->checkImageUpload($images);
 
         if (!file_exists($path)) {
             mkdir($path, 0777);
         }
-        if (is_array($images)) {
-            try {
-                $id = max($imgModel->getCollection()->getAllIds());
-                foreach ($images as $key => $item) {
-                    $upload = new Varien_File_Uploader($item);
-                    $id++;
-                    $data['name'] = "slide_{$slideId}_{$id}.{$upload->getFileExtension()}";
-                    $data['slideId'] = $slideId;
-                    $upload->save($path, $data['name']);
 
-                    $imgModel->setData($data);
-                    $imgModel->save();
-                }
-            } catch (Exception $e) {
-                return false;
-            }
+        try {
+            $upload = new Varien_File_Uploader($image);
+            $newName = "slide_{$slideId}_{$key}." . $upload->getFileExtension();
+            $upload->save($path, $newName);
 
-            return true;
+            return $newName;
+        } catch (Exception $e) {
+            Mage::getSingleton('adminhtml/session')->addError($e->getMessage());
+
+            return false;
         }
-        Mage::getSingleton('adminhtml/session')
-            ->addError(Mage::helper('dangnd_slider')
-                ->__($images));
-
-        return false;
-    }
-
-    public function validate($data)
-    {
-        $err = [];
-        $helper = Mage::helper('dangnd_slider');
-
-        if(!Zend_Validate::is($data['name'], 'NotEmpty')) {
-            $err[] = $helper->__('Slide name can\'t be empty');
-        }
-
-        if(empty($err)) {
-            return true;
-        }
-
-        return $err;
-    }
-
-    public function deleteImage($listId)
-    {
-        $imgModel = Mage::getModel('dangnd_slider/images');
-
-        foreach ($listId as $item) {
-            $imgModel->setId($item)->delete();
-        }
-    }
-
-    public function editSildeImage($images, $slideId)
-    {
-        $dir = 'dangnd/slide';
-        $path = Mage::getBaseDir('media') . DS . $dir;
-        $images = $this->checkImageUpload($images);
-
-        if (!file_exists($path)) {
-            mkdir($path, 0777);
-        }
-        if (is_array($images)) {
-            try {
-                foreach ($images as $key => $item) {
-                    if($item['size'] === 0) {
-                        continue;
-                    }
-                    $upload = new Varien_File_Uploader($item);
-                    $newName = "slide_{$slideId}_{$key}.{$upload->getFileExtension()}";
-                    $upload->save($path, $newName);
-                }
-            } catch (Exception $e) {
-                return false;
-            }
-
-            return true;
-        }
-        Mage::getSingleton('adminhtml/session')
-            ->addError(Mage::helper('dangnd_slider')
-                ->__($images));
-
-        return false;
-    }
-
-    public function multiDeleteAction()
-    {
-        $listId = $this->getRequest()->getParam('slideId');
-        $model  = Mage::getModel('dangnd_slider/slide');
-
-        if(empty($listId)) {
-            Mage::getSingleton('adminhtml/session')
-                ->addError(Mage::helper('dangnd_slider')->__('Please select a line to delete!'));
-        } else {
-            foreach ($listId as $item) {
-                $model->setId($item)->delete();
-            }
-
-            Mage::getSingleton('adminhtml/session')
-                ->addSuccess(Mage::helper('dangnd_slider')->__('Delete Success.'));
-        }
-
-        $this->_redirect('*/*/');
     }
 }

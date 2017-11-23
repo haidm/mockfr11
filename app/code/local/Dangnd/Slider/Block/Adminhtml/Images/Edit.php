@@ -48,7 +48,7 @@ class Dangnd_Slider_Block_Adminhtml_Images_Edit extends Mage_Adminhtml_Block_Wid
                 var div = document.getElementById('previewImg');
                 div.innerHTML = '';
                 
-                if (newFrm == 1) {
+                if (newFrm) {
                     div.innerHTML = \"<div><img id='preview' src='' height='100px' /></div>\";
                 } else {
                     div.innerHTML = \"<div><img id='preview' src='' height='100px' /></div>\" +

@@ -20,7 +20,7 @@ class Dangnd_Slider_Block_Adminhtml_Slide_Edit_Tab_General extends Mage_Adminhtm
         $fieldset->addField('name', 'text', [
             'name'     => 'name',
             'label'    => Mage::helper('dangnd_slider')->__('Name'),
-            'class'    => 'required-entry',
+            'class'    => 'required-entry validate-no-html-tags',
             'required' => true,
         ]);
 

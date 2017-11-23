@@ -21,7 +21,12 @@ class Dangnd_Slider_Block_Adminhtml_Images_Grid extends Mage_Adminhtml_Block_Wid
     public function _prepareCollection()
     {
         $collection = Mage::getModel('dangnd_slider/images')->getCollection();
-
+        $collection->getSelect()
+            ->join(array('s' => 'mock_slider_slide'),
+                'main_table.slideId = s.id',
+                array(
+                    'slideName' => 's.name',
+                ));
         $this->setCollection($collection);
 
         parent::_prepareCollection();
@@ -41,9 +46,9 @@ class Dangnd_Slider_Block_Adminhtml_Images_Grid extends Mage_Adminhtml_Block_Wid
             'width'   => '100',
             'renderer' => 'dangnd_slider/adminhtml_images_renderer_image'
         ));
-        $this->addColumn('slideId', array(
+        $this->addColumn('slideName', array(
             'header' => Mage::helper('dangnd_slider')->__('Slide'),
-            'index'  => 'slideId',
+            'index'  => 'slideName',
             'type'   => 'text'
         ));
         $this->addColumn('content', array(

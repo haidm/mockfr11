@@ -27,7 +27,6 @@ class Dangnd_Slider_Block_Adminhtml_Slide_Edit_Tab_Images extends Mage_Adminhtml
                 $fieldset->addField('image' . $item->getId(), 'image', array(
                     'name'               => "imgEdit[{$item->getId()}]",
                     'label'              => Mage::helper('dangnd_slider')->__('Image'),
-                    'class'              => 'required-entry',
                     'onchange'           => "readOne(this, 'img' + {$item->getId()}, 0);",
                     'after_element_html' => $html
                 ));
@@ -36,7 +35,6 @@ class Dangnd_Slider_Block_Adminhtml_Slide_Edit_Tab_Images extends Mage_Adminhtml
         $fieldset->addField('image', 'image', array(
             'name'               => 'image[]',
             'label'              => Mage::helper('dangnd_slider')->__('New Images'),
-            'class'              => 'required-entry',
             'multiple'           => 'multiple',
             'onchange'           => "readMulti(this);",
             'after_element_html' => "<div id='newImg'></div>"
@@ -51,13 +49,9 @@ class Dangnd_Slider_Block_Adminhtml_Slide_Edit_Tab_Images extends Mage_Adminhtml
     public function imagesHtml($image)
     {
         $pathImg = Mage::getBaseUrl('media') . 'dangnd/slide/' . $image->getName();
-//        $visible = empty($image->getVisible()) ? '' : 'true';
         $html = '<br />';
         $html .= "<img id='img{$image->getId()}' src='{$pathImg}' height='100px'/>";
         $html .= "<div><input type='checkbox' value='{$image->getId()}' name='delImg[]' /> Delete</div>";
-//        $html .= "<span style='margin-right: 30px'> Delete</span>";
-//        $html .= "<input type='checkbox' value='{$image->getId()}' name='visibleImg[]' checked='{$visible}' />";
-//        $html .= " <span> Is Visible</span></div>";
 
         return $html;
     }
