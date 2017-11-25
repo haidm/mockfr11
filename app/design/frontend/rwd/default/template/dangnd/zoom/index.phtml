@@ -49,6 +49,10 @@ $thumbnailWidth = Mage::getStoreConfig('myzoom/thumbnail/width');
         max-width  : <?php echo $mainImgWidth ?>px;
     }
 
+    #image-prd-view {
+        position: relative;
+    }
+
     .cloudzoom-gallery {
         float       : left;
         margin-left : 5px;
@@ -60,7 +64,21 @@ $thumbnailWidth = Mage::getStoreConfig('myzoom/thumbnail/width');
 </style>
 
 <div class="product-image product-image-zoom">
-    <div class="product-image-gallery">
+    <div id="image-prd-view" class="product-image-gallery">
+        <?php $label = $_product->getProduct_label(); ?>
+        <?php if(strpos($label, 'new') !== false) {?>
+            <div class="mylabel new-prd">
+                <div class="new-label">New</div>
+            </div>
+        <?php } ?>
+        <?php if(strpos($label, 'sale') !== false) {?>
+            <div class="mylabel sale-prd">
+                <div class="sale-label">Sale</div>
+            </div>
+        <?php } ?>
+        <?php if(strpos($label, 'promotion') !== false) {?>
+            <div class="promotion-label">Promotion</div>
+        <?php } ?>
         <img id='myCloudZoom' class="cloudzoom"
              src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($mainImgWidth, $mainImgHeight) ?>"
              data-cloudzoom="zoomImage: '<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize($mainImgWidth*2, $mainImgHeight*2) ?>'"/>

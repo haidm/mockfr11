@@ -1,0 +1,72 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     rwd_default
+ * @copyright   Copyright (c) 2006-2017 X.commerce, Inc. and affiliates (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<script type="text/javascript">
+    document.observe('dom:loaded', function() {
+        var swatchesConfig = new Product.ConfigurableSwatches(spConfig);
+    });
+    jquery(document).ready(function () {
+        jquery('.myswatch').on('click', function () {
+            var full = true;
+            var code = '';
+            var value = '';
+            var options = '';
+            var attr = jquery('.super-attribute-select');
+
+            for (var i = 0; i < attr.length; i++) {
+                value = jquery(attr[i]).val();
+                code = jquery(attr[i]).attr('attrCode');
+                if (value != '') {
+                    options += ',' + code + ':' + value;
+                } else {
+                    full = false;break;
+                }
+            }
+
+            jquery('.new-prd').remove();
+            jquery('.promotion-label').remove();
+            jquery('.sale-prd').remove();
+            jquery('.gallery-image').remove();
+            if (full) {
+                for (var i in attrConfig['new']) {
+                    if(attrConfig['new'][i] == options) {
+                        jquery('#image-prd-view').append('<div class="mylabel new-prd"><div class="new-label">New</div></div>');break;
+                    }
+                }
+                for (var i in attrConfig['promotion']) {
+                    if(attrConfig['promotion'][i] == options) {
+                        jquery('#image-prd-view').append('<div class="promotion-label">Promotion</div>');break;
+                    }
+                }
+                for (var i in attrConfig['sale']) {
+                    if(attrConfig['sale'][i] == options) {
+                        jquery('#image-prd-view').append('<div class="mylabel sale-prd"><div class="sale-label">Sale</div></div>');break;
+                    }
+                }
+            }
+        });
+    });
+</script>

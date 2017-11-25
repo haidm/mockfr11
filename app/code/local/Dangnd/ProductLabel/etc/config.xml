@@ -54,4 +54,16 @@
             </adminhtml>
         </routers>
     </admin>
+    <adminhtml>
+        <events>
+            <catalog_product_save_after>
+                <observers>
+                    <dangnd_label>
+                        <class>dangnd_label/observer</class>
+                        <method>productSaveBefore</method>
+                    </dangnd_label>
+                </observers>
+            </catalog_product_save_after>
+        </events>
+    </adminhtml>
 </config>
