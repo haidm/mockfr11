@@ -28,7 +28,7 @@ if ($active) {
     </style>
     <div class="widget widget-new-products">
         <div class="widget-title"><h2>Bestseller Products</h2></div>
-        <div class="swiper-container product-slide">
+        <div class="swiper-container product-slide" style="padding-bottom: 15px">
             <div class="swiper-wrapper">
                 <?php
                 foreach ($products['list'] as $item) {
@@ -62,7 +62,6 @@ if ($active) {
                                 </a>
                             </h3>
                             <?php echo $this->getPriceHtml($item, true, '-widget-new-grid') ?>
-                            <?php echo $this->getReviewsSummaryHtml($item, 'short') ?>
                         </div>
                     </div>
                     <?php

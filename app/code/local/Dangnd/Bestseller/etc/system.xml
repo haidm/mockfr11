@@ -21,6 +21,8 @@
                             <comment>Quantity of product taken out</comment>
                             <frontend_type>text</frontend_type>
                             <sort_order>0</sort_order>
+                            <validate>validate-number validate-one-required</validate>
+                            <backend_model>dangnd_bestseller/qtyProduct</backend_model>
                             <show_in_default>1</show_in_default>
                             <show_in_store>1</show_in_store>
                             <show_in_website>1</show_in_website>
@@ -40,6 +42,8 @@
                             <frontend_type>text</frontend_type>
                             <comment>The number of products displayed in a slide</comment>
                             <sort_order>0</sort_order>
+                            <validate>validate-number validate-one-required</validate>
+                            <backend_model>dangnd_bestseller/qtySlide</backend_model>
                             <show_in_default>1</show_in_default>
                             <show_in_store>1</show_in_store>
                             <show_in_website>1</show_in_website>
@@ -79,6 +83,8 @@
                             <frontend_type>text</frontend_type>
                             <comment>The number of products displayed in a slide</comment>
                             <sort_order>0</sort_order>
+                            <validate>validate-number validate-one-required</validate>
+                            <backend_model>dangnd_bestseller/qtySlide</backend_model>
                             <show_in_default>1</show_in_default>
                             <show_in_store>1</show_in_store>
                             <show_in_website>1</show_in_website>
