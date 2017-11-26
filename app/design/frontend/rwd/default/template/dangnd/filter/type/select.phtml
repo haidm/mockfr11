@@ -1,0 +1,23 @@
+<?php echo $this->getFilterType(); ?>
+<ol>
+    <select onclick="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+        <option value="">Select</option>
+        <?php foreach ($this->getItems() as $_item): ?>
+            <?php if ($_item->getCount() > 0): ?>
+                <option value="<?php echo $this->urlEscape($_item->getUrl()) ?>">
+                <?php echo $_item->getLabel() ?>
+                <?php if ($this->shouldDisplayProductCount()): ?>
+                    <span class="count">(<?php echo $_item->getCount() ?>)</span>
+                <?php endif; ?>
+            <?php else: ?>
+                <span>
+                 <?php echo $_item->getLabel(); ?>
+                    <?php if ($this->shouldDisplayProductCount()): ?>
+                        <span class="count">(<?php echo $_item->getCount() ?>)</span>
+                    <?php endif; ?>
+                                    </span>
+                </option>
+            <?php endif; ?>
+        <?php endforeach ?>
+    </select>
+</ol>

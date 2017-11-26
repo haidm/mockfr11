@@ -8,7 +8,7 @@
 /* @var $this Mage_Eav_Model_Entity_Setup*/
 
 $this->getConnection()->addColumn(
-    $this->getTable('catalog/eav_attribute'), 'filterType', array(
+    $this->getTable('catalog/eav_attribute'), 'filter_type', array(
         'type'      => Varien_Db_Ddl_Table::TYPE_TEXT,
         'nullable'  => true,
         'comment'   => 'Filter Type'

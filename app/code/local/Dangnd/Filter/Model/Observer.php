@@ -10,7 +10,7 @@ class Dangnd_Filter_Model_Observer
     /**
      * @param Varien_Event_Observer $observer
      */
-    public function addFieldToAttributeEditForm($observer)
+    public function addFieldToAttributeEditForm(Varien_Event_Observer $observer)
     {
         $filterType = array(
             array(
@@ -31,8 +31,9 @@ class Dangnd_Filter_Model_Observer
             ),
         );
         $fieldset = $observer->getForm()->getElement('base_fieldset');
-        $fieldset->addField('filterType', 'select', array(
-            'name'   => 'filterType',
+
+        $fieldset->addField('filter_type', 'select', array(
+            'name'   => 'filter_type',
             'label'  => Mage::helper('core')->__('Filter Type'),
             'title'  => Mage::helper('core')->__('Filter Type'),
             'values' => $filterType

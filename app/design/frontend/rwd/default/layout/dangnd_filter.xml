@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <layout>
-
+    <catalog_category_layered>
+        <remove name="catalog.leftnav"/>
+        <remove name="catalog.leftnav.state.renderers"/>
+        <reference name="left_first">
+            <block type="dangnd_filter/layer_view" name="mylayered.left" after="currency" template="dangnd/filter/view.phtml">
+                <block type="core/text_list" name="renderers" as="state_renderers" />
+            </block>
+        </reference>
+    </catalog_category_layered>
 </layout>

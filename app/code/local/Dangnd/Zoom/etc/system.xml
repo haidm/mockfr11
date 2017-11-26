@@ -20,6 +20,8 @@
                             <label>Height :</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>0</sort_order>
+                            <validate>validate-number validate-one-required</validate>
+                            <backend_model>dangnd_zoom/mainImage</backend_model>
                             <show_in_default>1</show_in_default>
                             <show_in_store>1</show_in_store>
                             <show_in_website>1</show_in_website>
@@ -28,6 +30,8 @@
                             <label>Width :</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>10</sort_order>
+                            <validate>validate-number validate-one-required</validate>
+                            <backend_model>dangnd_zoom/mainImage</backend_model>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -46,6 +50,8 @@
                             <label>Height :</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>0</sort_order>
+                            <validate>validate-number validate-one-required</validate>
+                            <backend_model>dangnd_zoom/zoomImage</backend_model>
                             <show_in_default>1</show_in_default>
                             <show_in_store>1</show_in_store>
                             <show_in_website>1</show_in_website>
@@ -54,6 +60,8 @@
                             <label>Width :</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>10</sort_order>
+                            <validate>validate-number validate-one-required</validate>
+                            <backend_model>dangnd_zoom/zoomImage</backend_model>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -72,6 +80,8 @@
                             <label>Height :</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>0</sort_order>
+                            <validate>validate-number validate-one-required</validate>
+                            <backend_model>dangnd_zoom/thumbnail</backend_model>
                             <show_in_default>1</show_in_default>
                             <show_in_store>1</show_in_store>
                             <show_in_website>1</show_in_website>
@@ -80,6 +90,8 @@
                             <label>Width :</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>10</sort_order>
+                            <validate>validate-number validate-one-required</validate>
+                            <backend_model>dangnd_zoom/thumbnail</backend_model>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>

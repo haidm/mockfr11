@@ -65,3 +65,7 @@
     border-bottom-left-radius : 10px;
     text-transform            : uppercase;
 }
+
+#narrow-by-list dd .configurable-swatch-list .link-no-image {
+    width : 98%;
+}
