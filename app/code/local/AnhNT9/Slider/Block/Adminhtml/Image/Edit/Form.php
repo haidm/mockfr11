@@ -50,7 +50,11 @@ class AnhNT9_Slider_Block_Adminhtml_Image_Edit_Form extends Mage_Adminhtml_Block
      */
     protected function _prepareForm()
     {
-        $model  = Mage::registry('imagemodel');
+        $model = Mage::registry('imagemodel');
+
+        $image_id = $this->getRequest()->getParam('image_id');
+        $slider_id = $model->getData()['sl_id'];
+
 
         $valueDescription = $model->getData()['description'];
 
@@ -59,56 +63,78 @@ class AnhNT9_Slider_Block_Adminhtml_Image_Edit_Form extends Mage_Adminhtml_Block
                 'add_widgets' => false,
                 'add_variables' => false,
                 'add_images' => false,
-                'files_browser_window_url'=> $this->getBaseUrl().'admin/cms_wysiwyg_images/index/',
+                'files_browser_window_url' => $this->getBaseUrl() . 'admin/cms_wysiwyg_images/index/',
             ));
 
-        $form   = new Varien_Data_Form(array(
-            'id'        => 'edit_form',
-            'action'    => $this->getData('action'),
-            'method'    => 'post',
+        $form = new Varien_Data_Form(array(
+            'id' => 'edit_form',
+            'action' => $this->getData('action'),
+            'method' => 'post',
             'enctype' => 'multipart/form-data'
         ));
         $options = Mage::getSingleton('anhnt9_slider/slider')->getMultSelectArray();
+        $name_slider = Mage::getModel('anhnt9_slider/slider')->load($slider_id)->getData('name_slider');
 
-        $fieldset   = $form->addFieldset('base_fieldset', array(
-            'legend'    => Mage::helper('anhnt9_slider')->__('Image Information')
+        $fieldset = $form->addFieldset('base_fieldset', array(
+            'legend' => Mage::helper('anhnt9_slider')->__('Image Information')
         ));
-
-        $fieldset->addField('name_image', 'image',
-            array(
-                'name'      => 'name_image',
-                'label'     => Mage::helper('anhnt9_slider')->__('Image'),
-                'class'     => 'required-entry required-file',
-                'renderer'  => 'anhnt9_slider/adminhtml_image_edit_renderer',
-                'required'  => true,
-                'note' => '(*.jpg, *.png, *.gif)',
-            )
-        );
-        $fieldset->addField('sl_id', 'multiselect',
-            array(
-                'name'      => 'sl_id[]',
-                'label'     => Mage::helper('anhnt9_slider')->__('Slider'),
-                'class'     => 'required-entry',
-                'required'  => true,
-                'values'    => $options,
-            )
-        );
+        //Edit image
+        if (isset($image_id) || $image_id != null) {
+            $fieldset->addField('name_image', 'image',
+                array(
+                    'name' => 'name_image',
+                    'label' => Mage::helper('anhnt9_slider')->__('Image'),
+                    'renderer' => 'anhnt9_slider/adminhtml_image_renderer_image',
+                    'note' => '(*.jpg, *.png, *.gif)',
+                )
+            );
+            $fieldset->addField('sl_id', 'select',
+                array(
+                    'name' => 'sl_id[]',
+                    'label' => Mage::helper('anhnt9_slider')->__('Slider'),
+                    'class' => 'required-entry',
+                    'required' => true,
+                    'values' => $options,
+                    'value' => $name_slider,
+                )
+            );
+            // New image
+        } else {
+            $fieldset->addField('edit_image', 'file',
+                array(
+                    'name' => 'name_image',
+                    'class' => 'required-entry required-file',
+                    'label' => Mage::helper('anhnt9_slider')->__('Image'),
+                    'required' => true,
+                    'note' => '(*.jpg, *.png, *.gif)',
+                )
+            );
+            $fieldset->addField('sl_id', 'multiselect',
+                array(
+                    'name' => 'sl_id[]',
+                    'label' => Mage::helper('anhnt9_slider')->__('Slider'),
+                    'class' => 'required-entry',
+                    'required' => true,
+                    'values' => $options,
+                )
+            );
+        }
 
         $form->addField($this->getData('description'), 'editor', array(
-            'name'      => 'description',
-            'style'     => 'width:768px;height:200px',
-            'class'     => 'required-entry',
-            'required'  => true,
+            'name' => 'description',
+            'style' => 'width:768px;height:200px',
+            'class' => 'required-entry',
+            'required' => true,
             'wysiwyg' => true,
-            'config'    => $configSettings,
-            'value'     => $valueDescription
+            'config' => $configSettings,
+            'value' => $valueDescription
         ));
 
         if ($model->getId()) {
             $fieldset->addField('image_id', 'hidden',
                 array(
-                    'name'      => 'image_id',
-                    'label'     => Mage::helper('anhnt9_slider')->__('Id')
+                    'name' => 'image_id',
+                    'label' => Mage::helper('anhnt9_slider')->__('Id')
                 )
             );
         }

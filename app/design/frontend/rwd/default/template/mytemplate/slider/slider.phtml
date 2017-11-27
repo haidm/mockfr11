@@ -1,5 +1,5 @@
 <?php
-$enable_slider = Mage::getStoreConfig('design/slider/enable_slider');
+$enable_slider = Mage::getStoreConfig('catalog/slider/enable_slider');
 
 if (isset($enable_slider) && ($enable_slider == 1)) {
     ?>
@@ -107,7 +107,7 @@ if (isset($enable_slider) && ($enable_slider == 1)) {
     <!-- Initialize Swiper -->
     <!--    Pagination Slider   -->
     <?php
-    $typeSlider = Mage::getStoreConfig('design/slider/type_slider');
+    $typeSlider = Mage::getStoreConfig('catalog/slider/type_slider');
     if ($typeSlider == 1) {
         ?>
         <script>

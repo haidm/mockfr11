@@ -10,7 +10,7 @@ class AnhNT9_Slider_Block_Slider extends Mage_Core_Block_Template
 {
     public function getListDataSlider()
     {
-        $typeSlider = Mage::getStoreConfig('design/slider/select_slider');
+        $typeSlider = Mage::getStoreConfig('catalog/slider/select_slider');
         if (isset($typeSlider) && $typeSlider != "") {
             $slider = Mage::getModel('anhnt9_slider/slider')->getCollection()->addFieldToFilter('slider_id', $typeSlider)->getData();
 

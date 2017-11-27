@@ -15,12 +15,17 @@ class AnhNT9_Slider_Block_Adminhtml_Image_Edit_Renderer extends Mage_Adminhtml_B
             return "<img width='75px' height = '75px' src='" .$value. "' />";
         }
         if ($row->getId()) {
-            $imageName = $row->getAfterImage();
-            $imagePath = Mage::getBaseUrl("media") . $imageName;
-            $dirImg = Mage::getBaseDir() . str_replace("/", DS, strstr($imagePath, '/media'));
-            if (file_exists($dirImg) && !empty($imageName)) {
-//                return "<img width='100px' height='100px' src='" . Mage::getBaseUrl("media") . $imageName . "' />";
-            }
+            $row->getData($this->getColumn()->getIndex());
+            return "<img width='75px' height = '75px' src='" .$value. "' />";
+//            $imageName = $row->getAfterImage();
+//            $imagePath = Mage::getBaseUrl("media") . $imageName;
+//            $dirImg = Mage::getBaseDir() . str_replace("/", DS, strstr($imagePath, '/media'));
+//            if (file_exists($dirImg) && !empty($imageName)) {
+////                return "<img width='100px' height='100px' src='" . Mage::getBaseUrl("media") . $imageName . "' />";
+//            }
+        }else{
+            $row->getData($this->getColumn()->getIndex());
+            return "<img width='75px' height = '75px' src='" .$value. "' />";
         }
     }
 }

@@ -28,40 +28,35 @@
     <?php
     $enable_product_featured = Mage::getStoreConfig('catalog/product_featured/enable_product_featured');
     $slidesPerView = Mage::getStoreConfig('catalog/product_featured/number_display_slider');
-    //checkVisible for product
-    foreach ($featured_products as $prod) :;
-        $valueVisible = $prod->getVisibility();
-        if (isset($valueVisible) && $valueVisible != 1):;
-            $checkVisible = true;
-        endif;
-    endforeach;
-    if (isset($checkVisible) && $checkVisible = true) :;
-        if (isset($enable_product_featured) && $enable_product_featured == 1) :?>
-            <?php shuffle($featured_products); ?>
-            <?php $this->getLayout()->getBlock('head')->setTitle('My Slider'); ?>
-            <!-- Link Swiper's CSS -->
-            <link rel="stylesheet" href="skin/frontend/rwd/default/css/swiper.min.css">
+    if (isset($enable_product_featured) && $enable_product_featured == 1) :?>
+        <?php shuffle($featured_products); ?>
+        <?php $this->getLayout()->getBlock('head')->setTitle('My Slider'); ?>
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="skin/frontend/rwd/default/css/swiper.min.css">
 
-            <!-- Demo styles -->
-            <style>
-                .product-featured {
-                    margin-left: auto;
-                    margin-right: auto;
-                    position: relative;
-                    overflow: hidden;
-                    z-index: 1;
-                    width: 100%;
-                    height: 400px;
-                }
-            </style>
-            <!-- Swiper -->
-            <div class="product-featured">
-                <div style="text-align: center;">
-                    <h2><?php echo $this->__('Featured Products') ?></h2>
-                </div>
-                <div class="swiper-wrapper">
-                    <?php foreach ($featured_products->getItems() as $_res): ?>
-                        <?php $_product = Mage::getModel('catalog/product')->load($_res->getId()); ?>
+        <!-- Demo styles -->
+        <style>
+            .product-featured {
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                overflow: hidden;
+                z-index: 1;
+                width: 100%;
+                height: 400px;
+            }
+        </style>
+        <!-- Swiper -->
+        <div class="product-featured">
+            <div style="text-align: center;">
+                <h2><?php echo $this->__('Featured Products') ?></h2>
+            </div>
+            <div class="swiper-wrapper">
+                <?php foreach ($featured_products->getItems() as $_res): ?>
+                    <?php $_product = Mage::getModel('catalog/product')->load($_res->getId()); ?>
+                    <!-- check Visibility -->
+                    <?php $checkVisible = $_res->getVisibility(); ?>
+                    <?php if ($checkVisible != 1): ?>
                         <div class="swiper-slide">
                             <a href="<?php echo $_res->getProductUrl() ?>"
                                title="<?php echo $this->htmlEscape($_product->getName()) ?>">
@@ -71,55 +66,55 @@
                             </a>
 
                         </div>
-                    <?php endforeach ?>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                    <?php endif; ?>
+                <?php endforeach ?>
             </div>
-            <!-- Swiper JS -->
-            <script src="skin/frontend/rwd/default/js/swiper.min.js"></script>
-            <!-- Initialize Swiper -->
-            <script>
-                var swiper = new Swiper('.product-featured', {
-                    centeredSlides: true,
-                    autoplay: {
-                        delay: 2500,
-                        disableOnInteraction: false,
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <!-- Swiper JS -->
+        <script src="skin/frontend/rwd/default/js/swiper.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.product-featured', {
+                centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                slidesPerView: <?php echo $slidesPerView; ?>,
+                spaceBetween: 50,
+                // init: false,
+                breakpoints: {
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 40,
                     },
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
                     },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
                     },
-                    slidesPerView: <?php echo $slidesPerView; ?>,
-                    spaceBetween: 50,
-                    // init: false,
-                    breakpoints: {
-                        1024: {
-                            slidesPerView: 4,
-                            spaceBetween: 40,
-                        },
-                        768: {
-                            slidesPerView: 3,
-                            spaceBetween: 30,
-                        },
-                        640: {
-                            slidesPerView: 2,
-                            spaceBetween: 20,
-                        },
-                        320: {
-                            slidesPerView: 1,
-                            spaceBetween: 10,
-                        }
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
                     }
-                });
-            </script>
-        <?php endif; ?>
+                }
+            });
+        </script>
     <?php endif; ?>
 <?php endif; ?>

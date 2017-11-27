@@ -45,13 +45,13 @@
                                 $product_label_item = $_product->getResource()->getAttribute('product_label')->getFrontend()->getOption($attr_id);
 
                                 if ($product_label_item == 'Sale') {
-                                    echo '<span class="onsale"></span>';
+                                    echo '<span style="right: 34px;" class="onsale"></span>';
                                 }
                                 if ($product_label_item == 'New') {
-                                    echo '<div class="ribbon-top-left"><div class="ribbon">New</div></div>';
+                                    echo '<div style="left: 23px;" class="ribbon-top-left"><div class="ribbon">New</div></div>';
                                 }
                                 if ($product_label_item == 'Promotion') {
-                                    echo '<div class="ribbon-bottom-right"><div class="ribbon-right">Promition</div></div>';
+                                    echo '<div style="right: 33px;top: 103px;" class="ribbon-bottom-right"><div class="ribbon-right">Promition</div></div>';
                                 }
                             }
                         }

@@ -97,6 +97,7 @@ class AnhNT9_Slider_Adminhtml_ImageController extends Mage_Adminhtml_Controller_
                     mkdir($new_dirPath, 0777);
                 }
                 $path = Mage::getBaseDir('media') . DS . $newDir . DS;
+
                 $uploader->save($path, $_FILES['name_image']['name']);
                 $fileName = $uploader->getUploadedFileName();
                 $_imgUrl = Mage::getBaseUrl("media") . $newDir . '/' . $fileName;
@@ -104,7 +105,7 @@ class AnhNT9_Slider_Adminhtml_ImageController extends Mage_Adminhtml_Controller_
             } catch (Exception $e) {
                 $fileType = "Invalid file format";
             }
-        }else{
+        } else {
             $fileType = "Image is required";
         }
         if ($fileType == 'Invalid file format') {
@@ -129,12 +130,13 @@ class AnhNT9_Slider_Adminhtml_ImageController extends Mage_Adminhtml_Controller_
             }
         }
         //save image to database
-        if (isset($_imgUrl) && !empty($_imgUrl)){
+        if (isset($_imgUrl) && !empty($_imgUrl)) {
             $postData['name_image'] = $_imgUrl;
-        }else{
+        } else {
             $postData['name_image'] = $postData['name_image']['value'];
         }
         if ($postData['image_id']) {
+            $postData['sl_id'] = $postData['sl_id']['0'];
             $image = Mage::getModel('anhnt9_slider/image');
             $image->setData($postData);
             if (count($postData['sl_id']) > 1) {
@@ -210,11 +212,11 @@ class AnhNT9_Slider_Adminhtml_ImageController extends Mage_Adminhtml_Controller_
             $img_path = $getDataById[0]['name_image'];
             $dirImg = Mage::getBaseDir() . str_replace("/", DS, strstr($img_path, '/media'));
 
-            if (!file_exists($dirImg)) {
-                Mage::getSingleton('adminhtml/session')
-                    ->addError(Mage::helper('anhnt9_slider')->__('Image ko ton tai!'));
-                return $this->_redirect('*/*/');
-            }
+//            if (!file_exists($dirImg)) {
+//                Mage::getSingleton('adminhtml/session')
+//                    ->addError(Mage::helper('anhnt9_slider')->__('Image ko ton tai!'));
+//                return $this->_redirect('*/*/');
+//            }
             //delete file image
             unlink($dirImg);
         } catch (Exception $exc) {
@@ -244,7 +246,8 @@ class AnhNT9_Slider_Adminhtml_ImageController extends Mage_Adminhtml_Controller_
         return Mage::getSingleton('admin/session')->isAllowed('admin');
     }
 
-    public function validate(){
+    public function validate()
+    {
         $errors = array();
 
         $helper = Mage::helper('customer');
