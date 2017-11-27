@@ -2,8 +2,7 @@
 <ol>
     <?php foreach ($this->getItems() as $_item): ?>
         <?php if ($_item->getCount() > 0): ?>
-            <input type="checkbox" value="<?php echo $this->urlEscape($_item->getUrl()) ?>"
-                   onClick="if (this.checked) { window.location = this.value; }"/>
+            <input type="checkbox" value="<?php echo $this->urlEscape($_item->getUrl()) ?>" class="catalog-myfilter"/>
             <?php echo $_item->getLabel() ?>
             <?php if ($this->shouldDisplayProductCount()): ?>
                 <span class="count">(<?php echo $_item->getCount() ?>)</span>

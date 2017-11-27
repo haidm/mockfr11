@@ -57,3 +57,10 @@
     </div>
 </div>
 <?php endif; ?>
+<script>
+    jquery(document).ready(function () {
+        jquery('.catalog-myfilter').click(function () {
+            window.location = jquery(this).val();
+        });
+    })
+</script>

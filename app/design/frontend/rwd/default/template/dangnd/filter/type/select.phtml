@@ -1,6 +1,6 @@
 <?php echo $this->getFilterType(); ?>
 <ol>
-    <select onclick="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+    <select class="catalog-myfilter">
         <option value="">Select</option>
         <?php foreach ($this->getItems() as $_item): ?>
             <?php if ($_item->getCount() > 0): ?>
