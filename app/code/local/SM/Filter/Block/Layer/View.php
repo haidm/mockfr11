@@ -132,7 +132,6 @@ class SM_Filter_Block_Layer_View extends Mage_Core_Block_Template
             $attributes = $this->getLayer()->getFilterableAttributes();
             $this->setData('_filterable_attributes', $attributes);
         }
-
         return $attributes;
     }
 

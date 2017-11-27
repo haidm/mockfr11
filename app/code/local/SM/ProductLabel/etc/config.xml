@@ -1,34 +1,34 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <SM_Label>
+        <SM_ProductLabel>
             <version>0.1.0</version>
-        </SM_Label>
+        </SM_ProductLabel>
     </modules>
     <global>
         <models>
             <sm_label>
-                <class>SM_Label_Model</class>
+                <class>SM_ProductLabel_Model</class>
                 <resourceModel>sm_label_resource</resourceModel>
             </sm_label>
             <sm_label_resource>
-                <class>SM_Label_Model_Resource</class>
+                <class>SM_ProductLabel_Model_Resource</class>
             </sm_label_resource>
         </models>
         <blocks>
             <sm_label>
-                <class>SM_Label_Block</class>
+                <class>SM_ProductLabel_Block</class>
             </sm_label>
         </blocks>
         <helpers>
             <sm_label>
-                <class>SM_Label_Helper</class>
+                <class>SM_ProductLabel_Helper</class>
             </sm_label>
         </helpers>
         <resources>
             <sm_label_setup>
                 <setup>
-                    <module>SM_Label</module>
+                    <module>SM_ProductLabel</module>
                     <class>Mage_Eav_Model_Entity_Setup</class>
                 </setup>
             </sm_label_setup>
@@ -48,7 +48,7 @@
             <adminhtml>
                 <args>
                     <modules>
-                        <sm_label before="Mage_Adminhtml">SM_Lable_Adminhtml</sm_label>
+                        <sm_productlabel before="Mage_Adminhtml">SM_ProductLable_Adminhtml</sm_productlabel>
                     </modules>
                 </args>
             </adminhtml>

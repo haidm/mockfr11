@@ -45,7 +45,9 @@ class SM_Slider_Block_Adminhtml_Slider_Edit_Form extends Mage_Adminhtml_Block_Wi
                     }
                 }
             }
-            else{
+        }
+        foreach ($listSliderImage as $item) {
+            if (!in_array($item->id,$listId)){
                 $fieldset->addField('newimage'.$item->id, 'checkbox', array(
                     'label' => $item->name,
                     'name' => 'newimage[]',

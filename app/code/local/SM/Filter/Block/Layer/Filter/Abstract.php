@@ -128,7 +128,8 @@ abstract class SM_Filter_Block_Layer_Filter_Abstract extends Mage_Core_Block_Tem
     public function getFilterType()
     {
         $attribute_type = $this->_filter->getAttributeModel()->getFilter_type();
-        switch ($attribute_type){
+        var_dump($attribute_type);
+         switch ($attribute_type){
             case 'checkbox':
                 $this->setTemplate('mytemplate/filter/checkbox.phtml');
                 break;
@@ -136,10 +137,11 @@ abstract class SM_Filter_Block_Layer_Filter_Abstract extends Mage_Core_Block_Tem
                 $this->setTemplate('mytemplate/filter/select.phtml');
                 break;
             case 'color':
+                echo "ascasvdsv";
                 $this->setTemplate('mytemplate/filter/color.phtml');
                 break;
             default:
-                $this->setTemplate('mytemplate/filter/link.phtml');
+                $this->setTemplate('mytemplate/filter/checkbox.phtml');
                 break;
         }
         return $this;

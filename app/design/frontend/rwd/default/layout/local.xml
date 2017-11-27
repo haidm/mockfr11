@@ -28,6 +28,14 @@
                 <type>skin_css</type>
                 <name>css/swiper/swiper.min.css</name>
             </action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/label.css</name>
+            </action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/layer.css</name>
+            </action>
         </reference>
     </default>
     <cms_page>
@@ -43,7 +51,7 @@
         <remove name="catalog.leftnav.state.renderers"/>
         <reference name="left_first">
             <block type="sm_filter/layer_view" name="sm.lefnav"
-                   template="catalog/layer/view.phtml">
+                   template="mytemplate/filter/view.phtml">
                 <block type="core/text_list" name="sm.lefnav.state.renderers" as="state_renderers"/>
             </block>
         </reference>
@@ -54,6 +62,11 @@
             <block type="sm_bestseller/bestSeller"
                    template="mytemplate/bestseller/categoryslide.phtml"
                    after="sm.featured.cateogry"/>
+        </reference>
+        <reference name="product_list">
+            <action method="setTemplate">
+                <template>mytemplate/label/distribute_label.phtml</template>
+            </action>
         </reference>
     </catalog_category_layered>
 

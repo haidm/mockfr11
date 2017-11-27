@@ -1,13 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: hungbui
- * Date: 25/10/2017
- * Time: 15:00
- */ 
-/* @var $installer Mage_Eav_Model_Entity_Setup */
 $installer = $this;
-
 $installer->startSetup();
 $isFeatured = array(
     'group'             => 'Featured product config',
@@ -17,7 +9,7 @@ $isFeatured = array(
     'label'             => 'Is Featured',
     'input'             => 'select',
     'class'             => '',
-    'source' => 'eav/entity_attribute_source_boolean',
+    'source' =>         'eav/entity_attribute_source_table',
     'global'            => Mage_Catalog_Model_Resource_Eav_Attribute::SCOPE_STORE,
     'visible'           => true,
     'default'           => '0',
@@ -29,9 +21,7 @@ $isFeatured = array(
     'used_in_product_listing' => true,
     'is_configurable' => false,
     'visible_in_advanced_search' => true,
-
 );
 $installer = Mage::getResourceModel('catalog/setup', 'catalog_setup');
 $installer->addAttribute(Mage_Catalog_Model_Product::ENTITY, 'is_featured', $isFeatured);
-
 $installer->endSetup();

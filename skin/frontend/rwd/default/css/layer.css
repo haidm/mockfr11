@@ -1,0 +1,35 @@
+.filter-checkbox {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    margin: 10px auto;
+    background: #fcfff4;
+    background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    border-radius: 50px;
+    box-shadow: inset 0px 1px 1px white;
+}
+
+.hungbd-filter-select {
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 28px;
+    overflow: hidden;
+    background: no-repeat right #FEFEFE;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0px 0px 10px 1px #FEFEFE;
+    box-shadow: inset 0px 0px 10px 1px #FEFEFE;
+}
+.hungbd-filter-select select {
+    background: transparent;
+    width: 170px;
+    font-size:7pt;
+    color:grey;
+    border: 0;
+    border-radius: 0;
+    height: 28px;
+    -webkit-appearance: none;
+}
+.hungbd-filter-select select:focus {
+    outline: none;
+}

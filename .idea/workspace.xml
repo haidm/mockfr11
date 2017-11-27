@@ -2,52 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa3ae6cf-e262-4095-a1bb-656584fa130f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/SM/Featured/controllers/Adminhtml/FeaturedController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/SM/Filter/Block/Adminhtml/Filter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/SM/Filter/Block/Adminhtml/Filter/Edit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/SM/Filter/Block/Adminhtml/Filter/Edit/Form.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/SM/Filter/Block/Adminhtml/Filter/Grid.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/Filter/Abstract.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/Filter/Attribute.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/Filter/Category.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/Filter/Decimal.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/Filter/Price.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/View.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/SM/Filter/Model/Type.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/SM/Filter/controllers/Adminhtml/FilterController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/SM/Filter/etc/adminhtml.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/SM/Label/Helper/Data.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/SM/Label/Model/TypeOfLabel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/SM/Label/etc/config.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/SM/Label/sql/SM_Label_setup/install_0.1.0.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/filter/checkbox.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/filter/color.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/filter/link.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/filter/price.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/filter/select.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/etc/modules/SM_Label.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/swiper2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/swiper2.min.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/categoryfeatured.phtml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/featured.phtml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/SM/ProductLabel/Block/Adminhtml/Label.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/SM/ProductLabel/Block/Adminhtml/Label/Edit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/SM/ProductLabel/Block/Adminhtml/Label/Edit/Form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/SM/ProductLabel/Block/Adminhtml/Label/Grid.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/SM/ProductLabel/Block/Adminhtml/Label/Renderer/GridLabel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/SM/ProductLabel/Block/Label.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/code/local/SM/ProductLabel/controllers/Adminhtml/LabelController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/filter/view.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/label/distribute_label.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/label/new_product.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/rwd/default/css/label.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/frontend/rwd/default/css/layer.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/code/local/SM/Label/Helper/Data.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/code/local/SM/Label/Model/TypeOfLabel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/code/local/SM/Label/etc/config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/code/local/SM/Label/sql/SM_Label_setup/install_0.1.0.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/SM/Bestseller/Block/BestSeller.php" afterPath="$PROJECT_DIR$/app/code/local/SM/Bestseller/Block/BestSeller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/SM/Bestseller/etc/system.xml" afterPath="$PROJECT_DIR$/app/code/local/SM/Bestseller/etc/system.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/SM/Featured/Block/Featured.php" afterPath="$PROJECT_DIR$/app/code/local/SM/Featured/Block/Featured.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/SM/Featured/etc/adminhtml.xml" afterPath="$PROJECT_DIR$/app/code/local/SM/Featured/etc/adminhtml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/SM/Featured/etc/system.xml" afterPath="$PROJECT_DIR$/app/code/local/SM/Featured/etc/system.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/SM/Featured/sql/sm_featured_setup/mysql4-install-0.1.0.php" afterPath="$PROJECT_DIR$/app/code/local/SM/Featured/sql/sm_featured_setup/mysql4-install-0.1.0.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/SM/Filter/Helper/Data.php" afterPath="$PROJECT_DIR$/app/code/local/SM/Filter/Helper/Data.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/SM/Filter/etc/config.xml" afterPath="$PROJECT_DIR$/app/code/local/SM/Filter/etc/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/SM/Filter/sql/SM_Filter_setup/mysql4-install-0.1.0.php" afterPath="$PROJECT_DIR$/app/code/local/SM/Filter/sql/SM_Filter_setup/mysql4-install-0.1.0.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/SM/Slider/controllers/Adminhtml/ImageController.php" afterPath="$PROJECT_DIR$/app/code/local/SM/Slider/controllers/Adminhtml/ImageController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/Filter/Abstract.php" afterPath="$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/Filter/Abstract.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/View.php" afterPath="$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/View.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/SM/Slider/Block/Adminhtml/Slider/Edit/Form.php" afterPath="$PROJECT_DIR$/app/code/local/SM/Slider/Block/Adminhtml/Slider/Edit/Form.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/local.xml" afterPath="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/bestseller/categoryslide.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/bestseller/categoryslide.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/bestseller/homeslide.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/bestseller/homeslide.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/categoryslide.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/categoryslide.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/homeslide.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/homeslide.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/slider/slider.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/slider/slider.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/etc/modules/SM_Featured.xml" afterPath="$PROJECT_DIR$/app/etc/modules/SM_Featured.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/layer/view.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/layer/view.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/filter/color.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/filter/color.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/etc/modules/SM_Label.xml" afterPath="$PROJECT_DIR$/app/etc/modules/SM_Label.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -78,7 +57,99 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="eav_attribute_set" pinned="false" current-in-tab="false">
+        <entry file="das://table:/528e1adb/de7c1cb8-0c44-403c-9bd4-701a3bec2bfc/magento.eav_attribute_set">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eav_entity" pinned="false" current-in-tab="false">
+        <entry file="das://table:/528e1adb/de7c1cb8-0c44-403c-9bd4-701a3bec2bfc/magento.eav_entity">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eav_entity_attribute" pinned="false" current-in-tab="false">
+        <entry file="das://table:/528e1adb/de7c1cb8-0c44-403c-9bd4-701a3bec2bfc/magento.eav_entity_attribute">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eav_entity_datetime" pinned="false" current-in-tab="false">
+        <entry file="das://table:/528e1adb/de7c1cb8-0c44-403c-9bd4-701a3bec2bfc/magento.eav_entity_datetime">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eav_entity_decimal" pinned="false" current-in-tab="false">
+        <entry file="das://table:/528e1adb/de7c1cb8-0c44-403c-9bd4-701a3bec2bfc/magento.eav_entity_decimal">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eav_entity_int" pinned="false" current-in-tab="false">
+        <entry file="das://table:/528e1adb/de7c1cb8-0c44-403c-9bd4-701a3bec2bfc/magento.eav_entity_int">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eav_entity_store" pinned="false" current-in-tab="false">
+        <entry file="das://table:/528e1adb/de7c1cb8-0c44-403c-9bd4-701a3bec2bfc/magento.eav_entity_store">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Abstract.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/Filter/Abstract.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="143" column="71" lean-forward="true" selection-start-line="143" selection-start-column="71" selection-end-line="143" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eav_entity_text" pinned="false" current-in-tab="false">
+        <entry file="das://table:/528e1adb/de7c1cb8-0c44-403c-9bd4-701a3bec2bfc/magento.eav_entity_text">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eav_entity_type" pinned="false" current-in-tab="false">
+        <entry file="das://table:/528e1adb/de7c1cb8-0c44-403c-9bd4-701a3bec2bfc/magento.eav_entity_type">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -89,14 +160,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>function getDir(</find>
-      <find>ucwords</find>
-      <find>function getBaseDir</find>
-      <find>hung_bd</find>
-      <find>hung</find>
-      <find>Hungbd</find>
-      <find>SM</find>
-      <find>Store Email Addre</find>
       <find>general</find>
       <find>Mage::helper('</find>
       <find>&lt;trans_email&gt;</find>
@@ -106,7 +169,6 @@
       <find>init</find>
       <find>&lt;tab&gt;</find>
       <find>function _addProductAttributesAndPrices</find>
-      <find>hungbd</find>
       <find>core/text</find>
       <find>conte</find>
       <find>angrytext</find>
@@ -118,6 +180,16 @@
       <find>catalog_category_layered</find>
       <find>.swiper-pagination-</find>
       <find>.swiper-button-prev</find>
+      <find>getImageLabel</find>
+      <find>$label</find>
+      <find>Dangnd</find>
+      <find>filter-checkbox</find>
+      <find>hungbd-filter-select</find>
+      <find>hungbd</find>
+      <find>getFilterType()</find>
+      <find>getFilter_type()</find>
+      <find>getAttributeModel</find>
+      <find>_filter</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -130,33 +202,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/code/local/SM/Featured/etc/config.xml" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Bestseller/etc/adminhtml.xml" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Slider/etc/system.xml" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Slider/etc/adminhtml.xml" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Slider/Block/Slider.php" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Slider/Block/Adminhtml/Slider/Edit.php" />
-        <option value="$PROJECT_DIR$/skin/frontend/rwd/default/scss/nhapnhay.scss" />
-        <option value="$PROJECT_DIR$/skin/frontend/rwd/default/css/nhapnhay.css" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Slider/controllers/Adminhtml/ImageController.php" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Featured/controllers/FeaturedController.php" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Featured/controllers/Adminhtml/FeaturedController.php" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Featured/etc/adminhtml.xml" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Featured/sql/SM_Featured_setup/mysql4-install-0.1.0.php" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/bestseller/categoryslide.phtml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/categoryslide.phtml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/filter/select.phtml" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Filter/sql/Hungbd_Filter_setup/mysql4-install-0.1.0.php" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Filter/Model/Type.php" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Filter/Helper/Data.php" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Filter/etc/config.xml" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Filter/etc/adminhtml.xml" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/View.php" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/Filter/Price.php" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/Filter/Decimal.php" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/Filter/Category.php" />
         <option value="$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/Filter/Attribute.php" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/Filter/Abstract.php" />
         <option value="$PROJECT_DIR$/app/code/local/SM/Filter/Block/Adminhtml/Filter.php" />
         <option value="$PROJECT_DIR$/app/code/local/SM/Filter/Block/Adminhtml/Filter/Grid.php" />
         <option value="$PROJECT_DIR$/app/code/local/SM/Filter/Block/Adminhtml/Filter/Edit.php" />
@@ -166,21 +212,47 @@
         <option value="$PROJECT_DIR$/app/code/local/SM/Featured/Block/Featured.php" />
         <option value="$PROJECT_DIR$/skin/frontend/rwd/default/css/swiper/jump.css" />
         <option value="$PROJECT_DIR$/app/code/local/SM/Label/sql/install_0.1.0.php" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Label/etc/config.xml" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Label/Model/TypeOfLabel.php" />
         <option value="$PROJECT_DIR$/app/code/local/SM/Label/Helper/Data.php" />
-        <option value="$PROJECT_DIR$/app/etc/modules/SM_Label.xml" />
         <option value="$PROJECT_DIR$/app/code/local/SM/Filter/controllers/Adminhtml/FilterController.php" />
         <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/slider/slider.phtml" />
         <option value="$PROJECT_DIR$/skin/frontend/rwd/default/css/swiper/swiper2.css" />
         <option value="$PROJECT_DIR$/skin/frontend/rwd/default/css/swiper/swiper2.min.css" />
         <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/homeslide.phtml" />
         <option value="$PROJECT_DIR$/app/code/local/SM/Bestseller/Block/BestSeller.php" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/local.xml" />
         <option value="$PROJECT_DIR$/app/code/local/SM/Bestseller/etc/system.xml" />
         <option value="$PROJECT_DIR$/app/code/local/SM/Featured/etc/system.xml" />
         <option value="$PROJECT_DIR$/skin/frontend/rwd/default/css/swiper/swiper.css" />
         <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/bestseller/homeslide.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/label/new_product.php" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/label/distribute_label.php" />
+        <option value="$PROJECT_DIR$/skin/frontend/rwd/default/css/label.css" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Label/Model/TypeOfLabel.php" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Label/sql/SM_Label_setup/install_0.1.0.php" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Label/etc/config.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Featured/sql/SM_Featured_setup/mysql4-install-0.1.0.php" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Label/sql/SM_Label_setup/mysql4-install_0.1.0.php" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/ProductLabel/etc/config.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/ProductLabel/Helper/Data.php" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/ProductLabel/sql/sm_label_setup/install-0.1.0.php" />
+        <option value="$PROJECT_DIR$/app/etc/modules/SM_Label.xml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/label/distribute_label.phtml" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/ProductLabel/Model/TypeLabel.php" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/ProductLabel/controllers/Adminhtml/ImageController.php" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/ProductLabel/controllers/Adminhtml/LabelController.php" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/ProductLabel/Block/Adminhtml/Label/Edit/Form.php" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/ProductLabel/Block/Adminhtml/Label.php" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/ProductLabel/Block/Adminhtml/Label/Renderer/GridLabel.php" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/ProductLabel/Block/Adminhtml/Label/Edit.php" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/ProductLabel/Block/Adminhtml/Label/Grid.php" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Slider/Block/Adminhtml/Slider/Edit/Form.php" />
+        <option value="$PROJECT_DIR$/skin/frontend/rwd/default/css/layer.css" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/local.xml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/filter/view.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/filter/color.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/layer/view.phtml" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/View.php" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/filter/checkbox.phtml" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/Filter/Abstract.php" />
       </list>
     </option>
   </component>
@@ -192,9 +264,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="6" />
-    <option name="width" value="1326" />
-    <option name="height" value="561" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -228,6 +301,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -275,7 +350,7 @@
               <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Bestseller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
@@ -284,7 +359,7 @@
               <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Bestseller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Block" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -294,7 +369,51 @@
               <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Bestseller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Block" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Layer" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockfr11-baont" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Block" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Layer" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockfr11-baont" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockfr11-baont" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Adminhtml" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockfr11-baont" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="etc" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -304,17 +423,8 @@
               <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Featured" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mockfr11-baont" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Featured" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="etc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
@@ -324,6 +434,7 @@
               <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sql" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
@@ -333,6 +444,26 @@
               <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sql" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="SM_Filter_setup" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockfr11-baont" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Slider" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockfr11-baont" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Slider" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Block" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -342,149 +473,34 @@
               <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Block" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Adminhtml" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mockfr11-baont" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Block" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Adminhtml" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mockfr11-baont" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Slider" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Block" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Adminhtml" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockfr11-baont" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Slider" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Block" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Adminhtml" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Slider" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockfr11-baont" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Slider" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Block" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Adminhtml" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Slider" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Edit" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mockfr11-baont" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mockfr11-baont" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Filter" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Adminhtml" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mockfr11-baont" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Slider" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mockfr11-baont" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Slider" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Block" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mockfr11-baont" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Slider" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Block" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Adminhtml" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mockfr11-baont" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Slider" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Block" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Adminhtml" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Slider" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mockfr11-baont" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Slider" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mockfr11-baont" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Slider" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Adminhtml" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mockfr11-baont" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Slider" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="etc" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mockfr11-baont" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Slider" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="sql" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mockfr11-baont" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="code" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="local" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="SM" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Slider" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="sql" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="SM_Slider_setup" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
@@ -545,7 +561,54 @@
               <item name="rwd" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockfr11-baont" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="design" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="rwd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layer" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockfr11-baont" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="design" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="rwd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="mytemplate" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockfr11-baont" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="design" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="rwd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="mytemplate" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="filter" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockfr11-baont" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="design" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="rwd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="mytemplate" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="label" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="mockfr11-baont" type="b2602c69:ProjectViewProjectNode" />
@@ -658,8 +721,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -670,19 +731,19 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp5.6\htdocs\magento\mockfr11-baont\skin\frontend\rwd\default\css" />
-      <recent name="C:\xampp5.6\htdocs\magento\mockfr11-baont\app\design\frontend\base\default\template" />
-      <recent name="C:\xampp5.6\htdocs\magento\mockfr11-baont\app\design\frontend\rwd\default\template\mytemplate" />
-      <recent name="C:\xampp5.6\htdocs\magento\mockfr11-baont\app\code\local\SM" />
-      <recent name="C:\xampp5.6\htdocs\magento\mockfr11-baont\app\code\local\SM\Featured\Block\Template" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp5.6\htdocs\magento\mockfr11-baont\app\code\local\SM" />
       <recent name="C:\xampp5.6\htdocs\magento\mockfr11-baont\js\lib" />
       <recent name="C:\xampp5.6\htdocs\magento\mockfr11-baont\app\code\local\SM\Label\sql\SM_Label_setup" />
       <recent name="C:\xampp5.6\htdocs\magento\mockfr11-baont\skin\frontend\rwd\default" />
       <recent name="C:\xampp5.6\htdocs\magento\mockfr11-baont\skin\frontend\rwd\default\css\jump" />
-      <recent name="C:\xampp5.6\htdocs\magento\mockfr11-baont\skin\frontend\rwd\default\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp5.6\htdocs\magento\mockfr11-baont\app\design\frontend\rwd\default\template\mytemplate\filter" />
+      <recent name="C:\xampp5.6\htdocs\magento\mockfr11-baont\app\code\local\SM\ProductLabel\Block" />
+      <recent name="C:\xampp5.6\htdocs\magento\mockfr11-baont\app\code\local\SM\ProductLabel" />
+      <recent name="C:\xampp5.6\htdocs\magento\mockfr11-baont\app\etc\modules" />
+      <recent name="C:\xampp5.6\htdocs\magento\mockfr11-baont\app\code\local" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -722,27 +783,31 @@
       <workItem from="1511077058055" duration="5823000" />
       <workItem from="1511144754654" duration="20284000" />
       <workItem from="1511311864294" duration="6973000" />
-      <workItem from="1511399503558" duration="1210000" />
+      <workItem from="1511399503558" duration="8194000" />
+      <workItem from="1511407927924" duration="1713000" />
+      <workItem from="1511424870862" duration="5761000" />
+      <workItem from="1511668367056" duration="4519000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106766000" />
+    <option name="totallyTimeSpent" value="125743000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2927383" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27836612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07639939" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16414523" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -760,8 +825,8 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24281392" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2927383" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07639939" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -783,119 +848,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/etc/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/etc/adminhtml.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="26" column="64" lean-forward="false" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/View.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315">
-          <caret line="70" column="18" lean-forward="false" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/Filter/Price.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/Filter/Decimal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="53" lean-forward="false" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/Filter/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/Filter/Attribute.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/Filter/Abstract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/sql/SM_Filter_setup/mysql4-install-0.1.0.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/mytemplate/filter/link.phtml" />
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Featured/etc/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/etc/modules/SM_Featured.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/layout/cms.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="83" column="31" lean-forward="true" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/default/css/jump.css" />
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Featured/Block/Featured.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/default/jump/jump.css" />
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/categoryslide.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="37" lean-forward="false" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Label/sql/SM_Label_setup/install_0.1.0.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Slider/etc/config.xml">
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Slider/Model/Image.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -903,255 +856,383 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Label/etc/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="773">
-          <caret line="53" column="24" lean-forward="false" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Label/Model/TypeOfLabel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="59" lean-forward="false" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Label/Helper/Data.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Slider/Block/Adminhtml/Slider/Grid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-646">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Slider/Block/Adminhtml/Slider/Edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/etc/modules/SM_Filter.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/etc/modules/SM_Label.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Slider/Block/Adminhtml/Slider/Renderer/FormImage.php">
+    <entry file="file://$PROJECT_DIR$/var/report/1889664856">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Slider/Block/Adminhtml/Slider/Edit/Form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Slider/Block/Slider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/controllers/Adminhtml/FilterController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="28" column="63" lean-forward="false" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/Block/Adminhtml/Filter/Grid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="63" column="41" lean-forward="false" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/Block/Adminhtml/Filter/Edit/Form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="61" column="44" lean-forward="false" selection-start-line="61" selection-start-column="44" selection-end-line="61" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/Block/Adminhtml/Filter/Edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/Block/Adminhtml/Filter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Slider/controllers/Adminhtml/SliderController.php">
+    <entry file="file://$PROJECT_DIR$/var/report/1284248526">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/default/css/nhapnhay.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/default/js/swiper/swiper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="3941" column="40" lean-forward="false" selection-start-line="3941" selection-start-column="40" selection-end-line="3941" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/default/js/swiper/swiper.esm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/default/js/swiper/swiper.esm.bundle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/lib/swiper2.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20000" lean-forward="false" selection-start-line="0" selection-start-column="20000" selection-end-line="0" selection-end-column="20000" />
-          <folding>
-            <element signature="e#4956#5214#2" expanded="false" />
-            <element signature="e#5315#5573#2" expanded="false" />
-            <element signature="e#5714#5972#2" expanded="false" />
-            <element signature="e#6092#6350#2" expanded="false" />
-            <element signature="e#6470#6728#2" expanded="false" />
-            <element signature="e#6848#7106#2" expanded="false" />
-            <element signature="e#14108#15555#2" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/featured/homeslide.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-          <folding>
-            <element signature="e#1290#1541#0#HTML" expanded="false" />
-            <element signature="e#1551#2463#0#HTML" expanded="false" />
-            <element signature="e#2473#3019#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/layout/catalog.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="7" column="69" lean-forward="true" selection-start-line="7" selection-start-column="69" selection-end-line="7" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/layout/local.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="48" column="20" lean-forward="true" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/lib/swiper2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8534">
-          <caret line="502" column="1" lean-forward="false" selection-start-line="502" selection-start-column="1" selection-end-line="502" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Bestseller/Block/BestSeller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/slider/slider.phtml">
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/ProductLabel/Model/TypeLabel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="9" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="18" selection-end-column="9" />
-          <folding />
+          <caret line="30" column="37" lean-forward="false" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/default/css/swiper/swiper.css">
+    <entry file="das://table:/528e1adb/de7c1cb8-0c44-403c-9bd4-701a3bec2bfc/magento.core_resource">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/ProductLabel/sql/sm_label_setup/install-0.1.0.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="260" column="27" lean-forward="true" selection-start-line="260" selection-start-column="27" selection-end-line="260" selection-end-column="27" />
+        <state relative-caret-position="221">
+          <caret line="13" column="42" lean-forward="false" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/label/distribute_label.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code/local/SM/Slider/controllers/Adminhtml/ImageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="233" column="17" lean-forward="false" selection-start-line="233" selection-start-column="17" selection-end-line="233" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Bestseller/etc/system.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="22" column="68" lean-forward="false" selection-start-line="22" selection-start-column="68" selection-end-line="22" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Featured/etc/system.xml">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="42" column="5" lean-forward="false" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/bestseller/homeslide.phtml">
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Slider/Block/Slider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="168" column="14" lean-forward="true" selection-start-line="168" selection-start-column="14" selection-end-line="168" selection-end-column="14" />
-          <folding>
-            <element signature="e#3541#6233#0#PHP" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/ProductLabel/Block/Label.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/ProductLabel/Block/Adminhtml/Label/Edit/Form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/ProductLabel/Block/Adminhtml/Label.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/ProductLabel/Block/Adminhtml/Label/Renderer/GridLabel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/ProductLabel/Block/Adminhtml/Label/Edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="68" lean-forward="false" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/ProductLabel/Block/Adminhtml/Label/Grid.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="30" column="54" lean-forward="false" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/ProductLabel/controllers/Adminhtml/LabelController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/controllers/Adminhtml/FilterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-575">
+          <caret line="15" column="79" lean-forward="false" selection-start-line="15" selection-start-column="79" selection-end-line="15" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Slider/Block/Adminhtml/Slider/Edit/Form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="48" column="45" lean-forward="true" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/etc/adminhtml.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/Filter/Attribute.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/filter/select.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/default/css/layer.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/layout/catalog.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="118" column="83" lean-forward="false" selection-start-line="118" selection-start-column="83" selection-end-line="118" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/layer/filter.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="42" column="31" lean-forward="true" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/layer/state.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/filter/view.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="46" column="49" lean-forward="true" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/filter/link.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/layer/view.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="41" column="26" lean-forward="false" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/View.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2278">
+          <caret line="134" column="6" lean-forward="false" selection-start-line="134" selection-start-column="6" selection-end-line="134" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/filter/checkbox.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/filter/price.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/layout/local.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="53" column="50" lean-forward="false" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/mytemplate/filter/color.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/528e1adb/de7c1cb8-0c44-403c-9bd4-701a3bec2bfc/magento.catalog_eav_attribute">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/528e1adb/de7c1cb8-0c44-403c-9bd4-701a3bec2bfc/magento.eav_attribute">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/etc/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/sql/SM_Filter_setup/mysql4-install-0.1.0.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/528e1adb/de7c1cb8-0c44-403c-9bd4-701a3bec2bfc/magento.eav_attribute_group">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/528e1adb/de7c1cb8-0c44-403c-9bd4-701a3bec2bfc/magento.eav_attribute_label">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/528e1adb/de7c1cb8-0c44-403c-9bd4-701a3bec2bfc/magento.eav_attribute_option">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/528e1adb/de7c1cb8-0c44-403c-9bd4-701a3bec2bfc/magento.eav_attribute_option_value">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/528e1adb/de7c1cb8-0c44-403c-9bd4-701a3bec2bfc/magento.eav_attribute_set">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/528e1adb/de7c1cb8-0c44-403c-9bd4-701a3bec2bfc/magento.eav_entity">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/528e1adb/de7c1cb8-0c44-403c-9bd4-701a3bec2bfc/magento.eav_entity_attribute">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/528e1adb/de7c1cb8-0c44-403c-9bd4-701a3bec2bfc/magento.eav_entity_datetime">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/528e1adb/de7c1cb8-0c44-403c-9bd4-701a3bec2bfc/magento.eav_entity_decimal">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/528e1adb/de7c1cb8-0c44-403c-9bd4-701a3bec2bfc/magento.eav_entity_int">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/528e1adb/de7c1cb8-0c44-403c-9bd4-701a3bec2bfc/magento.eav_entity_text">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/528e1adb/de7c1cb8-0c44-403c-9bd4-701a3bec2bfc/magento.eav_entity_type">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/528e1adb/de7c1cb8-0c44-403c-9bd4-701a3bec2bfc/magento.eav_entity_store">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/Block/Layer/Filter/Abstract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="143" column="71" lean-forward="true" selection-start-line="143" selection-start-column="71" selection-end-line="143" selection-end-column="71" />
+          <folding />
         </state>
       </provider>
     </entry>
