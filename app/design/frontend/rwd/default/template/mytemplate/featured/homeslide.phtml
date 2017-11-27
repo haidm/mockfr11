@@ -30,6 +30,12 @@
                 width: 110px;
                 height: 110px;
             }
+            .hungbd-home-fea-nav{
+                top : 60px;
+            }
+            .hungbd-home-fea-pag{
+                top : 151px;
+            }
         </style>
         <?php if ($products->getItems()): ?>
             <h2 align="center">Featured Product</h2>
@@ -52,13 +58,24 @@
                         </div>
                     <?php endforeach; ?>
                 </div>
+                <div class="swiper-button-next hungbd-home-fea-nav"></div>
+                <div class="swiper-pagination hungbd-home-fea-pag"></div>
             </div>
         <?php endif; ?>
         <script>
-            var swiper = new Swiper('.my-swiper', {
+            var feaswiper = new Swiper('.my-swiper', {
                 slidesPerView: <?php echo $productPerView; ?>,
                 spaceBetween: 10,
                 centeredSlides: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true,
+                },
                 autoplay: {
                     delay: 5000,
                 },

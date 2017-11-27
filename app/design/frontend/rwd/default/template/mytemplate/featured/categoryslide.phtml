@@ -1,4 +1,4 @@
-<?php if (Mage::getStoreConfig('general/hungbd_featured/enable')): ?>
+<?php if (Mage::getStoreConfig('general/hungbd_featured/enableoncate')): ?>
     <?php $productPerView = (int)Mage::getStoreConfig('general/hungbd_featured/slider_per_view_category'); ?>
     <?php if (($products = $this->getFeaturedProductByCategory())): ?>
         <style>
@@ -30,6 +30,9 @@
                 width: 110px;
                 height: 110px;
             }
+            .hungbd-fea-pag{
+                top : 195px
+            }
         </style>
         <?php if ($products->getItems()): ?>
             <h3 align="center">Featured Product</h3>
@@ -52,17 +55,24 @@
                         </div>
                     <?php endforeach; ?>
                 </div>
+<!--                <div class="swiper-pagination hungbd-fea-pag"></div>-->
             </div>
         <?php endif; ?>
         <script>
-            var swiper = new Swiper('.my-swiper', {
+            var feaswiper = new Swiper('.my-swiper', {
                 slidesPerView: <?php echo $productPerView; ?>,
                 spaceBetween: 20,
                 centeredSlides: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
                 autoplay: {
                     delay: 5000,
                 },
+                <?php if (count($products->getItems()) >= $productPerView): ?>
                 loop: true,
+                <?php endif; ?>
                 mousewheel: {
                     invert: true,
                 },

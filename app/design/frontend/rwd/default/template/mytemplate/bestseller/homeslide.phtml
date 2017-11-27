@@ -1,6 +1,6 @@
 <?php if (Mage::getStoreConfig('general/hungbd_bestseller/enable')): ?>
-    <?php $customProduct = $this->getCustomBestSeller();?>
-    <?php $products = $this->getBestSellerProduct();?>
+    <?php $customProduct = $this->getCustomBestSeller(); ?>
+    <?php $products = $this->getBestSellerProduct(); ?>
     <?php $productPerView = (int)Mage::getStoreConfig('general/hungbd_bestseller/slider_per_view_home'); ?>
     <?php if ($products || $customProduct): ?>
         <style>
@@ -31,6 +31,13 @@
             .best-seller img {
                 width: 110px;
                 height: 110px;
+            }
+
+            .hungbd-home-best {
+                top: 178px;
+            }
+            .hungbd-home-nav {
+                top: 60px;
             }
         </style>
         <?php if ($products->getItems() || $customProduct->getItems()): ?>
@@ -70,15 +77,25 @@
                         </div>
                     <?php endforeach; ?>
                 </div>
+                <div class="swiper-button-next hungbd-home-nav"></div>
+                <div class="swiper-pagination hungbd-home-best"></div>
             </div>
         <?php endif; ?>
         <script>
-            var swiper = new Swiper('.best-seller', {
+            var bestswiper = new Swiper('.best-seller', {
                 slidesPerView: <?php echo $productPerView; ?>,
                 spaceBetween: 10,
                 centeredSlides: true,
                 autoplay: {
                     delay: 5000,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
                 },
                 loop: true,
                 mousewheel: {

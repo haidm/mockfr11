@@ -1,4 +1,4 @@
-<?php if (Mage::getStoreConfig('general/hungbd_bestseller/enable')): ?>
+<?php if (Mage::getStoreConfig('general/hungbd_bestseller/enableoncate')): ?>
     <?php $productPerView = (int)Mage::getStoreConfig('general/hungbd_bestseller/slider_per_view_category'); ?>
     <?php $products = $this->getBestSellerProductCategory()  ?>
     <?php $customProducts = $this->getCustomBestSellerCategory()  ?>
@@ -33,7 +33,7 @@
                 height: 110px;
             }
         </style>
-        <?php if ($customProducts->getItems() || $product->getItems() ): ?>
+        <?php if ($customProducts || $product ): ?>
         <h3 align="center">Best Seller Product</h3>
         <div class="swiper-container best-seller">
             <div class="swiper-wrapper">
@@ -70,6 +70,7 @@
                     </div>
                 <?php endforeach; ?>
             </div>
+            <div class="swiper-pagination hungbd-best-pag"></div>
         </div>
     <?php endif; ?>
     <script>
@@ -77,13 +78,13 @@
                 slidesPerView: <?php echo $productPerView; ?> ,
                 spaceBetween: 10,
                 centeredSlides: true,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
                 autoplay: {
                     delay: 5000,
                 },
+                <?php if (count($products->getItems()) >= $productPerView): ?>
+                loop: true,
+                <?php endif; ?>
+
                 mousewheel: {
                     invert: true,
                 },

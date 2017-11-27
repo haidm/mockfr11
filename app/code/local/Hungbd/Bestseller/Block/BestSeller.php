@@ -22,9 +22,9 @@ class Hungbd_Bestseller_Block_BestSeller extends Mage_Catalog_Block_Product_Abst
         }
         $list = rtrim($list,',');
         $list .= ')';
-        $products = Mage::getResourceModel('reports/product_collection');
-        $products = $this->_addProductAttributesAndPrices($products)
-            ->addAttributeToFilter('visibility',4);
+        $products = Mage::getResourceModel('reports/product_collection')
+            ->addAttributeToSelect(array('*'))
+            ->addFieldToFilter('visibility', array(2,3,4));
         $products->getSelect()
             ->joinInner(array('order_items' => $products->getResource()->getTable('sales/order_item')),
                 "e.entity_id = order_items.product_id AND order_items.order_id in $list",
@@ -38,6 +38,8 @@ class Hungbd_Bestseller_Block_BestSeller extends Mage_Catalog_Block_Product_Abst
 
     public function getBestSellerProductCategory()
     {
+        $category_id = Mage::registry('current_category')->getId();
+        $category = Mage::getModel('catalog/category')->load($category_id);
         $order = Mage::getResourceModel('sales/order_collection')->addFieldToFilter('status','complete');
         $list = '(';
         foreach ($order as $item){
@@ -45,12 +47,10 @@ class Hungbd_Bestseller_Block_BestSeller extends Mage_Catalog_Block_Product_Abst
         }
         $list = rtrim($list,',');
         $list .= ')';
-        $category_id = Mage::registry('current_category')->getId();
-        $category = Mage::getModel('catalog/category')->load($category_id);
         $products = Mage::getResourceModel('reports/product_collection')
-            ->addCategoryFilter($category);
-        $products = $this->_addProductAttributesAndPrices($products)
-            ->addAttributeToFilter('visibility',4);
+            ->addCategoryFilter($category)
+            ->addAttributeToSelect(array('*'))
+            ->addFieldToFilter('visibility', array(2,3,4));
         $products->getSelect()
             ->joinInner(array('order_items' => $products->getResource()->getTable('sales/order_item')),
                 "e.entity_id = order_items.product_id AND order_items.order_id in $list",
@@ -66,7 +66,7 @@ class Hungbd_Bestseller_Block_BestSeller extends Mage_Catalog_Block_Product_Abst
     {
         $collection = Mage::getModel('catalog/product')
             ->getCollection()
-            ->addAttributeToFilter('visibility',4)
+            ->addAttributeToFilter('visibility',array(2,3,4))
             ->addAttributeToFilter('is_beseller',1);
         $collection = $this->_addProductAttributesAndPrices($collection);
         return $collection;
@@ -80,7 +80,7 @@ class Hungbd_Bestseller_Block_BestSeller extends Mage_Catalog_Block_Product_Abst
             ->setStoreId(Mage::app()->getStore()->getId())
             ->addCategoryFilter($category);
         $products = $this->_addProductAttributesAndPrices($products)
-            ->addAttributeToFilter('visibility',4)
+            ->addAttributeToFilter('visibility',Mage_Catalog_Model_Product_Visibility::VISIBILITY_BOTH)
             ->addAttributeToFilter('is_beseller', 1);
         return $products;
     }

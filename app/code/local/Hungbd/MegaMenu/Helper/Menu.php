@@ -36,7 +36,7 @@ class Hungbd_MegaMenu_Helper_Menu extends Mage_Core_Helper_Abstract
     {
         $menulist = Mage::getModel('hungbd_megamenu/menuitem')->getCollection();
         $topmenu = Mage::getModel('hungbd_megamenu/menuitem')->getCollection()
-            ->addFieldToFilter('level',0);
+            ->addFieldToFilter('parent_id',0);
         $test = '';
         $test1 = '';
         foreach ($topmenu as $item){

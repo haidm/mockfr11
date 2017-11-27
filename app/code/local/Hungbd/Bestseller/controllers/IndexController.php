@@ -19,7 +19,7 @@ class Hungbd_Bestseller_IndexController extends Mage_Core_Controller_Front_Actio
         $list .= ')';
         $storeId = (int)Mage::app()->getStore()->getId();
         $products = Mage::getResourceModel('reports/product_collection')
-            ->addAttributeToSelect(array('name', 'price', 'small_image'))->addAttributeToFilter('visibility', 4);
+            ->addAttributeToSelect(array('*'));
         $products->getSelect()
             ->joinInner(array('order_items' => $products->getResource()->getTable('sales/order_item')),
                 "e.entity_id = order_items.product_id AND order_items.order_id in $list",
@@ -29,10 +29,11 @@ class Hungbd_Bestseller_IndexController extends Mage_Core_Controller_Front_Actio
                     'order_id' => 'order_items.order_id',
                 ))->group('e.entity_id');
         $time = 0;
+        Mage::getSingleton('catalog/product_visibility')->addVisibleInCatalogFilterToCollection($products);
         foreach ($products as $item) {
             $time++;
             echo $item->entity_id.'<br>';
-//            echo $item->name.'<br>';
+            echo $item->name.'<br>';
 //            echo $item->ordered_qty.'<br>';
             echo $item->order_id.'<br>';
             echo '-------------------------------- <br>';

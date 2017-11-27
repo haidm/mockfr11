@@ -5,6 +5,7 @@
  * Date: 25/10/2017
  * Time: 17:05
  */
+
 /**
  * Menu item Grid
  * @category    Hungbd
@@ -57,7 +58,7 @@ class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_Grid extends Mage_Adminhtml_Block
             array(
                 'header' => Mage::helper('core')->__(' Name'),
                 'index' => 'name',
-                'type'    => 'text'
+                'type' => 'text'
             )
         );
 
@@ -65,7 +66,7 @@ class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_Grid extends Mage_Adminhtml_Block
             array(
                 'header' => Mage::helper('core')->__('Type'),
                 'index' => 'type',
-                'type'    => 'text'
+                'type' => 'text'
             )
         );
 
@@ -73,7 +74,7 @@ class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_Grid extends Mage_Adminhtml_Block
             array(
                 'header' => Mage::helper('core')->__('Link'),
                 'index' => 'link',
-                'type'    => 'text'
+                'type' => 'text'
             )
         );
 
@@ -81,17 +82,9 @@ class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_Grid extends Mage_Adminhtml_Block
             array(
                 'header' => Mage::helper('core')->__('Parent'),
                 'index' => 'parent_name',
-                'type'    => 'text'
+                'type' => 'text'
             )
         );
-
-        $this->addColumn('level',
-        array(
-            'header' => Mage::helper('core')->__('Level'),
-            'index' => 'level',
-            'type'    => 'text'
-        )
-    );
 
         return parent::_prepareColumns();
     }

@@ -96,7 +96,9 @@ class Hungbd_Slider_Adminhtml_ImageController extends Mage_Adminhtml_Controller_
             if (!empty($_FILES['image']['name']) || $_FILES['image']['name']) {
                 try {
                     $path = Mage::getBaseDir('media') . DS . 'hung_bd' . DS;
-                    unlink($path.Mage::getModel('hungbd_slider/image')->load($imageId)->getName());
+                    if ($this->getRequest()->getParam('deleteimg')){
+                        unlink($path.Mage::getModel('hungbd_slider/image')->load($imageId)->getName());
+                    }
                     $newDir = 'hung_bd';
                     $uploader = new Varien_File_Uploader('image');
                     $uploader->setAllowedExtensions(array('jpg', 'jpeg', 'gif', 'png'));

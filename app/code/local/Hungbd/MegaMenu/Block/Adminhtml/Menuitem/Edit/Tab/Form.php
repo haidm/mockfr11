@@ -53,7 +53,7 @@ class Hungbd_MegaMenu_Block_Adminhtml_Menuitem_Edit_Tab_Form extends Mage_Adminh
             array(
                 'name' => 'hiden',
                 'label' => 'Hiden',
-                'values' => array(array('label' => 'yes', 'value' => '1'),array('label' => 'no', 'value' => '0')),
+                'values' => array(array('label' => 'no', 'value' => '0'),array('label' => 'yes', 'value' => '1')),
                 'value' => $hiden,
             ));
 

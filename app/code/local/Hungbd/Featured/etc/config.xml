@@ -5,6 +5,17 @@
             <version>0.1.0</version>
         </Hungbd_Featured>
     </modules>
+    <frontend>
+        <routers>
+            <hungbd_bestseller>
+                <use>standard</use>
+                <args>
+                    <module>Hungbd_Featured</module>
+                    <frontName>featured</frontName>
+                </args>
+            </hungbd_bestseller>
+        </routers>
+    </frontend>
     <global>
         <models>
             <Hungbd_Featured>

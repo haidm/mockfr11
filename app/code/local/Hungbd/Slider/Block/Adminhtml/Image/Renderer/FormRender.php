@@ -18,10 +18,15 @@ class Hungbd_Slider_Block_Adminhtml_Image_Renderer_FormRender extends Mage_Admin
     {
         $id = $element->getIdFieldName();
         $name = $element->getName();
+        $class = $element->getData('class');
         $value = $element->getData('value');
+        if (!$value){
+            $value = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'hung_bd/no-preview-available.png';
+        }
         $html = '<div style="margin-bottom: 10px">';
-        $html .= "<img src='$value' style='height: 40px; width: 80px;'>";
-        $html .= "<input type='file' name='$name' value='$value' id='$id' style='margin-left: 130px;'> <br>";
+        $html .= "<img id='hungbd-preview-image' src='$value' style='height: 40px; width: 80px;'>";
+        $html .= " Delete <input type='checkbox' name='deleteimg' value='1'>";
+        $html .= "<input type='file' class='$class' name='$name' id='$id' style='margin-left: 75px;' onchange='loadFile(event)'> <br>";
         $html .= '</div>';
         return $html;
 

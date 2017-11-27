@@ -40,11 +40,21 @@ class Hungbd_Slider_Block_Adminhtml_Image_Edit_Form extends Mage_Adminhtml_Block
         $fieldset = $form->addFieldset('slider_form',
             array('legend' => 'Slider infomation'));
 
-        $fieldset->addField('link', 'image', array(
-            'label' => Mage::helper('catalog')->__('Image'),
-            'required' => false,
-            'name' => 'image',
-        ))->setRenderer($render);
+        if ($model->getId()){
+            $fieldset->addField('link', 'image', array(
+                'label' => Mage::helper('catalog')->__('Image'),
+                'required' => false,
+                'name' => 'image',
+            ))->setRenderer($render);
+        }
+        else{
+            $fieldset->addField('link', 'image', array(
+                'label' => Mage::helper('catalog')->__('Image'),
+                'required' => false,
+                'name' => 'image',
+                'class' => 'required-entry',
+            ))->setRenderer($render);
+        }
 
         $fieldset->addField('text', 'textarea', array(
             'label' => Mage::helper('core')->__('text'),

@@ -32,18 +32,19 @@ class Hungbd_MegaMenu_Block_MegaMenu extends Mage_Page_Block_Html_Topmenu
      * @param Collection $listMenuItem
      * @return void
      */
-    public function getChildItem($menuItem, $maxLevel, $listMenuItem)
+    public function getChildItem($menuItem,$level ,$maxLevel, $listMenuItem)
     {
-        if ($menuItem->level >= $maxLevel || $menuItem->hiden) {
+        $level++;
+        if ($level > $maxLevel) {
             return;
         }
         if ($this->hasChildren($menuItem->id)){
             echo "<ul>";
             foreach ($listMenuItem as $key => $item) {
-                if ($item->parent_id == $menuItem->id) {
+                if ($item->parent_id == $menuItem->id && !$item->hiden) {
                     echo "<li>";
                     echo "<a href='$item->link'>$item->name</a>";
-                    $this->getChildItem($item, $maxLevel, $listMenuItem);
+                    $this->getChildItem($item,$level ,$maxLevel, $listMenuItem);
                     echo "</li>";
                 }
             }

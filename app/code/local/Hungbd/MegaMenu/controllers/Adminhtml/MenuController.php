@@ -77,7 +77,7 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
             $menuItemModel->load($menuItemId);
             if (!$menuItemModel->getId()) {
                 Mage::getSingleton('adminhtml/session')
-                    ->addError(Mage::helper( 'core')->__('Menu item ko ton tai!'));
+                    ->addError(Mage::helper('core')->__('Menu item ko ton tai!'));
                 $this->_redirect('*/*/');
                 return;
             }
@@ -113,12 +113,8 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
         $postData = $this->getRequest()->getParams();
         if ($this->getRequest()->getParam('parent_id') != 0) {
             $parentId = $this->getRequest()->getParam('parent_id');
-            $parentLevel = Mage::getModel('hungbd_megamenu/menuitem')
-                ->load($parentId)->getLevel();
-            $level = $parentLevel + 1;
         } else {
             $parentId = 0;
-            $level = 0;
         }
         if ($this->validate($postData) == 'true') {
             //save custom link
@@ -131,7 +127,6 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
                 $menuItemModel = Mage::getModel('hungbd_megamenu/menuitem')
                     ->setId($id)
                     ->setName($name)
-                    ->setLevel($level)
                     ->setType($type)
                     ->setLink($link)
                     ->setHiden($hiden)
@@ -170,7 +165,6 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
                 $menuItemModel = Mage::getModel('hungbd_megamenu/menuitem')
                     ->setId($id)
                     ->setName($name)
-                    ->setLevel($level)
                     ->setType($type)
                     ->setLink($link)
                     ->setHiden($hiden)
@@ -210,7 +204,6 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
                 $menuItemModel = Mage::getModel('hungbd_megamenu/menuitem')
                     ->setId($id)
                     ->setName($name)
-                    ->setLevel($level)
                     ->setType($type)
                     ->setLink($link)
                     ->setHiden($hiden)
@@ -253,77 +246,93 @@ class Hungbd_MegaMenu_adminhtml_MenuController extends Mage_Adminhtml_Controller
 
     public function deleteAction()
     {
-
         $menuItemId = $this->getRequest()->getParam('id');
+        $item = Mage::getModel('hungbd_megamenu/menuitem')
+            ->load($menuItemId);
+        $parentItemId = $item->getParent_id();
+        $listChildrenMenuItem = Mage::getModel('hungbd_megamenu/menuitem')
+            ->getCollection()
+            ->addFieldToFilter('parent_id', $menuItemId);
         try {
-            Mage::getModel('hungbd_megamenu/menuitem')
-                ->setId($menuItemId)
-                ->delete()
+            if ($parentItemId == 0) {
+                foreach ($listChildrenMenuItem as $menuitem) {
+                    $menuitem->parent_id = 0;
+                    $menuitem->hiden = 1;
+                    $menuitem->save();
+                }
+            } else {
+                foreach ($listChildrenMenuItem as $menuitem) {
+                    $menuitem->parent_id = $parentItemId;
+                    $menuitem->save();
+                }
+            }
+            $item->delete()
                 ->save();
-            return $this->_redirect('*/*/');
-        } catch (Mage_Core_Exception $e) {
-            Mage::getSingleton('adminhtml/session')->addError($e->getMessage());
+            Mage::getSingleton('adminhtml/session')
+                ->addSuccess(Mage::helper('core')->__('The Menuitem has been deleted.'));
         } catch (Exception $e) {
             Mage::getSingleton('adminhtml/session')
                 ->addError(Mage::helper('core')->__('An error occurred while saving this item.'));
         }
-        $this->_redirectReferer();
-    }
 
-    /**
-     * Validate function
-     * @param array $data
-     * @return true or array error
-     */
-    private function validate($data)
-    {
-        $errors = array();
+$this->_redirect('*/*/');
+}
 
-        if ($data['type'] == 'Custom link' || $data['type'] == 'Product link' || $data['type'] == 'Category link') {
+/**
+ * Validate function
+ * @param array $data
+ * @return true or array error
+ */
+private
+function validate($data)
+{
+    $errors = array();
 
-            if (!Zend_Validate::is($data['parent_id'], 'Regex', array('/^[0-9]+$/'))) {
-                $errors[] = Mage::helper('core')->__('Not a valid parent id');
-            }
+    if ($data['type'] == 'Custom link' || $data['type'] == 'Product link' || $data['type'] == 'Category link') {
 
-            if ($data['type'] == 'Custom link') {
-
-                if (!Zend_Validate::is($data['link'], 'Regex',
-                    array('@^(https?|ftp)://[^\s/$.?#].[^\s]*$@'))) {
-                    $errors[] = Mage::helper('core')->__('Not a valid url');
-                }
-
-                if (!Zend_Validate::is($data['name'], 'Regex', array('/^[a-z A-Z 0-9]{1,15}$/'))) {
-                    $errors[] = Mage::helper('core')->__('Not a valid Name');
-                }
-
-                if ($data['id']) {
-                    if (!Zend_Validate::is($data['id'], 'Regex', array('/^[0-9]+$/'))) {
-                        $errors[] = Mage::helper('core')->__('Not a valid id');
-                    }
-                }
-            }
-
-            if ($data['type'] == 'Product link') {
-                if (!Zend_Validate::is($data['product_sku'], 'Regex', array('/^[a-z A-z 0-9]{0,50}$/'))) {
-                    $errors[] = Mage::helper('core')->__('Not a valid product sku');
-                }
-            }
-
-            if ($data['type'] == 'Category link') {
-                if (!Zend_Validate::is($data['category_id'], 'Regex', array('/^[0-9]+$/'))) {
-                    $errors[] = Mage::helper('core')->__('Not a valid category id');
-                }
-            }
-
-            if ($errors) {
-                return $errors;
-            } else {
-                return 'true';
-            }
-        } else {
-            $errors[] = Mage::helper('core')->__('Not a valid type');
-            return $errors;
+        if (!Zend_Validate::is($data['parent_id'], 'Regex', array('/^[0-9]+$/'))) {
+            $errors[] = Mage::helper('core')->__('Not a valid parent id');
         }
+
+        if ($data['type'] == 'Custom link') {
+
+            if (!Zend_Validate::is($data['link'], 'Regex',
+                array('@^(https?|ftp)://[^\s/$.?#].[^\s]*$@'))) {
+                $errors[] = Mage::helper('core')->__('Not a valid url');
+            }
+
+            if (!Zend_Validate::is($data['name'], 'Regex', array('/^[a-z A-Z 0-9]{1,15}$/'))) {
+                $errors[] = Mage::helper('core')->__('Not a valid Name');
+            }
+
+            if ($data['id']) {
+                if (!Zend_Validate::is($data['id'], 'Regex', array('/^[0-9]+$/'))) {
+                    $errors[] = Mage::helper('core')->__('Not a valid id');
+                }
+            }
+        }
+
+        if ($data['type'] == 'Product link') {
+            if (!Zend_Validate::is($data['product_sku'], 'Regex', array('/^[a-z A-z 0-9]{0,50}$/'))) {
+                $errors[] = Mage::helper('core')->__('Not a valid product sku');
+            }
+        }
+
+        if ($data['type'] == 'Category link') {
+            if (!Zend_Validate::is($data['category_id'], 'Regex', array('/^[0-9]+$/'))) {
+                $errors[] = Mage::helper('core')->__('Not a valid category id');
+            }
+        }
+
+        if ($errors) {
+            return $errors;
+        } else {
+            return 'true';
+        }
+    } else {
+        $errors[] = Mage::helper('core')->__('Not a valid type');
+        return $errors;
     }
+}
 
 }
