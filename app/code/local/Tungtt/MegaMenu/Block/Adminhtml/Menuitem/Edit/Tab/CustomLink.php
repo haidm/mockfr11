@@ -14,13 +14,13 @@ class Tungtt_MegaMenu_Block_Adminhtml_Menuitem_Edit_Tab_CustomLink extends Mage_
         $fieldset->addField('name', 'text', array(
             'label' => 'Menu item name',
             'name' => 'name',
-            'class' => 'required-entry validate-alphanum',
+            'class' => 'required-entry validate-length maximum-length-100 minimum-length-2',
         ));
 
         $fieldset->addField('link', 'text', array(
             'label' => 'Menu item link',
             'name' => 'link',
-            'class' => 'required-entry validate-clean-url',
+            'class' => 'required-entry validate-url validate-length maximum-length-500 minimum-length-15',
         ));
 
         $form->addValues($model->getData());

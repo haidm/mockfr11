@@ -3,7 +3,7 @@
 class Tungtt_MegaMenu_Block_Adminhtml_Menuitem_Edit_Tab_Form extends Mage_Adminhtml_Block_Widget_Form
 {
 
-    protected function _prepareForm()
+    public function _prepareForm()
     {
         $form = new Varien_Data_Form();
         $this->setForm($form);
@@ -11,18 +11,10 @@ class Tungtt_MegaMenu_Block_Adminhtml_Menuitem_Edit_Tab_Form extends Mage_Adminh
         $newmodel = Mage::registry('menuitem_type');
         $menuItemList = Mage::registry('menuitem_list');
         $select = 0;
-        $selectData = array(
-            array('label' => 'none', 'value' => 0)
-        );
-        foreach ($menuItemList as $key => $item) {
-            if ($item->id != $model->getId()) {
-                $selectData[$key]['label'] = $item->name;
-                $selectData[$key]['value'] = $item->id;
-                if ($item->id == $model->getParentid()){
-                    $select = $item->id;
-                }
-            }
-        }
+        $selectData = $this->showCategories($menuItemList, 0, '', $model);
+        $selectData[0]['label'] = 'None';
+        $selectData[0]['value'] = 0;
+
         $fieldset = $form->addFieldset('menuitem_form',
             array('legend' => 'Menu item infomation'));
 
@@ -32,11 +24,11 @@ class Tungtt_MegaMenu_Block_Adminhtml_Menuitem_Edit_Tab_Form extends Mage_Adminh
                 'label' => 'Parent',
                 'values' => $selectData,
                 'value' => $select,
-                'class' => 'required-entry validate-select',
+                'class' => 'required-entry validate-select validate-digits validate-digits-range digits-range-0-999999',
                 'required' => true,
             ));
 
-        if ($newmodel){
+        if ($newmodel) {
             $fieldset->addField('type', 'hidden', array(
                 'name' => 'type',
                 'label' => 'type',
@@ -61,5 +53,24 @@ class Tungtt_MegaMenu_Block_Adminhtml_Menuitem_Edit_Tab_Form extends Mage_Adminh
 
         $form->addValues($model->getData());
         return parent::_prepareForm();
+    }
+
+    public function showCategories($data, $parent_id = 0, $char = '', $model)
+    {
+        GLOBAL $selectData;
+        foreach ($data as $key => $item) {
+            // Nếu là chuyên mục con thì hiển thị
+            if ($item->parent_id == $parent_id) {
+                $selectData[$key]['label'] = $char . $item->name;
+                $selectData[$key]['value'] = $item->id;
+//                echo $selectData[$key]['label'];
+//                if ($item->id == $model->getParentid()){
+//                    $select = $item->id;
+//                }
+                // Tiếp tục đệ quy để tìm chuyên mục con của chuyên mục đang lặp
+                $this->showCategories($data, $selectData[$key]['value'], $char . '|--', $model);
+            }
+        }
+        return $selectData;
     }
 }

@@ -57,21 +57,29 @@
                 <type>skin_js</type>
                 <name>js/swiper/swiper.min.js</name>
             </action>
-            <action method="addItem">
-                <type>skin_js</type>
-                <name>js/swiper/swiper.esm.js</name>
-            </action>
-            <action method="addItem">
-                <type>skin_js</type>
-                <name>js/swiper/swiper.esm.bundle.js</name>
-            </action>
+            <!--<action method="addItem">-->
+                <!--<type>skin_js</type>-->
+                <!--<name>js/swiper/swiper.esm.js</name>-->
+            <!--</action>-->
+            <!--<action method="addItem">-->
+                <!--<type>skin_js</type>-->
+                <!--<name>js/swiper/swiper.esm.bundle.js</name>-->
+            <!--</action>-->
         </reference>
         <reference name="catalog.topnav">
             <block type="tungtt_megamenu/megamenu" name="catalog.topnav" template="mytemplate/megamenu/megamenu.phtml"/>
+            <block type="tungtt_megamenu/megamenu" name="catalog.topnav">
+                <block type="page/html_topmenu_renderer" name="catalog.topnav.renderer"
+                       template="page/html/topmenu/renderer.phtml"/>
+            </block>
         </reference>
     </default>
-
     <catalog_category_layered>
+        <reference name="catalog.leftnav">
+            <action method="setTemplate">
+                <template>mytemplate/filter/catalog/layer/view.phtml</template>
+            </action>
+        </reference>
         <reference name="content">
             <block type="tungtt_featured/featured" name="tungtt.featured.cateogry"
                    template="mytemplate/featured/categoryslide.phtml"
@@ -79,6 +87,7 @@
             <block type="tungtt_bestseller/bestseller" template="mytemplate/bestseller/categoryslide.phtml"
                    after="tungtt.featured.cateogry"/>
         </reference>
+
     </catalog_category_layered>
     <catalog_product_view>
         <reference name="product.info.media">

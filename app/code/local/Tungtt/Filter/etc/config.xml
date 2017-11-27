@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Tungtt_Filter>
+            <version>0.1.0</version>
+        </Tungtt_Filter>
+    </modules>
+    <frontend>
+        <routers>
+            <tungtt_filter>
+                <use>standard</use>
+                <args>
+                    <frontName>product-filter</frontName>
+                    <module>Tungtt_Filter</module>
+                </args>
+            </tungtt_filter>
+            <catalog>
+                <args>
+                    <modules>
+                        <Tungtt_Filter before="Mage_Catalog">Tungtt_Filter_Catalog</Tungtt_Filter>
+                    </modules>
+                </args>
+            </catalog>
+            <catalogsearch>
+                <args>
+                    <modules>
+                        <Tungtt_Filter before="Mage_CatalogSearch">Tungtt_Filter_CatalogSearch</Tungtt_Filter>
+                    </modules>
+                </args>
+            </catalogsearch>
+        </routers>
+        <layout>
+            <updates>
+                <tungtt_filter>
+                    <file>tungtt_filter.xml</file>
+                </tungtt_filter>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <models>
+            <tungtt_filter>
+                <class>Tungtt_Filter_Model</class>
+                <resourceModel>Filter_resource</resourceModel>
+            </tungtt_filter>
+            <tungtt_filter_resource>
+                <class>Tungtt_Filter_Model_Resource</class>
+            </tungtt_filter_resource>
+        </models>
+        <blocks>
+            <catalog>
+                <rewrite>
+                    <layer_view>Tungtt_Filter_Block_Catalog_Layer_View</layer_view>
+                    <layer_state>Tungtt_Filter_Block_Catalog_Layer_State</layer_state>
+                    <layer_filter_abstract>Tungtt_Filter_Block_Catalog_Layer_Abstract</layer_filter_abstract>
+                </rewrite>
+            </catalog>
+        </blocks>
+        <helpers>
+            <tungtt_filter>
+                <class>Tungtt_Filter_Helper</class>
+            </tungtt_filter>
+            <configurableswatches><!-- change here -->
+                <rewrite>
+                    <productimg>Tungtt_Filter_Helper_Productimg</productimg>
+                    <productlist>Tungtt_Filter_Helper_Productlist</productlist>
+                </rewrite>
+            </configurableswatches><!-- change here -->
+        </helpers>
+    </global>
+</config>

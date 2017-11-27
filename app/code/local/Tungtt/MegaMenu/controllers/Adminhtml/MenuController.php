@@ -55,7 +55,7 @@ class Tungtt_MegaMenu_Adminhtml_MenuController extends Mage_Adminhtml_Controller
             ->getCollection()
             ->addAttributeToSelect('name')
             ->addAttributeToFilter('status', 1)
-            ->addAttributeToFilter('visibility', 4)
+            ->addAttributeToFilter('visibility',array("nin" => 1))
             ->setOrder('name', 'ASC');
 
         if ($menuItemId) {
@@ -260,36 +260,36 @@ class Tungtt_MegaMenu_Adminhtml_MenuController extends Mage_Adminhtml_Controller
 
         if ($data['type'] == 'Custom link' || $data['type'] == 'Product link' || $data['type'] == 'Category link') {
 
-            if (!Zend_Validate::is($data['parent_id'], 'Regex', array('/^[0-9]+$/'))) {
+            if (!Zend_Validate::is($data['parent_id'], 'Regex', array('/^[0-9]{1,6}$/'))) {
                 $errors[] = Mage::helper('core')->__('Not a valid parent id');
             }
 
             if ($data['type'] == 'Custom link') {
 
                 if (!Zend_Validate::is($data['link'], 'Regex',
-                    array('@^(https?|ftp)://[^\s/$.?#].[^\s]*$@'))) {
+                    array('@^(https?|ftp):[//]{2}([a-zA-Z0-9]{1,40}.){1,3}([a-zA-Z]{1,5}){1}([//]{1}([a-zA-Z-0-9-.]+))*$@'))) {
                     $errors[] = Mage::helper('core')->__('Not a valid url');
                 }
 
-                if (!Zend_Validate::is($data['name'], 'Regex', array('/^[a-z A-Z 0-9]{1,15}$/'))) {
+                if (!Zend_Validate::is($data['name'], 'Regex', array('/^[a-zA-Z0-9 ]{2,50}$/'))) {
                     $errors[] = Mage::helper('core')->__('Not a valid Name');
                 }
 
                 if ($data['id']) {
-                    if (!Zend_Validate::is($data['id'], 'Regex', array('/^[0-9]+$/'))) {
+                    if (!Zend_Validate::is($data['id'], 'Regex', array('/^[0-9]{1,10}$/'))) {
                         $errors[] = Mage::helper('core')->__('Not a valid id');
                     }
                 }
             }
 
             if ($data['type'] == 'Product link') {
-                if (!Zend_Validate::is($data['product_sku'], 'Regex', array('/^[a-z A-z 0-9]{0,50}$/'))) {
+                if (!Zend_Validate::is($data['product_sku'], 'Regex', array('/^[a-zA-z0-9- ]{1,200}$/'))) {
                     $errors[] = Mage::helper('core')->__('Not a valid product sku');
                 }
             }
 
             if ($data['type'] == 'Category link') {
-                if (!Zend_Validate::is($data['category_id'], 'Regex', array('/^[0-9]+$/'))) {
+                if (!Zend_Validate::is($data['category_id'], 'Regex', array('/^[1-9]{1}[0-9]{0,9}$/'))) {
                     $errors[] = Mage::helper('core')->__('Not a valid category id');
                 }
             }

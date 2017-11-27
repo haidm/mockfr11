@@ -44,56 +44,22 @@ $_height_thumbnail = Mage::getStoreConfig('catalog/product_image_zoom/height_thu
 $_width_thumbnail = Mage::getStoreConfig('catalog/product_image_zoom/width_thumbnail');
 ?>
 
-    <head>
         <script type="text/javascript" src="/js/lib/jquery_003.js"></script>
         <script type="text/javascript" src="/js/lib/cloud-zoom.1.0.2.js"></script>
-        <script type="text/javascript" src="/js/lib/thumbelina.js"></script>
         <link href="/skin/frontend/rwd/default/css/productzoom/cloudzoom.css" type="text/css" rel="stylesheet">
-        <link href="/skin/frontend/rwd/default/css/productzoom/thumbelina.css" type="text/css" rel="stylesheet">
-        <style>
-            img.cloudzoom-gallery {
-                border: 1px solid #ccc;
-            }
-
-            a.thumb-link {
-                text-decoration: none;
-                display: inline-block;
-                margin-right: 5px;
-            }
-            .cloudzoom-lens {
-                cursor: pointer;
-            }
-        </style>
-        <script type="text/javascript">
-            $(function () {
-                $('#zoom1').bind('click', function () {            // Bind a click event to a Cloud Zoom instance.
-                    var cloudZoom = $(this).data('CloudZoom');  // On click, get the Cloud Zoom object,
-                    cloudZoom.closeZoom();
-                    $.fancybox.open(cloudZoom.getGalleryList());// and pass Cloud Zoom's image list to Fancy Box.
-                    return false;
-                });
-            });
-        </script>
-    </head>
     <script type="text/javascript">
-        CloudZoom.quickStart(); // cz
-        // The following piece of code can be ignored.
-        if (window.location.hostname.indexOf("starplugins.") != -1) {
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-254857-7']);
-            _gaq.push(['_trackPageview']);
-            (function () {
-                var ga = document.createElement('script');
-                ga.type = 'text/javascript';
-                ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(ga, s);
-            })();
-        }
-
+        $(function () {
+            $('#zoom1').bind('click', function () {            // Bind a click event to a Cloud Zoom instance.
+                var cloudZoom = $(this).data('CloudZoom');  // On click, get the Cloud Zoom object,
+                cloudZoom.closeZoom();
+                $.fancybox.open(cloudZoom.getGalleryList());// and pass Cloud Zoom's image list to Fancy Box.
+                return false;
+            });
+        });
+        CloudZoom.quickStart();
     </script>
-    <div>
+    <div class="product-image product-image-zoom">
+        <div class="product-image-gallery">
         <img class="cloudzoom"
              alt="<?php echo $this->escapeHtml($this->getImageLabel()) ?>" id="zoom1"
              src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize($_image_width, $_image_height); ?>"
@@ -106,7 +72,9 @@ $_width_thumbnail = Mage::getStoreConfig('catalog/product_image_zoom/width_thumb
                      zoomWidth: <?php echo $_box_zoom_width; ?>,
                      zoomHeight: <?php echo $_box_zoom_height; ?>,
                      '>
+        </div>
     </div>
+<?php if (count($this->getGalleryImages()) > 0): ?>
     <div class="more-views">
         <div class="zoom-desc">
             <h2><?php echo $this->__('More Views') ?></h2>
@@ -123,12 +91,13 @@ $_width_thumbnail = Mage::getStoreConfig('catalog/product_image_zoom/width_thumb
                                      alt="<?php echo $this->escapeHtml($this->getImageLabel()); ?>"
                                      data-cloudzoom='
                          useZoom:"#zoom1",
-                         image:"<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile()); ?>",
-                         zoomImage:"<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile()); ?>"'/>
+                         image:"<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile())->resize($_image_width, $_image_height); ?>",
+                         zoomImage:"<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile())?>"'/>
                             </a></li>
                     <?php endif; ?>
                     <?php $i++; endforeach; ?>
             </ul>
         </div>
     </div>
+<?php endif; ?>
 <?php echo $this->getChildHtml('after'); ?>

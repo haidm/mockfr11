@@ -1,7 +1,17 @@
 <?php
 
-class Tungtt_MegaMenu_Block_MegaMenu extends Mage_Core_Block_Template
+class Tungtt_MegaMenu_Block_MegaMenu extends Mage_Page_Block_Html_Topmenu
 {
+    public function __construct()
+    {
+        parent::__construct();
+        if (Mage::getStoreConfig('general/tungtt_megamenu/enable')) {
+            $this->setTemplate('mytemplate/megamenu/megamenu.phtml');
+        } else {
+            $this->setTemplate('page/html/topmenu.phtml');
+        }
+    }
+
     /**
      * Get child category function
      * @param object $menuitem
@@ -10,23 +20,24 @@ class Tungtt_MegaMenu_Block_MegaMenu extends Mage_Core_Block_Template
      * @return void
      */
     public function getChildItem($menuItem, $maxLevel, $listMenuItem)
-{
-    if ($menuItem->level >= $maxLevel) {
-        return;
-    }
-    if ($this->hasChildren($menuItem->id)){
-        echo "<ul>";
-        foreach ($listMenuItem as $key => $item) {
-            if ($item->parent_id == $menuItem->id) {
-                echo "<li>";
-                echo "<a href='$item->link'>$item->name</a>";
-                $this->getChildItem($item, $maxLevel, $listMenuItem);
-                echo "</li>";
-            }
+    {
+        if ($menuItem->level >= $maxLevel) {
+            return;
         }
-        echo "</ul>";
+        if ($this->hasChildren($menuItem->id)) {
+            echo "<ul>";
+            foreach ($listMenuItem as $key => $item) {
+                if ($item->parent_id == $menuItem->id) {
+                    echo "<li>";
+                    echo "<a href='$item->link'>$item->name</a>";
+                    $this->getChildItem($item, $maxLevel, $listMenuItem);
+                    echo "</li>";
+                }
+            }
+            echo "</ul>";
+        }
     }
-}
+
     /**
      * Check item has children
      * @param integer $menuItemId

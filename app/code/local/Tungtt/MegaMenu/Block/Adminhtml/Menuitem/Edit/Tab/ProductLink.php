@@ -9,6 +9,7 @@ class Tungtt_MegaMenu_Block_Adminhtml_Menuitem_Edit_Tab_ProductLink extends Mage
         $menuItem = Mage::registry('menuitem_model');
         $model = Mage::registry('product_list');
         foreach ($model as $key => $item){
+            var_dump($item);
             $data[$key]['label'] = $item->name." ($item->sku)";
             $data[$key]['value'] = $item->sku;
             if ($menuItem->getName() == $item->name){
@@ -24,11 +25,9 @@ class Tungtt_MegaMenu_Block_Adminhtml_Menuitem_Edit_Tab_ProductLink extends Mage
                 'label' => 'Product',
                 'values' => $data,
                 'value' => $select,
-                'class' => 'required-entry validate-select',
+                'class' => 'required-entry validate-select validate-length maximum-length-200 minimum-length-1',
                 'required' => true,
             ));
-
-
         return parent::_prepareForm();
     }
 }

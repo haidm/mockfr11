@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 class Tungtt_MegaMenu_Block_Adminhtml_Menuitem_Grid extends Mage_Adminhtml_Block_Widget_Grid
 {
@@ -22,7 +22,7 @@ class Tungtt_MegaMenu_Block_Adminhtml_Menuitem_Grid extends Mage_Adminhtml_Block
     protected function _prepareCollection()
     {
         $collection = Mage::getModel('tungtt_megamenu/menuitem')
-            ->getCollection();
+            ->getCollection()->getJoinSefl();
         $this->setCollection($collection);
         parent::_prepareCollection();
         return $this;
@@ -66,10 +66,10 @@ class Tungtt_MegaMenu_Block_Adminhtml_Menuitem_Grid extends Mage_Adminhtml_Block
             )
         );
 
-        $this->addColumn('parent_id',
+        $this->addColumn('parent',
             array(
                 'header' => Mage::helper('core')->__('Parent'),
-                'index' => 'parent_id',
+                'index' => 'parent_name',
                 'type'    => 'text'
             )
         );

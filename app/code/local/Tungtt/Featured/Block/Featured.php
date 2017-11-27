@@ -6,7 +6,7 @@ class Tungtt_Featured_Block_Featured extends Mage_Catalog_Block_Product_Abstract
     {
         $collection = Mage::getModel('catalog/product')
             ->getCollection()
-            ->addAttributeToFilter('visibility',4)
+            ->addAttributeToFilter('visibility', array("nin" => 1))
             ->addAttributeToFilter('is_featured',1);
         $collection = $this->_addProductAttributesAndPrices($collection);
         return $collection;
@@ -20,7 +20,7 @@ class Tungtt_Featured_Block_Featured extends Mage_Catalog_Block_Product_Abstract
             ->setStoreId(Mage::app()->getStore()->getId())
             ->addCategoryFilter($category);
         $products = $this->_addProductAttributesAndPrices($products)
-            ->addAttributeToFilter('visibility',4)
+            ->addAttributeToFilter('visibility', array("nin" => 1))
             ->addAttributeToFilter('is_featured', 1);
         return $products;
     }
