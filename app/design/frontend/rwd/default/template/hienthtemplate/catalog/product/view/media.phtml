@@ -54,7 +54,11 @@ $thumb_width = Mage::getStoreConfig('general/Hienth_ProductZoom/widthThumb');
 </script>
 
 <div class="product-image product-image-zoom">
-    <div class="product-image-gallery">
+    <div class="product-image-gallery parent-label">
+        <?php $labelarr = $_product->getAttributeText('label');
+        if(in_array('New',$labelarr)): echo "<div class='wrap-label-new-detail'><div class='label-new-detail'>New</div></div>";endif;
+        if(in_array('Sale',$labelarr)): echo "<div class='label-sale-detail'>Sale</div>";endif;
+        ?>
         <img id="zoom1"
              class="cloudzoom"
              src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize($image_width,$image_height) ?>"
@@ -68,6 +72,7 @@ $thumb_width = Mage::getStoreConfig('general/Hienth_ProductZoom/widthThumb');
                      autoInside:750
                      '
         />
+        <?php if(in_array('Promotion',$labelarr)): echo "<div class='label-promotion-detail'>Promotion</div>";endif; ?>
     </div>
 </div>
 

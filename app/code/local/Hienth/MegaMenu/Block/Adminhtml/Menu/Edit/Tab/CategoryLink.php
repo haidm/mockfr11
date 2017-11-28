@@ -7,11 +7,29 @@ class Hienth_MegaMenu_Block_Adminhtml_Menu_Edit_Tab_CategoryLink extends Mage_Ad
         $menuId = Mage::registry('menuId');
         $menuModel = Mage::registry('menumodel');
         $menuName = $menuModel->load($menuId)->name;
-        $menuCategory = Mage::registry('menuCategory');
+        $menuCategory = Mage::getModel('catalog/category')
+            ->getCollection()
+            ->addAttributeToSelect('name')
+            ->setOrder('name','asc');
+//        $cateFirst = Mage::getModel('catalog/category')->getCollection()->addFilter('parent_id',0);
+//        $cateFirst->addAttributeToSelect('name');
+//        foreach ($cateFirst as $key => $item)
+//        {
+//            $data[$key]['label'] = $item->getName();
+//            $data[$key]['value'] = $item->getId();
+//            if ($menuName == $item->getName()){
+//                $select = $item->getId();
+//            }
+//            echo "<pre>";
+//            print_r($this->getChildCate($item,$menuCategory));die;
+//            $data[] = $this->getChildCate($item,$menuCategory);
+//
+//
+//        }
+
         foreach ($menuCategory as $key => $item){
             $data[$key]['label'] = $item->name;
             $data[$key]['value'] = $item->getId();
-//            var_dump($data[$key]['value']);die;
             if ($menuName == $item->name){
                 $select = $item->id;
             }
@@ -58,4 +76,40 @@ class Hienth_MegaMenu_Block_Adminhtml_Menu_Edit_Tab_CategoryLink extends Mage_Ad
         }
         return parent::_prepareForm();
     }
+
+//    public function getChildCate($menu,$listMenu)
+//    {
+//
+//        if($this->hasChildCate($menu->getId()))
+//        {
+//            $i = 1;
+//            foreach ($listMenu as $key => $value)
+//            {
+//                if($value->getParent_id() == $menu->getId())
+//                {
+//                    $i++;
+//                    $data[$i]['label'] = '---'.$value->getName();
+//                    $data[$i]['value'] = $value->getId();
+//                    $this->getChildCate($value,$listMenu);
+//                }
+//            }
+//        }
+//        return $data;
+//    }
+//    public function hasChildCate($id)
+//    {
+//
+//        $model = Mage::getModel('catalog/category')
+//            ->getCollection()
+//            ->addFilter('parent_id',$id);
+//        if($model->count() > 0)
+//        {
+//            return true;
+//        }
+//        else
+//        {
+//            return false;
+//        }
+//    }
+
 }

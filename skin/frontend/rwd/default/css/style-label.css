@@ -118,4 +118,53 @@
         background-position: top right;
     }
 }
+/****************************************Label-Detail****************************************/
+.wrap-label-new-detail{position: absolute;z-index: 1;overflow: hidden;width:100px;height:100px;}
+.label-new-detail{color: #cd3319;position:relative;text-transform: uppercase;
+    transform: rotate(315deg);font-weight: bold;text-align: center;
+    transition: 1s;background: #FFE71A;height:50px;width:140px;left:-38px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    /*opacity: 0.5;*/
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+.label-sale-detail{color: #1e46ff;position: absolute;z-index: 2;text-transform: uppercase;right:5px;
+    transform: rotate(-315deg);top:15px;font-weight: bold;
+    text-shadow: 2px 2px 8px red;
+}
+.label-promotion-detail{color:indianred;position: absolute;z-index: 1;bottom:10px;right:5px;
+    text-transform: uppercase;font-weight: bold;
+    /*color*/
+    background-image: -webkit-linear-gradient(left, #ff0000, #ff7f00, #ffff00, #00ff00, #00ffff, #0000ff, #8b00ff);
+    background-image: -moz-linear-gradient(left, #ff0000, #ff7f00, #ffff00, #00ff00, #00ffff, #0000ff, #8b00ff);
+    background-image: -ms-linear-gradient(left, #ff0000, #ff7f00, #ffff00, #00ff00, #00ffff, #0000ff, #8b00ff);
+    background-image:-o-linear-gradient(left, #ff0000, #ff7f00, #ffff00, #00ff00, #00ffff, #0000ff, #8b00ff);
+    background-image:linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #00ffff, #0000ff, #8b00ff);
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-animation: shine 2s infinite;
+    -webkit-background-clip: text;
+    -webkit-background-size: 300px;
+
+    transition: 2s;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+}
+.label-promotion-detail:hover{
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2)
+}
 

@@ -28,20 +28,11 @@ class Hienth_MegaMenu_Adminhtml_MenuController extends Mage_Adminhtml_Controller
         $menuId  = $this->getRequest()->getParam('id');
         $menuType = $this->getRequest()->getParam('menu_type');
         $menuParent = $this->getRequest()->getParam('menu_id');
-        $menuCategory = Mage::getModel('catalog/category')
-            ->getCollection()
-            ->addAttributeToSelect('name')
-            ->setOrder('name','asc');
-        $menuProduct = Mage::getModel('catalog/product')
-            ->getCollection()
-            ->addAttributeToSelect('name')
-//            ->addAttributeToSelect('is_Active',1)
-            ->setOrder('name','asc');
         Mage::register('menuParent', $menuParent);
         Mage::register('menumodel', $menuModel);
         Mage::register('menuType', $menuType);
-        Mage::register('menuCategory', $menuCategory);
-        Mage::register('menuProduct', $menuProduct);
+//        Mage::register('menuCategory', $menuCategory);
+//        Mage::register('menuProduct', $menuProduct);
         Mage::register('menuId', $menuId);
         if ($menuId) {
             $menuModel->load($menuId);

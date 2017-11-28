@@ -7,7 +7,11 @@ class Hienth_MegaMenu_Block_Adminhtml_Menu_Edit_Tab_ProductLink extends Mage_Adm
         $menuId = Mage::registry('menuId');
         $menuModel = Mage::registry('menumodel');
         $menuName = $menuModel->load($menuId)->name;
-        $menuProduct = Mage::registry('menuProduct');
+        $menuProduct = Mage::getModel('catalog/product')
+            ->getCollection()
+            ->addAttributeToSelect('name')
+            ->addAttributeToSelect('is_Active')
+            ->setOrder('name','asc');
         foreach ($menuProduct as $key => $item){
             $data[$key]['label'] = $item->getName();
             $data[$key]['value'] = $item->getId();

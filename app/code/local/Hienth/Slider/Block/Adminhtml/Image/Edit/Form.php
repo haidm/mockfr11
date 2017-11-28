@@ -50,16 +50,15 @@ class Hienth_Slider_Block_Adminhtml_Image_Edit_Form extends Mage_Adminhtml_Block
                 'required'           => true,
                 'onchange'           => 'readURL(this);',
                 'note'               => '(*.jpg, *.jpeg, *.png, *.gif)',
-                'renderer'           => 'Hienth_Slider_Block_Adminhtml_Image_Renderer_Image',
-                'after_element_html' => "<br><img id='preview' src='{$img}' height='100px' />"
+                'after_element_html' => "<br><img id='preview' src='{$img}' height='30px' />"
             ));
             $fieldset->addField('is_enabled','checkbox', array(
                 'header'   => Mage::helper('Hienth_Slider')->__('General'),
-                'width'    => '20px',
+                'width'    => '10px',
                 'name'     => 'is_enabled',
                 'value'    => 1,
                 'onclick'  => 'this.value == this.checked ? 1 : 0',
-                'note'     => Mage::helper('Hienth_Slider')->__('Delete Image')
+                'after_element_html' => "<span>Delete Image</span>"
             ));
         }
         else

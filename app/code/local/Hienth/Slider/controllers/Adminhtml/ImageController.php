@@ -95,28 +95,38 @@ class Hienth_Slider_Adminhtml_ImageController extends Mage_Adminhtml_Controller_
             $nameImage = $filename;
         }
         $model = Mage::getModel('Hienth_Slider/image');
-        $model->setName($nameImage)
-              ->setLink($postdata['link'])
-              ->setText($postdata['text']);
-        if($postdata['imageId']){
-            $model->setId($postdata['imageId']);
-        }
-        try {
-            $model->save();
-            Mage::getSingleton('adminhtml/session')
-                ->addSuccess(Mage::helper('Hienth_Slider')->__('The menu item has been saved.'));
-            if ($this->getRequest()->getParam('back')) {
-                return $this->_redirect('*/*/edit', array('id' => $model->getId()));
+        if($this->validate($postdata) == 'true')
+        {
+            $model->setName($nameImage)
+                ->setLink($postdata['link'])
+                ->setText($postdata['text']);
+            if($postdata['imageId']){
+                $model->setId($postdata['imageId']);
             }
-            return $this->_redirect('*/*/');
-        } catch (Mage_Core_Exception $e) {
-            Mage::getSingleton('adminhtml/session')->addError($e->getMessage());
-        } catch (Exception $e) {
-            Mage::getSingleton('adminhtml/session')
-                ->addError(Mage::helper('core')->__('An error occurred while saving this item.'));
+            try {
+                $model->save();
+                Mage::getSingleton('adminhtml/session')
+                    ->addSuccess(Mage::helper('Hienth_Slider')->__('The menu item has been saved.'));
+                if ($this->getRequest()->getParam('back')) {
+                    return $this->_redirect('*/*/edit', array('id' => $model->getId()));
+                }
+                return $this->_redirect('*/*/');
+            } catch (Mage_Core_Exception $e) {
+                Mage::getSingleton('adminhtml/session')->addError($e->getMessage());
+            } catch (Exception $e) {
+                Mage::getSingleton('adminhtml/session')
+                    ->addError(Mage::helper('core')->__('An error occurred while saving this item.'));
+            }
+            Mage::getSingleton('adminhtml/session')->setRuleData($postdata);
+            $this->_redirectReferer();
         }
-        Mage::getSingleton('adminhtml/session')->setRuleData($postdata);
-        $this->_redirectReferer();
+        else
+        {
+            Mage::getSingleton('adminhtml/session')
+                ->addError($this->validate($postdata)[0]);
+            $this->_redirect('*/*/');
+        }
+
     }
     public function deleteAction()
     {
@@ -154,5 +164,32 @@ class Hienth_Slider_Adminhtml_ImageController extends Mage_Adminhtml_Controller_
             }
             $this->_redirectReferer();
         }
+    }
+    public function  validate($data)
+    {
+        $errors = array();
+        $helper = Mage::helper('core');
+        if($data['link'] != ''){
+            if(!Zend_Validate::is($data['link'],'Regex',array('@^(https?|ftp)://[^\s/$.?#].[^\s]*$@')))
+            {
+                $errors[] = $helper->__('Không đúng kiểu link.');
+            }
+        }
+        if(!Zend_Validate::is($data['text'],'Regex',array('/^[a-z A-Z 0-9]*$/')))
+        {
+            $errors[] = $helper->__('Không đúng kiểu text.');
+        }
+        if(!Zend_Validate::is($data['imageId'],'Regex',array('/^[0-9]+$/')))
+        {
+            $errors[] = $helper->__('Không đúng kiểu ID.');
+        }
+        if($errors){
+            return $errors;
+        }
+        else
+        {
+            return 'true';
+        }
+
     }
 }

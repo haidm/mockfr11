@@ -10,14 +10,14 @@ class Hienth_Slider_Block_Adminhtml_Slider_Edit_Form extends Mage_Adminhtml_Bloc
     public function _prepareForm()
     {
         $listImage = Mage::getModel('Hienth_Slider/image')->getCollection();
-        $selects = array();
-        foreach ($listImage as $image)
-        {
-            $selects[] = array(
-                'value' => $image->getId(),
-                'label' => $image->getName()
-            );
-        }
+//        $selects = array();
+//        foreach ($listImage as $image)
+//        {
+//            $selects[] = array(
+//                'value' => $image->getId(),
+//                'label' => $image->getName()
+//            );
+//        }
         $sliderId = Mage::registry('sliderId');
         $form = new Varien_Data_Form(array(
             'id'      => 'edit_form',
@@ -40,12 +40,29 @@ class Hienth_Slider_Block_Adminhtml_Slider_Edit_Form extends Mage_Adminhtml_Bloc
             'required'  => true,
             'class'     => 'validate-no-html-tags required-entry'
         ));
-        $fieldset->addField('list_image', 'multiselect', array(
-            'label' => Mage::helper('Hienth_Slider')->__('List Image'),
-            'name' => 'list_image',
-            'required' => false,
-            'values' => $selects,
-        ));
+//        $fieldset->addField('list_image', 'multiselect', array(
+//            'label' => Mage::helper('Hienth_Slider')->__('List Image'),
+//            'name' => 'list_image',
+//            'required' => false,
+//            'values' => $selects,
+//        ));
+        $listImg = Mage::getModel('Hienth_Slider/slider')->load($sliderId)->list_image;
+        $arrImg = explode('-',$listImg);
+        foreach ($listImage as $image)
+        {
+            if(in_array($image->id,$arrImg)) {$check = 1;}
+            else {$check = 0;}
+            $img = Mage::getBaseUrl('media').'hienth/image/'.$image->name;
+            $fieldset->addField('image'.$image->id, 'checkbox', array(
+                'label'     => Mage::helper('Hienth_Slider')->__('Choose Image'),
+                'name'      => 'image'.$image->id,
+                'required'  => false,
+                'checked'   => $check,
+                'value'    => $image->id,
+                'onclick'  => 'this.value == this.checked ? 1 : 0',
+                'after_element_html' => "<img src='{$img}' height='100px' />"
+            ));
+        }
         $modelSlider = Mage::registry('modelSlider');
 //        var_dump($modelSlider->getData());die;
         $form->addValues($modelSlider->getData());
