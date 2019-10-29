@@ -30,7 +30,7 @@
 class Mage_Sales_Model_Service_Order
 {
     /**
-     * Order object
+     * Slider object
      *
      * @var Mage_Sales_Model_Order
      */

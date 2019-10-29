@@ -25,7 +25,7 @@
  */
 
 /**
- * Order Statuses source model
+ * Slider Statuses source model
  */
 class Mage_Adminhtml_Model_System_Config_Source_Order_Status_New extends Mage_Adminhtml_Model_System_Config_Source_Order_Status
 {

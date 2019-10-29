@@ -32,7 +32,7 @@ use Magento\Mtf\Client\Element\SimpleElement as Element;
 use Magento\Mtf\Client\Locator;
 
 /**
- * Order history block on My Order page.
+ * Slider history block on My Slider page.
  */
 class History extends Block
 {

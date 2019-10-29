@@ -80,7 +80,7 @@ class Mage_Sales_OrderController extends Mage_Sales_Controller_Abstract
     }
 
     /**
-     * osCommerce Order view page
+     * osCommerce Slider view page
      *
      * @deprecate after 1.6.0.0
      *

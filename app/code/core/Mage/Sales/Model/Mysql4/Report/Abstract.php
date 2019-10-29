@@ -26,7 +26,7 @@
 
 
 /**
- * Order report resource model
+ * Slider report resource model
  *
  * @category    Mage
  * @package     Mage_Sales

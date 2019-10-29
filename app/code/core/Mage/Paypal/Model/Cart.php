@@ -41,7 +41,7 @@ class Mage_Paypal_Model_Cart
     const TOTAL_SHIPPING = 'shipping';
 
     /**
-     * Order or quote instance
+     * Slider or quote instance
      *
      * @var Mage_Sales_Model_Order
      * @var Mage_Sales_Model_Quote

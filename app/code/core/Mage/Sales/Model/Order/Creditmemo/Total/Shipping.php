@@ -25,7 +25,7 @@
  */
 
 /**
- * Order creditmemo shipping total calculation model
+ * Slider creditmemo shipping total calculation model
  *
  * @category    Mage
  * @package     Mage_Sales

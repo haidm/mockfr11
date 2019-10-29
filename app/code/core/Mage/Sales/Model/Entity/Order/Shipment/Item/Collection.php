@@ -26,7 +26,7 @@
 
 
 /**
- * Order shipment items collection
+ * Slider shipment items collection
  *
  * @category   Mage
  * @package    Mage_Sales

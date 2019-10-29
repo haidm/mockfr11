@@ -1,0 +1,153 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     rwd_default
+ * @copyright   Copyright (c) 2006-2017 X.commerce, Inc. and affiliates (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+
+/**
+ * Product media data template
+ *
+ * @see Mage_Catalog_Block_Product_View_Media
+ */
+
+/* @var $this Mage_Catalog_Block_Product_View_Media */
+?>
+<?php
+$_product = $this->getProduct();
+$_helper = $this->helper('catalog/output');
+//get list data config in admin
+$_image_width = Mage::getStoreConfig('catalog/product_image_zoom/image_width');
+$_image_height = Mage::getStoreConfig('catalog/product_image_zoom/image_height');
+//config image box zoom
+$_box_zoom_height = Mage::getStoreConfig('catalog/product_image_zoom/box_zoom_height');
+$_box_zoom_width = Mage::getStoreConfig('catalog/product_image_zoom/box_zoom_width');
+//config image thumbnail
+$_height_thumbnail = Mage::getStoreConfig('catalog/product_image_zoom/height_thumbnail');
+$_width_thumbnail = Mage::getStoreConfig('catalog/product_image_zoom/width_thumbnail');
+?>
+
+<script type="text/javascript" src="/js/lib/jquery_003.js"></script>
+<script type="text/javascript" src="/js/lib/cloudzoom.js"></script>
+<link href="/skin/frontend/rwd/default/css/cloud-zoom.css" type="text/css" rel="stylesheet">
+<script type="text/javascript">
+    $(function () {
+        $('#zoom1').bind('click', function () {            // Bind a click event to a Cloud Zoom instance.
+            var cloudZoom = $(this).data('CloudZoom');  // On click, get the Cloud Zoom object,
+            cloudZoom.closeZoom();
+            $.fancybox.open(cloudZoom.getGalleryList());// and pass Cloud Zoom's image list to Fancy Box.
+            return false;
+        });
+    });
+    CloudZoom.quickStart();
+</script>
+<style>
+    .product-label{
+        position: relative;
+    }
+    .new{
+        position: absolute;
+    }
+    .ribbon-bottom-right{
+        top: auto;
+        bottom: 0;
+        width: 100px;
+        height: 100px;
+    }
+    .ribbon-right{
+        padding:14px;
+        left: -11px;
+        top:43px;
+        width: 150px;
+    }
+    .ribbon-top-left{
+        width: 100px;
+        height: 100px;
+    }
+    .ribbon{
+        padding: 7px 0;
+        left: -40px;
+        top:13px;
+        width: 150px;
+    }
+</style>
+<div class="product-label">
+    <?php
+    if (!empty($_product->getData('product_label'))) {
+        $product_label = explode(',', $_product->getData('product_label'));
+        foreach ($product_label as $attr_id) {
+            $product_label_item = $_product->getResource()->getAttribute('product_label')->getFrontend()->getOption($attr_id);
+            if ($product_label_item == 'Sale') {
+                echo '<span class="onsale" ></span>';
+            }
+            if ($product_label_item == 'New') {
+                echo '<div class="ribbon-top-left"><div class="ribbon">New</div></div>';
+            }
+            if ($product_label_item == 'Promotion') {
+                echo '<div class="ribbon-bottom-right"><div class="ribbon-right">Promition</div></div>';
+            }
+        }
+    }
+    ?>
+    <img class="cloudzoom" alt="Cloud Zoom small image" id="zoom1"
+         src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize($_image_width, $_image_height) ?>"
+         title="<?php echo $this->escapeHtml($this->getImageLabel()); ?>"
+         data-cloudzoom='
+                     zoomImage:"<?php echo $this->helper('catalog/image')->init($_product, 'image');?>",
+                     zoomWidth:<?php echo $_box_zoom_width; ?>,
+                     zoomHeight:<?php echo $_box_zoom_height; ?>,
+                     tintColor:"#000",
+                     tintOpacity:0.25,
+                     maxMagnification:4,
+                     captionPosition:"bottom",
+                     autoInside:750,
+                     '>
+</div>
+<div class="more-views">
+    <div class="zoom-desc">
+        <h2><?php echo $this->__('More Views') ?></h2>
+        <ul class="product-image-thumbs">
+            <?php $i = 0;
+            foreach ($this->getGalleryImages() as $_image): ?>
+                <?php if ($this->isGalleryImageVisible($_image)): ?>
+                    <li>
+                        <a href="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile()); ?>"
+                           class="thumb-link">
+                            <img class="cloudzoom-gallery" width="<?php echo $_width_thumbnail; ?>"
+                                 height="<?php echo $_height_thumbnail; ?>"
+                                 src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile())->resize($_image_width, $_image_height); ?>"
+                                 title="<?php echo $this->escapeHtml($this->getImageLabel()); ?>"
+                                 alt="<?php echo $this->escapeHtml($this->getImageLabel()); ?>"
+                                 data-cloudzoom='
+                         useZoom:"#zoom1",
+                         image:"<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile())->resize($_image_width, $_image_height); ?>",
+                         zoomImage:"<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile())->resize($_image_width, $_image_height); ?>"'>
+                        </a>
+                    </li>
+                <?php endif; ?>
+                <?php $i++; endforeach; ?>
+        </ul>
+    </div>
+</div>
+
+<?php echo $this->getChildHtml('after'); ?>
+

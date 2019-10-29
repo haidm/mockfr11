@@ -32,7 +32,7 @@ use Magento\Mtf\Constraint\AbstractAssertForm;
 use Magento\Mtf\Fixture\InjectableFixture;
 
 /**
- * Assert product was added to Items Ordered grid in customer account on Order creation page backend.
+ * Assert product was added to Items Ordered grid in customer account on Slider creation page backend.
  */
 class AssertProductInItemsOrderedGrid extends AbstractAssertForm
 {
@@ -51,7 +51,7 @@ class AssertProductInItemsOrderedGrid extends AbstractAssertForm
     protected $productsIsConfigured;
 
     /**
-     * Assert product was added to Items Ordered grid in customer account on Order creation page backend.
+     * Assert product was added to Items Ordered grid in customer account on Slider creation page backend.
      *
      * @param SalesOrderCreateIndex $orderCreatePage
      * @param array $products
@@ -139,6 +139,6 @@ class AssertProductInItemsOrderedGrid extends AbstractAssertForm
      */
     public function toString()
     {
-        return 'Product is added to Items Ordered grid from "Last Ordered Items" section on Order creation page.';
+        return 'Product is added to Items Ordered grid from "Last Ordered Items" section on Slider creation page.';
     }
 }

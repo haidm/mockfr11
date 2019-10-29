@@ -25,7 +25,7 @@
  */
 
 /**
- * Order API V2
+ * Slider API V2
  *
  * @category   Mage
  * @package    Mage_Sales

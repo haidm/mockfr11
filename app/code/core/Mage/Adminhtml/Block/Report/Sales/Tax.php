@@ -37,7 +37,7 @@ class Mage_Adminhtml_Block_Report_Sales_Tax extends Mage_Adminhtml_Block_Widget_
     public function __construct()
     {
         $this->_controller = 'report_sales_tax';
-        $this->_headerText = Mage::helper('reports')->__('Order Taxes Report Grouped by Tax Rate');
+        $this->_headerText = Mage::helper('reports')->__('Slider Taxes Report Grouped by Tax Rate');
         parent::__construct();
         $this->setTemplate('report/grid/container.phtml');
         $this->_removeButton('add');

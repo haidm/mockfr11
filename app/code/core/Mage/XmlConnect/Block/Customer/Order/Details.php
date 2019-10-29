@@ -68,8 +68,8 @@ class Mage_XmlConnect_Block_Customer_Order_Details extends Mage_Payment_Block_In
 
         $orderDate = $this->formatDate($order->getCreatedAtStoreDate(), 'long');
         $orderXmlObj->addCustomChild('order', null, array(
-             'label' => $this->__('Order #%s - %s', $order->getRealOrderId(), $order->getStatusLabel()),
-             'order_date' => $this->__('Order Date: %s', $orderDate)
+             'label' => $this->__('Slider #%s - %s', $order->getRealOrderId(), $order->getStatusLabel()),
+             'order_date' => $this->__('Slider Date: %s', $orderDate)
         ));
 
         $billing  = Mage::helper('xmlconnect')->trimLineBreaks($order->getBillingAddress()->format('text'));
@@ -163,7 +163,7 @@ class Mage_XmlConnect_Block_Customer_Order_Details extends Mage_Payment_Block_In
     {
         $order = Mage::registry('current_order');
         if (!($order instanceof Mage_Sales_Model_Order)) {
-            Mage::throwException($this->__('Order is not available.'));
+            Mage::throwException($this->__('Slider is not available.'));
         }
         return $order;
     }

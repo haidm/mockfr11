@@ -26,7 +26,7 @@
 
 
 /**
- * Order billing address backend
+ * Slider billing address backend
  *
  * @category    Mage
  * @package     Mage_Sales

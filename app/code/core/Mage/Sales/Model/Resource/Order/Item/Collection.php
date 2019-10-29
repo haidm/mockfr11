@@ -49,7 +49,7 @@ class Mage_Sales_Model_Resource_Order_Item_Collection extends Mage_Sales_Model_R
     protected $_eventObject    = 'order_item_collection';
 
     /**
-     * Order field for setOrderFilter
+     * Slider field for setOrderFilter
      *
      * @var string
      */

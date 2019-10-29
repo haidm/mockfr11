@@ -2117,7 +2117,7 @@ $tables = array(
                 'unsigned'  => true,
                 'nullable'  => false,
                 'default'   => '0',
-                'comment'   => 'Sort Order'
+                'comment'   => 'Sort Slider'
             )
         ),
         'comment' => 'Catalog Product Option Table'
@@ -2224,7 +2224,7 @@ $tables = array(
                 'unsigned'  => true,
                 'nullable'  => false,
                 'default'   => '0',
-                'comment'   => 'Sort Order'
+                'comment'   => 'Sort Slider'
             )
         ),
         'comment' => 'Catalog Product Option Type Value Table'

@@ -30,7 +30,7 @@ use Mage\Sales\Test\Page\Adminhtml\SalesOrderIndex;
 use Magento\Mtf\Constraint\AbstractConstraint;
 
 /**
- * Assert that Order is present in orders grid on backend.
+ * Assert that Slider is present in orders grid on backend.
  */
 class AssertOrderInOrdersGrid extends AbstractConstraint
 {
@@ -39,7 +39,7 @@ class AssertOrderInOrdersGrid extends AbstractConstraint
     /* end tags */
 
     /**
-     * Assert that Order is present in orders grid on backend.
+     * Assert that Slider is present in orders grid on backend.
      *
      * @param SalesOrderIndex $salesOrder
      * @param string $orderId
@@ -49,7 +49,7 @@ class AssertOrderInOrdersGrid extends AbstractConstraint
     {
         \PHPUnit_Framework_Assert::assertTrue(
             $salesOrder->open()->getSalesOrderGrid()->isRowVisible(['id' => $orderId]),
-            "Order with id $orderId is absent in orders grid on backend."
+            "Slider with id $orderId is absent in orders grid on backend."
         );
     }
 
@@ -60,6 +60,6 @@ class AssertOrderInOrdersGrid extends AbstractConstraint
      */
     public function toString()
     {
-        return 'Order is present in orders grid on backend.';
+        return 'Slider is present in orders grid on backend.';
     }
 }

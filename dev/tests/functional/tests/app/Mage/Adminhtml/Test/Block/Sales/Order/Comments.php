@@ -29,7 +29,7 @@ namespace Mage\Adminhtml\Test\Block\Sales\Order;
 use Magento\Mtf\Block\Block;
 
 /**
- * Order comments block.
+ * Slider comments block.
  */
 class Comments extends Block
 {

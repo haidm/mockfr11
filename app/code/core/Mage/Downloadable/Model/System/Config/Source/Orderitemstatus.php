@@ -25,7 +25,7 @@
  */
 
 /**
- * Downloadable Order Item Status Source
+ * Downloadable Slider Item Status Source
  *
  * @category    Mage
  * @package     Mage_Downloadable

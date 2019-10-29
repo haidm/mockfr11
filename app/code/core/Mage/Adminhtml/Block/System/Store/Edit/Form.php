@@ -102,7 +102,7 @@ class Mage_Adminhtml_Block_System_Store_Edit_Form extends Mage_Adminhtml_Block_W
 
             $fieldset->addField('website_sort_order', 'text', array(
                 'name'      => 'website[sort_order]',
-                'label'     => Mage::helper('core')->__('Sort Order'),
+                'label'     => Mage::helper('core')->__('Sort Slider'),
                 'value'     => $websiteModel->getSortOrder(),
                 'required'  => false,
                 'disabled'  => $websiteModel->isReadOnly(),
@@ -303,7 +303,7 @@ class Mage_Adminhtml_Block_System_Store_Edit_Form extends Mage_Adminhtml_Block_W
 
             $fieldset->addField('store_sort_order', 'text', array(
                 'name'      => 'store[sort_order]',
-                'label'     => Mage::helper('core')->__('Sort Order'),
+                'label'     => Mage::helper('core')->__('Sort Slider'),
                 'value'     => $storeModel->getSortOrder(),
                 'required'  => false,
                 'disabled'  => $storeModel->isReadOnly(),

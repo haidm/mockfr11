@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <catalog>
+            <groups>
+                <slider translate="label">
+                    <label>Custom Slider</label>
+                    <sort_order>160</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enable_slider translate="label comment">
+                            <label>Enable Slider</label>
+                            <frontend_type>select</frontend_type>
+                            <frontend_class>required-entry</frontend_class>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </enable_slider>
+                    </fields>
+                    <fields>
+                        <select_slider translate="label comment">
+                            <label>Select Album</label>
+                            <frontend_type>select</frontend_type>
+                            <frontend_class>required-entry</frontend_class>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>anhnt9_slider/sliderconfig</source_model>
+                        </select_slider>
+                    </fields>
+                    <fields>
+                        <type_slider translate="label comment">
+                            <label>Select Slider</label>
+                            <frontend_type>select</frontend_type>
+                            <frontend_class>required-entry</frontend_class>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>anhnt9_slider/typeslider</source_model>
+                        </type_slider>
+                    </fields>
+                </slider>
+            </groups>
+        </catalog>
+    </sections>
+</config>

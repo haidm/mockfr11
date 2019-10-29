@@ -83,7 +83,7 @@ Catalog layout
         <block type="rss/catalog_category" output="toHtml" name="rss.catalog.category" />
     </rss_catalog_category>
 <!--
-Order layout
+Slider layout
 -->
     <rss_order_new>
         <block type="rss/order_new" output="toHtml" name="rss.order.new"/>

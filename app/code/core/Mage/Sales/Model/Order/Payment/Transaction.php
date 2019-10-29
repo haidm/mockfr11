@@ -75,7 +75,7 @@ class Mage_Sales_Model_Order_Payment_Transaction extends Mage_Core_Model_Abstrac
 
 
     /**
-     * Order instance
+     * Slider instance
      *
      * @var Mage_Sales_Model_Order_Payment
      */
@@ -137,7 +137,7 @@ class Mage_Sales_Model_Order_Payment_Transaction extends Mage_Core_Model_Abstrac
     protected $_eventObject = 'order_payment_transaction';
 
     /**
-     * Order website id
+     * Slider website id
      *
      * @var int
      */
@@ -540,7 +540,7 @@ class Mage_Sales_Model_Order_Payment_Transaction extends Mage_Core_Model_Abstrac
     }
 
     /**
-     * Order Payment instance getter
+     * Slider Payment instance getter
      * Will attempt to load by payment_id if it is set in data
      * @param bool $shouldLoad
      * @return Mage_Sales_Model_Order_Payment
@@ -558,7 +558,7 @@ class Mage_Sales_Model_Order_Payment_Transaction extends Mage_Core_Model_Abstrac
     }
 
     /**
-     * Order ID getter
+     * Slider ID getter
      * Attempts to get ID from set order payment object, if any, or from data by key 'order_id'
      * @return int|null
      */
@@ -735,7 +735,7 @@ class Mage_Sales_Model_Order_Payment_Transaction extends Mage_Core_Model_Abstrac
     public function getTransactionTypes()
     {
         return array(
-            Mage_Sales_Model_Order_Payment_Transaction::TYPE_ORDER    => Mage::helper('sales')->__('Order'),
+            Mage_Sales_Model_Order_Payment_Transaction::TYPE_ORDER    => Mage::helper('sales')->__('Slider'),
             Mage_Sales_Model_Order_Payment_Transaction::TYPE_AUTH    => Mage::helper('sales')->__('Authorization'),
             Mage_Sales_Model_Order_Payment_Transaction::TYPE_CAPTURE => Mage::helper('sales')->__('Capture'),
             Mage_Sales_Model_Order_Payment_Transaction::TYPE_VOID    => Mage::helper('sales')->__('Void'),

@@ -57,7 +57,7 @@ class Mage_Adminhtml_Model_Session_Quote extends Mage_Core_Model_Session_Abstrac
     protected $_store   = null;
 
     /**
-     * Order model object
+     * Slider model object
      *
      * @var Mage_Sales_Model_Order
      */

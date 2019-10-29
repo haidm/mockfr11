@@ -27,7 +27,7 @@
 namespace Mage\Adminhtml\Test\Block\Sales\Order;
 
 /**
- * Order totals block.
+ * Slider totals block.
  */
 class Totals extends \Mage\Checkout\Test\Block\Cart\Totals
 {

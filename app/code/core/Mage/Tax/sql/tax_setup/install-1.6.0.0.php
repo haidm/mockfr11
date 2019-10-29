@@ -233,7 +233,7 @@ $table = $installer->getConnection()
         ), 'Code')
     ->addColumn('order_status', Varien_Db_Ddl_Table::TYPE_TEXT, 50, array(
         'nullable'  => false,
-        ), 'Order Status')
+        ), 'Slider Status')
     ->addColumn('percent', Varien_Db_Ddl_Table::TYPE_FLOAT, null, array(
         ), 'Percent')
     ->addColumn('orders_count', Varien_Db_Ddl_Table::TYPE_INTEGER, null, array(
@@ -253,7 +253,7 @@ $table = $installer->getConnection()
     ->addForeignKey($installer->getFkName('tax/tax_order_aggregated_created', 'store_id', 'core/store', 'store_id'),
         'store_id', $installer->getTable('core/store'), 'store_id',
         Varien_Db_Ddl_Table::ACTION_CASCADE, Varien_Db_Ddl_Table::ACTION_CASCADE)
-    ->setComment('Tax Order Aggregation');
+    ->setComment('Tax Slider Aggregation');
 $installer->getConnection()->createTable($table);
 
 /**

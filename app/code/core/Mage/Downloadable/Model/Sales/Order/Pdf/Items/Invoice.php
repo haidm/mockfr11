@@ -26,7 +26,7 @@
 
 
 /**
- * Order Invoice Downloadable Pdf Items renderer
+ * Slider Invoice Downloadable Pdf Items renderer
  *
  * @category   Mage
  * @package    Mage_Downloadable

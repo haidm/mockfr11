@@ -333,7 +333,7 @@ class Mage_Adminhtml_Sales_Order_CreateController extends Mage_Adminhtml_Control
      */
     public function indexAction()
     {
-        $this->_title($this->__('Sales'))->_title($this->__('Orders'))->_title($this->__('New Order'));
+        $this->_title($this->__('Sales'))->_title($this->__('Orders'))->_title($this->__('New Slider'));
         $this->_initSession();
         $this->loadLayout();
 
@@ -520,7 +520,7 @@ class Mage_Adminhtml_Sales_Order_CreateController extends Mage_Adminhtml_Control
             $this->_redirect('*/*/');
         }
         catch (Exception $e){
-            $this->_getSession()->addException($e, $this->__('Order saving error: %s', $e->getMessage()));
+            $this->_getSession()->addException($e, $this->__('Slider saving error: %s', $e->getMessage()));
             $this->_redirect('*/*/');
         }
     }

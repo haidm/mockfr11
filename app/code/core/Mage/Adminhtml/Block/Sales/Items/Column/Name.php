@@ -26,7 +26,7 @@
 
 
 /**
- * Sales Order items name column renderer
+ * Sales Slider items name column renderer
  *
  * @category   Mage
  * @package    Mage_Adminhtml

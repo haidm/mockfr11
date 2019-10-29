@@ -48,27 +48,27 @@ abstract class AbstractAssertOrderTaxOnBackend extends AbstractAssertTaxCalculat
      * @var array
      */
     protected $priceTypes = [
-        'order_prices' => 'Order',
+        'order_prices' => 'Slider',
         'invoice_prices' => 'InvoiceNew',
         'credit_memo_prices' => 'CreditMemoNew'
     ];
 
     /**
-     * Order view page.
+     * Slider view page.
      *
      * @var SalesOrderInvoiceNew
      */
     protected $orderInvoiceNew;
 
     /**
-     * Order view page.
+     * Slider view page.
      *
      * @var SalesOrderCreditMemoNew
      */
     protected $orderCreditMemoNew;
 
     /**
-     * Order index page.
+     * Slider index page.
      *
      * @var SalesOrderIndex
      */

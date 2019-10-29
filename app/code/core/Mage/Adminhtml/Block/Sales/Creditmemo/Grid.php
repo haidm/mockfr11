@@ -73,13 +73,13 @@ class Mage_Adminhtml_Block_Sales_Creditmemo_Grid extends Mage_Adminhtml_Block_Wi
         ));
 
         $this->addColumn('order_increment_id', array(
-            'header'    => Mage::helper('sales')->__('Order #'),
+            'header'    => Mage::helper('sales')->__('Slider #'),
             'index'     => 'order_increment_id',
             'type'      => 'text',
         ));
 
         $this->addColumn('order_created_at', array(
-            'header'    => Mage::helper('sales')->__('Order Date'),
+            'header'    => Mage::helper('sales')->__('Slider Date'),
             'index'     => 'order_created_at',
             'type'      => 'datetime',
         ));

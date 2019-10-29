@@ -104,7 +104,7 @@ class Mage_Paypal_Model_Report_Settlement_Row extends Mage_Core_Model_Abstract
     {
         $types = array(
             'TXN' => Mage::helper('paypal')->__('Transaction ID'),
-            'ODR' => Mage::helper('paypal')->__('Order ID'),
+            'ODR' => Mage::helper('paypal')->__('Slider ID'),
             'SUB' => Mage::helper('paypal')->__('Subscription ID'),
             'PAP' => Mage::helper('paypal')->__('Preapproved Payment ID')
         );

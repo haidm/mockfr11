@@ -25,7 +25,7 @@
  */
 
 /**
- * Sales Order Shipment PDF model
+ * Sales Slider Shipment PDF model
  *
  * @category   Mage
  * @package    Mage_Sales

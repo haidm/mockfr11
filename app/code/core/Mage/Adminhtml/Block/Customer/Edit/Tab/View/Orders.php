@@ -64,7 +64,7 @@ class Mage_Adminhtml_Block_Customer_Edit_Tab_View_Orders extends Mage_Adminhtml_
     {
 
         $this->addColumn('increment_id', array(
-            'header'    => Mage::helper('customer')->__('Order #'),
+            'header'    => Mage::helper('customer')->__('Slider #'),
             'align'     => 'center',
             'index'     => 'increment_id',
             'width'     => '100px',
@@ -87,7 +87,7 @@ class Mage_Adminhtml_Block_Customer_Edit_Tab_View_Orders extends Mage_Adminhtml_
         ));
 
         $this->addColumn('grand_total', array(
-            'header'    => Mage::helper('customer')->__('Order Total'),
+            'header'    => Mage::helper('customer')->__('Slider Total'),
             'index'     => 'grand_total',
             'type'      => 'currency',
             'currency'  => 'order_currency_code',

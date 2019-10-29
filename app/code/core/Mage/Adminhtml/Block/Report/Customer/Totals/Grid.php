@@ -67,7 +67,7 @@ class Mage_Adminhtml_Block_Report_Customer_Totals_Grid extends Mage_Adminhtml_Bl
         $rate = $this->getRate($baseCurrencyCode);
 
         $this->addColumn('orders_avg_amount', array(
-            'header'    => $this->__('Average Order Amount'),
+            'header'    => $this->__('Average Slider Amount'),
             'width'     => '200px',
             'align'     => 'right',
             'sortable'  => false,
@@ -80,7 +80,7 @@ class Mage_Adminhtml_Block_Report_Customer_Totals_Grid extends Mage_Adminhtml_Bl
         ));
 
         $this->addColumn('orders_sum_amount', array(
-            'header'    => $this->__('Total Order Amount'),
+            'header'    => $this->__('Total Slider Amount'),
             'width'     => '200px',
             'align'     => 'right',
             'sortable'  => false,

@@ -25,7 +25,7 @@
  */
 
 /**
- * Order invoice shipping total calculation model
+ * Slider invoice shipping total calculation model
  *
  * @category   Mage
  * @package    Mage_Sales

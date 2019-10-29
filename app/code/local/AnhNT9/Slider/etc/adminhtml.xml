@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <slider>
+            <title>Slider</title>
+            <sort_order>99</sort_order>
+            <children>
+                <slidermenu translate="title" module="anhnt9_slider">
+                    <title>Album</title>
+                    <sort_order>0</sort_order>
+                    <action>adminhtml/slider</action>
+                </slidermenu>
+                <image translate="title" module="anhnt9_slider">
+                    <title>Image</title>
+                    <sort_order>0</sort_order>
+                    <action>adminhtml/image</action>
+                </image>
+            </children>
+        </slider>
+    </menu>
+
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <slider>
+                        <children>
+                            <slidermenu translate="title" module="anhnt9_slider">
+                                <title>Slider</title>
+                            </slidermenu>
+                        </children>
+                    </slider>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
